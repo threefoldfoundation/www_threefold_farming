@@ -1,27 +1,25 @@
 <template>
   <div
-    class="flex flex-post px-0 sm:px-4 pb-8 mb-8"
+    class="flex search-post px-0 sm:px-4 pb-8 mb-8"
     v-bind:class="{ 'no-border': !border }"
   >
-    <g-link :to="path" class="post-card-image-link">
+    <g-link :to="record.path" class="post-card-image-link">
       <g-image
-        :src="img"
+        :src="record.image"
         :alt="record.title"
         class="post-card-image"
       ></g-image>
     </g-link>
-    <div>
-      <g-link :to="path">
+    <div class="p-5">
+      <g-link :to="record.path">
         <h2 class="post-card-title mt-3">{{ record.title || record.name }}</h2>
         <p class="post-card-excerpt">{{ record.excerpt }}</p>
-        <section
-          class="flex flex-wrap post-tags container mx-auto relative py-1"
-        >
+        <section class="post-tags container mx-auto relative py-1">
           <g-link
             v-for="membership in record.memberships"
             :key="membership.id"
             :to="membership.path"
-            class="text-xs bg-transparent hover:text-blue-700 py-1 px-2 mr-1 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full mb-2"
+            class="text-xs bg-transparent hover:text-blue-700 py-1 px-2 mr-1 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
             >{{ membership.title }}</g-link
           >
         </section>
@@ -33,7 +31,7 @@
             <div class="flex justify-between items-center">
               <ul class="list-none flex author-list m-0">
                 <li
-                  v-for="author in authors"
+                  v-for="author in record.author"
                   :key="author.id"
                   class="author-list-item"
                 >
@@ -50,14 +48,14 @@
 
             <div class="flex flex-col text-xs leading-none uppercase">
               <p>
-                <g-link :to="path">
+                <g-link :to="record.path">
                   <time :datetime="record.datetime">{{
                     record.humanTime
                   }}</time>
                 </g-link>
               </p>
               <p>
-                <g-link :to="path">
+                <g-link :to="record.path">
                   <time :datetime="record.datetime">{{
                     record.startDate
                   }}</time>
@@ -66,8 +64,8 @@
               </p>
             </div>
           </div>
-          <section class="post-tags container mx-auto relative py-3" v-if="displaytags()">
-            <g-link 
+          <section class="post-tags container mx-auto relative py-3">
+            <g-link
               v-for="tag in record.tags"
               :key="tag.id"
               :to="tag.path"
@@ -82,55 +80,15 @@
 </template>
 
 <script>
-function get_img(img){
-    if(img){
-      img.src = "https://data.threefold.io/" + img.src
-      for(var i=0; i < img.srcset.length; i++){
-        img.srcset[i] = "https://data.threefold.io/" + img.srcset[i]
-      }
-    }
-    return img
-}
-
 export default {
-  
   props: {
     record: {},
-    showtags: false,
-    pathPrefix: "",
     border: {
       type: Boolean,
       default: true,
     },
   },
-
-  computed: {
-    img(){
-      return get_img(this.record.image )
-    },
-
-    authors(){
-      if(this.record.authors){
-        for(var i=0; i < this.record.authors.length; i++){
-              this.record.authors[i].image = get_img(this.record.authors[i].image)
-        }
-        return this.record.authors
-      }
-    },
-
-    path(){
-       if (this.pathPrefix)
-          return this.pathPrefix + "/" + this.record.id
-        return this.record.path
-    }
-  },
-
-  methods: {
-    displaytags(){
-      return this.showtags
-    }
-  }
-}
+};
 </script>
 
 <style scoped>
@@ -140,8 +98,19 @@ export default {
   line-height: 1.2;
 }
 
+.flex-post {
+  flex-direction: row;
+  
+}
+.search-post{
+  border-bottom-width: 1px;
+  border-bottom-color: #e2e8f0;
+  
+  width: 100%;
+}
+
 .post-card-image {
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
 }
 </style>
