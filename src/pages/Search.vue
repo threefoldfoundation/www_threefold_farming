@@ -110,10 +110,11 @@ query ($private: Int){
     edges{
       node{
         __typename
-        title
+        header_title
+        header_excerpt
         path
+        title
         excerpt
-        image
       }      
     }
   }
@@ -136,8 +137,8 @@ export default {
   computed: {
     searchResults() {
       const searchTerm = this.q;
-      if (searchTerm.length < 3) return [];
-      var searchRes = this.$search.search({ query: searchTerm, limit: 5 });
+      if (!searchTerm || searchTerm.length < 3) return [];
+      var searchRes = this.$search.search({ query: searchTerm, limit: 100 });
       var result = [];
       for (var i = 0; i < searchRes.length; i++) {
         var item = searchRes[i];

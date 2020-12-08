@@ -1,9 +1,9 @@
 ---
 id: participate
-title: participate
-image: ./header.png
-altImg: why
-excerpt:  Welcome to the growing ecosystem of ThreeFold.
+# header_title: participate
+# header_image: ./header.png
+# header_altImg: Participate
+# header_excerpt:  Welcome to the growing ecosystem of ThreeFold.
 ---
 # Participate
 
