@@ -8,17 +8,6 @@ module.exports = {
     siteName: 'Threefold Farming',
     plugins: [
 
-        // Remote models
-
-        {
-            use: 'gridsome-source-graphql',
-            options: {
-                url: 'https://data.threefold.io/___graphql',
-                fieldName: 'Threefold',
-                typeName: '',
-            },
-        },
-
         // Local models
         {
             use: '@gridsome/source-filesystem',
@@ -73,6 +62,75 @@ module.exports = {
             }
         },
 
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Person',
+                path: './content/person/**/*.md',
+                refs: {
+                    tags: {
+                        typeName: 'PersonTag',
+                        create: true
+                    },
+                    memberships: {
+                        typeName: 'Membership',
+                        create: true
+                    },
+                    projects: 'Project'
+                },
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Blog',
+                path: './content/blog/**/*.md',
+                templates: {
+                    BlogPost: '/blog/post/:id'
+                },
+                refs: {
+                    authors: 'Person',
+                    tags: {
+                        typeName: 'BlogTag',
+                        create: true
+                    }
+                }
+            }
+        },
+      
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'News',
+                path: './content/news/**/*.md',
+                refs: {
+                    authors: 'Person',
+                    tags: {
+                        typeName: 'NewsTag',
+                        create: true
+                    }
+                }
+            }
+        },
+      
+      
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Project',
+                path: './content/project/**/*.md',
+                refs: {
+                    authors: 'Person',
+                    members: 'Person',
+      
+                    tags: {
+                        typeName: 'ProjectTag',
+                        create: true
+                    }
+                }
+            }
+        },       
+
         // Tailwind
         {
             use: 'gridsome-plugin-tailwindcss',
@@ -94,82 +152,29 @@ module.exports = {
         {
             use: 'gridsome-plugin-flexsearch',
             options: {
-                flexsearch: {
-                    cache: true,
-                },
-                compress: true,
                 searchFields: ['title', 'name', 'content', 'status', 'linkedin', 'excerpt', 'cities', 'countries', 'websites'],
                 collections: [{
-                        query: `{
-                      allBlog{edges{
-                          node{
-                            id
-                            path
-                            content
-                            excerpt
-                            title
-                            tags{
-                              title
-                            }
-                          }
-                        }
-                      }
-                    }
-                    `,
-                        path: 'allBlog.edges',
+                        typeName: 'Blog',
                         indexName: 'Blog',
-                        fields: ['path'],
+                        fields: ['path']
                     },
+
                     {
-                        query: `
-                    {
-                      allProject{
-                        edges {
-                          node {
-                            title
-                            content
-                            status
-                            path  
-                            members {
-                              name
-                            },
-                            linkedin
-                          }
-                        }
-                      }
-                    }
-                    `,
-                        path: 'allProject.edges',
-                        fields: ['path'],
-                        indexName: 'Project'
+                        typeName: 'Project',
+                        indexName: 'Project',
+                        fields: ['path']
                     },
+
                     {
-                        query: `
+                        typeName: 'Person',
+                        indexName: 'Person',
+                        fields: ['path']
+                    },
+
                     {
-                      allPerson{
-                        edges{
-                          node{
-                            content
-                            path
-                            excerpt
-                            name
-                            memberships{
-                              title
-                            }
-                            tags{
-                              title
-                            }
-                            cities
-                            countries
-                            websites
-                          }      
-                        }
-                      }
-                    }
-                    `,
-                        path: 'allPerson.edges',
-                        fields: ['path'],
-                        indexName: 'Person'
+                        typeName: 'News',
+                        indexName: 'News',
+                        fields: ['path']
                     },
 
                     {
@@ -180,13 +185,59 @@ module.exports = {
 
                 ]
             }
-        }
+        },
     ],
     templates: {
         MarkdownPage: [{
             path: '/:id',
             component: '~/templates/MarkdownPage.vue',
 
+        }],
+
+        BlogTag: [{
+            path: '/blog/tags/:id',
+            component: '~/templates/Tag.vue'
+        }],
+
+        
+        
+        NewsTag: [{
+            path: '/news/tags/:id',
+            component: '~/templates/Tag.vue'
+        }],
+
+        ProjectTag: [{
+            path: '/partners/tags/:id',
+            component: '~/templates/Tag.vue'
+        }],
+
+        Membership: [{
+            path: '/team/memberships/:id',
+            component: '~/templates/Membership.vue'
+        }],
+
+        Blog: [{
+            path: '/blog/post/:id',
+            component: '~/templates/BlogPost.vue'
+        }],
+
+        News: [{
+            path: '/news/post/:id',
+            component: '~/templates/NewsPost.vue'
+        }],
+
+        Person: [{
+            path: '/team/:id',
+            component: '~/templates/Person.vue'
+        }],
+        PersonTag: [{
+            path: '/team/tags/:id',
+            component: '~/templates/Tag.vue'
+        }],
+
+        Project: [{
+            path: '/partners/:id',
+            component: '~/templates/Project.vue'
         }],
     },
 
@@ -210,7 +261,13 @@ module.exports = {
                         host: `localhost`,
                         global: false,
                     }
-                }]
+                },
+                // '@noxify/gridsome-remark-table-align', ['@noxify/gridsome-remark-classes', {
+                //     'table': 'table table-striped',
+                //     'tableCell[align=center]': 'text-center',
+                //     'tableCell[align=right]': 'text-right'
+                // }
+            ]
             ]
         }
     }
