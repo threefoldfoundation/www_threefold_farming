@@ -11,7 +11,7 @@ title: participate
 - we
 - can
 - have
-- bulletpoints
+- [**bulletpoints**](https://circles.threefold.me/project/kristine-ping/kanban)
 
 > this is another element markdown allows us to have
 
