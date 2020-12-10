@@ -6,11 +6,6 @@ header_altImg: Token
 header_excerpt: TFT is the only way to rent compute and storage capacity on the ThreeFold Grid - which has the potential to gain significant market share in today's public cloud market.
 ---
 
-</br>
-</br>
-</br>
-</br>
-
 # A CIRCULAR ECONOMY
 </br>
 
