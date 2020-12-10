@@ -1,5 +1,5 @@
 ---
-id: home1
+id: home
 title: How it works
 image: ./card1.jpeg
 button: Get Started
