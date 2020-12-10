@@ -1,9 +1,15 @@
 ---
 id: home2
-title: The Technology Demands It
+title: The Market
 image: ./card2.jpeg
-button: Read More on Our Blog
+button: 
 link: ''
 order: 1
-excerpt: Modern day technologies like 5G, IOT, AI,... demand more cloud resources near end-users. The central datacenter approach can't keep up with this deman.  The ThreeFold Grid can cater to all the needs these industries as the decentralized nature of the the grid puts the capacity near the end user.
+excerpt: The Cloud is the engine for the current internet. To change the behaviour of the internet we need a new engine. 
+- Estimated cloud revenue 2027 = 1.1 trillion
+- 200 billion revenue for SAAS cloud
+- 4 Billion people connected today
+- 50% left to connect
+- if 10$ pp = 500 Billion
+- Estimated capacity demand for 2025 = 175 ZB
 ---
