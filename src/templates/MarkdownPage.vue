@@ -12,25 +12,20 @@
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
       />
-      <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides.length > 0"
-      />
+      <VerticalNav :slides="$page.markdownPage.slides" v-if="$page.markdownPage.slides.length > 0" />
       <div v-html="$page.markdownPage.content"></div>
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
+      <NewCard v-for="card in $page.markdownPage.cards" :key="card.id" :card="card" />
 
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
+      <SolutionsHeader v-if="$page.markdownPage.header" :header="$page.markdownPage.header" />
+
+      <ShowcaseProducts
+        :products="$page.markdownPage.productData"
+        v-if="$page.markdownPage.productData.length > 0"
       />
     </div>
   </Layout>
@@ -77,6 +72,13 @@
          btn2
          link2
        }
+       
+       productData{
+        id
+         title
+        content
+       }
+
     }
   }
 
@@ -88,6 +90,7 @@ import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
+import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 
 export default {
   components: {
@@ -96,12 +99,13 @@ export default {
     VerticalNav,
     GetInTouch,
     SolutionsHeader,
+    ShowcaseProducts,
   },
   metaInfo() {
     return {
-      title: this.$page.markdownPage.title,
+      title: this.$page.markdownPage.title
     };
-  },
+  }
 };
 </script>
 <style scoped>

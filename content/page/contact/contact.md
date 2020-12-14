@@ -11,4 +11,5 @@ slides:
   ]
 
 contactData: [collaborate, support, press, join]
+productData: [myproducts ,test2]
 ---
