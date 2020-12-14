@@ -32,6 +32,11 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+      />
     </div>
   </Layout>
 </template>
@@ -77,6 +82,11 @@
          btn2
          link2
        }
+       howItWorks{
+         id
+         title
+         excerpt
+       }
     }
   }
 
@@ -88,7 +98,7 @@ import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
-
+import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 export default {
   components: {
     NewCard,
@@ -96,6 +106,7 @@ export default {
     VerticalNav,
     GetInTouch,
     SolutionsHeader,
+    HowItWorks,
   },
   metaInfo() {
     return {

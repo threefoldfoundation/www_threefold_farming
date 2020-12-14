@@ -36,6 +36,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'HowItWorks',
+                path: './content/page/**/how_it_works/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Header',
                 path: './content/page/**/header/*.md',
             }
@@ -50,7 +58,8 @@ module.exports = {
                     cards: 'Card',
                     slides: 'Slide',
                     contactData: 'Contact',
-                    header: 'Header'
+                    header: 'Header',
+                    howItWorks: 'HowItWorks',
                 }
             }
         },
