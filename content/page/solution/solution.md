@@ -8,4 +8,5 @@ howItWorks:
     get_rewarded_with_tokens,
     users_reserve_capacity,
   ]
+productData: [myproducts ,test2]
 ---
