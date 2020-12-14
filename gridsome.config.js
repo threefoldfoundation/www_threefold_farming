@@ -36,12 +36,21 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Header',
+                path: './content/page/**/header/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
                     cards: 'Card',
                     slides: 'Slide',
-                    contactData: 'Contact'
+                    contactData: 'Contact',
+                    header: 'Header'
                 }
             }
         },
@@ -97,7 +106,7 @@ module.exports = {
                 }
             }
         },
-      
+
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -112,8 +121,8 @@ module.exports = {
                 }
             }
         },
-      
-      
+
+
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -122,14 +131,14 @@ module.exports = {
                 refs: {
                     authors: 'Person',
                     members: 'Person',
-      
+
                     tags: {
                         typeName: 'ProjectTag',
                         create: true
                     }
                 }
             }
-        },       
+        },
 
         // Tailwind
         {
@@ -199,8 +208,8 @@ module.exports = {
             component: '~/templates/Tag.vue'
         }],
 
-        
-        
+
+
         NewsTag: [{
             path: '/news/tags/:id',
             component: '~/templates/Tag.vue'
@@ -249,25 +258,25 @@ module.exports = {
             anchorClassName: 'icon icon-link',
             plugins: [
                 ['gridsome-plugin-remark-prismjs-all', {
-                    highlightClassName: "gridsome-highlight",
-                    codeTitleClassName: "gridsome-code-title",
-                    classPrefix: 'language-',
-                    aliases: {},
-                    noInlineHighlight: false,
-                    showLineNumbers: false, //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-                    languageExtensions: [],
-                    prompt: { //  `require("prismjs/plugins/command-line/prism-command-line.css");`
-                        user: `root`,
-                        host: `localhost`,
-                        global: false,
-                    }
-                },
-                // '@noxify/gridsome-remark-table-align', ['@noxify/gridsome-remark-classes', {
-                //     'table': 'table table-striped',
-                //     'tableCell[align=center]': 'text-center',
-                //     'tableCell[align=right]': 'text-right'
-                // }
-            ]
+                        highlightClassName: "gridsome-highlight",
+                        codeTitleClassName: "gridsome-code-title",
+                        classPrefix: 'language-',
+                        aliases: {},
+                        noInlineHighlight: false,
+                        showLineNumbers: false, //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+                        languageExtensions: [],
+                        prompt: { //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+                            user: `root`,
+                            host: `localhost`,
+                            global: false,
+                        }
+                    },
+                    // '@noxify/gridsome-remark-table-align', ['@noxify/gridsome-remark-classes', {
+                    //     'table': 'table table-striped',
+                    //     'tableCell[align=center]': 'text-center',
+                    //     'tableCell[align=right]': 'text-right'
+                    // }
+                ]
             ]
         }
     }

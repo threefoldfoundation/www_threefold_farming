@@ -23,7 +23,15 @@
         :card="card"
       />
 
-      <GetInTouch :contacts="$page.markdownPage.contactData" v-if="$page.markdownPage.contactData.length > 0"/>
+      <GetInTouch
+        :contacts="$page.markdownPage.contactData"
+        v-if="$page.markdownPage.contactData.length > 0"
+      />
+
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
     </div>
   </Layout>
 </template>
@@ -60,6 +68,15 @@
          mail
          phone
        }
+       header{
+         title
+         subtitle
+         excerpt
+         btn1
+         link1
+         btn2
+         link2
+       }
     }
   }
 
@@ -70,6 +87,7 @@ import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
+import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 
 export default {
   components: {
@@ -77,6 +95,7 @@ export default {
     Header,
     VerticalNav,
     GetInTouch,
+    SolutionsHeader,
   },
   metaInfo() {
     return {
