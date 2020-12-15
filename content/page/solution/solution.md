@@ -1,5 +1,6 @@
 ---
 id: solution
+solution_image: ./new_ideas.svg
 header: header
 howItWorksMain: how_it_works_main
 howItWorks:

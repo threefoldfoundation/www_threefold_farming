@@ -69,6 +69,11 @@
           <SignUp :signup="$page.markdownPage.signup" />
         </ClientOnly>
       </template>
+
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
     </div>
   </Layout>
 </template>
@@ -83,6 +88,7 @@
         header_altImg
         header_title
         header_image
+        solution_image
         slides{
           id
           title
