@@ -55,6 +55,11 @@
         :logos="$page.markdownPage.logos"
       />
 
+      <template>
+        <ClientOnly>
+          <CallToAction :cta="$page.markdownPage.cta" />
+        </ClientOnly>
+      </template>
     </div>
   </Layout>
 </template>
@@ -132,6 +137,13 @@
           svg
           excerpt
         }
+        cta{
+          id
+          title
+          excerpt
+          button
+          link
+        }
     }
   }
 
@@ -147,6 +159,7 @@ import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
+import CallToAction from "~/components/custom/sections/CallToAction.vue";
 
 export default {
   components: {
@@ -159,12 +172,16 @@ export default {
     ShowcaseProducts,
     Features,
     logoShowcase,
+    CallToAction,
   },
   metaInfo() {
     return {
       title: this.$page.markdownPage.title,
     };
   },
+  // mounted() {
+  //   console.log(this.$page.markdownPage.cta);
+  // },
 };
 </script>
 <style scoped>
