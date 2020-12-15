@@ -31,6 +31,7 @@
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
       />
     </div>
   </Layout>
@@ -82,7 +83,11 @@
          title
          excerpt
        }
-       
+       howItWorksMain{
+         id
+         title
+         image
+       }
        productData{
         id
          title
@@ -117,6 +122,9 @@ export default {
     return {
       title: this.$page.markdownPage.title
     };
+  },
+  mounted(){
+    console.log(this.$page.markdownPage)
   }
 };
 </script>

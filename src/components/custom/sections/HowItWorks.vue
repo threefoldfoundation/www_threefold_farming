@@ -2,11 +2,11 @@
   <section class="py-12 px-4">
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
       <div class="lg:w-1/2 px-2">
-        <img src="../../../../static/img/how_it_works.png" alt="" />
+        <g-image :src="main.image.src" :alt="main.title"></g-image>
       </div>
       <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
         <h2 class="text-4xl px-4 mb-4 leading-tight font-semibold font-heading">
-          How Does It Work?
+          {{ main.title }}
         </h2>
         <div
           class="p-4 mb-4"
@@ -28,6 +28,6 @@
 
 <script>
 export default {
-  props: ["HIWData"],
+  props: ["HIWData", "main"],
 };
 </script>

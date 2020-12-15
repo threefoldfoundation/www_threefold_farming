@@ -1,7 +1,7 @@
 ---
 id: solution
 header: header
-
+howItWorksMain: main
 howItWorks:
   [
     farmers_connect_capacity_and_compute,

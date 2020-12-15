@@ -68,6 +68,7 @@ module.exports = {
                     contactData: 'Contact',
                     header: 'Header',
                     howItWorks: 'HowItWorks',
+                    howItWorksMain: 'HowItWorks',
                     productData: 'Product'
                 }
             }
