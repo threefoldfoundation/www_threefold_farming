@@ -49,6 +49,12 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :logos="$page.markdownPage.logos"
+      />
+
     </div>
   </Layout>
 </template>
@@ -116,6 +122,10 @@
           link
           excerpt
         }
+        logos{
+          id
+          image
+        }
         features{
           id
           title 
@@ -136,6 +146,7 @@ import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.v
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
+import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 
 export default {
   components: {
@@ -147,6 +158,7 @@ export default {
     HowItWorks,
     ShowcaseProducts,
     Features,
+    logoShowcase,
   },
   metaInfo() {
     return {
