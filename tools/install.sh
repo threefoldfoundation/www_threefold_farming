@@ -38,10 +38,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     npm install --global @gridsome/cli
 fi
 set +e
-#npm install --global
-npm install package.json -g
 
-mkdir -p node_modules
+npm install 
 
 source run.sh
 
