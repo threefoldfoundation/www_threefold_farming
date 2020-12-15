@@ -22,19 +22,11 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
       />
-      <div v-html="$page.markdownPage.content"></div>
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
 
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
       />
-
-      
 
       <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -64,6 +56,13 @@
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
+      />
+
+      <div v-html="$page.markdownPage.content"></div>
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
       />
 
       <template>
