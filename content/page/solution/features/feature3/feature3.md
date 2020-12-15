@@ -1,6 +1,6 @@
 ---
 id: value_based_price
-svg: ./value_based_price
+svg: ./peer_to_peer.png
 title: Value-based price
 ---
 
