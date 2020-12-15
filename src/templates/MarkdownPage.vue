@@ -12,10 +12,52 @@
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
       />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
+
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
       />
+
+      <GetInTouch
+        :contacts="$page.markdownPage.contactData"
+        v-if="$page.markdownPage.contactData.length > 0"
+      />
+
+      <ShowcaseProducts
+        :products="$page.markdownPage.productData"
+        v-if="$page.markdownPage.productData.length > 0"
+      />
+
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      />
+
+      <Features
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain"
+        :features="$page.markdownPage.features"
+      />
+      <template>
+        <ClientOnly>
+          <Comparison
+            :main="$page.markdownPage.comparisonMain"
+            :sections="$page.markdownPage.comparisonSecs"
+          />
+        </ClientOnly>
+      </template>
+
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :logos="$page.markdownPage.logos"
+      />
+
       <div v-html="$page.markdownPage.content"></div>
       <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -23,7 +65,17 @@
         :card="card"
       />
 
-      <GetInTouch :contacts="$page.markdownPage.contactData" v-if="$page.markdownPage.contactData.length > 0"/>
+      <template>
+        <ClientOnly>
+          <CallToAction :cta="$page.markdownPage.cta" />
+          <SignUp :signup="$page.markdownPage.signup" />
+        </ClientOnly>
+      </template>
+
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
     </div>
   </Layout>
 </template>
@@ -38,6 +90,7 @@
         header_altImg
         header_title
         header_image
+        solution_image
         slides{
           id
           title
@@ -60,6 +113,75 @@
          mail
          phone
        }
+       header{
+         title
+         subtitle
+         excerpt
+         btn1
+         link1
+         btn2
+         link2
+       }
+       howItWorks{
+         id
+         title
+         excerpt
+       }
+       howItWorksMain{
+         id
+         title
+         image
+       }
+       productData{
+        id
+         title
+        content
+       }
+        featuresMain{
+          id
+          title 
+          btn 
+          link
+          excerpt
+        }
+        logos{
+          id
+          image
+        }
+        features{
+          id
+          title 
+          svg
+          excerpt
+        }
+        cta{
+          id
+          title
+          excerpt
+          button
+          link
+        }
+        signup{
+          id
+          title
+          button1
+          link1
+          button2
+          link2
+        }
+        comparisonMain{
+          id
+          title
+          description
+          button
+          link
+        }
+        comparisonSecs{
+          id
+          svg
+          title
+          excerpt
+        }
     }
   }
 
@@ -70,6 +192,14 @@ import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
+import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
+import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
+import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
+import Features from "~/components/custom/sections/Features.vue";
+import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
+import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import SignUp from "~/components/custom/sections/SignUp.vue";
+import Comparison from "~/components/custom/sections/Comparison.vue";
 
 export default {
   components: {
@@ -77,6 +207,14 @@ export default {
     Header,
     VerticalNav,
     GetInTouch,
+    SolutionsHeader,
+    HowItWorks,
+    ShowcaseProducts,
+    Features,
+    logoShowcase,
+    CallToAction,
+    SignUp,
+    Comparison,
   },
   metaInfo() {
     return {

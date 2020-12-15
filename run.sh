@@ -1,4 +1,10 @@
 
+
+if [ ! -d "node_modules" ]
+then
+    sh tools/install.sh
+fi
+
 pushd ~/code/github/threefoldfoundation/data_threefold
 git pull
 popd

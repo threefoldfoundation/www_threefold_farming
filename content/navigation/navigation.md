@@ -20,9 +20,6 @@ navLinks:
       - title: Token
         path: /token
 
-      - title: Future
-        path: /future
-
       - title: Knowledge
         path: https://wiki.threefold.io/#/what_is_farming
         external: true
@@ -60,3 +57,6 @@ social:
   - icon: linkedin
     link: https://www.linkedin.com/company/threefold-foundation/
 ---
+
+<!--       - title: Future
+        path: /future -->
