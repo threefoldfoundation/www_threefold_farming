@@ -64,6 +64,37 @@ module.exports = {
                 path: './content/page/**/features/**/*.md',
             }
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Logo',
+                path: './content/page/**/logos/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Cta',
+                path: './content/page/**/cta/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'SignUp',
+                path: './content/page/**/signup/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Comparison',
+                path: './content/page/**/comparison/**/*.md',
+            }
+        },
 
         {
             use: '@gridsome/source-filesystem',
@@ -79,7 +110,12 @@ module.exports = {
                     howItWorksMain: 'HowItWorks',
                     productData: 'Product',
                     featuresMain: 'Features',
-                    features: 'Features'
+                    features: 'Features',
+                    logos: 'Logo',
+                    cta: 'Cta',
+                    signup: 'SignUp',
+                    comparisonMain: 'Comparison',
+                    comparisonSecs: 'Comparison'
                 }
             }
         },

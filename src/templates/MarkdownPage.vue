@@ -12,6 +12,12 @@
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
       />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
+
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
@@ -28,10 +34,7 @@
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      />
+      
 
       <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -49,6 +52,31 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+      <template>
+        <ClientOnly>
+          <Comparison
+            :main="$page.markdownPage.comparisonMain"
+            :sections="$page.markdownPage.comparisonSecs"
+          />
+        </ClientOnly>
+      </template>
+
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :logos="$page.markdownPage.logos"
+      />
+
+      <template>
+        <ClientOnly>
+          <CallToAction :cta="$page.markdownPage.cta" />
+          <SignUp :signup="$page.markdownPage.signup" />
+        </ClientOnly>
+      </template>
+
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
     </div>
   </Layout>
 </template>
@@ -63,6 +91,7 @@
         header_altImg
         header_title
         header_image
+        solution_image
         slides{
           id
           title
@@ -116,10 +145,42 @@
           link
           excerpt
         }
+        logos{
+          id
+          image
+        }
         features{
           id
           title 
           svg
+          excerpt
+        }
+        cta{
+          id
+          title
+          excerpt
+          button
+          link
+        }
+        signup{
+          id
+          title
+          button1
+          link1
+          button2
+          link2
+        }
+        comparisonMain{
+          id
+          title
+          description
+          button
+          link
+        }
+        comparisonSecs{
+          id
+          svg
+          title
           excerpt
         }
     }
@@ -136,6 +197,10 @@ import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.v
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
+import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
+import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import SignUp from "~/components/custom/sections/SignUp.vue";
+import Comparison from "~/components/custom/sections/Comparison.vue";
 
 export default {
   components: {
@@ -147,6 +212,10 @@ export default {
     HowItWorks,
     ShowcaseProducts,
     Features,
+    logoShowcase,
+    CallToAction,
+    SignUp,
+    Comparison,
   },
   metaInfo() {
     return {

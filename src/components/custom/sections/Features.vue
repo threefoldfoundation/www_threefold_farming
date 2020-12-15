@@ -9,7 +9,7 @@
         :key="feature.id"
         class="lg:w-1/4 px-4 mb-6"
       >
-        <g-image :src="feature.svg.src"></g-image>
+        <g-image class="w-10 h-10" :src="feature.svg.src"></g-image>
         <h3 class="text-xl my-3 font-semibold font-heading">
           {{ feature.title }}
         </h3>

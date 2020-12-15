@@ -1,6 +1,6 @@
 ---
 id: variety
-svg: ./variety.svg
+svg: ./P2P.png
 title: Variety
 ---
 

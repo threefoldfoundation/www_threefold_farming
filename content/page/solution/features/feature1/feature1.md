@@ -1,6 +1,6 @@
 ---
 id: high_durability
-svg: ./high_durability.svg
+svg: ./Full_Privacy.png
 title: High durability
 ---
 

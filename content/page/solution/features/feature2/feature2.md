@@ -1,6 +1,6 @@
 ---
 id: versatility
-svg: ./versatility.svg
+svg: ./Multi Gateway.png
 title: Versatility
 ---
 
