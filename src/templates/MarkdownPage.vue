@@ -49,6 +49,14 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+      <template>
+        <ClientOnly>
+          <Comparison
+            :main="$page.markdownPage.comparisonMain"
+            :sections="$page.markdownPage.comparisonSecs"
+          />
+        </ClientOnly>
+      </template>
 
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
@@ -61,7 +69,6 @@
           <SignUp :signup="$page.markdownPage.signup" />
         </ClientOnly>
       </template>
-
     </div>
   </Layout>
 </template>
@@ -154,6 +161,19 @@
           button2
           link2
         }
+        comparisonMain{
+          id
+          title
+          description
+          button
+          link
+        }
+        comparisonSecs{
+          id
+          svg
+          title
+          excerpt
+        }
     }
   }
 
@@ -171,6 +191,7 @@ import Features from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
+import Comparison from "~/components/custom/sections/Comparison.vue";
 
 export default {
   components: {
@@ -185,6 +206,7 @@ export default {
     logoShowcase,
     CallToAction,
     SignUp,
+    Comparison,
   },
   metaInfo() {
     return {

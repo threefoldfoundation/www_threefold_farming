@@ -91,6 +91,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Comparison',
+                path: './content/page/**/comparison/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -105,7 +113,9 @@ module.exports = {
                     features: 'Features',
                     logos: 'Logo',
                     cta: 'Cta',
-                    signup: 'SignUp'
+                    signup: 'SignUp',
+                    comparisonMain: 'Comparison',
+                    comparisonSecs: 'Comparison'
                 }
             }
         },
