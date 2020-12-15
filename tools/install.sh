@@ -40,6 +40,8 @@ fi
 set +e
 npm install --global
 
+mkdir -p node_modules
+
 source run.sh
 
 
