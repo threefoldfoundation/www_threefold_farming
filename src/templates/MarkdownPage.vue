@@ -58,8 +58,10 @@
       <template>
         <ClientOnly>
           <CallToAction :cta="$page.markdownPage.cta" />
+          <SignUp :signup="$page.markdownPage.signup" />
         </ClientOnly>
       </template>
+
     </div>
   </Layout>
 </template>
@@ -144,6 +146,14 @@
           button
           link
         }
+        signup{
+          id
+          title
+          button1
+          link1
+          button2
+          link2
+        }
     }
   }
 
@@ -160,6 +170,7 @@ import ShowcaseProducts from "~/components/marketing/sections/cta-sections/Showc
 import Features from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import SignUp from "~/components/custom/sections/SignUp.vue";
 
 export default {
   components: {
@@ -173,15 +184,13 @@ export default {
     Features,
     logoShowcase,
     CallToAction,
+    SignUp,
   },
   metaInfo() {
     return {
       title: this.$page.markdownPage.title,
     };
   },
-  // mounted() {
-  //   console.log(this.$page.markdownPage.cta);
-  // },
 };
 </script>
 <style scoped>

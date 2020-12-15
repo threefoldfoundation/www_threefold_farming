@@ -83,6 +83,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'SignUp',
+                path: './content/page/**/signup/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -96,7 +104,8 @@ module.exports = {
                     featuresMain: 'Features',
                     features: 'Features',
                     logos: 'Logo',
-                    cta: 'Cta'
+                    cta: 'Cta',
+                    signup: 'SignUp'
                 }
             }
         },
