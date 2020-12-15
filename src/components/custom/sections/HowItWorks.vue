@@ -2,7 +2,11 @@
   <section class="py-12 px-4">
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
       <div class="lg:w-1/2 px-2">
-        <g-image :src="main.image.src" :alt="main.title"></g-image>
+        <g-image
+          class="g-image g-image--lazy g-image--loading"
+          :src="main.image.src"
+          :alt="main.title"
+        ></g-image>
       </div>
       <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
         <h2 class="text-4xl px-4 mb-4 leading-tight font-semibold font-heading">

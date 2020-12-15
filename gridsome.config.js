@@ -60,6 +60,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Features',
+                path: './content/page/**/features/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -69,7 +77,9 @@ module.exports = {
                     header: 'Header',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
-                    productData: 'Product'
+                    productData: 'Product',
+                    featuresMain: 'Features',
+                    features: 'Features'
                 }
             }
         },

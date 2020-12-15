@@ -12,16 +12,26 @@
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
       />
-      <VerticalNav :slides="$page.markdownPage.slides" v-if="$page.markdownPage.slides.length > 0" />
+      <VerticalNav
+        :slides="$page.markdownPage.slides"
+        v-if="$page.markdownPage.slides.length > 0"
+      />
       <div v-html="$page.markdownPage.content"></div>
-      <NewCard v-for="card in $page.markdownPage.cards" :key="card.id" :card="card" />
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
+      />
 
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <SolutionsHeader v-if="$page.markdownPage.header" :header="$page.markdownPage.header" />
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
 
       <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -32,6 +42,12 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
+      />
+
+      <Features
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain"
+        :features="$page.markdownPage.features"
       />
     </div>
   </Layout>
@@ -93,7 +109,19 @@
          title
         content
        }
-
+        featuresMain{
+          id
+          title 
+          btn 
+          link
+          excerpt
+        }
+        features{
+          id
+          title 
+          svg
+          excerpt
+        }
     }
   }
 
@@ -107,6 +135,7 @@ import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
+import Features from "~/components/custom/sections/Features.vue";
 
 export default {
   components: {
@@ -117,15 +146,13 @@ export default {
     SolutionsHeader,
     HowItWorks,
     ShowcaseProducts,
+    Features,
   },
   metaInfo() {
     return {
-      title: this.$page.markdownPage.title
+      title: this.$page.markdownPage.title,
     };
   },
-  mounted(){
-    console.log(this.$page.markdownPage)
-  }
 };
 </script>
 <style scoped>
