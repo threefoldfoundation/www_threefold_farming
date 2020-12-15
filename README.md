@@ -1,4 +1,4 @@
-# Default starter for Threefold Webstack
+# Default starter for Threefold Farming
 
 ### 1. Install dependencies
 
