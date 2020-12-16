@@ -28,10 +28,10 @@
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <ShowcaseProducts
+      <!-- <ShowcaseProducts
         :products="$page.markdownPage.productData"
         v-if="$page.markdownPage.productData.length > 0"
-      />
+      /> -->
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -45,12 +45,6 @@
         :features="$page.markdownPage.features"
       />
 
-      <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      />
-      
       <template>
         <ClientOnly>
           <Comparison
@@ -60,10 +54,16 @@
         </ClientOnly>
       </template>
 
-      <logoShowcase
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      />
+
+      <!-- <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
-      />
+      /> -->
 
       <div v-html="$page.markdownPage.content"></div>
       <NewCard
@@ -75,14 +75,14 @@
       <template>
         <ClientOnly>
           <CallToAction :cta="$page.markdownPage.cta" />
-          <SignUp :signup="$page.markdownPage.signup" />
+          <!-- <SignUp :signup="$page.markdownPage.signup" /> -->
         </ClientOnly>
       </template>
 
-      <img
+      <!-- <img
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
-      />
+      /> -->
     </div>
   </Layout>
 </template>
