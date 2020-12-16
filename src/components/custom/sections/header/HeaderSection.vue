@@ -9,7 +9,6 @@
         {{ header.excerpt }}
       </p>
       <div>
-        <!-- bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded -->
         <g-link
           class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
           v-if="header.btn1"
