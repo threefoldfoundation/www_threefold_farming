@@ -9,9 +9,18 @@
         <div class="space-y-8 xl:col-span-1">
           <img
             class="h-10"
-            src="https://tailwindui.com/img/logos/v1/workflow-mark-gray-300.svg"
+            src="/img/tf_icon_black.svg"
             alt="Company name"
+            v-if="theme == 'light'"
           />
+
+          <img
+            class="h-10"
+            src="/img/tf_icon_white.svg"
+            alt="Company name"
+            v-else
+          />
+
           <p class="text-gray-500 text-base leading-6">
             {{ record.description }}
           </p>
@@ -250,7 +259,7 @@
 
 <script>
 export default {
-  props: { record: {} },
+  props: ['record' , 'theme'],
 };
 </script>
 
