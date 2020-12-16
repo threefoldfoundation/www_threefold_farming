@@ -1,5 +1,5 @@
 ---
-id: threefold
+id: participate_comparison2
 svg: ./certificate.svg
 title: Threefold
 ---

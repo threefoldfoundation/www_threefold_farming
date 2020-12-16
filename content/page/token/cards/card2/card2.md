@@ -1,5 +1,5 @@
 ---
-id: why2
+id: tokenCard2
 title: STATS
 image: ./card2.jpeg
 button: See More

@@ -1,5 +1,5 @@
 ---
-id: comparison_main
+id: participate_comparison_main
 title: Less = More
 description: The truth is there's no comparison
 button: Dive Deeper

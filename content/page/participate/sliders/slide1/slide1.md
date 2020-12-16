@@ -1,5 +1,5 @@
 ---
-id: our_philosophy
+id: participateSlide1
 title: our philosophy
 image: ''
 order: 6

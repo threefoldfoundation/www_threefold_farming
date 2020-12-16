@@ -1,5 +1,5 @@
 ---
-id: high_durability
+id: token_feature1
 svg: ./Full_Privacy.png
 title: High durability
 ---

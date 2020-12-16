@@ -1,23 +1,11 @@
 ---
 id: token
-howItWorksMain: how_it_works_main
-howItWorks:
-  [
-    farmers_connect_capacity_and_compute,
-    get_rewarded_with_tokens,
-    users_reserve_capacity,
-  ]
-howItWorksMain_2: how_it_works_main_2
-howItWorks_2:
-  [
-    farmers_connect_capacity_and_compute,
-    get_rewarded_with_tokens,
-    users_reserve_capacity,
-  ]
-featuresMain: Feature_main
-features: [high_durability, versatility, value_based_price, variety]
-cards: [why1, why2]
-cta: cta
+howItWorksMain: token_main
+howItWorks: [token_sec1, token_sec2, token_sec3]
+howItWorksMain_2: token_main2
+howItWorks_2: [token_hIW1, token_hIW2, token_hIW3]
+featuresMain: token_Feature_main
+features: [token_feature1, token_feature2, token_feature3, token_feature4]
+cards: [tokenCard1, tokenCard2]
+cta: token_cta
 ---
-
-

@@ -4,22 +4,18 @@ title: participate
 header: header_participate
 slides:
   [
-    our_philosophy,
-    if_not_us_who,
-    what_we_stand_for,
-    internet_access_a_human_right,
-    digital_sovereignty_for_everyone,
-    a_new_internet_for_our_planet,
+    participateSlide1,
+    participateSlide2,
+    participateSlide3,
+    participateSlide4,
+    participateSlide5,
+    participateSlide6,
   ]
-howItWorksMain: how_it_works_main
-howItWorks:
-  [
-    farmers_connect_capacity_and_compute,
-    get_rewarded_with_tokens,
-    users_reserve_capacity,
-  ]
-comparisonMain: comparison_main
-comparisonSecs: [centralized, threefold, distributed]
+howItWorksMain: participate_main
+howItWorks: [participate_sec1, participate_sec2, participate_sec3]
+comparisonMain: participate_comparison_main
+comparisonSecs:
+  [participate_comparison1, participate_comparison2, participate_comparison3]
 howItWorksMain_2: how_it_works_main_2
 howItWorks_2:
   [
@@ -27,6 +23,5 @@ howItWorks_2:
     get_rewarded_with_tokens,
     users_reserve_capacity,
   ]
-cta: cta
+cta: participate_cta
 ---
-

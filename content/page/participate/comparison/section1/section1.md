@@ -1,5 +1,5 @@
 ---
-id: centralized
+id: participate_comparison1
 svg: ./new_ideas.svg
 title: Centralized
 ---

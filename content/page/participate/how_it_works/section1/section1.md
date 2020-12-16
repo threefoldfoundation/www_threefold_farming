@@ -1,5 +1,5 @@
 ---
-id: farmers_connect_capacity_and_compute
+id: participate_sec1
 title: Farmers connect capacity + compute
 ---
 

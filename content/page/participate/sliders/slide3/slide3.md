@@ -1,5 +1,5 @@
 ---
-id: what_we_stand_for
+id: participateSlide3
 title: what we stand for
 image:
 order: 4

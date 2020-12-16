@@ -1,5 +1,5 @@
 ---
-id: distributed
+id: participate_comparison3
 svg: ./waiting.svg
 title: Distributed
 ---

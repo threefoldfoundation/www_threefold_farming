@@ -1,5 +1,5 @@
 ---
-id: cta
+id: participate_cta
 title: No paper plane can be made without paper
 button: Sign up
 link: /solution #Add button link here

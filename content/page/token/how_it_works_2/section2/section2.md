@@ -1,5 +1,5 @@
 ---
-id: get_rewarded_with_tokens
+id: token_hIW2
 title: Get rewarded with tokens
 ---
 

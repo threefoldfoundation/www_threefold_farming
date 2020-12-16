@@ -1,5 +1,5 @@
 ---
-id: Feature_main
+id: token_Feature_main
 title: The new paradigm
 btn: Sign up for free
 link: /solution # Add Btn link here
