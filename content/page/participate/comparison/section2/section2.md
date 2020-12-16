@@ -1,7 +1,7 @@
 ---
 id: participate_comparison2
 svg: ./certificate.svg
-title: Threefold
+title: Venus Node v2
 ---
 
-We can also talk during business meeting, or visit your office anytime you want! Our employees will provide proper contracts.
+The mother of the home and small office nodes. No bigger than a regular desktop PC. No technical experience required.

@@ -1,22 +1,15 @@
 ---
 id: participateSlide2
-title: if not us, who? if not now, when?
+title: Venus Node v2
 image:
 order: 5
 ---
 
-While to date we have maintained more of a focal role in terms of funding, development, and promotion, for example, this has been more out of necessity than out of desire.
+The mother of the home and small office nodes. With dimensions no bigger than a regular desktop PC it really packs a punch with a very powerful processor and loads of storage. It is highly recommended putting this behind a stable (preferably fiber) internet connection. There is no technical experience required to install a Venus Node as it comes "plug and farm". All that needs to be done is: connect it to the modem with a network cable and a power source.
+<br />
+<br />
+**Features:** AMD Ryzen 9 3900x 128 GB Ram 2 TB SSD (NVME) 14 TB HDD
+<br />
+<br />
+More Specs
 
-We know that the success of the mission depends on a distributed and decentralized ecosystem all working towards the same vision.
-<br />
-<br />
-We agree that the world needs healing and that raising consciousness is the way forward. This happens on 3 levels:
-<br />
-
-- Physical (climate, pollution)
-- Personal (spirituality)
-- Digital
-<br />
-<br />
-
-Our current internet is seriously broken, and it needs to be fixed.

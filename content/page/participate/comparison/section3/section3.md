@@ -1,7 +1,8 @@
 ---
 id: participate_comparison3
 svg: ./waiting.svg
-title: Distributed
+title: Scale Out Node
 ---
 
-You don’t buy a pig... or shall I say a paper in a poke. The supplies will be delivered to your company every first Monday of the month.
+This 3Node comes with the same specs as the Venus V2 assembled into a data center chassis. Ideal for professionals looking to add farming capacity to their server facilities.
+

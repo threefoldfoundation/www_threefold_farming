@@ -1,8 +1,8 @@
 ---
 id: participate_cta
-title: No paper plane can be made without paper
-button: Sign up
+title: Join Farming Community
+button: Join
 link: /solution #Add button link here
 ---
 
-Professional, dedicated, local. Dunder Mifflin is on its best patch to change the way you think about paper. That’s us - people who sell limitless paper in the paperless world.
+Our goal is to bring more nodes to the ThreeFold Grid. This is an opportunity for anyone to become a part of "the internet" in a sustainable, neutral, and future-proof way.

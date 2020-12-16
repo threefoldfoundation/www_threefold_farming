@@ -60,6 +60,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Header_2',
+                path: './content/page/**/header_2/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Product',
                 path: './content/page/**/productData/**/*.md',
             }
@@ -114,6 +122,7 @@ module.exports = {
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',
+                    header_2: 'Header_2',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
                     productData: 'Product',

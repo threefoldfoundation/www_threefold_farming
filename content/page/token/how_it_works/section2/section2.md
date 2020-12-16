@@ -1,6 +1,6 @@
 ---
 id: token_sec2
-title: Get rewarded with tokens
+title: Farmers connect capacity + compute
 ---
 
-By connecting your 3Node and providing capacity, you generate ThreeFold Tokens (TFT). This is called farming.
+This is done by Farmers, who receive TFT in exchange.

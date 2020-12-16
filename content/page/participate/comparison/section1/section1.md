@@ -1,7 +1,7 @@
 ---
 id: participate_comparison1
 svg: ./new_ideas.svg
-title: Centralized
+title: Titan Node v2
 ---
 
-During the phone call we will be able to present you all details of cooperation, pricing and special offers, suited for your company.
+A small sized 3Node no bigger than a mini-pc. Created to put in any home or small office. No technical experience required.

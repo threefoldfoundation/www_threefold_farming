@@ -1,5 +1,5 @@
 ---
 id: participate_main
-title: Largest p2p Internet Grid is Live
+title: HOW IT WORKS
 image: ./token_overview.png
 ---

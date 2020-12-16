@@ -1,6 +1,6 @@
 ---
 id: participate_sec3
-title: Users reserve capacity
+title: ''
 ---
 
-When users reserve that capacity, they pay you in TFT. This is called cultivation.
+Farmers provide capacity in the form of storage, network and compute, that can be used by anyone.

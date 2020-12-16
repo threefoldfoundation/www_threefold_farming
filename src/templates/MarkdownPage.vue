@@ -18,9 +18,9 @@
         :header="$page.markdownPage.header"
       />
 
-      <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides.length > 0"
+      <SolutionsHeader
+        v-if="$page.markdownPage.header_2"
+        :header="$page.markdownPage.header_2"
       />
 
       <GetInTouch
@@ -45,6 +45,11 @@
         :features="$page.markdownPage.features"
       />
 
+      <VerticalNav
+        :slides="$page.markdownPage.slides"
+        v-if="$page.markdownPage.slides.length > 0"
+      />
+
       <template>
         <ClientOnly>
           <Comparison
@@ -54,11 +59,11 @@
         </ClientOnly>
       </template>
 
-      <HowItWorks
+      <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      />
+      /> -->
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
@@ -72,17 +77,23 @@
         :card="card"
       />
 
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
+
       <template>
         <ClientOnly>
           <CallToAction :cta="$page.markdownPage.cta" />
-          <!-- <SignUp :signup="$page.markdownPage.signup" /> -->
         </ClientOnly>
       </template>
 
-      <!-- <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      /> -->
+      <template>
+        <ClientOnly>
+            <SignUp :signup="$page.markdownPage.signup" />
+        </ClientOnly>
+      </template>
+      
     </div>
   </Layout>
 </template>

@@ -1,5 +1,5 @@
 ---
 id: token_main
-title: Largest p2p Internet Grid is Live
-image: ./how_it_works.png
+title: A CIRCULAR ECONOMY
+image: ./token_overview.png
 ---
