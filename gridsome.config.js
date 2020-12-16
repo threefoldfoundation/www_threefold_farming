@@ -44,8 +44,24 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'HowItWorks_2',
+                path: './content/page/**/how_it_works_2/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Header',
                 path: './content/page/**/header/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Header_2',
+                path: './content/page/**/header_2/*.md',
             }
         },
 
@@ -106,6 +122,7 @@ module.exports = {
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',
+                    header_2: 'Header_2',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
                     productData: 'Product',
@@ -115,7 +132,9 @@ module.exports = {
                     cta: 'Cta',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
-                    comparisonSecs: 'Comparison'
+                    comparisonSecs: 'Comparison',
+                    howItWorksMain_2: 'HowItWorks_2',
+                    howItWorks_2: 'HowItWorks_2'              
                 }
             }
         },

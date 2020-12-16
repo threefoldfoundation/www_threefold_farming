@@ -1,5 +1,5 @@
 ---
-id: value_based_price
+id: token_feature3
 svg: ./peer_to_peer.png
 title: Value-based price
 ---

@@ -1,6 +1,6 @@
 ---
-id: users_reserve_capacity
+id: token_sec3
 title: Users reserve capacity
 ---
 
-When users reserve that capacity, they pay you in TFT. This is called cultivation.
+Through exchanges, TFT is brought to the users of the ThreeFold Grid, who then buy capacity to host their applications with it.

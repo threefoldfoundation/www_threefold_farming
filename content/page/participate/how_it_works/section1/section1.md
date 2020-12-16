@@ -1,6 +1,6 @@
 ---
-id: farmers_connect_capacity_and_compute
-title: Farmers connect capacity + compute
+id: participate_sec1
+title: ''
 ---
 
-All you need is an electricity source, a network, and a 3Node (server). Connect from home or from the office, connect one node or build a small data center.
+Farmers can be compared to Bitcoin Miners because they earn rewards for providing hardware to the networks.

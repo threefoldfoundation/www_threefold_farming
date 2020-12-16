@@ -1,9 +1,11 @@
 ---
 id: header_participate
-title: The world needs a Technological Reset
-subtitle: Be The Internet
-btn1: Learn more
-link1: /link1
-btn2: Stay Updated
-link2: /link2
+title: ''
+subtitle: BECOME PART OF THE LARGEST P2P GRID IN THE WORLD
+btn1: ''
+link1: ''
+btn2: ''
+link2: ''
 ---
+
+ThreeFold Farming is the process of providing hardware to expand the ThreeFold Grid and receiving ThreeFold Tokens TFT as passive income.

@@ -1,5 +1,5 @@
 ---
-id: why1
+id: tokenCard1
 title: STAKING
 image: ./card1.jpeg
 button: Start Now

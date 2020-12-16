@@ -1,7 +1,7 @@
 ---
-id: comparison_main
-title: Less = More
-description: The truth is there's no comparison
-button: Dive Deeper
-link: /solution #Add button link here
+id: participate_comparison_main
+title: 3Nodes and Specs
+description: ''
+button: More Specs
+link: '' #Add button link here
 ---

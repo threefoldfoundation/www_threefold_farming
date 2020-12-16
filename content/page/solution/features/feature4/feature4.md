@@ -1,7 +1,7 @@
 ---
 id: variety
 svg: ./P2P.png
-title: Variety
+title: Inclusive
 ---
 
-The offer includes paper in wide range of density and sizes. Ideal for high-quality printing and photocopying.
+Cost-efficient, circular economy.

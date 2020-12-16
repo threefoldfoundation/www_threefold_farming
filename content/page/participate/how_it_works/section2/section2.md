@@ -1,6 +1,6 @@
 ---
-id: get_rewarded_with_tokens
-title: Get rewarded with tokens
+id: participate_sec2
+title: ''
 ---
 
-By connecting your 3Node and providing capacity, you generate ThreeFold Tokens (TFT). This is called farming.
+The main diﬀerence is that Miners essentially waste their hardware capacity to solve riddles that oﬀer no beneﬁt outside of the Bitcoin ecosystem.

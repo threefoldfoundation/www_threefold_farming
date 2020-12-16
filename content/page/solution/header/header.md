@@ -1,9 +1,11 @@
 ---
 id: header
 title: ThreeFold Farming
-subtitle: Enabling a better Internet, together.
-btn1: Learn more
-link1: /link1
-btn2: Stay Updated
-link2: /link2
+subtitle: Powering the next-gen Internet
+btn1: ''
+link1: ''
+btn2: ''
+link2: ''
 ---
+
+Our open-source and lightweight OS and autonomous technology powers the decentralization of the Internet with more Security, Privacy and Performance-Efficiency.

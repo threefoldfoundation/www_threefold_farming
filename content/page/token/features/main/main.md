@@ -1,8 +1,6 @@
 ---
-id: Feature_main
-title: The new paradigm
-btn: Sign up for free
-link: /solution # Add Btn link here
+id: token_Feature_main
+title: HOLD AND EARN
+btn: Learn More
+link: /solution # link to wiki
 ---
-
-Here we can add some text.

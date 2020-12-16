@@ -1,16 +1,18 @@
 ---
 id: token
-howItWorksMain: how_it_works_main
-howItWorks:
+header_title: A PURPOSE DRIVEN TOKEN
+header_image: ./token_header.png
+header_altImg: token_header
+header_excerpt: TFT is the only way to rent compute and storage capacity on the ThreeFold Grid - which has the potential to gain significant market share in today's public cloud market.
+howItWorksMain: token_main
+howItWorks: [token_sec1, token_sec2, token_sec3]
+slides:
   [
-    farmers_connect_capacity_and_compute,
-    get_rewarded_with_tokens,
-    users_reserve_capacity,
+    intrinsic_value,
+    limited_supply,
+    povered_by_stellar,
+    sustainable,
   ]
-featuresMain: Feature_main
-features: [high_durability, versatility, value_based_price, variety]
-cards: [why1, why2]
-cta: cta
+cards: [tokenCard2]
+signup: signup
 ---
-
-

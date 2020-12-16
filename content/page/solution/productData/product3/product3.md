@@ -1,5 +1,5 @@
 ---
-id: myproducts_3
+id: solution_product3
 title: myproducts
 content: ayklamdsf
 
