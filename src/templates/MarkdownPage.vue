@@ -44,6 +44,13 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      />
+      
       <template>
         <ClientOnly>
           <Comparison

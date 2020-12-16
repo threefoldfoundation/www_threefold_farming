@@ -20,6 +20,13 @@ howItWorks:
   ]
 comparisonMain: comparison_main
 comparisonSecs: [centralized, threefold, distributed]
+howItWorksMain_2: how_it_works_main_2
+howItWorks_2:
+  [
+    farmers_connect_capacity_and_compute,
+    get_rewarded_with_tokens,
+    users_reserve_capacity,
+  ]
 cta: cta
 ---
 

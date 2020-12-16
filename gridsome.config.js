@@ -44,6 +44,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'HowItWorks_2',
+                path: './content/page/**/how_it_works_2/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Header',
                 path: './content/page/**/header/*.md',
             }
@@ -115,7 +123,9 @@ module.exports = {
                     cta: 'Cta',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
-                    comparisonSecs: 'Comparison'
+                    comparisonSecs: 'Comparison',
+                    howItWorksMain_2: 'HowItWorks_2',
+                    howItWorks_2: 'HowItWorks_2'              
                 }
             }
         },
