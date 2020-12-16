@@ -1,6 +1,6 @@
 ---
 id: header_why
-title: The world needs a Technological Reset
+title: Powering the next-gen Internet
 subtitle: BE THE INTERNET
 btn1: Learn more
 link1: /link1

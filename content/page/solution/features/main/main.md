@@ -1,8 +1,6 @@
 ---
 id: Feature_main
 title: The new paradigm
-btn: Sign up for free
-link: /solution # Add Btn link here
+btn: 'Learn More'
+link: '/blog'
 ---
-
-Here we can add some text.

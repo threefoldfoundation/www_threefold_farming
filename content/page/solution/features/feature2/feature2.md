@@ -1,7 +1,7 @@
 ---
 id: versatility
 svg: ./Multi Gateway.png
-title: Versatility
+title: Privacy
 ---
 
-Multi-functional paper for various office needs. Snow-white sheets will shine bright like diamond for many years.
+need specs
