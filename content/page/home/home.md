@@ -6,4 +6,5 @@ header_altImg: home_header
 header_excerpt: Join the decentralization movement and empower a new paradigm for technology, humanity and our planet.
 cards: [home, home2, home3, home4]
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
+
 ---
