@@ -1,7 +1,7 @@
 ---
 id: availability
 title: An Internet available to everyone, everywhere
-image: ./availability.jpeg
+image: availability.jpeg
 order: 5
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: sustainability
 title: A Sustainable Internet, for our planet
-image: ./sustainability.png
+image: sustainability.png
 order: 4
 ---
 

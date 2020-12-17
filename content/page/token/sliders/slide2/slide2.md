@@ -1,7 +1,7 @@
 ---
 id: limited_supply
 title: LIMITED SUPPLY
-image: ./limited_supply.png
+image: limited_supply.png
 order: 5
 ---
 

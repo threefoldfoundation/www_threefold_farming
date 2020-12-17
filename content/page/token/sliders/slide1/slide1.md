@@ -1,7 +1,7 @@
 ---
 id: intrinsic_value
 title: INTRINSIC VALUE
-image: ./tft_stats.png
+image: tft_stats.png
 order: 6
 
 ---
