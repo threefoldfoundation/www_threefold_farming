@@ -292,8 +292,6 @@ module.exports = {
             component: '~/templates/Tag.vue'
         }],
 
-
-
         NewsTag: [{
             path: '/news/tags/:id',
             component: '~/templates/Tag.vue'

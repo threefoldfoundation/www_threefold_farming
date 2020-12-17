@@ -1,8 +1,8 @@
 ---
-id: cta
-title: No paper plane can be made without paper
-button: Sign up
+id: solution_cta
+title: The largest peer-to-peer Internet Grid is Live
+button: Capacity Explorer
 link: /solution #Add button link here
 ---
 
-Professional, dedicated, local. Dunder Mifflin is on its best patch to change the way you think about paper. That’s us - people who sell limitless paper in the paperless world.
+The ThreeFold Grid is live with 80+ PB and 500 Nodes deployed across 23+ countries, and growing fast.

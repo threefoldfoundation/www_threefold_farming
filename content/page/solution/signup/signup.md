@@ -1,8 +1,10 @@
 ---
-id: signup
-title: Are you a carte blanche of the paper industry? No worries, our team will help you in implementation process and dispel doubts.
-button1: Sign up for free
+id: solution_signup
+title: THE LARGEST PEER-TO-PEER INTERNET GRID IS LIVE
+button1: Capacity Explorer
 link1: /solution #Add button1 link here
-button2: Learn more
-link2: /solution #Add button1 link here
+button2: ''
+link2: '' #Add button1 link here
 ---
+
+Join us and see where nodes are already available.

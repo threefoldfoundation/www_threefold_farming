@@ -1,6 +1,12 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
+
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -11,16 +17,6 @@
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.header_2"
-        :header="$page.markdownPage.header_2"
       />
 
       <GetInTouch
@@ -39,16 +35,11 @@
         :main="$page.markdownPage.howItWorksMain"
       />
 
-      <Features
+       <!-- <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      />
-
-      <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides.length > 0"
-      />
+      /> -->
 
       <template>
         <ClientOnly>
@@ -65,6 +56,11 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       /> -->
+
+      <VerticalNav
+        :slides="$page.markdownPage.slides"
+        v-if="$page.markdownPage.slides.length > 0"
+      />
 
       <div v-html="$page.markdownPage.content"></div>
       <NewCard
