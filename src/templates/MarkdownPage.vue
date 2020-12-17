@@ -12,7 +12,7 @@
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -53,6 +53,7 @@
       <template>
         <ClientOnly>
           <Comparison
+            v-if="$page.markdownPage.comparisonSecs.length > 0"
             :main="$page.markdownPage.comparisonMain"
             :sections="$page.markdownPage.comparisonSecs"
           />
@@ -84,16 +85,21 @@
 
       <template>
         <ClientOnly>
-          <CallToAction :cta="$page.markdownPage.cta" />
+          <CallToAction
+            v-if="$page.markdownPage.cta"
+            :cta="$page.markdownPage.cta"
+          />
         </ClientOnly>
       </template>
 
       <template>
         <ClientOnly>
-            <SignUp :signup="$page.markdownPage.signup" />
+          <SignUp
+            v-if="$page.markdownPage.signup"
+            :signup="$page.markdownPage.signup"
+          />
         </ClientOnly>
       </template>
-      
     </div>
   </Layout>
 </template>
