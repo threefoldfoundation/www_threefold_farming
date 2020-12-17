@@ -8,11 +8,11 @@
       </div>
       <div class="w-full lg:w-2/6 px-4 text-center">
         <g-link
-          class="inline-block py-4 px-8 mb-4 sm:mb-0 mr-6 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow"
+          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
           :to="signup.link1"
           >{{ signup.button1 }}</g-link
         ><g-link
-          class="inline-block text-indigo-600 hover:underline"
+          class="text-indigo-600 bg-transparent hover:underline"
           :to="signup.link2"
           >{{ signup.button2 }}</g-link
         >
