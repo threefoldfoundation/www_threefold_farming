@@ -12,7 +12,7 @@
           :to="signup.link1"
           >{{ signup.button1 }}</g-link
         ><g-link
-          class="text-indigo-600 bg-transparent hover:underline"
+          class="text-gray-900 bg-transparent hover:underline"
           :to="signup.link2"
           >{{ signup.button2 }}</g-link
         >
