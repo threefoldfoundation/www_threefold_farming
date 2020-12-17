@@ -19,6 +19,13 @@
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
     />
+
+    <template>
+        <ClientOnly>
+            <SignUp :signup="$page.markdownPage.signup" />
+        </ClientOnly>
+      </template>
+
     <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
 </template>
@@ -46,6 +53,14 @@
           id
           image
         }
+        signup{
+          id
+          title
+          button1
+          link1
+          button2
+          link2
+        }
     }  
   }
 
@@ -56,6 +71,7 @@ import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
+import SignUp from "~/components/custom/sections/SignUp.vue";
 
 export default {
   components: {
@@ -63,6 +79,7 @@ export default {
     Header,
     Getintouch,
     logoShowcase,
+    SignUp,
   },
   computed: {
     contacts() {
