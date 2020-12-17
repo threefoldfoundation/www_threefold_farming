@@ -1,7 +1,7 @@
 ---
 id: home2
 title: A model in which anyone can partake
-image: ./card2.jpeg
+image: ./home_card2.png
 button: Learn More
 link: /solution
 order: 2

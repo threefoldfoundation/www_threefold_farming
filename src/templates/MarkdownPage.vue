@@ -65,11 +65,6 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
-      <!-- <logoShowcase
-        v-if="$page.markdownPage.logos.length > 0"
-        :logos="$page.markdownPage.logos"
-      /> -->
-
       <div v-html="$page.markdownPage.content"></div>
       <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -80,6 +75,11 @@
       <img
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
+      />
+
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :logos="$page.markdownPage.logos"
       />
 
       <template>

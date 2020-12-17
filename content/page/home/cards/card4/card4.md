@@ -1,7 +1,7 @@
 ---
 id: home4
 title: The Token of the Internet
-image: ./card4.jpeg
+image: ./home_card4.png
 button: Learn More
 link: /token
 order: 4
