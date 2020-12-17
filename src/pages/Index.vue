@@ -8,10 +8,17 @@
         :excerpt="$page.markdownPage.header_excerpt"
       />
       <div v-html="$page.markdownPage.content"></div>
-    <NewCard v-for="card in $page.markdownPage.cards" :key="card.id" :card = "card"/>
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
+      />
     </div>
 
-    
+    <logoShowcase
+      v-if="$page.markdownPage.logos.length > 0"
+      :logos="$page.markdownPage.logos"
+    />
     <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
 </template>
@@ -35,6 +42,10 @@
           order
           excerpt
         }
+         logos{
+          id
+          image
+        }
     }  
   }
 
@@ -44,33 +55,35 @@
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
-
+import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 
 export default {
   components: {
     NewCard,
     Header,
     Getintouch,
+    logoShowcase,
   },
-  computed : {
-      contacts(){ 
-        return [
-            {
-            title :"Collaborate",
-            mail :"support@example.com",
-            phonenumber : "+1 (555) 123-4567",
-            },
-            {
-            title :"Collaborate",
-            mail : "support@example.com",
-            phonenumber : "+1 (555) 123-4567",
-            },
-            {
-            title : "Collaborate",
-            mail : "support@example.com",
-            phonenumber :"+1 (555) 123-4567",
-            },
-      ]}
+  computed: {
+    contacts() {
+      return [
+        {
+          title: "Collaborate",
+          mail: "support@example.com",
+          phonenumber: "+1 (555) 123-4567",
+        },
+        {
+          title: "Collaborate",
+          mail: "support@example.com",
+          phonenumber: "+1 (555) 123-4567",
+        },
+        {
+          title: "Collaborate",
+          mail: "support@example.com",
+          phonenumber: "+1 (555) 123-4567",
+        },
+      ];
+    },
   },
   metaInfo() {
     return {
