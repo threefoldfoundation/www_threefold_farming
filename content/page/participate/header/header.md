@@ -1,5 +1,5 @@
 ---
-id: header_participate
+id: participate_header
 title: ''
 subtitle: BECOME PART OF THE LARGEST P2P GRID IN THE WORLD
 btn1: ''

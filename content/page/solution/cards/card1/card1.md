@@ -1,10 +1,10 @@
 ---
-id: solution1
-title: The largest peer-to-peer Internet Grid is Live
-image: ./card1.png
-button: Capacity Explorer
-link: '/blog'
+id: solution_card
+title: We started everything from scratch...
+image: ./solution_card.png
+button: Learn More
+link: '/https://wiki.threefold.io/#/threefold_layers'
 order: 1
-excerpt: The ThreeFold Grid is live with 80+ PB & 500Nodes deployed across 23+ countries, and growing fast.
+excerpt: By starting again from zero, we created a unique lightweight and autonomous OS built from a Linux Kernel. From there, we developed a fully automous system with its own network connection overlay, unique storage algorythm, and storage system that alltogether (1) eliminate backdoors for hackers, (2) eliminate complexity from the model (3) ensure data is fully secured and encrypted.
 ---
 

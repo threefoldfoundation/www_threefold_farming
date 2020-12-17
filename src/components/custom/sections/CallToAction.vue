@@ -8,7 +8,7 @@
         {{ cta.excerpt }}
       </p>
       <g-link
-        class="inline-block py-4 px-8 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow"
+        class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         :to="cta.link"
         >{{ cta.button }}</g-link
       >

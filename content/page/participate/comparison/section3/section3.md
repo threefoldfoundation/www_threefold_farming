@@ -1,6 +1,6 @@
 ---
 id: participate_comparison3
-svg: ./waiting.svg
+svg: ./venus.png
 title: Scale Out Node
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: participate_comparison2
-svg: ./certificate.svg
+svg: ./venus.png
 title: Venus Node v2
 ---
 

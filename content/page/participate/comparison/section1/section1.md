@@ -1,6 +1,6 @@
 ---
 id: participate_comparison1
-svg: ./new_ideas.svg
+svg: ./venus.png
 title: Titan Node v2
 ---
 

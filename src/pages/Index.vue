@@ -8,10 +8,24 @@
         :excerpt="$page.markdownPage.header_excerpt"
       />
       <div v-html="$page.markdownPage.content"></div>
-    <NewCard v-for="card in $page.markdownPage.cards" :key="card.id" :card = "card"/>
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
+      />
     </div>
 
-    
+    <logoShowcase
+      v-if="$page.markdownPage.logos.length > 0"
+      :logos="$page.markdownPage.logos"
+    />
+
+    <template>
+        <ClientOnly>
+            <SignUp :signup="$page.markdownPage.signup" />
+        </ClientOnly>
+      </template>
+
     <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
 </template>
@@ -35,6 +49,18 @@
           order
           excerpt
         }
+         logos{
+          id
+          image
+        }
+        signup{
+          id
+          title
+          button1
+          link1
+          button2
+          link2
+        }
     }  
   }
 
@@ -44,33 +70,37 @@
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
-
+import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
+import SignUp from "~/components/custom/sections/SignUp.vue";
 
 export default {
   components: {
     NewCard,
     Header,
     Getintouch,
+    logoShowcase,
+    SignUp,
   },
-  computed : {
-      contacts(){ 
-        return [
-            {
-            title :"Collaborate",
-            mail :"support@example.com",
-            phonenumber : "+1 (555) 123-4567",
-            },
-            {
-            title :"Collaborate",
-            mail : "support@example.com",
-            phonenumber : "+1 (555) 123-4567",
-            },
-            {
-            title : "Collaborate",
-            mail : "support@example.com",
-            phonenumber :"+1 (555) 123-4567",
-            },
-      ]}
+  computed: {
+    contacts() {
+      return [
+        {
+          title: "Collaborate",
+          mail: "support@example.com",
+          phonenumber: "+1 (555) 123-4567",
+        },
+        {
+          title: "Collaborate",
+          mail: "support@example.com",
+          phonenumber: "+1 (555) 123-4567",
+        },
+        {
+          title: "Collaborate",
+          mail: "support@example.com",
+          phonenumber: "+1 (555) 123-4567",
+        },
+      ];
+    },
   },
   metaInfo() {
     return {
