@@ -1,7 +1,7 @@
 ---
 id: home
 title: Powering the next Technological Era
-image: ./home_card1.png
+image: ./home_card_1.png
 button: Learn More
 link: '/why'
 order: 1

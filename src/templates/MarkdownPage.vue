@@ -1,12 +1,11 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-
+      
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -55,13 +54,6 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      /> -->
-
-      <!-- <div v-html="$page.markdownPage.content"></div>
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
       /> -->
       
       <VerticalNav

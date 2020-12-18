@@ -1,7 +1,7 @@
 ---
 id: token_card2
 title: LIVE STATS
-image: ./live_stats.png
+image: ./live_stats_1.png
 button: TFT STATISTICS
 link: '/https://tokenstats.threefoldtoken.com/'
 order: 1

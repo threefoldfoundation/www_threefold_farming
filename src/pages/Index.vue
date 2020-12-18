@@ -1,6 +1,10 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
       <Header
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
@@ -49,6 +53,15 @@
           order
           excerpt
         }
+        header{
+         title
+         subtitle
+         excerpt
+         btn1
+         link1
+         btn2
+         link2
+       }
          logos{
           id
           image
@@ -67,14 +80,16 @@
 </page-query>
 
 <script>
-import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
+import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
+import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 
 export default {
   components: {
+    SolutionsHeader,
     NewCard,
     Header,
     Getintouch,

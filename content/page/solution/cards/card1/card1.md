@@ -1,7 +1,7 @@
 ---
 id: solution_card
 title: We started everything from scratch...
-image: ./solution_card.png
+image: ./solution_card_1.png
 button: Learn More
 link: '/https://wiki.threefold.io/#/threefold_layers'
 order: 1
