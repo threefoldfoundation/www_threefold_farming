@@ -1,7 +1,7 @@
 ---
 id: home3
 title: The most powerful nodes
-image: ./home_card3.png
+image: ./home_card_3.png
 button: Learn More
 link: /participate
 order: 3
