@@ -11,8 +11,8 @@ slides:
     intrinsic_value,
     limited_supply,
     povered_by_stellar,
-    sustainable,
+    token_sustainable,
   ]
-cards: [tokenCard2]
+cards: [token_card2]
 signup: signup
 ---

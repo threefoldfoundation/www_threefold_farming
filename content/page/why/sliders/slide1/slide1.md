@@ -1,6 +1,6 @@
 ---
 id: peer-to-peer
-title: Peer-to-peer puts people back in control
+title: P2P puts people back in control
 image: peer-to-peer.png
 order: 6
 ---

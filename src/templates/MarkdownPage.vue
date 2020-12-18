@@ -57,6 +57,13 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
+      <!-- <div v-html="$page.markdownPage.content"></div>
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
+      /> -->
+      
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
@@ -69,7 +76,7 @@
         :card="card"
       />
 
-      <img
+      <!-- <img
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -77,7 +84,7 @@
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
-      />
+      /> -->
 
       <template>
         <ClientOnly>
@@ -87,6 +94,11 @@
           />
         </ClientOnly>
       </template>
+
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
 
       <template>
         <ClientOnly>

@@ -1,5 +1,5 @@
 ---
-id: sustainable
+id: token_sustainable
 title: SUSTAINABLE
 image: sustainable.png
 order: 3
