@@ -1,7 +1,7 @@
 ---
 id: home
 header_title: BE THE INTERNET
-header_image: ./header.png
+header_image: ./farming_header.png
 header_altImg: home_header
 header_excerpt: Join the decentralization movement and empower a new paradigm for technology, humanity and our planet.
 cards: [home, home2, home3, home4]
