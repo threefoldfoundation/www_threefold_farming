@@ -1,7 +1,7 @@
 ---
 id: povered_by_stellar
 title: POWERED BY STELLAR
-image: ./powered_by_stellar.png
+image: powered_by_stellar.png
 order: 4
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: tokenCard2
+id: token_card2
 title: LIVE STATS
 image: ./live_stats.png
 button: TFT STATISTICS

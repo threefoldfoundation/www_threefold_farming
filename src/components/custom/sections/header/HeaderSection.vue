@@ -15,7 +15,7 @@
           :to="header.link1"
           >{{ header.btn1 }}</g-link
         ><g-link
-          class="text-indigo-600 bg-transparent hover:underline"
+          class="text-gray-900 bg-transparent hover:underline"
           v-if="header.btn2"
           :to="header.link2"
           >{{ header.btn2 }}</g-link

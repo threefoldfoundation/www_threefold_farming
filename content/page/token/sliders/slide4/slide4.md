@@ -1,7 +1,7 @@
 ---
-id: sustainable
+id: token_sustainable
 title: SUSTAINABLE
-image: ./sustainable.png
+image: sustainable.png
 order: 3
 ---
 

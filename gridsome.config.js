@@ -134,7 +134,7 @@ module.exports = {
                     comparisonMain: 'Comparison',
                     comparisonSecs: 'Comparison',
                     howItWorksMain_2: 'HowItWorks_2',
-                    howItWorks_2: 'HowItWorks_2'              
+                    howItWorks_2: 'HowItWorks_2'
                 }
             }
         },
@@ -280,6 +280,9 @@ module.exports = {
             }
         },
     ],
+    chainWebpack: config => {
+        config.resolve.alias.set('@images', '@/assets/images')
+    },
     templates: {
         MarkdownPage: [{
             path: '/:id',
