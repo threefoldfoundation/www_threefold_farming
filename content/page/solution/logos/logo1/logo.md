@@ -1,5 +1,5 @@
 ---
-id: logo1
+id: solution_logo1
 image: ./logo.png
 
 
