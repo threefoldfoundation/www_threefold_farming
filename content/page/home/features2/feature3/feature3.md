@@ -1,6 +1,6 @@
 ---
 id: make_data_safe
-svg: 
+svg: ./protect.png
 title: Make Data Safe
 ---
 

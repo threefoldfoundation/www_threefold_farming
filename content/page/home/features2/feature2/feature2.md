@@ -1,6 +1,6 @@
 ---
 id: connect_the_world
-svg: 
+svg: ./connect.png
 title: Connect the World
 ---
 

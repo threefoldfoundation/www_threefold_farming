@@ -71,6 +71,7 @@
         header_excerpt
         button
         link
+        solution_image
         cards{
           id
           title

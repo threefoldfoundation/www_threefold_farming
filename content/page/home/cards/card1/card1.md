@@ -1,7 +1,7 @@
 ---
 id: home_card
 title: Introducing the 3Node
-image: ''
+image: ./home_card1.png
 button: Know More
 link: '/why'
 order: 1

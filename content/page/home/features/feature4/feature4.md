@@ -1,6 +1,6 @@
 ---
 id: not_sustainable
-svg: ./P2P.png
+svg: 
 title: Not Sustainable
 ---
 
