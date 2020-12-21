@@ -6,10 +6,14 @@
           {{ title }}
         </h2>
         <p class="mb-8 text-gray-700 leading-relaxed">{{ excerpt }}</p>
-        <!-- <div>
-          <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow" href="#">Sign up</a>
-          <a class="text-indigo-600 hover:underline" href="#">Learn more</a>
-      </div> -->
+        <div v-if="button">
+          <a
+            class="inline-block py-4 px-8 mr-6 leading-none text-white bg-gray-900 hover:bg-gray-700 font-semibold rounded shadow"
+            :href="link"
+            >{{ button }}</a
+          >
+          <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
+        </div>
       </div>
       <div class="lg:w-1/2 px-2"><img :src="img" :alt="altImg" /></div>
     </div>
@@ -18,7 +22,7 @@
 
 <script>
 export default {
-  props: ["title", "excerpt", "altImg", "image"],
+  props: ["title", "excerpt", "altImg", "image", "button", "link"],
   computed: {
     img: function () {
       if (!this.image) return "";

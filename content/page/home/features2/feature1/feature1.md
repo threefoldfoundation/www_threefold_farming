@@ -1,6 +1,6 @@
 ---
 id: decentralize_the_internet
-svg: ''
+svg: 
 title: Decentralize the Internet
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: not_scalable
-svg: ''
+svg:
 title: Not Scalable
 ---
 

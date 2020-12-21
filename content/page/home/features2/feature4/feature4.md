@@ -1,6 +1,6 @@
 ---
 id: earn_passive_income
-svg: ''
+svg: 
 title: Earn Passive Income
 ---
 

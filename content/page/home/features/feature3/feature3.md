@@ -1,6 +1,6 @@
 ---
 id: not_secure
-svg: ''
+svg:
 title: Not Secure
 ---
 

@@ -5,7 +5,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
+
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -54,7 +54,7 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       /> -->
-      
+
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
@@ -79,7 +79,7 @@
       />
 
       <logoShowcase
-        v-if="$page.markdownPage.logos.length > 0"
+        v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
       />
 
@@ -238,7 +238,6 @@ import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.v
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
-import Features2 from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
