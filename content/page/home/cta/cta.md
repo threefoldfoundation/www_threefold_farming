@@ -1,8 +1,6 @@
 ---
 id: home_cta
-title: Join the Decentralization Movement
-button: Join
+title: How much capacity will you provide?
+button: Get your 3Node
 link: /solution #Add button link here
 ---
-
-Support the project by joining our community or by buying our token.

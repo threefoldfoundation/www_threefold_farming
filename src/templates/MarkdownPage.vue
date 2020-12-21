@@ -34,12 +34,11 @@
         :main="$page.markdownPage.howItWorksMain"
       />
 
-       <!-- <Features
+      <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      /> -->
-
+      />
       <template>
         <ClientOnly>
           <Comparison
@@ -68,7 +67,13 @@
         :card="card"
       />
 
-      <!-- <img
+      <Features2
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain2"
+        :features="$page.markdownPage.features2"
+      />
+
+      <img
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -76,7 +81,7 @@
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
-      /> -->
+      />
 
       <template>
         <ClientOnly>
@@ -168,11 +173,24 @@
           link
           excerpt
         }
+        featuresMain2{
+          id
+          title
+          btn 
+          link
+          excerpt
+        }
         logos{
           id
           image
         }
         features{
+          id
+          title 
+          svg
+          excerpt
+        }
+        features2{
           id
           title 
           svg
@@ -220,6 +238,7 @@ import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.v
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
+import Features2 from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";

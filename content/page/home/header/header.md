@@ -1,11 +1,11 @@
 ---
 id: home_header
-title: ThreeFold Farming
-subtitle: BE THE INTERNET
-btn1: Become a Farmer
-link1: /blog
-btn2: Learn More
-link2: /blog
+title: ''
+subtitle: Decentralization is taking over.
+btn1: ''
+link1: ''
+btn2: ''
+link2: ''
 ---
 
-Join the decentralization movement and empower a new paradigm for technology, humanity and our planet.
+Emerging technologies demand edge solutions to scale. ThreeFold created secure and scaleable technology that allows anyone to connect decentralized capacity, anywhere.
