@@ -9,7 +9,12 @@
         :key="feature.id"
         class="lg:w-1/4 px-4 mb-6"
       >
-        <g-image class="w-10 h-10" :src="feature.svg.src"></g-image>
+        <g-image
+          class="w-10 h-10"
+          v-if="feature.svg"
+          :src="feature.svg.src"
+          :alt="feature.svg"
+        ></g-image>
         <h3 class="text-xl my-3 font-semibold font-heading">
           {{ feature.title }}
         </h3>
@@ -20,6 +25,7 @@
     </div>
     <div class="text-center">
       <g-link
+        v-if="main.btn"
         class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         :to="main.link"
         >{{ main.btn }}</g-link
@@ -33,6 +39,6 @@
 
 <script>
 export default {
-  props: ["main", "features"]
+  props: ["main", "features"],
 };
 </script>

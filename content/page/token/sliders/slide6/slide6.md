@@ -1,5 +1,5 @@
 ---
-id: participateSlide6
+id: tokenSlide6
 title: a new internet | for our planet
 image:
 order: 1

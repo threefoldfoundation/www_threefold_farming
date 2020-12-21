@@ -1,5 +1,5 @@
 ---
-id: logo3
+id: solution_logo3
 image: ./skale.png
 
 

@@ -1,17 +1,24 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <Header
+        :title="$page.markdownPage.header_title"
+        :image="$page.markdownPage.header_image"
+        :excerpt="$page.markdownPage.header_excerpt"
+        :button="$page.markdownPage.button"
+        :link="$page.markdownPage.link"
+      />
+
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      <Header
-        :title="$page.markdownPage.header_title"
-        :image="$page.markdownPage.header_image"
-        :altImg="$page.markdownPage.header_altImg"
-        :excerpt="$page.markdownPage.header_excerpt"
+
+      <Features
+        :main="$page.markdownPage.featuresMain"
+        :features="$page.markdownPage.features"
       />
-      <div v-html="$page.markdownPage.content"></div>
+
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -19,16 +26,35 @@
       />
     </div>
 
-    <logoShowcase
-      v-if="$page.markdownPage.logos.length > 0"
-      :logos="$page.markdownPage.logos"
+    <Features
+      :main="$page.markdownPage.featuresMain2"
+      :features="$page.markdownPage.features2"
     />
 
+    <!-- <logoShowcase
+      v-if="$page.markdownPage.logos.length > 0"
+      :logos="$page.markdownPage.logos"
+    /> -->
+
     <template>
-        <ClientOnly>
-            <SignUp :signup="$page.markdownPage.signup" />
-        </ClientOnly>
-      </template>
+      <ClientOnly>
+        <SignUp :signup="$page.markdownPage.signup" />
+      </ClientOnly>
+    </template>
+
+    <template>
+      <ClientOnly>
+        <CallToAction
+          v-if="$page.markdownPage.cta"
+          :cta="$page.markdownPage.cta"
+        />
+      </ClientOnly>
+    </template>
+
+    <img
+      v-if="$page.markdownPage.solution_image"
+      :src="$page.markdownPage.solution_image.src"
+    />
 
     <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
@@ -43,7 +69,9 @@
         header_title
         header_image
         header_excerpt
-        header_altImg
+        button
+        link
+        solution_image
         cards{
           id
           title
@@ -62,9 +90,35 @@
          btn2
          link2
        }
-         logos{
+       featuresMain{
+          id
+          title 
+          btn 
+          link
+          excerpt
+        }
+        featuresMain2{
+          id
+          title 
+          btn 
+          link
+          excerpt
+        }
+        logos{
           id
           image
+        }
+        features{
+          id
+          title 
+          svg
+          excerpt
+        }
+        features2{
+          id
+          title 
+          svg
+          excerpt
         }
         signup{
           id
@@ -74,6 +128,13 @@
           button2
           link2
         }
+        cta{
+          id
+          title
+          excerpt
+          button
+          link
+        }
     }  
   }
 
@@ -82,40 +143,23 @@
 <script>
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
+import Features from "~/components/custom/sections/Features.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
+import CallToAction from "~/components/custom/sections/CallToAction.vue";
 
 export default {
   components: {
     SolutionsHeader,
-    NewCard,
     Header,
+    Features,
+    NewCard,
     Getintouch,
     logoShowcase,
     SignUp,
-  },
-  computed: {
-    contacts() {
-      return [
-        {
-          title: "Collaborate",
-          mail: "support@example.com",
-          phonenumber: "+1 (555) 123-4567",
-        },
-        {
-          title: "Collaborate",
-          mail: "support@example.com",
-          phonenumber: "+1 (555) 123-4567",
-        },
-        {
-          title: "Collaborate",
-          mail: "support@example.com",
-          phonenumber: "+1 (555) 123-4567",
-        },
-      ];
-    },
+    CallToAction,
   },
   metaInfo() {
     return {

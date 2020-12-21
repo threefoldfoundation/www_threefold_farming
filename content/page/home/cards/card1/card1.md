@@ -1,10 +1,10 @@
 ---
-id: home
-title: Powering the next Technological Era
-image: ./home_card_1.png
-button: Learn More
+id: home_card
+title: Introducing the 3Node
+image: ./home_card1.png
+button: Know More
 link: '/why'
 order: 1
-excerpt: Today's Internet is highly inefficient, unsustainable, exploits user data, and is extremely centralized. ThreeFold started from scratch, and built the Internet infrastructure the worlds need for exponential evolution.
+excerpt: Contribute to the economy that holds the most valuable commodity on earth. Data is now considered the most valuable commodity on earth, outshining oil and gold. Today it is controlled by a few large corporations. ThreeFold provides a new paradigm that allows anyone, like you, to participate in the Internet economy. 
 ---
 

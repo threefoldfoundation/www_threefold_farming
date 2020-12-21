@@ -5,7 +5,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
+
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -34,12 +34,11 @@
         :main="$page.markdownPage.howItWorksMain"
       />
 
-       <!-- <Features
+      <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      /> -->
-
+      />
       <template>
         <ClientOnly>
           <Comparison
@@ -55,7 +54,7 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       /> -->
-      
+
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
@@ -68,15 +67,21 @@
         :card="card"
       />
 
-      <!-- <img
+      <Features2
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain2"
+        :features="$page.markdownPage.features2"
+      />
+
+      <img
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
 
       <logoShowcase
-        v-if="$page.markdownPage.logos.length > 0"
+        v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
-      /> -->
+      />
 
       <template>
         <ClientOnly>
@@ -168,11 +173,24 @@
           link
           excerpt
         }
+        featuresMain2{
+          id
+          title
+          btn 
+          link
+          excerpt
+        }
         logos{
           id
           image
         }
         features{
+          id
+          title 
+          svg
+          excerpt
+        }
+        features2{
           id
           title 
           svg
