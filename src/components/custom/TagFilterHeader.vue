@@ -18,7 +18,7 @@
           class="list-none sm:flex justify-left capitalize transition-all transition-500"
         >
           <!-- Tags -->
-          <li class="py-1 mx-5">
+          <li class="pt-2 mx-5">
             <div class="relative" x-data="{ open: false }">
               <button
                 @click="setActive(0)"
@@ -54,7 +54,7 @@
               >
                 <div
                   v-if="open"
-                  class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-700"
+                  class="w-64 max-h-10 px-2 py-2 bg-white rounded-md shadow dark:bg-gray-700"
                 >
                   <a
                     v-for="tag in tags"
