@@ -14,8 +14,9 @@
         "
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
-        :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
+        :button="$page.markdownPage.button"
+        :link="$page.markdownPage.link"
       />
 
       <GetInTouch
@@ -60,15 +61,14 @@
         v-if="$page.markdownPage.slides.length > 0"
       />
 
-      <div v-html="$page.markdownPage.content"></div>
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
       />
 
-      <Features2
-        v-if="$page.markdownPage.features.length > 0"
+      <Features
+        v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
       />
@@ -116,9 +116,10 @@
         path
         content
         header_excerpt
-        header_altImg
         header_title
         header_image
+        button
+        link
         solution_image
         slides{
           id

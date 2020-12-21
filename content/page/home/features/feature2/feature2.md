@@ -1,6 +1,6 @@
 ---
 id: not_scalable
-svg:
+svg: ./Multi_Gateway.png
 title: Not Scalable
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: make_data_safe
-svg: 
+svg: ./peer_to_peer.png
 title: Make Data Safe
 ---
 

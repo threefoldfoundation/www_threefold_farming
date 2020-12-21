@@ -15,7 +15,7 @@
           <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
         </div>
       </div>
-      <div class="lg:w-1/2 px-2"><img :src="img" :alt="altImg" /></div>
+      <div class="lg:w-1/2 px-2"><img :src="img" :alt="title" /></div>
     </div>
   </section>
 </template>

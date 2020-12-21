@@ -1,6 +1,6 @@
 ---
 id: not_secure
-svg:
+svg: ./peer_to_peer.png
 title: Not Secure
 ---
 
