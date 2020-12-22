@@ -1,7 +1,7 @@
 ---
 id: our_philosophy
 title: our philosophy
-image: ''
+image:
 order: 6
 
 ---
