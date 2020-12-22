@@ -16,10 +16,10 @@
           :alt="section.title"
         />
         <h3 class="text-2xl mb-4 font-semibold font-heading">
-          <span
+          <!-- <span
             class="inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full"
             >{{ index + 1 }}</span
-          >
+          > -->
           <span>{{ section.title }}</span>
         </h3>
         <p class="text-gray-600">
@@ -29,6 +29,7 @@
     </div>
     <div>
       <g-link
+        v-if="main.button"
         class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         :to="main.link"
         >{{ main.button }}</g-link

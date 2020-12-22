@@ -7,10 +7,10 @@
       <div
         v-for="feature in features"
         :key="feature.id"
-        class="lg:w-1/4 px-4 mb-6"
+        class="lg:w-1/2 px-4 mb-6 text-center"
       >
         <g-image
-          class="w-10 h-10"
+          class="w-10 h-10 mx-auto"
           v-if="feature.svg"
           :src="feature.svg.src"
           :alt="feature.svg"
