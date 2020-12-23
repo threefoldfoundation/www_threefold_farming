@@ -18,6 +18,11 @@
         :excerpt="$page.markdownPage.header_excerpt"
       />
 
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
+
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
@@ -58,11 +63,6 @@
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
-      />
-      
-      <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
       />
 
       <div v-html="$page.markdownPage.content"></div>

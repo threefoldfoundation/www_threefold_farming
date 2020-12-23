@@ -1,8 +1,8 @@
 ---
 id: participate_cta
-title: Join Farming Community
-button: Join
-link: /solution #Add button link here
+title: Reserve your 3Node
+button: Learn More
+link: 
 ---
 
-Our goal is to bring more nodes to the ThreeFold Grid. This is an opportunity for anyone to become a part of "the internet" in a sustainable, neutral, and future-proof way.
+Right now we're sold out, but you can already reserve your spot in the next batch for Q1 2021. Spots are limited. Dive in to see which 3Node is best for you.

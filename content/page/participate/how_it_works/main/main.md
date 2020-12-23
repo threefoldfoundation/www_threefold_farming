@@ -1,5 +1,5 @@
 ---
 id: participate_main
-title: HOW IT WORKS
-image: ./header_participate.png
+title: Meet the Titan V2
+image: ./howitworks.png
 ---
