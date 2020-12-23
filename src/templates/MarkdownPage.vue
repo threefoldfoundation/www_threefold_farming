@@ -28,10 +28,10 @@
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <!-- <ShowcaseProducts
+      <ShowcaseProducts
         :products="$page.markdownPage.productData"
-        v-if="$page.markdownPage.productData.length > 0"
-      /> -->
+        v-if="$page.markdownPage.productData && $page.markdownPage.productData.length > 0"
+      />
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -47,7 +47,7 @@
       <template>
         <ClientOnly>
           <Comparison
-            v-if="$page.markdownPage.comparisonSecs.length > 0"
+            v-if="$page.markdownPage.comparisonSecs && $page.markdownPage.comparisonSecs.length > 0"
             :main="$page.markdownPage.comparisonMain"
             :sections="$page.markdownPage.comparisonSecs"
           />
@@ -259,6 +259,7 @@ export default {
     };
   },
 };
+
 </script>
 <style scoped>
 /**
