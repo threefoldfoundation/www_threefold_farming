@@ -1,7 +1,7 @@
 ---
 id: solution_header
 title: 
-subtitle: A technological reset
+subtitle: A Technological Reset
 btn1: Start Now
 link1: /blog
 btn2: 

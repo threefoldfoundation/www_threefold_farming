@@ -1,6 +1,6 @@
 ---
 id: solution_card1
-title: Fast. Secure. Sustainable.
+title: Fast, Secure & Sustainable
 image: ./solution_card_1.png
 button: 
 link: 

@@ -1,7 +1,7 @@
 ---
 id: solution_card4
 title: ZERO OS
-image: ./solution_card_1.png
+image: ./solution_card_4.png
 button: Link to Wiki
 link: 
 order: 3

@@ -1,7 +1,7 @@
 ---
 id: solution_card6
 title: THREEFOLD TOKENS
-image: ./solution_card_1.png
+image: ./solution_card_6.png
 button: Token Page
 link: 
 order: 3

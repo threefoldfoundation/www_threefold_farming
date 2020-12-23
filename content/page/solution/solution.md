@@ -1,6 +1,7 @@
 ---
 id: solution
 header: solution_header
+solution_image: ./solution_main.png
 cards: [solution_card1, solution_card2, solution_card3, solution_card4, solution_card5, solution_card6]
 ---
 <!-- 

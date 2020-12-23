@@ -1,7 +1,7 @@
 ---
 id: solution_card2
 title: As simple as it gets
-image: ./solution_card_1.png
+image: ./solution_card_2.png
 button: Become a Farmer
 link: 
 order: 1

@@ -1,7 +1,7 @@
 ---
 id: solution_card5
 title: ZERO PEOPLE
-image: ./solution_card_1.png
+image: ./solution_card_5.png
 button: Link to Wiki
 link: 
 order: 3

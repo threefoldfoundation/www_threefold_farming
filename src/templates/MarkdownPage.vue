@@ -59,6 +59,11 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides.length > 0"
       />
+      
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
 
       <div v-html="$page.markdownPage.content"></div>
       <NewCard
@@ -71,11 +76,6 @@
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
-      />
-
-      <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
       />
 
       <logoShowcase
@@ -91,11 +91,6 @@
           />
         </ClientOnly>
       </template>
-
-      <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
 
       <template>
         <ClientOnly>

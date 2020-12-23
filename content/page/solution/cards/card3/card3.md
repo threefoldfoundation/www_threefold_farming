@@ -1,7 +1,7 @@
 ---
 id: solution_card3
-title: Plug & Earn
-image: ./solution_card_1.png
+title: PLUG & EARN
+image: ./solution_card_3.png
 button: Learn More
 link: 
 order: 3
