@@ -2,9 +2,9 @@
 id: participate_header
 title: 800 USD. Currently Sold Out.
 subtitle: Plug & Earn
-btn1: 
+btn1: Join Us
 link1: 
-btn2:
+btn2: Visit the Grid Explorer
 link2: 
 ---
 
