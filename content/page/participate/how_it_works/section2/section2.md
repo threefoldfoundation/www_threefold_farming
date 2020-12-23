@@ -1,6 +1,6 @@
 ---
 id: participate_sec2
-title: ''
+title: Performance meets Price
 ---
 
-The main diﬀerence is that Miners essentially waste their hardware capacity to solve riddles that oﬀer no beneﬁt outside of the Bitcoin ecosystem.
+The team has designed this node with an eye on performance while ensuring an affordable entry point for all. The specs include: AMD Ryzen 5 3400G, 32 GB RAM, 480 GB SSD, & 1 TB HDD.

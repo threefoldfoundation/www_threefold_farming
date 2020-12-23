@@ -18,15 +18,20 @@
         :excerpt="$page.markdownPage.header_excerpt"
       />
 
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
+
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <!-- <ShowcaseProducts
+      <ShowcaseProducts
         :products="$page.markdownPage.productData"
-        v-if="$page.markdownPage.productData.length > 0"
-      /> -->
+        v-if="$page.markdownPage.productData && $page.markdownPage.productData.length > 0"
+      />
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -42,7 +47,7 @@
       <template>
         <ClientOnly>
           <Comparison
-            v-if="$page.markdownPage.comparisonSecs.length > 0"
+            v-if="$page.markdownPage.comparisonSecs && $page.markdownPage.comparisonSecs.length > 0"
             :main="$page.markdownPage.comparisonMain"
             :sections="$page.markdownPage.comparisonSecs"
           />
@@ -73,11 +78,6 @@
         :features="$page.markdownPage.features2"
       />
 
-      <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
-
       <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
@@ -91,11 +91,6 @@
           />
         </ClientOnly>
       </template>
-
-      <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
 
       <template>
         <ClientOnly>
@@ -264,6 +259,7 @@ export default {
     };
   },
 };
+
 </script>
 <style scoped>
 /**

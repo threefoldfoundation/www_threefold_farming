@@ -1,17 +1,8 @@
 ---
 id: solution
 header: solution_header
-cards: [solution_card]
-slides:
-  [
-    performance,
-    privacy,
-    security,
-    inclusive,
-    sustainable,
-  ]
-solution_image: ./grid_live.png
-cta: solution_cta
+solution_image: ./solution_main.png
+cards: [solution_card1, solution_card2, solution_card3, solution_card4, solution_card5, solution_card6]
 ---
 <!-- 
 featuresMain: Feature_main
@@ -25,3 +16,16 @@ features: [high_durability, versatility, value_based_price, variety] -->
 header_image: ./solution_header.png
 header_altImg: solution_header
 header_excerpt: Our open-source lightweight OS and autonomous technology powers the decentralization of the Internet with more Security, Privacy & Performance-Efficiency. -->
+
+<!-- slides:
+  [
+    performance,
+    privacy,
+    security,
+    inclusive,
+    sustainable,
+  ] -->
+
+<!--   cta: solution_cta -->
+
+<!-- solution_image: ./grid_live.png -->

@@ -1,7 +1,7 @@
 ---
 id: home_header
 title: ''
-subtitle: Decentralization is taking over.
+subtitle: Decentralization is taking over
 btn1: ''
 link1: ''
 btn2: ''

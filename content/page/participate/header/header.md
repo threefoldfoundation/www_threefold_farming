@@ -1,11 +1,13 @@
 ---
 id: participate_header
-title: ''
-subtitle: BECOME PART OF THE LARGEST P2P GRID IN THE WORLD
-btn1: ''
-link1: ''
-btn2: ''
-link2: ''
+title: 800 USD. Currently Sold Out.
+subtitle: Plug & Earn
+btn1: Join Us
+link1: 
+btn2: Visit the Grid Explorer
+link2: 
 ---
 
-ThreeFold Farming is the process of providing hardware to expand the ThreeFold Grid and receiving ThreeFold Tokens TFT as passive income.
+Plug and Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
+
+

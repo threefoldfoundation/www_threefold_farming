@@ -38,7 +38,7 @@
 
     <template>
       <ClientOnly>
-        <SignUp :signup="$page.markdownPage.signup" />
+        <SignUp :signup="$page.markdownPage.signup" v-if="$page.markdownPage.signup" />
       </ClientOnly>
     </template>
 
