@@ -1,9 +1,9 @@
 ---
-id: tokenCard2
-title: LIVE STATS
-image: ./tft_stats.png
-button: TFT STATISTICS
-link: '/https://tokenstats.threefoldtoken.com/'
+id: solution_card2
+title: As simple as it gets
+image: ./solution_card_1.png
+button: Become a Farmer
+link: 
 order: 1
-excerpt: TFT is live and actively traded.
+excerpt: Electricity + Network + 3Node = all you need to connect decentralized capacity to a faster, more secure, & scalable Internet.
 ---

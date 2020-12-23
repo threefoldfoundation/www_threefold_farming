@@ -1,9 +1,9 @@
 ---
-id: tokenCard3
-title: A Sustainable Internet, for our planet
-image: ./card3.jpeg
-button: Start Now
-link: '/blog'
+id: solution_card3
+title: Plug & Earn
+image: ./solution_card_1.png
+button: Learn More
+link: 
 order: 3
-excerpt: 
+excerpt: Farmers earn ThreeFold Tokens by connecting and leasing capacity to the ThreeFold Grid. Developers and users rent compute and storage capacity directly from Farmers, creating a complete circular economic model, in which anyone can partake.
 ---
