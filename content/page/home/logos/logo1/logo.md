@@ -1,6 +1,6 @@
 ---
 id: logo1
-image: ./logo.png
+image: ./hpe.png
 
 
 ---

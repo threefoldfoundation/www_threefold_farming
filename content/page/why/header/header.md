@@ -1,11 +1,11 @@
 ---
 id: header_why
-title: BE THE INTERNET
-subtitle: The world needs a Technological Reset
-btn1: Learn more
-link1: /blog
-btn2: Stay Updated
-link2: /blog
+title: 
+subtitle: Today's internet is broken
+btn1: Be a part of a new internet
+link1: /participate
+btn2: 
+link2:
 ---
 
-The Internet is run by large corporations and their hyper-scale data centers. Their centralized approach is highly inefficent, extremely costly and unsustainable. Our data isn't even safe anymore.
+The Internet is run by large corporations. This centralized approach is highly inefficent, extremely costly and unsustainable. Our data isn't owned by us, and it isn't safe.

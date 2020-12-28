@@ -1,9 +1,9 @@
 ---
 id: solution_card4
-title: ZERO OS
+title: Zero OS
 image: ./solution_card_4.png
-button: Link to Wiki
+button: Learn More
 link: 
-order: 3
-excerpt: Our unique operating system enables the most efficient utilization of hardware. We started from scratch with a Linux Kernel, and created a lightweight, super-efficient, and stateless OS. All the unnecessary layers of complexity were eliminated to deliver compute and storage with the best security, affordability and energy efficiency.
+order: 2
+excerpt: Autonomous IT means self-driving and self-healing. A major efficiency gain comes from removing the human requirement for deploying and operating IT infrastructure and services. Instead, a Smart Contract for IT autonomously handles all the required actions on the ThreeFold Grid. Zero people means no opportunities for human error or malicious intent.
 ---

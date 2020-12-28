@@ -36,10 +36,10 @@
       :features="$page.markdownPage.features2"
     />
 
-    <!-- <logoShowcase
+    <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
-    /> -->
+    />
 
     <template>
       <ClientOnly>

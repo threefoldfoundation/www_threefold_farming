@@ -1,6 +1,6 @@
 ---
 id: Feature_home
-title: The current model is failing future demand
+title: The status quo is failing
 btn: ''
 link: ''
 ---

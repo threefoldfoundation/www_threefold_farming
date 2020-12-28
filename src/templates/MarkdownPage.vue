@@ -16,11 +16,8 @@
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
-      />
-
-      <img
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
+        :button="$page.markdownPage.button"
+        :link="$page.markdownPage.link"
       />
 
       <GetInTouch
@@ -37,6 +34,11 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
+      />
+
+      <img
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
       />
 
       <Features
@@ -114,6 +116,8 @@
         header_altImg
         header_title
         header_image
+        button
+        link
         solution_image
         slides{
           id

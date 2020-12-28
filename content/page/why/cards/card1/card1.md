@@ -5,6 +5,6 @@ image: ./card1.jpeg
 button: Learn More
 link: '/blog'
 order: 1
-excerpt: We created a complete peer-to-peer architecture that can assist the world in it's journey towards decentralization. Blockchain and edge computing were only steps towards that end goal. Our model removes complexity and inefficiencies. No intermediaries. No marketing. No gimmicks. Everything is automated. Completely end-to-end. But it doesn't end there. Users get full control over their data with 100% security and privacy. Not even ThreeFold can access it.
+excerpt: Blockchain and edge computing gave birth to the era of decentralization. ThreeFold's peer-to-peer architecture is the next step in that evolution, bringing an extremely simple, super efficient and ultra secure end-to-end environment. This means users have 100% ownership and access rights over their data.
 ---
 
