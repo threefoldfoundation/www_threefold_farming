@@ -14,6 +14,11 @@
         :header="$page.markdownPage.header"
       />
 
+      <img
+      v-if="$page.markdownPage.solution_image_2"
+      :src="$page.markdownPage.solution_image.src"
+      />
+
       <Features
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
@@ -72,6 +77,7 @@
         button
         link
         solution_image
+        solution_image_2
         cards{
           id
           title

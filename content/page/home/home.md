@@ -6,6 +6,7 @@ header_excerpt: This is the era of decentralization. Join the movement by connec
 button: Learn more
 link: /why
 header: home_header
+solution_image_2: ./Data_Graph.png
 featuresMain: Feature_home
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
 cards: [home_card]
