@@ -16,7 +16,7 @@
 
       <img
       v-if="$page.markdownPage.solution_image_2"
-      :src="$page.markdownPage.solution_image.src"
+      :src="$page.markdownPage.solution_image_2.src"
       />
 
       <Features
