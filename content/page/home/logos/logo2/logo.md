@@ -1,6 +1,6 @@
 ---
 id: logo2
-image: ./dash.png
+image: ./kleos.png
 
 
 ---

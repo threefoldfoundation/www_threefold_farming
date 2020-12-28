@@ -1,6 +1,6 @@
 ---
 id: logo4
-image: ./vlinder.png
+image: ./green_edge.png
 
 
 ---

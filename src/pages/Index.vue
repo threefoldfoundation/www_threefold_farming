@@ -14,6 +14,11 @@
         :header="$page.markdownPage.header"
       />
 
+      <img
+      v-if="$page.markdownPage.solution_image_2"
+      :src="$page.markdownPage.solution_image_2.src"
+      />
+
       <Features
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
@@ -31,10 +36,10 @@
       :features="$page.markdownPage.features2"
     />
 
-    <!-- <logoShowcase
+    <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
-    /> -->
+    />
 
     <template>
       <ClientOnly>
@@ -72,6 +77,7 @@
         button
         link
         solution_image
+        solution_image_2
         cards{
           id
           title
