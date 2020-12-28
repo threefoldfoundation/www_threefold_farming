@@ -102,6 +102,11 @@
           />
         </ClientOnly>
       </template>
+
+      <BrandPanel
+        :brand="$page.markdownPage.brandPanel"
+        v-if="$page.markdownPage.brandPanel"
+      />
     </div>
   </Layout>
 </template>
@@ -155,6 +160,16 @@
          title
          excerpt
        }
+       brandPanel{
+         id
+         title
+         title2
+         excerpt
+         sourceUrl
+         btnTxt
+         image
+       }
+
        howItWorksMain{
          id
          title
@@ -241,6 +256,7 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
+import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 
 export default {
   components: {
@@ -256,6 +272,7 @@ export default {
     CallToAction,
     SignUp,
     Comparison,
+    BrandPanel,
   },
   metaInfo() {
     return {

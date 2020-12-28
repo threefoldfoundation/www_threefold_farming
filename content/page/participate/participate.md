@@ -12,6 +12,7 @@ solution_image: ./participate_main.png
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]
 cta: participate_cta
+brandPanel : participate_brandPanel
 ---
 
 <!-- header: participate_header -->
