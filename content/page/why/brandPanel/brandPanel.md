@@ -3,7 +3,7 @@ id: why_brandPanel
 title: A strong Community of Believers
 title2: 
 sourceUrl: /team
-btnTxt: Meet the Blievers
+btnTxt: Meet the Believers
 image: ./teamcollage2.png
 ---
 
