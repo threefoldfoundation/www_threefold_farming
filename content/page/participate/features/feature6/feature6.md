@@ -1,6 +1,6 @@
 ---
 id: feature6
-svg: ''
+svg: ./earn.png
 title: Earn Passive Income
 ---
 

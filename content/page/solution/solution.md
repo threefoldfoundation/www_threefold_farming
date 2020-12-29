@@ -6,7 +6,8 @@ header_image: ./solution_main.png
 header_excerpt: ThreeFold's edge computing solution allows seamless and direct data transportation that guarantees data ownership and access at warp speed in a completely end-to-end encrypted environment.
 button: Learn more
 link: /why
-cards: [solution_card2, solution_card4, solution_card5, solution_card3]
+headerSolution : headerSolution
+cards: [solution_card4, solution_card5, solution_card3]
 ---
 <!-- 
 featuresMain: Feature_main

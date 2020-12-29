@@ -1,6 +1,6 @@
 ---
 id: feature4
-svg: ''
+svg: ./connect.png
 title: Connect the World
 ---
 

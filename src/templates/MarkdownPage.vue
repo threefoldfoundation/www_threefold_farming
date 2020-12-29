@@ -20,6 +20,11 @@
         :link="$page.markdownPage.link"
       />
 
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
+
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
@@ -27,7 +32,10 @@
 
       <ShowcaseProducts
         :products="$page.markdownPage.productData"
-        v-if="$page.markdownPage.productData && $page.markdownPage.productData.length > 0"
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
       />
 
       <HowItWorks
@@ -49,7 +57,10 @@
       <template>
         <ClientOnly>
           <Comparison
-            v-if="$page.markdownPage.comparisonSecs && $page.markdownPage.comparisonSecs.length > 0"
+            v-if="
+              $page.markdownPage.comparisonSecs &&
+              $page.markdownPage.comparisonSecs.length > 0
+            "
             :main="$page.markdownPage.comparisonMain"
             :sections="$page.markdownPage.comparisonSecs"
           />
@@ -80,10 +91,10 @@
         :features="$page.markdownPage.features2"
       />
 
-      <logoShowcase
+      <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
-      />
+      /> -->
 
       <template>
         <ClientOnly>
@@ -102,6 +113,16 @@
           />
         </ClientOnly>
       </template>
+
+      <BrandPanel
+        :brand="$page.markdownPage.brandPanel"
+        v-if="$page.markdownPage.brandPanel"
+      />
+
+      <!-- <SplitWithImage
+      :split="$page.markdownPage.splitWithImage"
+        v-if="$page.markdownPage.splitWithImage"
+      /> -->
     </div>
   </Layout>
 </template>
@@ -150,10 +171,32 @@
          btn2
          link2
        }
+       headerSolution{
+         subtitle
+         excerpt
+       }
        howItWorks{
          id
          title
          excerpt
+       }
+       brandPanel{
+         id
+         title
+         title2
+         excerpt
+         sourceUrl
+         btnTxt
+         image
+       }
+       splitWithImage{
+         id
+         subtitle
+         title
+         excerpt
+         sourceUrl
+         btnTxt
+         image
        }
        howItWorksMain{
          id
@@ -241,6 +284,8 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
+import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
+import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
 
 export default {
   components: {
@@ -256,6 +301,8 @@ export default {
     CallToAction,
     SignUp,
     Comparison,
+    BrandPanel,
+    SplitWithImage,
   },
   metaInfo() {
     return {
@@ -263,7 +310,6 @@ export default {
     };
   },
 };
-
 </script>
 <style scoped>
 /**

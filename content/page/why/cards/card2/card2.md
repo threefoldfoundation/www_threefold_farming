@@ -1,7 +1,7 @@
 ---
 id: why2
 title: An Internet available to everyone
-image: ./card2.jpeg
+image: ./why_card2.png
 button: Learn More
 link: '/blog'
 order: 1
