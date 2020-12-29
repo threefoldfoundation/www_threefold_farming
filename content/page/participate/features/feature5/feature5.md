@@ -1,6 +1,6 @@
 ---
 id: feature5
-svg: ''
+svg: ./protect.png
 title: Make Data Safe
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: participate
 header_title: Plug & Earn
-header_image: ./participate_header.png
+header_image: ./Participate_Image.png
 header_altImg: participate_header
 header_excerpt: 800 USD. Currently Sold Out. Plug & Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
 button: Reserve Now

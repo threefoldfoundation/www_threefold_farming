@@ -1,6 +1,6 @@
 ---
 id: feature3
-svg: ''
+svg: ./decentralize.png
 title: Decentralize the Internet
 ---
 
