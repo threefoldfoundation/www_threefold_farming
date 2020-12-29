@@ -91,10 +91,10 @@
         :features="$page.markdownPage.features2"
       />
 
-      <logoShowcase
+      <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
-      />
+      /> -->
 
       <template>
         <ClientOnly>
