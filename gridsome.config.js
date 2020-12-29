@@ -119,6 +119,14 @@ module.exports = {
             }
         },
 
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'SplitWithImage',
+                path: './content/page/**/splitWithImage/*.md',
+            }
+        },
+
 
         {
             use: '@gridsome/source-filesystem',
@@ -144,7 +152,8 @@ module.exports = {
                     comparisonSecs: 'Comparison',
                     howItWorksMain_2: 'HowItWorks_2',
                     howItWorks_2: 'HowItWorks_2',
-                    brandPanel: 'BrandPanel'
+                    brandPanel: 'BrandPanel',
+                    splitWithImage: 'SplitWithImage'
 
                 }
             }

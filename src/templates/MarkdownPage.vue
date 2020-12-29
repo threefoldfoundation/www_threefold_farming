@@ -27,7 +27,10 @@
 
       <ShowcaseProducts
         :products="$page.markdownPage.productData"
-        v-if="$page.markdownPage.productData && $page.markdownPage.productData.length > 0"
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
       />
 
       <HowItWorks
@@ -49,7 +52,10 @@
       <template>
         <ClientOnly>
           <Comparison
-            v-if="$page.markdownPage.comparisonSecs && $page.markdownPage.comparisonSecs.length > 0"
+            v-if="
+              $page.markdownPage.comparisonSecs &&
+              $page.markdownPage.comparisonSecs.length > 0
+            "
             :main="$page.markdownPage.comparisonMain"
             :sections="$page.markdownPage.comparisonSecs"
           />
@@ -107,6 +113,11 @@
         :brand="$page.markdownPage.brandPanel"
         v-if="$page.markdownPage.brandPanel"
       />
+
+      <SplitWithImage
+      :split="$page.markdownPage.splitWithImage"
+        v-if="$page.markdownPage.splitWithImage"
+         />
     </div>
   </Layout>
 </template>
@@ -169,7 +180,15 @@
          btnTxt
          image
        }
-
+       splitWithImage{
+         id
+         subtitle
+         title
+         excerpt
+         sourceUrl
+         btnTxt
+         image
+       }
        howItWorksMain{
          id
          title
@@ -257,6 +276,7 @@ import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
+import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
 
 export default {
   components: {
@@ -273,6 +293,7 @@ export default {
     SignUp,
     Comparison,
     BrandPanel,
+    SplitWithImage,
   },
   metaInfo() {
     return {
@@ -280,7 +301,6 @@ export default {
     };
   },
 };
-
 </script>
 <style scoped>
 /**

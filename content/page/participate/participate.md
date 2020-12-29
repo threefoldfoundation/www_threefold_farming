@@ -13,6 +13,7 @@ featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]
 cta: participate_cta
 brandPanel : participate_brandPanel
+splitWithImage : participate_splitWihImage
 ---
 
 <!-- header: participate_header -->
