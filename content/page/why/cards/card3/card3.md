@@ -1,7 +1,7 @@
 ---
 id: why3
 title: A better solution for our planet
-image: ./card3.jpeg
+image: ./why_card3.png
 button: Learn More
 link: '/blog'
 order: 3

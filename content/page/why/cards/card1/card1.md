@@ -1,7 +1,7 @@
 ---
 id: why1
 title: Peer-to-peer puts people back in control
-image: ./card1.jpeg
+image: ./why_card1.png
 button: Learn More
 link: '/blog'
 order: 1

@@ -1,13 +1,13 @@
 ---
 id: participate_brandPanel
-title: Ready to dive in?
-title2: Start your free trial today.
+title: 
+title2: Currently nodes are SOLD OUT
 sourceUrl: /participate
-btnTxt: learn more
+btnTxt: Learn More
 image: http://via.placeholder.com/600
 
 ---
 
 
 
-Plug and Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning. 
+Reserve your spot in the next batch for Q1 2021. Spots are limited. Dive in to see which 3Node is best for you.

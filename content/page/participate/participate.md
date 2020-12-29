@@ -11,9 +11,7 @@ howItWorks: [participate_sec1, participate_sec2, participate_sec3]
 solution_image: ./participate_main.png 
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]
-cta: participate_cta
 brandPanel : participate_brandPanel
-splitWithImage : participate_splitWihImage
 ---
 
 <!-- header: participate_header -->
@@ -30,3 +28,7 @@ header_excerpt: Farmers can be compared to Bitcoin Miners because they earn rewa
 <!-- comparisonMain: participate_comparison_main
 comparisonSecs:
   [participate_comparison1, participate_comparison2, participate_comparison3] -->
+
+<!-- cta: participate_cta -->
+
+<!-- splitWithImage : participate_splitWihImage -->

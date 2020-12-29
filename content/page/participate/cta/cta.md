@@ -1,6 +1,6 @@
 ---
 id: participate_cta
-title: Reserve your 3Node
+title: Reserve your 3Node 
 button: Learn More
 link: 
 ---

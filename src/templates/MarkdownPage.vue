@@ -2,10 +2,6 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      />
-      <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
@@ -22,6 +18,11 @@
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
+      />
+
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
       />
 
       <GetInTouch
@@ -118,10 +119,10 @@
         v-if="$page.markdownPage.brandPanel"
       />
 
-      <SplitWithImage
+      <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
         v-if="$page.markdownPage.splitWithImage"
-         />
+      /> -->
     </div>
   </Layout>
 </template>

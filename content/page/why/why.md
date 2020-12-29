@@ -1,7 +1,8 @@
 ---
 id: why
 header: header_why
-cards: [why1, why2, why3, why4]
+cards: [why1, why2, why3]
+brandPanel : why_brandPanel
 ---
 
 <!-- header_title: The world needs a Technological Reset
