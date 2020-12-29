@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto py-16">
       <div
         class="bg-gray-800 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4"
       >
@@ -19,10 +19,11 @@
             </p>
             <g-link
               :to="brand.sourceUrl"
-              class="mt-8 bg-white shadow px-6 py-3 inline-flex items-center text-base rounded shadow leading-none font-semibold text-gray-800 hover:bg-gray-300 "
+              class="mt-8 text-gray-900 bg-white hover:text-gray-600 shadow px-6 py-3 inline-flex items-center text-base rounded shadow leading-none font-semibold "
               >{{ brand.btnTxt }}</g-link
             >
             <!-- class="inline-block py-4 px-8 mr-6 leading-none text-white bg-gray-900 hover:bg-gray-700 font-semibold rounded shadow" -->
+            <!-- inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-600 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out -->
           </div>
         </div>
         <div class="relative pb-3/5 -mt-6 md:pb-1/2">

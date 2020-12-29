@@ -4,8 +4,7 @@ subtitle: AWARD WINNING SUPPORT
 title: We’re here to help
 sourceUrl: /participate
 btnTxt: visit the help center
-image: https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6875F5&sat=-100&blend-mode=multiply
-
+image: http://via.placeholder.com/600
 ---
 
 

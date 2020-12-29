@@ -16,7 +16,7 @@
       </p>
       <div class="mt-8">
         <div class="inline-flex rounded-md shadow">
-          <a :href="split.sourceUrl" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-600 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          <a :href="split.sourceUrl" class="mt-2 text-gray-900 bg-white hover:text-gray-600 shadow px-6 py-3 inline-flex items-center text-base rounded shadow leading-none font-semibold ">
             {{ split.btnTxt }}
             <!-- Heroicon name: external-link -->
             <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
