@@ -2,6 +2,10 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
+      <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
@@ -165,6 +169,10 @@
          link1
          btn2
          link2
+       }
+       headerSolution{
+         subtitle
+         excerpt
        }
        howItWorks{
          id

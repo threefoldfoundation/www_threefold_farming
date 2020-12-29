@@ -127,6 +127,14 @@ module.exports = {
             }
         },
 
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'SolutionsHeader',
+                path: './content/page/**/headerSolution/*.md',
+            }
+        },
+
 
         {
             use: '@gridsome/source-filesystem',
@@ -153,7 +161,9 @@ module.exports = {
                     howItWorksMain_2: 'HowItWorks_2',
                     howItWorks_2: 'HowItWorks_2',
                     brandPanel: 'BrandPanel',
-                    splitWithImage: 'SplitWithImage'
+                    splitWithImage: 'SplitWithImage',
+                    headerSolution: 'SolutionsHeader'
+
 
                 }
             }

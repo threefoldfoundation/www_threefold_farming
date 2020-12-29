@@ -7,6 +7,7 @@ header_excerpt: ThreeFold's edge computing solution allows seamless and direct d
 button: Learn more
 link: /why
 cards: [solution_card2, solution_card4, solution_card5, solution_card3]
+headerSolution : headerSolution
 ---
 <!-- 
 featuresMain: Feature_main
