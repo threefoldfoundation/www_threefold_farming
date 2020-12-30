@@ -22,9 +22,9 @@ features2:
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 cta: home_cta
 solution_image: ./home_image.png
-inTheNews: in_the_news
 ---
 
 <!-- header: home_header -->
 <!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
 <!-- signup: home_signup -->
+<!-- inTheNews: in_the_news -->
