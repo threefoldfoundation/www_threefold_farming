@@ -1,11 +1,12 @@
 ---
 id: home
-header_title: Decentralization is taking over! - BE THE INTERNET
+header_title: Be the Internet
 header_image: ./farming_header.png
-header_excerpt: This is the era of decentralization. ThreeFold has created secure and scaleable technology that allows anyone to connect decentralized capacity, anywhere. Join the movement by connecting ThreeFold technology to the most advanced peer-to-peer grid on the planet.
+header_excerpt: This is the era of decentralization. Join the movement by connecting ThreeFold technology to the most advanced peer-to-peer grid on the planet.
 button:
 link:
 header: home_header
+headerSolution : headerHome
 solution_image_2: ./data_graph.png
 featuresMain: Feature_home
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]

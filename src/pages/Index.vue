@@ -13,6 +13,11 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
 
       <g-image
         v-if="$page.markdownPage.solution_image_2"
@@ -103,6 +108,10 @@
          link1
          btn2
          link2
+       }
+        headerSolution{
+         subtitle
+         excerpt
        }
        featuresMain{
           id
