@@ -3,8 +3,8 @@ id: home
 header_title: Be the Internet
 header_image: ./farming_header.png
 header_excerpt: This is the era of decentralization. Join the movement by connecting threefold technology to the most advanced peer-to-peer grid on the planet.
-button: 
-link: 
+button:
+link:
 header: home_header
 solution_image_2: ./data_graph.png
 featuresMain: Feature_home
@@ -21,6 +21,7 @@ features2:
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 cta: home_cta
 solution_image: ./home_image.png
+inTheNews: in_the_news
 ---
 
 <!-- header: home_header -->

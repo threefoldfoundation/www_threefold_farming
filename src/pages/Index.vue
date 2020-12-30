@@ -15,8 +15,8 @@
       />
 
       <img
-      v-if="$page.markdownPage.solution_image_2"
-      :src="$page.markdownPage.solution_image_2.src"
+        v-if="$page.markdownPage.solution_image_2"
+        :src="$page.markdownPage.solution_image_2.src"
       />
 
       <Features
@@ -43,7 +43,10 @@
 
     <template>
       <ClientOnly>
-        <SignUp :signup="$page.markdownPage.signup" v-if="$page.markdownPage.signup" />
+        <SignUp
+          :signup="$page.markdownPage.signup"
+          v-if="$page.markdownPage.signup"
+        />
       </ClientOnly>
     </template>
 
@@ -62,6 +65,11 @@
     />
 
     <!-- <Getintouch :contacts="contacts"/> -->
+
+    <InTheNews
+      v-if="$page.markdownPage.inTheNews"
+      :news="$page.markdownPage.inTheNews"
+    />
   </Layout>
 </template>
 
@@ -141,6 +149,11 @@
           button
           link
         }
+        inTheNews {
+          id
+          excerpt
+          images
+        }
     }  
   }
 
@@ -155,6 +168,7 @@ import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 
 export default {
   components: {
@@ -166,6 +180,7 @@ export default {
     logoShowcase,
     SignUp,
     CallToAction,
+    InTheNews,
   },
   metaInfo() {
     return {
