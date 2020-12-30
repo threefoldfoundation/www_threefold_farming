@@ -20,6 +20,12 @@
         :link="$page.markdownPage.link"
       />
 
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      />
+
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
@@ -38,13 +44,7 @@
         "
       />
 
-      <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      />
-
-      <img
+      <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -85,8 +85,8 @@
         :card="card"
       />
 
-      <Features2
-        v-if="$page.markdownPage.features.length > 0"
+      <Features
+        v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
       />
@@ -183,7 +183,7 @@
        brandPanel{
          id
          title
-         title2
+         subtitle
          excerpt
          sourceUrl
          btnTxt

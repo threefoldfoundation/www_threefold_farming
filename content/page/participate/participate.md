@@ -3,12 +3,13 @@ id: participate
 header_title: Plug & Earn
 header_image: ./Participate_Image.png
 header_altImg: participate_header
-header_excerpt: 800 USD. Currently Sold Out. Plug & Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
+header_excerpt: Plug & Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
 button: Reserve Now
 link: /participate
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
-solution_image: ./participate_main.png 
+headerSolution : headerParticipate
+solution_image: ./participate_main2.png 
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]
 brandPanel : participate_brandPanel

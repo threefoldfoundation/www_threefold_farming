@@ -2,10 +2,11 @@
 id: home
 header_title: Be the Internet
 header_image: ./farming_header.png
-header_excerpt: This is the era of decentralization. Join the movement by connecting threefold technology to the most advanced peer-to-peer grid on the planet.
-button: 
-link: 
+header_excerpt: This is the era of decentralization. Join the movement by connecting ThreeFold technology to the most advanced peer-to-peer grid on the planet.
+button:
+link:
 header: home_header
+headerSolution : headerHome
 solution_image_2: ./data_graph.png
 featuresMain: Feature_home
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
@@ -26,3 +27,4 @@ solution_image: ./home_image.png
 <!-- header: home_header -->
 <!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
 <!-- signup: home_signup -->
+<!-- inTheNews: in_the_news -->

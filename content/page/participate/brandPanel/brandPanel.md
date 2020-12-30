@@ -1,13 +1,10 @@
 ---
 id: participate_brandPanel
-title: 
-title2: Currently nodes are SOLD OUT
+title:
+subtitle: Currently 3Nodes are SOLD OUT
 sourceUrl: /participate
-btnTxt: Learn More
-image: http://via.placeholder.com/600
-
+btnTxt: Reserve 3Node
+image: participate_cta.png # Please add images in src/assets/brandPanel/\
 ---
 
-
-
-Reserve your spot in the next batch for Q1 2021. Spots are limited. Dive in to see which 3Node is best for you.
+Spots are limited. Dive in, see which 3Node is best for you and reserve your spot in the next batch for Q1 2021.

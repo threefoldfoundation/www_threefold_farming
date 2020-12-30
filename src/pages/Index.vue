@@ -13,10 +13,15 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
 
-      <img
-      v-if="$page.markdownPage.solution_image_2"
-      :src="$page.markdownPage.solution_image_2.src"
+      <g-image
+        v-if="$page.markdownPage.solution_image_2"
+        :src="$page.markdownPage.solution_image_2.src"
       />
 
       <Features
@@ -43,7 +48,10 @@
 
     <template>
       <ClientOnly>
-        <SignUp :signup="$page.markdownPage.signup" v-if="$page.markdownPage.signup" />
+        <SignUp
+          :signup="$page.markdownPage.signup"
+          v-if="$page.markdownPage.signup"
+        />
       </ClientOnly>
     </template>
 
@@ -56,12 +64,17 @@
       </ClientOnly>
     </template>
 
-    <img
+    <g-image
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
     />
 
     <!-- <Getintouch :contacts="contacts"/> -->
+
+    <!-- <InTheNews
+      v-if="$page.markdownPage.inTheNews"
+      :news="$page.markdownPage.inTheNews"
+    /> -->
   </Layout>
 </template>
 
@@ -95,6 +108,10 @@
          link1
          btn2
          link2
+       }
+        headerSolution{
+         subtitle
+         excerpt
        }
        featuresMain{
           id
@@ -141,6 +158,11 @@
           button
           link
         }
+        inTheNews {
+          id
+          excerpt
+          images
+        }
     }  
   }
 
@@ -155,6 +177,7 @@ import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 
 export default {
   components: {
@@ -166,6 +189,7 @@ export default {
     logoShowcase,
     SignUp,
     CallToAction,
+    InTheNews,
   },
   metaInfo() {
     return {
