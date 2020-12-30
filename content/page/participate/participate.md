@@ -8,6 +8,7 @@ button: Reserve Now
 link: /participate
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
+headerSolution : headerParticipate
 solution_image: ./participate_main.png 
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]

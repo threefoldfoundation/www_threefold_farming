@@ -1,6 +1,6 @@
 ---
 id: why_brandPanel
-title: A strong Community of Believers
+title: A strong community of believers
 subtitle:
 sourceUrl: /team
 btnTxt: Meet the Believers

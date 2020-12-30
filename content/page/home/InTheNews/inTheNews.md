@@ -10,5 +10,4 @@ images:
     https://tailwindui.com/img/logos/v1/statamic-logo.svg,
   ]
 ---
-
-Trusted by over 5 very average small businesses
+In the news

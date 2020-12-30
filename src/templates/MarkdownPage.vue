@@ -20,6 +20,12 @@
         :link="$page.markdownPage.link"
       />
 
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      />
+
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
@@ -36,12 +42,6 @@
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
-      />
-
-      <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
       />
 
       <g-image
