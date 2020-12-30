@@ -14,7 +14,7 @@
         :header="$page.markdownPage.header"
       />
 
-      <img
+      <g-image
         v-if="$page.markdownPage.solution_image_2"
         :src="$page.markdownPage.solution_image_2.src"
       />
@@ -59,7 +59,7 @@
       </ClientOnly>
     </template>
 
-    <img
+    <g-image
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
     />

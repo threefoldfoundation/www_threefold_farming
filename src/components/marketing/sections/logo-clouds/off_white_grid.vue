@@ -12,7 +12,7 @@
           :key="img.id"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
-          <img class="max-h-12" :src="img" />
+          <g-image class="max-h-12" :src="img" />
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@
         v-for="(section, index) in sections"
         :key="index"
       >
-        <img
+        <g-image
           class="w-1/2 mx-auto mb-8 h-32"
           :src="section.svg.src"
           :alt="section.title"
