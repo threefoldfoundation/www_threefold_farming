@@ -13,7 +13,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
@@ -130,6 +130,7 @@
         logos{
           id
           image
+          url
         }
         features{
           id
@@ -161,7 +162,10 @@
         inTheNews {
           id
           excerpt
-          images
+          partners {
+            path
+            logo
+          }
         }
     }  
   }

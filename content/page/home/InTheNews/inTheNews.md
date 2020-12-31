@@ -1,13 +1,24 @@
 ---
 id: in_the_news
-images:
-  [
-    https://tailwindui.com/img/logos/v1/transistor-logo.svg,
-    https://tailwindui.com/img/logos/v1/mirage-logo.svg,
-    https://tailwindui.com/img/logos/v1/tuple-logo.svg,
-    https://tailwindui.com/img/logos/v1/laravel-logo.svg,
-    https://tailwindui.com/img/logos/v1/statickit-logo.svg,
-    https://tailwindui.com/img/logos/v1/statamic-logo.svg,
-  ]
+# Add logos in src/assets/images/
+partners:
+  - path: /test
+    logo: https://tailwindui.com/img/logos/v1/transistor-logo.svg
+
+  - path: /test
+    logo: https://tailwindui.com/img/logos/v1/mirage-logo.svg
+
+  - path: /test
+    logo: https://tailwindui.com/img/logos/v1/tuple-logo.svg
+
+  - path: /test
+    logo: https://tailwindui.com/img/logos/v1/laravel-logo.svg
+
+  - path: /test
+    logo: https://tailwindui.com/img/logos/v1/statickit-logo.svg
+
+  - path: /test
+    logo: https://tailwindui.com/img/logos/v1/statamic-logo.svg
 ---
+
 In the news

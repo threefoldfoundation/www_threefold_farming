@@ -7,13 +7,14 @@
         {{ news.excerpt }}
       </p>
       <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-        <div
-          v-for="img in news.images"
-          :key="img.id"
+        <g-link
+          v-for="partner in news.partners"
+          :key="partner.id"
+          target="_blank"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
-          <g-image class="max-h-12" :src="img" />
-        </div>
+          <img class="max-h-12" :src="image(partner.img)" />
+        </g-link>
       </div>
     </div>
   </div>
@@ -22,5 +23,17 @@
 <script>
 export default {
   props: ["news"],
+  methods: {
+    image(img) {
+      if (img) {
+        return img;
+      }
+      if (img.src) {
+        return img.src;
+      } else {
+        return require(`!!assets-loader!@images/${img}`);
+      }
+    },
+  },
 };
 </script>
