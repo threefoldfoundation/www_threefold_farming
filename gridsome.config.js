@@ -16,6 +16,13 @@ module.exports = {
                 path: './content/page/**/cards/**/*.md',
             }
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Card2',
+                path: './content/page/**/cards2/**/*.md',
+            }
+        },
 
         {
             use: '@gridsome/source-filesystem',
@@ -82,6 +89,13 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Features3',
+                path: './content/page/**/features3/**/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Logos',
                 path: './content/page/**/logos/**/*.md',
             }
@@ -134,7 +148,20 @@ module.exports = {
                 path: './content/page/**/headerSolution/*.md',
             }
         },
-
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'SolutionsHeader',
+                path: './content/page/**/headerSolution2/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'SolutionsHeader',
+                path: './content/page/**/headerSolution3/*.md',
+            }
+        },
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -149,6 +176,7 @@ module.exports = {
                 path: './content/page/*/*.md',
                 refs: {
                     cards: 'Card',
+                    cards2: 'Card2',
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',
@@ -159,6 +187,8 @@ module.exports = {
                     features: 'Features',
                     featuresMain2: 'Features2',
                     features2: 'Features2',
+                    featuresMain3: 'Features3',
+                    features3: 'Features3',
                     logos: 'Logos',
                     cta: 'Cta',
                     signup: 'SignUp',
@@ -169,6 +199,8 @@ module.exports = {
                     brandPanel: 'BrandPanel',
                     splitWithImage: 'SplitWithImage',
                     headerSolution: 'SolutionsHeader',
+                    headerSolution2: 'SolutionsHeader',
+                    headerSolution3: 'SolutionsHeader',
                     inTheNews: 'InTheNews'
                 }
             }

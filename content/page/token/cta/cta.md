@@ -1,8 +1,14 @@
 ---
-id: token_cta
-title: No paper plane can be made without paper
-button: Sign up
-link: /solution #Add button link here
+id: home_token
+title: Why does TFT have value?
+button: 
+link: 
 ---
 
-Professional, dedicated, local. Dunder Mifflin is on its best patch to change the way you think about paper. That’s us - people who sell limitless paper in the paperless world.
+The TFT is valuable in different ways to different people.
+
+For TFT holders, TFT is valuable because it is worth actual compute and storage capacity.
+
+Today, TFT is becoming valuable to developers and enterprises deploying their solutions on the ThreeFold Grid. That's because you can use TFT to reserve fully private and secure capacity in the most technologically advanced Internet architecture.
+
+Of course many also see it as an investment, similar to Bitcoin or other cryptocurrencies. But it shouldn’t be seen as an investment vehicle or way for short term gains or speculation as it is just a way to participate in the p2p Internet.

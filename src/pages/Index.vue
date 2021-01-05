@@ -13,7 +13,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
@@ -71,10 +71,10 @@
 
     <!-- <Getintouch :contacts="contacts"/> -->
 
-    <!-- <InTheNews
+    <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
-    /> -->
+    />
   </Layout>
 </template>
 
@@ -98,12 +98,12 @@
           button
           link
           order
-          excerpt
+          excerpt(length: 2000)
         }
         header{
          title
          subtitle
-         excerpt
+         excerpt(length: 2000)
          btn1
          link1
          btn2
@@ -111,37 +111,38 @@
        }
         headerSolution{
          subtitle
-         excerpt
+         excerpt(length: 2000)
        }
        featuresMain{
           id
           title 
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
         }
         featuresMain2{
           id
           title 
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
         }
         logos{
           id
           image
+          url
         }
         features{
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
         }
         features2{
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
         }
         signup{
           id
@@ -154,14 +155,17 @@
         cta{
           id
           title
-          excerpt
+          excerpt(length: 2000)
           button
           link
         }
         inTheNews {
           id
-          excerpt
-          images
+          excerpt(length: 2000)
+          partners {
+            path
+            logo
+          }
         }
     }  
   }

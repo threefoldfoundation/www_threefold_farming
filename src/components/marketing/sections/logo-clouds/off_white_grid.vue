@@ -7,13 +7,18 @@
         {{ news.excerpt }}
       </p>
       <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-        <div
-          v-for="img in news.images"
-          :key="img.id"
+        <g-link
+          v-for="partner in news.partners"
+          :key="partner.id"
+          :to="partner.path"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
-          <g-image class="max-h-12" :src="img" />
-        </div>
+          <g-image
+            v-if="partner.logo"
+            class="max-h-12"
+            :src="require(`!!assets-loader!@images/${partner.logo}`)"
+          />
+        </g-link>
       </div>
     </div>
   </div>

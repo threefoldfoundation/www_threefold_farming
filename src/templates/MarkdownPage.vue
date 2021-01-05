@@ -20,6 +20,12 @@
         :link="$page.markdownPage.link"
       />
 
+      <Features
+        v-if="$page.markdownPage.features3.length > 0"
+        :main="$page.markdownPage.featuresMain3"
+        :features="$page.markdownPage.features3"
+      />
+
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
@@ -49,11 +55,40 @@
         :src="$page.markdownPage.solution_image.src"
       />
 
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution2"
+        :header="$page.markdownPage.headerSolution2"
+      />
+
       <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+
+      <!-- <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      /> -->
+
+      <VerticalNav
+        :slides="$page.markdownPage.slides"
+        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
+      />
+
+      <div v-html="$page.markdownPage.content"></div>
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
+      />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution3"
+        :header="$page.markdownPage.headerSolution3"
+      />
+
       <template>
         <ClientOnly>
           <Comparison
@@ -67,24 +102,6 @@
         </ClientOnly>
       </template>
 
-      <!-- <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      /> -->
-
-      <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides.length > 0"
-      />
-
-      <div v-html="$page.markdownPage.content"></div>
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
-
       <Features
         v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
@@ -95,6 +112,12 @@
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
       /> -->
+
+      <NewCard
+        v-for="card in $page.markdownPage.cards2"
+        :key="card.id"
+        :card="card"
+      />
 
       <template>
         <ClientOnly>
@@ -154,7 +177,16 @@
           button
           link
           order
-          excerpt
+          excerpt(length: 2000)
+        }
+        cards2{
+          id
+          title
+          image
+          button
+          link
+          order
+          excerpt(length: 2000)
         }
        contactData{
          id
@@ -165,7 +197,7 @@
        header{
          title
          subtitle
-         excerpt
+         excerpt(length: 2000)
          btn1
          link1
          btn2
@@ -173,18 +205,26 @@
        }
        headerSolution{
          subtitle
-         excerpt
+         excerpt(length: 2000)
+       }
+        headerSolution2{
+         subtitle
+         excerpt(length: 2000)
+       }
+        headerSolution3{
+         subtitle
+         excerpt(length: 2000)
        }
        howItWorks{
          id
          title
-         excerpt
+         excerpt(length: 2000)
        }
        brandPanel{
          id
          title
          subtitle
-         excerpt
+         excerpt(length: 2000)
          sourceUrl
          btnTxt
          image
@@ -193,7 +233,7 @@
          id
          subtitle
          title
-         excerpt
+         excerpt(length: 2000)
          sourceUrl
          btnTxt
          image
@@ -213,14 +253,21 @@
           title 
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
         }
         featuresMain2{
           id
           title
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
+        }
+        featuresMain3{
+          id
+          title
+          btn 
+          link
+          excerpt(length: 2000)
         }
         logos{
           id
@@ -230,18 +277,24 @@
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
         }
         features2{
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
+        }
+        features3{
+          id
+          title 
+          svg
+          excerpt(length: 2000)
         }
         cta{
           id
           title
-          excerpt
+          excerpt(length: 2000)
           button
           link
         }
@@ -264,7 +317,7 @@
           id
           svg
           title
-          excerpt
+          excerpt(length: 2000)
         }
     }
   }
