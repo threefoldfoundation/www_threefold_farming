@@ -1,7 +1,7 @@
 ---
 id: token_feature2
-svg: ./Multi Gateway.png
-title: Versatility
+svg: ./secure.png
+title: Incredibly Secure
 ---
 
-Multi-functional paper for various office needs. Snow-white sheets will shine bright like diamond for many years.
+Internet money may be new but it's secured by proven [cryptograhy](). This protects your wallet, your TFT, and your transactions.

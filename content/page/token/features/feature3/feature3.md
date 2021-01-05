@@ -1,7 +1,7 @@
 ---
 id: token_feature3
-svg: ./peer_to_peer.png
-title: Value-based price
+svg: ./peer-to-peer.png
+title: Peer-to-Peer Economy
 ---
 
-The best combination of quality and economy comes with our paper. The offer includes wides ranges of density.
+You can send your TFT directly to your contacts, without any intermediaties such as banks. It's like handing cash over in-person, but you can do it securely with anyone, anywhere, anytime.
