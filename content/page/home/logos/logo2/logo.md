@@ -1,5 +1,5 @@
 ---
 id: logo2
 image: ./kleos.png
-url: /test
+url: https://kleos.net/
 ---

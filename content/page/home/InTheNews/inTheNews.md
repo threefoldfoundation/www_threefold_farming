@@ -3,13 +3,13 @@ id: in_the_news
 # Add logos in src/assets/images/
 partners:
   - path: /test
-    logo: https://tailwindui.com/img/logos/v1/transistor-logo.svg
+    logo: apple.png
 
   - path: /test
-    logo: https://tailwindui.com/img/logos/v1/mirage-logo.svg
+    logo: forbers.png
 
   - path: /test
-    logo: https://tailwindui.com/img/logos/v1/tuple-logo.svg
+    logo: cryotodaily.png
 
   - path: /test
     logo: https://tailwindui.com/img/logos/v1/laravel-logo.svg
