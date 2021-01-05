@@ -20,6 +20,12 @@
         :link="$page.markdownPage.link"
       />
 
+      <Features
+        v-if="$page.markdownPage.features3.length > 0"
+        :main="$page.markdownPage.featuresMain3"
+        :features="$page.markdownPage.features3"
+      />
+
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
@@ -54,6 +60,7 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+
       <template>
         <ClientOnly>
           <Comparison
@@ -222,6 +229,13 @@
           link
           excerpt
         }
+        featuresMain3{
+          id
+          title
+          btn 
+          link
+          excerpt
+        }
         logos{
           id
           image
@@ -233,6 +247,12 @@
           excerpt
         }
         features2{
+          id
+          title 
+          svg
+          excerpt
+        }
+        features3{
           id
           title 
           svg

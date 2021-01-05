@@ -4,4 +4,4 @@ svg: ./spend.png
 title: Spend TFT
 ---
 
-Deploy your workloads & applications on the ThreeFold Grid with your virtual data center and marketplace.
+Deploy your workloads and apps with your own VDC and marketplace.

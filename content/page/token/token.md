@@ -6,11 +6,10 @@ header_altImg: token_header
 header_excerpt: The currency of the peer-to-peer internet, the ThreeFold Grid. Current value of TFT on ThreeFold Grid = $0.10
 button: Get TFT
 link: /token
-featuresMain: token_features
-features: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
-header: token_header
+featuresMain3: token_features
+features3: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
+headerSolution: headerToken
 solution_image: ./token_img.png
-headerSolution : headerToken
 cards: [token_card1]
 comparisonMain: token_comparison
 comparisonSecs:
