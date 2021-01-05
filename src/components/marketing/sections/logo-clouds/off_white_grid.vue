@@ -10,7 +10,7 @@
         <g-link
           v-for="partner in news.partners"
           :key="partner.id"
-          target="_blank"
+          :to="partner.path"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
           <g-image
