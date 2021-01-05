@@ -1,7 +1,24 @@
 ---
 id: token
+header_title: What is ThreeFold Token (TFT)? 
+header_image: ./token_header.png
+header_altImg: token_header
+header_excerpt: The currency of the peer-to-peer internet, the ThreeFold Grid. Current value of TFT on ThreeFold Grid = $0.10
+button: Get TFT
+link: /token
+featuresMain: token_features
+features: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
 header: token_header
-howItWorksMain: token_main
+solution_image: ./token_img.png
+headerSolution : headerToken
+cards: [token_card1]
+comparisonMain: token_comparison
+comparisonSecs:
+  [token_comparison1, token_comparison2, token_comparison3]
+cta: home_token
+---
+
+<!-- howItWorksMain: token_main
 howItWorks: [token_sec1, token_sec2, token_sec3]
 slides:
   [
@@ -9,12 +26,5 @@ slides:
     limited_supply,
     povered_by_stellar,
     token_sustainable,
-  ]
-cards: [token_card2]
-signup: signup
----
-
-<!-- header_title: A PURPOSE DRIVEN TOKEN
-header_image: ./header_token.png
-header_altImg: token_header
-header_excerpt: TFT is the only way to rent compute and storage capacity on the ThreeFold Grid - which has the potential to gain significant market share in today's public cloud market. -->
+  ] -->
+<!-- signup: signup -->
