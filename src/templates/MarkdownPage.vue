@@ -75,7 +75,7 @@
 
       <VerticalNav
         :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides.length > 0"
+        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
 
       <div v-html="$page.markdownPage.content"></div>
