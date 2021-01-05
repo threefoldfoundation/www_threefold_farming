@@ -55,24 +55,16 @@
         :src="$page.markdownPage.solution_image.src"
       />
 
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution2"
+        :header="$page.markdownPage.headerSolution2"
+      />
+
       <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
-
-      <template>
-        <ClientOnly>
-          <Comparison
-            v-if="
-              $page.markdownPage.comparisonSecs &&
-              $page.markdownPage.comparisonSecs.length > 0
-            "
-            :main="$page.markdownPage.comparisonMain"
-            :sections="$page.markdownPage.comparisonSecs"
-          />
-        </ClientOnly>
-      </template>
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -91,6 +83,24 @@
         :key="card.id"
         :card="card"
       />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution3"
+        :header="$page.markdownPage.headerSolution3"
+      />
+
+      <template>
+        <ClientOnly>
+          <Comparison
+            v-if="
+              $page.markdownPage.comparisonSecs &&
+              $page.markdownPage.comparisonSecs.length > 0
+            "
+            :main="$page.markdownPage.comparisonMain"
+            :sections="$page.markdownPage.comparisonSecs"
+          />
+        </ClientOnly>
+      </template>
 
       <Features
         v-if="$page.markdownPage.features2.length > 0"
@@ -102,6 +112,12 @@
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
       /> -->
+
+      <NewCard
+        v-for="card in $page.markdownPage.cards2"
+        :key="card.id"
+        :card="card"
+      />
 
       <template>
         <ClientOnly>
@@ -163,6 +179,15 @@
           order
           excerpt
         }
+        cards2{
+          id
+          title
+          image
+          button
+          link
+          order
+          excerpt
+        }
        contactData{
          id
          title
@@ -179,6 +204,14 @@
          link2
        }
        headerSolution{
+         subtitle
+         excerpt
+       }
+        headerSolution2{
+         subtitle
+         excerpt
+       }
+        headerSolution3{
          subtitle
          excerpt
        }
