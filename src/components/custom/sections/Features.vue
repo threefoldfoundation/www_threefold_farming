@@ -23,9 +23,8 @@
         </p>
       </div>
     </div>
-    <div class="text-center">
+    <div class="text-center" v-if="main.btn">
       <g-link
-        v-if="main.btn"
         class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         :to="main.link"
         >{{ main.btn }}</g-link
