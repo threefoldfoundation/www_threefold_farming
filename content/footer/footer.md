@@ -13,41 +13,39 @@ items:
  - title: LEARN
    links:
     - name: 3Node
-      link: '#'
+      link: '/participate'
     - name: Tech
-      link: '#'
+      link: '/solution'
     - name: Token
-      link: '#'
+      link: '/token'
     - name: Blog
-      link: '#'
-    - name: Knowledgebase
-      link: '#'
-    - name: Community
-      link: '#'
+      link: '/blog'
+    - name: KnowledgeBase
+      link: 'https://wiki.threefold.io/#/'
  - title: ABOUT
    links:
     - name: Newsroom
-      link: '#'
+      link: '/news'
     - name: Team
-      link: '#'
+      link: '/team'
     - name: Partners
-      link: '#'
+      link: '/partners'
     - name: Company
-      link: '#'
+      link: 'https://wiki.threefold.io/#/threefold_foundation?id=threefold-foundation'
  - title: SUPPORT
    links:
     - name: FAQ
-      link: '#'
+      link: 'https://forum.threefold.io/'
     - name: Community
-      link: '#'
+      link: 'https://t.me/threefoldnews'
     - name: Contact
-      link: '#'
+      link: '/contact'
  - title: LEGAL
    links:
     - name: Terms&Conditions
-      link: '#'
+      link: 'https://wiki.threefold.io/#/terms_conditions_websites'
     - name: PrivacyPolicy
-      link: '#'
+      link: 'https://wiki.threefold.io/#/privacypolicy'
     - name: Impressum
       link: '#'
 ---
