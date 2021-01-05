@@ -2,7 +2,7 @@
 id: participate_brandPanel
 title:
 subtitle: Currently 3Nodes are SOLD OUT
-sourceUrl: /participate
+sourceUrl: https://pre-register.threefold.io/
 btnTxt: Reserve 3Node
 image: participate_cta.png # Please add images in src/assets/brandPanel/\
 ---
