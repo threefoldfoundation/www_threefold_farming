@@ -10,10 +10,13 @@ featuresMain3: token_features
 features3: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
 headerSolution: headerToken
 solution_image: ./token_img.png
+headerSolution2: headerToken2
 cards: [token_card1]
+headerSolution3: headerToken3
 comparisonMain: token_comparison
 comparisonSecs:
   [token_comparison1, token_comparison2, token_comparison3]
+cards2: [token2_card1]
 cta: home_token
 ---
 
