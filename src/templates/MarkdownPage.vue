@@ -172,7 +172,7 @@
        header{
          title
          subtitle
-         excerpt
+         excerpt(length: 2000)
          btn1
          link1
          btn2
@@ -180,7 +180,7 @@
        }
        headerSolution{
          subtitle
-         excerpt
+         excerpt(length: 2000)
        }
        howItWorks{
          id
