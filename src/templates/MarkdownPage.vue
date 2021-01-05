@@ -177,7 +177,7 @@
           button
           link
           order
-          excerpt
+          excerpt(length: 2000)
         }
         cards2{
           id
@@ -186,7 +186,7 @@
           button
           link
           order
-          excerpt
+          excerpt(length: 2000)
         }
        contactData{
          id
@@ -209,22 +209,22 @@
        }
         headerSolution2{
          subtitle
-         excerpt
+         excerpt(length: 2000)
        }
         headerSolution3{
          subtitle
-         excerpt
+         excerpt(length: 2000)
        }
        howItWorks{
          id
          title
-         excerpt
+         excerpt(length: 2000)
        }
        brandPanel{
          id
          title
          subtitle
-         excerpt
+         excerpt(length: 2000)
          sourceUrl
          btnTxt
          image
@@ -233,7 +233,7 @@
          id
          subtitle
          title
-         excerpt
+         excerpt(length: 2000)
          sourceUrl
          btnTxt
          image
@@ -253,21 +253,21 @@
           title 
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
         }
         featuresMain2{
           id
           title
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
         }
         featuresMain3{
           id
           title
           btn 
           link
-          excerpt
+          excerpt(length: 2000)
         }
         logos{
           id
@@ -277,24 +277,24 @@
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
         }
         features2{
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
         }
         features3{
           id
           title 
           svg
-          excerpt
+          excerpt(length: 2000)
         }
         cta{
           id
           title
-          excerpt
+          excerpt(length: 2000)
           button
           link
         }
@@ -317,7 +317,7 @@
           id
           svg
           title
-          excerpt
+          excerpt(length: 2000)
         }
     }
   }
