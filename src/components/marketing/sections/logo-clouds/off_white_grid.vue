@@ -13,7 +13,11 @@
           target="_blank"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
-          <img class="max-h-12" :src="image(partner.logo)" />
+          <g-image
+            v-if="partner.logo"
+            class="max-h-12"
+            :src="require(`!!assets-loader!@images/${partner.logo}`)"
+          />
         </g-link>
       </div>
     </div>
@@ -23,17 +27,5 @@
 <script>
 export default {
   props: ["news"],
-  methods: {
-    image(img) {
-      if (img) {
-        return img;
-      }
-      if (img.src) {
-        return img.src;
-      } else {
-        return require(`!!assets-loader!@images/${img}`);
-      }
-    },
-  },
 };
 </script>
