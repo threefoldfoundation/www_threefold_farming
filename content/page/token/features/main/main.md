@@ -1,8 +1,6 @@
 ---
-id: token_features
-title: Features
-btn: 
-link: 
+id: token_Feature_main
+title: HOLD AND EARN
+btn: Learn More
+link: /solution # link to wiki
 ---
-
-TFT is a cryptocurrency. It is a scarce digital currency that you can use on the Internet - similar to Bitcoin, but actually very different. If you're new to crypto, here are some key characteristics of TFT.

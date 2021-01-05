@@ -1,7 +1,7 @@
 ---
 id: token_feature1
-svg: ./truly_yours.png
-title: Truly Yours
+svg: ./Full_Privacy.png
+title: High durability
 ---
 
-TFT lets you be your own bank. You can control your own funds with your wallets as proof of ownership - no third parties needed.
+Forget about paper jams with our increased stability product. Ideal for high-quality printing and photocopying.
