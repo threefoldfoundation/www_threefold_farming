@@ -1,5 +1,5 @@
 ---
 id: logo1
 image: ./hpe.png
-url: https://google.com
+url: https://www.hpe.com/us/en/home.html
 ---

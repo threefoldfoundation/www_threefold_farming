@@ -3,13 +3,13 @@ id: in_the_news
 # Add logos in src/assets/images/
 partners:
   - path: /test
-    logo: limited_supply.png
+    logo: apple.png
 
   - path: /test
-    logo: ""
+    logo: forbers.png
 
   - path: /test
-    logo: ""
+    logo: cryotodaily.png
 
   - path: /test
     logo: ""
