@@ -30,9 +30,6 @@ export default {
       return image;
     },
   },
-  mounted() {
-    console.log(this.logos);
-  },
 };
 </script>
 

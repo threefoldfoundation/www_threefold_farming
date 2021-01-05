@@ -13,7 +13,7 @@
           target="_blank"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
-          <img class="max-h-12" :src="image(partner.img)" />
+          <img class="max-h-12" :src="image(partner.logo)" />
         </g-link>
       </div>
     </div>
