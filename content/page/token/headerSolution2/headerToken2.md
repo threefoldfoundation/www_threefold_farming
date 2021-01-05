@@ -5,7 +5,7 @@ subtitle: TFT fuels the Peer-to-Peer Internet
 
 It is the official medium of exchange for capacity on the ThreeFold Grid.
 
-Farmers, the equivalent of miners on the Threefold Grid, get rewarded in TFT according to the amount of capacity (CPU, RAM, SDD/HDD) they connect to the network every month, we call this proof-of-capacity.
+Farmers, the equivalent of miners on the Threefold Grid, get rewarded in TFT according to the amount of capacity (CPU, RAM, SDD/HDD) they connect to the network every month, we call this proof-of-capacity. 
 
 Users, developers, and enterprises use TFT to reserve the capacity they need to create, use and share their workloads and applications on the network.
 

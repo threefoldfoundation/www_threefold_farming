@@ -71,10 +71,10 @@
 
     <!-- <Getintouch :contacts="contacts"/> -->
 
-    <!-- <InTheNews
+    <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
-    /> -->
+    />
   </Layout>
 </template>
 
