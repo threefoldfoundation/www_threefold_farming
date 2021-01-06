@@ -7,7 +7,7 @@ header_excerpt: ThreeFold's edge computing solution allows seamless and direct d
 button: Learn More
 link: https://wiki.threefold.io/#/hercules_components
 headerSolution : headerSolution
-solution_image: ./Participate_Image.png
+solution_image: ./participate_image.png
 cards: [solution_card4, solution_card5, solution_card3]
 ---
 <!-- 
