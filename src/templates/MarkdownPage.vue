@@ -20,12 +20,6 @@
         :link="$page.markdownPage.link"
       />
 
-      <Features
-        v-if="$page.markdownPage.features3.length > 0"
-        :main="$page.markdownPage.featuresMain3"
-        :features="$page.markdownPage.features3"
-      />
-
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
@@ -53,6 +47,12 @@
       <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
+      />
+
+      <Features
+        v-if="$page.markdownPage.features3.length > 0"
+        :main="$page.markdownPage.featuresMain3"
+        :features="$page.markdownPage.features3"
       />
 
       <SolutionsHeader
