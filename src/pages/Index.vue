@@ -46,6 +46,11 @@
       :logos="$page.markdownPage.logos"
     />
 
+    <InTheNews
+      v-if="$page.markdownPage.inTheNews"
+      :news="$page.markdownPage.inTheNews"
+    />
+
     <template>
       <ClientOnly>
         <SignUp
@@ -70,11 +75,6 @@
     />
 
     <!-- <Getintouch :contacts="contacts"/> -->
-
-    <InTheNews
-      v-if="$page.markdownPage.inTheNews"
-      :news="$page.markdownPage.inTheNews"
-    />
   </Layout>
 </template>
 
