@@ -5,6 +5,21 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+      
+      <g-image
+        v-if="$page.markdownPage.solution_image2"
+        :src="$page.markdownPage.solution_image2.src"
+      />
+
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution4"
+        :header="$page.markdownPage.headerSolution4"
+      />
+      
+      <g-image
+        v-if="$page.markdownPage.solution_image3"
+        :src="$page.markdownPage.solution_image3.src"
+      />
 
       <Header
         v-if="
@@ -128,6 +143,11 @@
         </ClientOnly>
       </template>
 
+      <g-image
+        v-if="$page.markdownPage.solution_image4"
+        :src="$page.markdownPage.solution_image4.src"
+      />
+
       <template>
         <ClientOnly>
           <SignUp
@@ -163,6 +183,9 @@
         button
         link
         solution_image
+        solution_image2
+        solution_image3
+        solution_image4
         slides{
           id
           title
@@ -208,10 +231,16 @@
          excerpt(length: 2000)
        }
         headerSolution2{
-         subtitle
-         excerpt(length: 2000)
+        subtitle
+        excerpt(length: 2000)
        }
         headerSolution3{
+         subtitle
+         excerpt(length: 2000)
+         btn1
+         link1
+       }
+        headerSolution4{
          subtitle
          excerpt(length: 2000)
        }

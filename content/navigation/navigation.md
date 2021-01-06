@@ -20,7 +20,7 @@ navLinks:
       - title: Token
         path: /token
 
-      - title: Knowledge
+      - title: Knowledge Base
         path: https://wiki.threefold.io/#/what_is_farming
         external: true
 

@@ -1,11 +1,11 @@
 ---
 id: solution_header
 title: 
-subtitle: Powering the next-gen Internet
+subtitle: The ThreeFold Grid
 btn1: 
 link1: 
 btn2: 
 link2: 
 ---
 
-Introducing 3Node – it powers the ThreeFold Grid with a unique and lightweight OS that allows you to connect decentralized capacity to the global Internet.
+Bringing a smart, secure and efficent network solution that allows anyone (farmers) to connect capacity and participate in the internet economy. An upgrade from today’s centralized data center model.

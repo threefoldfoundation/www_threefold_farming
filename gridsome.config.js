@@ -165,6 +165,13 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'SolutionsHeader',
+                path: './content/page/**/headerSolution4/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'InTheNews',
                 path: './content/page/**/InTheNews/*.md',
             }
@@ -201,6 +208,7 @@ module.exports = {
                     headerSolution: 'SolutionsHeader',
                     headerSolution2: 'SolutionsHeader',
                     headerSolution3: 'SolutionsHeader',
+                    headerSolution4: 'SolutionsHeader',
                     inTheNews: 'InTheNews'
                 }
             }

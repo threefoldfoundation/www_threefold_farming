@@ -5,5 +5,5 @@ image: ./solution_card_4.png
 button: Learn More
 link: https://wiki.threefold.io/#/grid_tech_opensource?id=zero-os
 order: 2
-excerpt: Autonomous IT means self-driving and self-healing. A major efficiency gain comes from removing the human requirement for deploying and operating IT infrastructure and services. Instead, a Smart Contract for IT autonomously handles all the required actions on the ThreeFold Grid. Zero people means no opportunities for human error or malicious intent.
+excerpt: Zero-OS has been designed from the bottom up, started from scratch from a Linux kernel. It is a stateless and scalable operating system with a lightweight architecture that makes it cost and energy-efficient. Zero-OS eliminates multiple layers of complexity, enabling the delivery compute and storage everywhere, much closer to the source of the hardware.
 ---

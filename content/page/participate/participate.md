@@ -1,9 +1,9 @@
 ---
 id: participate
 header_title: Plug & Earn
-header_image: ./Participate_Image.png
+header_image: ./3_nodes.png
 header_altImg: participate_header
-header_excerpt: Plug & Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
+header_excerpt: 800 USD | Plug & Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
 button: Reserve Now
 link: https://pre-register.threefold.io/
 howItWorksMain: participate_main

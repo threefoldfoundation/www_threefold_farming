@@ -8,4 +8,4 @@ btn2:
 link2:
 ---
 
-The Internet is run by large corporations. This centralized approach is highly inefficent, extremely costly and unsustainable. Our data isn't owned by us, and it isn't safe.
+The Internet is controlled by large corporations. This centralized approach is highly inefficient, extremely costly, and unsustainable. Our data isn't owned by us, and it isn't safe.
