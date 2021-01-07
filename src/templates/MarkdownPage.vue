@@ -241,8 +241,10 @@
          link1
        }
         headerSolution4{
-         subtitle
-         excerpt(length: 2000)
+        subtitle
+        excerpt(length: 2000)
+        btn1
+        link1
        }
        howItWorks{
          id
