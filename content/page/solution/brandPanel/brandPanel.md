@@ -2,7 +2,7 @@
 id: solution_brandPanel
 title: Plug & Earn
 subtitle: Farmers earn in TFTs
-sourceUrl: https://pre-register.threefold.io/
+sourceUrl: /token
 btnTxt: Know More
 image: solution_plugearn.png # Please add images in src/assets/brandPanel/\
 ---
