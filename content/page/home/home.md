@@ -2,7 +2,7 @@
 id: home
 header_title: Be the Internet
 header_image: ./farming_header.png
-header_excerpt: This is the era of decentralization. Join the movement by connected a node to the most advanced peer-to-peer grid on the planet.
+header_excerpt: This is the era of decentralization. Join the movement by connecting the 3Node to the most advanced peer-to-peer grid on the planet.
 button:
 link:
 header: home_header
