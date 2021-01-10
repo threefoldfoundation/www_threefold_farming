@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div class="max-w-screen-xl mx-auto py-16">
       <div
-        class="bg-gray-800 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4"
+        class="brandpanel rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4"
       >
         <div
           class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
@@ -28,7 +28,7 @@
         </div>
         <div class="relative pb-3/5 -mt-6 md:pb-1/2">
           <g-image
-            class="absolute inset-0 w-full h-full transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+            class="absolute brandpanel inset-0 w-full h-full transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
             :src="image"
             :alt="brand.title"
           />
