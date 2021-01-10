@@ -21,7 +21,7 @@
             </p>
             <g-link
               :to="brand.sourceUrl"
-              class="mt-8 bg-white border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 hover:bg-gray-50 transition duration-150 ease-in-out"
+              class="mt-8 bg-white border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base leading-6 font-medium text-gray-900 hover:text-indigo-500 hover:bg-gray-50 transition duration-150 ease-in-out"
               >{{ brand.btnTxt }}</g-link
             >
           </div>
