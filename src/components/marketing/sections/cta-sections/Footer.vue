@@ -161,7 +161,7 @@
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
         <p class="text-base leading-6 text-gray-400 xl:text-center">
-          &#xA9; 2021 Workflow, Inc. All rights reserved.
+          &#xA9; 2021 ThreeFold, All rights reserved.
         </p>
       </div>
     </div>
