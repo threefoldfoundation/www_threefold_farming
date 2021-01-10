@@ -9,7 +9,7 @@
         >
           <div class="lg:self-center">
             <h2
-              class="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10"
+              class="text-3xl leading-9 font-extrabold text-white sm:text-3xl sm:leading-10"
             >
               <span class="block">{{ brand.title }}</span>
               <span class="block" v-if="brand.subtitle">{{

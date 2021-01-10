@@ -1,7 +1,7 @@
 <template>
   <section class="pt-8 px-4 text-center">
     <div class="max-w-2xl mx-auto mb-8">
-      <h2 class="text-4xl leading-tight mb-6 font-semibold font-heading">
+      <h2 class="text-3xl leading-tight mb-6 font-semibold font-heading">
         Meet some of our partners
       </h2>
       <p class="text-gray-400 leading-relaxed"></p>
