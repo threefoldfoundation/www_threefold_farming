@@ -1,10 +1,10 @@
 <template>
   <section class="py-12 px-4 text-center">
     <div class="w-full max-w-2xl mx-auto">
-      <h2 class="text-3xl leading-tight font-semibold font-heading">
+      <h2 class="text-4xl leading-tight font-semibold font-heading">
         {{ cta.title }}
       </h2>
-      <p class="mt-6 mb-8 text-gray-600 leading-relaxed">
+      <p class="mt-6 mb-8 text-gray-600 text-break">
         {{ cta.excerpt }}
       </p>
       <g-link
@@ -22,3 +22,10 @@ export default {
   props: ["cta"],
 };
 </script>
+
+<style scoped>
+.text-break{
+line-height: 2.9;
+}
+
+</style>

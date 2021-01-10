@@ -2,10 +2,10 @@
   <section class="py-12 px-4 text-center">
     <div class="w-full max-w-2xl mx-auto">
       <span class="text-sm font-semibold">{{ header.title }}</span>
-      <h2 class="text-3xl mt-2 mb-6 leading-tight font-semibold font-heading">
+      <h2 class="text-4xl mt-2 mb-6 leading-tight font-semibold font-heading">
         {{ header.subtitle }}
       </h2>
-      <p class="mb-8 text-gray-600 leading-relaxed">
+      <p class="mb-8 text-gray-600 text-break">
         {{ header.excerpt }}
       </p>
       <div>
@@ -30,3 +30,9 @@ export default {
   props: ["header"],
 };
 </script>
+<style scoped>
+.text-break{
+line-height: 2.6;
+}
+
+</style>
