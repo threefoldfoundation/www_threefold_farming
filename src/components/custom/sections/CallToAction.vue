@@ -4,7 +4,7 @@
       <h2 class="text-4xl leading-tight font-semibold font-heading">
         {{ cta.title }}
       </h2>
-      <p class="mt-6 mb-8 text-gray-600 text-break">
+      <p class="mt-6 mb-8 text-gray-700 text-break">
         {{ cta.excerpt }}
       </p>
       <g-link

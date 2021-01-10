@@ -16,7 +16,7 @@
                 brand.subtitle
               }}</span>
             </h2>
-            <p class="mt-4 text-lg leading-6 text-indigo-200">
+            <p class="mt-4 text-lg leading-6 text-white">
               {{ brand.excerpt }}
             </p>
             <g-link

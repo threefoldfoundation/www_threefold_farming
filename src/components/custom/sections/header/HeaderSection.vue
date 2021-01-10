@@ -5,7 +5,7 @@
       <h2 class="text-4xl mt-2 mb-6 leading-tight font-semibold font-heading">
         {{ header.subtitle }}
       </h2>
-      <p class="mb-8 text-gray-600 text-break">
+      <p class="mb-8 text-gray-700 text-break">
         {{ header.excerpt }}
       </p>
       <div>
