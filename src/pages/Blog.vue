@@ -115,7 +115,7 @@ export default {
   },
 
   metaInfo: {
-    title: "Newsroom",
+    title: "Blogs",
   },
   components: {
     PostListItem,
