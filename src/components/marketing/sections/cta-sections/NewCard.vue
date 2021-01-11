@@ -12,6 +12,14 @@
           <p class="mt-4 text-gray-700">{{ card.excerpt }}</p>
           <div class="mt-8" v-if="card.button">
             <a
+              v-if="card.link.includes('http')"
+              target="_blank"
+              :href="card.link"
+              class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
+              >{{ card.button }}</a
+            >
+            <a
+              v-else
               :href="card.link"
               class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
               >{{ card.button }}</a
