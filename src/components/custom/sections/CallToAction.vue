@@ -4,7 +4,7 @@
       <h2 class="text-4xl leading-tight font-semibold font-heading">
         {{ cta.title }}
       </h2>
-      <p class="mt-6 mb-8 text-gray-700 text-break">
+      <p class="mt-6 mb-8 text-gray-700 leading-relaxed">
         {{ cta.excerpt }}
       </p>
       <g-link
@@ -22,10 +22,3 @@ export default {
   props: ["cta"],
 };
 </script>
-
-<style scoped>
-.text-break{
-line-height: 2.9;
-}
-
-</style>

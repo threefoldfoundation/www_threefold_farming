@@ -5,7 +5,7 @@
       <h2 class="text-4xl mt-2 mb-6 leading-tight font-semibold font-heading">
         {{ header.subtitle }}
       </h2>
-      <p class="mb-8 text-gray-700 text-break">
+      <p class="mb-8 text-gray-700 leading-relaxed">
         {{ header.excerpt }}
       </p>
       <div>
@@ -30,9 +30,3 @@ export default {
   props: ["header"],
 };
 </script>
-<style scoped>
-.text-break{
-line-height: 2.6;
-}
-
-</style>
