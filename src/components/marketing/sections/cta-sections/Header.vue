@@ -2,12 +2,21 @@
   <section class="py-12 px-4">
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
       <div class="lg:w-1/2 px-2 lg:pr-10 mt-10 lg:mt-0 order-1 lg:order-none">
-        <h2 class="text-4xl mb-6 leading-tight font-semibold font-heading">
+        <h2 class="text-8xl mb-6 leading-tight font-semibold font-heading">
           {{ title }}
         </h2>
         <p class="mb-8 text-gray-700 leading-relaxed">{{ excerpt }}</p>
         <div v-if="button">
           <a
+            v-if="link.includes('http')"
+            target="_blank"
+            class="inline-block py-4 px-8 mr-6 leading-none text-white bg-gray-900 hover:bg-gray-700 font-semibold rounded shadow"
+            :href="link"
+            >{{ button }}</a
+          >
+
+          <a
+            v-else
             class="inline-block py-4 px-8 mr-6 leading-none text-white bg-gray-900 hover:bg-gray-700 font-semibold rounded shadow"
             :href="link"
             >{{ button }}</a
@@ -32,3 +41,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+</style>

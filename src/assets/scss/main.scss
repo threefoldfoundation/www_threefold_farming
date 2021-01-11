@@ -51,6 +51,14 @@ ul {
     }
 }
 
+.footerlink{
+    margin-left: 0rem !important;
+    };
+
+.brandpanel{
+    background-color: #1072ba ;
+}    
+
 .animated-link:after {
     content: "";
     width: 0px;
@@ -254,9 +262,12 @@ button:focus {
 
 body[data-theme="dark"] {
     background-color: #191b1f;
-    @apply text-gray-300;
+    @apply text-white;
     .post-content-text {
-        @apply text-gray-300;
+        @apply text-white;
+    }
+    .brandpanel{
+        background-color: #1072ba !important;
     }
     .text-gray-700,
     .text-gray-900 {
@@ -284,7 +295,7 @@ body[data-theme="dark"] {
         background-color: #191b1f;
     }
     .post-card-excerpt {
-        @apply text-gray-500;
+        @apply text-white;
     }
     .pagination li {
         @apply bg-gray-700;
