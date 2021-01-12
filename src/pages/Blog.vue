@@ -37,7 +37,7 @@
 <page-query>
 
 query{
-  entries: allBlog(sortBy: "created", order: DESC) {
+  entries: allBlog(sortBy: "created", order: DESC, filter: {tags: { id: {in: ["farming"]}}}) {
     totalCount
     pageInfo {
       totalPages
@@ -84,7 +84,7 @@ import NewsFilterHeader from "~/components/custom/NewsFilterHeader.vue";
 export default {
   data() {
     const allMonths = [
-      "All",
+      "All Months",
       "January",
       "February",
       "March",
@@ -99,14 +99,14 @@ export default {
       "December",
     ];
     const currYear = new Date().getFullYear();
-    var years = ["All"]
+    var years = ["All Years"]
     var r  = this.range(2019, currYear)
     r.forEach((year) => years.push(String(year)));
 
   return {
-      selectedTopic: "All",
-      selectedYear: "All",
-      selectedMonth: "All",
+      selectedTopic: "All Topics",
+      selectedYear: "All Years",
+      selectedMonth: "All Months",
       months: allMonths,
       years: years,
       listArchive: false,
@@ -133,9 +133,9 @@ export default {
       this.selectedMonth = month;
     },
     resetAll() {
-      this.selectedTopic = "All";
-      this.selectedYear = "All";
-      this.selectedMonth = "All";
+      this.selectedTopic = "All Topics";
+      this.selectedYear = "All Years";
+      this.selectedMonth = "All Months";
     },
     range(start, end, step) {
         var range = [];
@@ -190,7 +190,7 @@ export default {
   computed: {
 
     topics: function () {
-      var res = ["All"];
+      var res = ["All Topics"];
       this.$page.topics.edges.forEach((edge) => res.push(edge.node.title));
       return res;
     },    
@@ -212,19 +212,19 @@ export default {
         var node = old.edges[i].node;
         
         // Now check topic
-        var topics = ["All"];
+        var topics = ["All Topics"];
         node.tags.forEach((tag) => topics.push(tag.title));
         
         var nodeDate = new Date(node.datetime);
         if (!topics.includes(this.selectedTopic)) continue;
 
         // Check year
-        var years = ["All", String(nodeDate.getFullYear())];
+        var years = ["All Years", String(nodeDate.getFullYear())];
       
         if (!years.includes(this.selectedYear)) continue;
 
 // Check Month
-        var months = ["All", this.months[nodeDate.getMonth() + 1]];
+        var months = ["All Months", this.months[nodeDate.getMonth() + 1]];
         if (!months.includes(this.selectedMonth)) continue;
         res.edges.push({ node: node, id: node.id });
       }
