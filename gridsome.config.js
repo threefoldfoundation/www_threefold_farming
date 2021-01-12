@@ -261,7 +261,13 @@ module.exports = {
                     tags: {
                         typeName: 'BlogTag',
                         create: true
+                    },
+
+                    category: {
+                        typeName: 'BlogCategory',
+                        create: true
                     }
+
                 }
             }
         },
@@ -275,6 +281,11 @@ module.exports = {
                     authors: 'Person',
                     tags: {
                         typeName: 'NewsTag',
+                        create: true
+                    },
+
+                    category: {
+                        typeName: 'NewsCategory',
                         create: true
                     }
                 }

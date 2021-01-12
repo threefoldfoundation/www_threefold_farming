@@ -40,7 +40,7 @@
 
 <page-query>
 query{
-  entries: allNews(sortBy: "created", order: DESC, filter: {tags: { id: {in: ["farming"]}}}) {
+  entries: allNews(sortBy: "created", order: DESC, filter: {category: { id: {in: ["farming"]}}}) {
     totalCount
     pageInfo {
       totalPages
@@ -55,6 +55,10 @@ query{
           path
         }
         excerpt
+        category{
+          id
+          title
+        }
         image(width:800)
         path
         humanTime : created(format:"DD MMM YYYY")
