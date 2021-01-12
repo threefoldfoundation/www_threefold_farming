@@ -1,15 +1,15 @@
 ---
 id: token
-header_title: What is ThreeFold Token (TFT)? 
+header_title: What is ThreeFold Token? 
 header_image: ./token_header.png
 header_altImg: token_header
 header_excerpt: The currency of the peer-to-peer internet, the ThreeFold Grid. Current value of TFT on ThreeFold Grid = $0.10
 button: Get TFT
 link: https://app.liquid.com/quick-exchange/
-headerSolution: headerToken
-solution_image: ./token_img.png
 featuresMain3: token_features
 features3: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
+headerSolution: headerToken
+solution_image: ./token_img.png
 headerSolution2: headerToken2
 cards: [token_card1]
 headerSolution3: headerToken3

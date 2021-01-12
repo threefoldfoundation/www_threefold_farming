@@ -11,7 +11,6 @@ button: Learn More
 link: https://wiki.threefold.io/#/hercules_components
 headerSolution2: headerSolution2
 cards: [solution_card4, solution_card5]
-headerSolution3: headerSolution3
 solution_image4: ./participate_image.png
 cta: solution_cta
 brandPanel: solution_brandPanel
@@ -42,3 +41,4 @@ header_excerpt: Our open-source lightweight OS and autonomous technology powers 
 <!--   cta: solution_cta -->
 
 <!-- solution_image: ./grid_live.png -->
+<!-- headerSolution3: headerSolution3 -->
