@@ -371,7 +371,7 @@ import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
-import marked from 'marked';
+
 
 export default {
   components: {
