@@ -221,9 +221,9 @@ export default {
         const diffDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
         var selected = false;
 
-        if (!this.listArchive && diffDays <= 30) {
+        if (!this.listArchive && diffDays <= 180) {
           selected = true;
-        } else if (this.listArchive && diffDays > 30) {
+        } else if (this.listArchive && diffDays > 180) {
           selected = true;
         }
 
