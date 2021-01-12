@@ -7,7 +7,7 @@ button:
 link:
 header: home_header
 headerSolution : headerHome
-solution_image_2: ./data_graph.png
+solution_image_2: ./Data_Graph.png
 featuresMain: Feature_home
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
 cards: [home_card]
