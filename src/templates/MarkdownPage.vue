@@ -326,6 +326,7 @@
         cta{
           id
           title
+          content
           excerpt(length: 2000)
           button
           link

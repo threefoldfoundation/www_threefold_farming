@@ -4,8 +4,8 @@
       <h2 class="text-4xl leading-tight font-semibold font-heading">
         {{ cta.title }}
       </h2>
-      <p class="mt-6 mb-8 text-gray-700 leading-relaxed">
-        {{ cta.excerpt }}
+      <p v-html="cta.content" class="mt-6 mb-8 text-gray-700 leading-relaxed">
+        
       </p>
       <g-link
         v-if="cta.button"
