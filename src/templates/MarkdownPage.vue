@@ -233,6 +233,7 @@
         headerSolution2{
         subtitle
         excerpt(length: 2000)
+        content
        }
         headerSolution3{
          subtitle
@@ -325,6 +326,7 @@
         cta{
           id
           title
+          content
           excerpt(length: 2000)
           button
           link
@@ -370,6 +372,7 @@ import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
+
 
 export default {
   components: {
