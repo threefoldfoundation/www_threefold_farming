@@ -189,7 +189,7 @@ module.exports = {
         {
             use: 'gridsome-plugin-matomo',
             options: {
-      	        host: 'http://matomo.freeflowpages',
+      	        host: 'http://matomo.freeflowpages.com',
                 siteId: 1
             }
         }
