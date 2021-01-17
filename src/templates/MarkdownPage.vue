@@ -5,7 +5,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
+
       <g-image
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
@@ -15,7 +15,7 @@
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
-      
+
       <g-image
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
@@ -98,7 +98,7 @@
         :key="card.id"
         :card="card"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"
@@ -225,10 +225,12 @@
          link1
          btn2
          link2
+         content
        }
        headerSolution{
          subtitle
          excerpt(length: 2000)
+         content
        }
         headerSolution2{
         subtitle
@@ -240,12 +242,14 @@
          excerpt(length: 2000)
          btn1
          link1
+         content
        }
         headerSolution4{
         subtitle
         excerpt(length: 2000)
         btn1
         link1
+        content
        }
        howItWorks{
          id
@@ -373,7 +377,6 @@ import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
 
-
 export default {
   components: {
     NewCard,
@@ -393,8 +396,15 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.markdownPage.title,
+      title: this.pageName,
     };
+  },
+  computed: {
+    pageName() {
+      let path = this.$route.path.substring(1);
+      let name = path[0].toUpperCase() + path.slice(1);
+      return name;
+    },
   },
 };
 </script>
