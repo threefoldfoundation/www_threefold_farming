@@ -104,6 +104,7 @@
          title
          subtitle
          excerpt(length: 2000)
+         content
          btn1
          link1
          btn2
@@ -112,6 +113,7 @@
         headerSolution{
          subtitle
          excerpt(length: 2000)
+         content
        }
        featuresMain{
           id
@@ -156,6 +158,7 @@
           id
           title
           excerpt(length: 2000)
+          content
           button
           link
         }
