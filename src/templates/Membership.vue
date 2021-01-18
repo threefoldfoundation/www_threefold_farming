@@ -59,7 +59,7 @@
       }
     }  
 
-    allMembership(filter: {title: {in: ["foundation", "tech"]}}){
+    allMembership(filter: {title: {in: ["foundation", "tech", "cofounder"]}}){
      edges{
       node{
         id
