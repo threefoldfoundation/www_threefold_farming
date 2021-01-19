@@ -121,6 +121,7 @@
           btn 
           link
           excerpt(length: 2000)
+          content
         }
         featuresMain2{
           id
@@ -128,6 +129,7 @@
           btn 
           link
           excerpt(length: 2000)
+          content
         }
         logos{
           id
@@ -139,12 +141,14 @@
           title 
           svg
           excerpt(length: 2000)
+          content
         }
         features2{
           id
           title 
           svg
           excerpt(length: 2000)
+          content
         }
         signup{
           id

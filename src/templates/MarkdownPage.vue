@@ -314,18 +314,21 @@
           title 
           svg
           excerpt(length: 2000)
+          content
         }
         features2{
           id
           title 
           svg
           excerpt(length: 2000)
+          content
         }
         features3{
           id
           title 
           svg
           excerpt(length: 2000)
+          content
         }
         cta{
           id

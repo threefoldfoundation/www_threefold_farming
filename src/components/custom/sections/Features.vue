@@ -18,8 +18,8 @@
         <h3 class="text-xl my-3 font-semibold font-heading">
           {{ feature.title }}
         </h3>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          {{ feature.excerpt }}
+        <p v-html="feature.content" class="text-sm text-gray-700 leading-relaxed">
+          
         </p>
       </div>
     </div>
