@@ -15,6 +15,13 @@ body {
     padding-top: 100px;
 }
 
+// .active--exact {
+//     background-color: transparent;
+// }
+.act-link {
+    @apply bg-gray-300;
+}
+
 pre {
     @apply border-l;
     @apply border-l-2;
@@ -279,7 +286,8 @@ body[data-theme="dark"] {
     .lg\:shadow-lg {
         box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 10px 10px -5px rgba(255, 255, 255, 0.04);
     }
-    .learn-button {
+    .learn-button,
+    a.active--exact.active {
         background-color: #c4c4c4;
         @apply text-gray-900;
         &:hover {
