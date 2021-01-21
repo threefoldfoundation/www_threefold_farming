@@ -98,12 +98,11 @@
           button
           link
           order
-          excerpt(length: 2000)
+          content
         }
         header{
          title
          subtitle
-         excerpt(length: 2000)
          content
          btn1
          link1
@@ -112,7 +111,6 @@
        }
         headerSolution{
          subtitle
-         excerpt(length: 2000)
          content
        }
        featuresMain{
@@ -120,7 +118,6 @@
           title 
           btn 
           link
-          excerpt(length: 2000)
           content
         }
         featuresMain2{
@@ -128,7 +125,6 @@
           title 
           btn 
           link
-          excerpt(length: 2000)
           content
         }
         logos{
@@ -140,14 +136,12 @@
           id
           title 
           svg
-          excerpt(length: 2000)
           content
         }
         features2{
           id
           title 
           svg
-          excerpt(length: 2000)
           content
         }
         signup{
@@ -161,14 +155,13 @@
         cta{
           id
           title
-          excerpt(length: 2000)
           content
           button
           link
         }
         inTheNews {
           id
-          excerpt(length: 2000)
+          content
           partners {
             path
             logo

@@ -23,9 +23,10 @@
         >
           {{ split.title }}
         </h2>
-        <p class="mt-3 text-lg leading-7 text-gray-300">
-          {{ split.excerpt }}
-        </p>
+        <p
+          class="mt-3 text-lg leading-7 text-gray-300"
+          v-html="split.content"
+        ></p>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
             <a
