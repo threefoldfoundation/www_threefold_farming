@@ -200,7 +200,7 @@
           button
           link
           order
-          excerpt(length: 2000)
+          content
         }
         cards2{
           id
@@ -209,7 +209,7 @@
           button
           link
           order
-          excerpt(length: 2000)
+          content
         }
        contactData{
          id
@@ -220,7 +220,6 @@
        header{
          title
          subtitle
-         excerpt(length: 2000)
          btn1
          link1
          btn2
@@ -229,24 +228,20 @@
        }
        headerSolution{
          subtitle
-         excerpt(length: 2000)
          content
        }
         headerSolution2{
         subtitle
-        excerpt(length: 2000)
         content
        }
         headerSolution3{
          subtitle
-         excerpt(length: 2000)
          btn1
          link1
          content
        }
         headerSolution4{
         subtitle
-        excerpt(length: 2000)
         btn1
         link1
         content
@@ -254,13 +249,13 @@
        howItWorks{
          id
          title
-         excerpt(length: 2000)
+         content
        }
        brandPanel{
          id
          title
          subtitle
-         excerpt(length: 2000)
+         content
          sourceUrl
          btnTxt
          image
@@ -269,7 +264,7 @@
          id
          subtitle
          title
-         excerpt(length: 2000)
+         content
          sourceUrl
          btnTxt
          image
@@ -289,21 +284,21 @@
           title 
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         featuresMain2{
           id
           title
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         featuresMain3{
           id
           title
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         logos{
           id
@@ -313,28 +308,24 @@
           id
           title 
           svg
-          excerpt(length: 2000)
           content
         }
         features2{
           id
           title 
           svg
-          excerpt(length: 2000)
           content
         }
         features3{
           id
           title 
           svg
-          excerpt(length: 2000)
           content
         }
         cta{
           id
           title
           content
-          excerpt(length: 2000)
           button
           link
         }
@@ -357,7 +348,7 @@
           id
           svg
           title
-          excerpt(length: 2000)
+          content
         }
     }
   }

@@ -5,5 +5,4 @@ image: ./card3.jpeg
 button: Start Now
 link: '/blog'
 order: 3
-excerpt: 
 ---
