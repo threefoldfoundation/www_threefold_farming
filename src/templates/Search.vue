@@ -57,7 +57,7 @@ query ($private: Int){
     }
   }
 
-  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech"]}}}) {   
+  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech", "cofounders"]}}}) { 
      edges {
       node {
         id

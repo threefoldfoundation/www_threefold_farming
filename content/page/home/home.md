@@ -2,11 +2,11 @@
 id: home
 header_title: Be the Internet
 header_image: ./farming_header.png
-header_excerpt: This is the era of decentralization. Join the movement by connecting the 3Node to the most advanced peer-to-peer grid on the planet.
+header_excerpt: This is the era of decentralization. Plug in a server (3Node) from your home or office and start generating passive revenue by selling decentralized storage and compute capacity.
 button:
 link:
 header: home_header
-headerSolution : headerHome
+headerSolution: headerHome
 solution_image_2: ./Data_Graph.png
 featuresMain: Feature_home
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
@@ -28,3 +28,5 @@ solution_image: ./home_image.png
 <!-- header: home_header -->
 <!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
 <!-- signup: home_signup -->
+
+<!-- Join the movement by connecting the 3Node to the most advanced peer-to-peer grid on the planet. -->

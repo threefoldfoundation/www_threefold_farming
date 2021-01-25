@@ -1,11 +1,15 @@
 ---
 id: header_why
-title: 
-subtitle: Today's internet is broken
-btn1: Be a part of a new internet
-link1: /participate
-btn2: 
-link2:
+title:
+subtitle: Today's Internet is broken
+btn1: A New Internet
+link1: /solution
+btn2: Be a part of it
+link2: /participate
 ---
 
-The Internet is controlled by large corporations. This centralized approach is highly inefficient, extremely costly, and unsustainable. Our data isn't owned by us, and it isn't safe.
+The Internet is controlled by large corporations.
+<br />
+This centralized approach is highly inefficient, extremely costly, and unsustainable.
+<br />
+Our data isn't owned by us, and it isn't safe.

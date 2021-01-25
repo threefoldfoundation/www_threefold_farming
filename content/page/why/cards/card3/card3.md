@@ -3,7 +3,7 @@ id: why3
 title: A better solution for our planet
 image: ./why_card3.png
 button: Learn More
-link: "https://blog.threefold.io/blog/tfblog/posts/10-times-power-savings-is-this-possible"
+link: https://www2.farming.threefold.io/blog/post/for_our_planet/
 order: 3
 ---
 

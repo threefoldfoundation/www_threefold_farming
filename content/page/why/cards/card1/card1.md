@@ -3,7 +3,7 @@ id: why1
 title: Peer-to-peer puts people back in control
 image: ./why_card1.png
 button: Learn More
-link: "https://blog.threefold.io/blog/tfblog/posts/internet-is-growing-wild"
+link: https://www2.farming.threefold.io/blog/post/what_is_peer_to_peer/
 order: 1
 ---
 
