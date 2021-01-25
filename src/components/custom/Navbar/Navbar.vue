@@ -109,7 +109,7 @@
                   viewBox="0 0 20 20"
                   :class="{
                     'rotate-180': active == index,
-                    'rotate-0': active == !index,
+                    'rotate-0': !active == index,
                   }"
                   class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
                 >
@@ -298,7 +298,6 @@ export default {
     close(e) {
       if (!this.$el.contains(e.target)) {
         this.open = false;
-        this.active = !this.active;
       }
     },
   },
