@@ -10,6 +10,7 @@ Farmers, the equivalent of miners on the Threefold Grid, get rewarded in TFT acc
 <br />
 <br />
 Users, developers, and enterprises use TFT to reserve the capacity they need to create, use and share their workloads and applications on the network.
+
 <br />
 <br />
 TFT will become even more important with staking. When you stake your TFT you'll be able to help secure TFT and earn rewards. In this system, the peer-to-peer community finds an interest to hold the token to stimulate a healthy economy.
