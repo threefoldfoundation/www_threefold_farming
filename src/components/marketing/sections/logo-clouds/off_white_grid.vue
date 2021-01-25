@@ -1,10 +1,9 @@
 <template>
   <div class="bg-white">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <h2
-        class="text-4xl text-center mb-12 font-semibold font-heading"
-        v-html="news.content"
-      ></h2>
+      <h2 class="text-4xl text-center mb-12 font-semibold font-heading">
+        {{ news.excerpt }}
+      </h2>
       <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
         <g-link
           v-for="partner in news.partners"

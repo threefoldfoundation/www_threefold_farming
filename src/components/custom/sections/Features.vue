@@ -18,10 +18,9 @@
         <h3 class="text-xl my-3 font-semibold font-heading">
           {{ feature.title }}
         </h3>
-        <p
-          v-html="feature.content"
-          class="text-sm text-gray-700 leading-relaxed"
-        ></p>
+        <p v-html="feature.content" class="text-sm text-gray-700 leading-relaxed">
+          
+        </p>
       </div>
     </div>
     <div class="text-center" v-if="main.btn">
@@ -30,7 +29,9 @@
         :to="main.link"
         >{{ main.btn }}</g-link
       >
-      <p class="text-sm text-gray-400 mt-5" v-html="main.content"></p>
+      <p class="text-sm text-gray-400 mt-5">
+        {{ main.excerpt }}
+      </p>
     </div>
   </section>
 </template>

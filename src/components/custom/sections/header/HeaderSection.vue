@@ -5,7 +5,9 @@
       <h2 class="text-4xl mt-2 mb-6 leading-tight font-heading">
         {{ header.subtitle }}
       </h2>
-      <p v-html="header.content" class="mb-8 text-gray-700 leading-relaxed"></p>
+      <p  v-html="header.content" class="mb-8 text-gray-700 leading-relaxed">
+       
+      </p>
       <div>
         <g-link
           class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"

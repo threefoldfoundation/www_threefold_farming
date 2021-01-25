@@ -21,10 +21,9 @@
           <h3 class="text-2xl mb-2 font-semibold font-heading">
             {{ howItWorkSec.title }}
           </h3>
-          <p
-            class="text-gray-700 leading-relaxed"
-            v-html="howItWorkSec.content"
-          ></p>
+          <p class="text-gray-700 leading-relaxed">
+            {{ howItWorkSec.excerpt }}
+          </p>
         </div>
       </div>
     </div>
