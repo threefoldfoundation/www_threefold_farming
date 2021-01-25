@@ -225,12 +225,10 @@
          link1
          btn2
          link2
-         content
        }
        headerSolution{
          subtitle
          excerpt(length: 2000)
-         content
        }
         headerSolution2{
         subtitle
@@ -242,14 +240,12 @@
          excerpt(length: 2000)
          btn1
          link1
-         content
        }
         headerSolution4{
         subtitle
         excerpt(length: 2000)
         btn1
         link1
-        content
        }
        howItWorks{
          id
