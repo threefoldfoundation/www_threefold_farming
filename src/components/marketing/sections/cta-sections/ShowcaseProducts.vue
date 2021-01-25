@@ -12,11 +12,7 @@
       </div>
 
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div
-          v-for="(product, idx) in products"
-          :key="idx"
-          class="p-2 sm:p-10 text-center cursor-pointer"
-        >
+        <div v-for="(product, idx) in products" :key="idx" class="p-2 sm:p-10 text-center cursor-pointer">
           <div
             class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white"
           >
@@ -26,10 +22,9 @@
               <div class="px-6 py-4">
                 <div class="space-y-5">
                   <div class="font-bold text-xl mb-2">{{ product.title }}</div>
-                  <p
-                    v-html="product.content"
-                    class="text-gray-700 text-base"
-                  ></p>
+                  <p v-html="product.content" class="text-gray-700 text-base">
+                  
+                  </p>
                 </div>
               </div>
             </div>

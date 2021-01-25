@@ -5,7 +5,8 @@ btn1: Learn More
 link1: /participate
 ---
 
-3Node enables everyone to extend the ThreeFold Grid. 
+3Node enables everyone to extend the ThreeFold Grid.
+
 <br />
 <br />
 It is powered by ThreeFold technology that permits tech users to host their IT workloads in the most advanced internet architecture in the world.

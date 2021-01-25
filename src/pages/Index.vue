@@ -51,23 +51,12 @@
       :news="$page.markdownPage.inTheNews"
     />
 
-    <template>
-      <ClientOnly>
-        <SignUp
-          :signup="$page.markdownPage.signup"
-          v-if="$page.markdownPage.signup"
-        />
-      </ClientOnly>
-    </template>
+    <SignUp
+      :signup="$page.markdownPage.signup"
+      v-if="$page.markdownPage.signup"
+    />
 
-    <template>
-      <ClientOnly>
-        <CallToAction
-          v-if="$page.markdownPage.cta"
-          :cta="$page.markdownPage.cta"
-        />
-      </ClientOnly>
-    </template>
+    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
 
     <g-image
       v-if="$page.markdownPage.solution_image"

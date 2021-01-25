@@ -2,7 +2,7 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden pt-24">
       <div class="flex flex-row flex-wrap items-center mx-4 sm:mx-0">
-        <div class="w-full md:w-1/6 mx-auto sm:mx-0">       
+        <div class="w-full md:w-1/6 mx-auto sm:mx-0">
           <g-image
             :src="$page.project.logo"
             class="rounded-full bg-gray-200 w-32 h-32 border-4 border-gray-400 mx-auto md:mx-0"
@@ -38,7 +38,7 @@
                         <g-link :to="member.path">
                           <g-image
                             :src="member.image"
-                            
+                            :alt="member.name"
                             class="w-8 h-8 rounded-full bg-gray-200 border-2 border-white"
                           />
                         </g-link>
@@ -57,26 +57,25 @@
                 ></g-image>
                 </li> -->
                 <li>
-                <a
-                :href="$page.project.websites"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-black linkedin_size mx-1"
-              >
-                <font-awesome :icon="['fas', 'globe']" />
-              </a>
-              </li>
+                  <a
+                    :href="$page.project.websites"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-black linkedin_size mx-1"
+                  >
+                    <font-awesome :icon="['fas', 'globe']" />
+                  </a>
+                </li>
                 <li>
-                <a
-                :href="$page.project.linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-gray-400 hover:text-black linkedin_size mx-1"
-              >
-                <font-awesome :icon="['fab', 'linkedin']" />
-              </a>
-              </li>
-                  
+                  <a
+                    :href="$page.project.linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-black linkedin_size mx-1"
+                  >
+                    <font-awesome :icon="['fab', 'linkedin']" />
+                  </a>
+                </li>
               </ul>
 
               <!-- <g-link
@@ -86,7 +85,6 @@
                 class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
                 >{{ edge.node.title }}</g-link
               > -->
-              
             </section>
           </div>
         </div>
@@ -174,10 +172,8 @@
         title
         path
       }
+    }
   }
-  }
-
-  
 }
 
 </page-query>
@@ -202,9 +198,6 @@ export default {
       title: this.$page.project.title,
     };
   },
-  mounted() {
-    console.log(this.$page.project)
-  }
 };
 </script>
 <style scoped>
@@ -213,6 +206,7 @@ export default {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
+
 .linkedin_size {
   font-size: 2rem !important;
 }

@@ -225,9 +225,7 @@
  * Will be used to add/remove the additional
  * css classes to show the sticky navbar
  */
-
 import ThemeSwitcher from "~/components/custom/ThemeSwitcher.vue";
-
 export default {
   components: {
     ThemeSwitcher,
@@ -276,7 +274,6 @@ export default {
       }
     },
   },
-
   mounted() {
     if (!this.disableScroll) {
       var height = document.getElementById("header").clientHeight;
@@ -295,11 +292,9 @@ input:focus,
 button:focus {
   outline: 0;
 }
-
 .inset-0 {
   z-index: 999;
 }
-
 nav li a {
   padding-right: 10px;
 }

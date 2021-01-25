@@ -6,7 +6,7 @@ header_excerpt: This is the era of decentralization. Plug in a server (3Node) fr
 button:
 link:
 header: home_header
-headerSolution : headerHome
+headerSolution: headerHome
 solution_image_2: ./Data_Graph.png
 featuresMain: Feature_home
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]

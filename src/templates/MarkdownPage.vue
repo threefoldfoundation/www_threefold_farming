@@ -104,18 +104,14 @@
         :header="$page.markdownPage.headerSolution3"
       />
 
-      <template>
-        <ClientOnly>
-          <Comparison
-            v-if="
-              $page.markdownPage.comparisonSecs &&
-              $page.markdownPage.comparisonSecs.length > 0
-            "
-            :main="$page.markdownPage.comparisonMain"
-            :sections="$page.markdownPage.comparisonSecs"
-          />
-        </ClientOnly>
-      </template>
+      <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain"
+        :sections="$page.markdownPage.comparisonSecs"
+      />
 
       <Features
         v-if="$page.markdownPage.features2.length > 0"
@@ -134,28 +130,20 @@
         :card="card"
       />
 
-      <template>
-        <ClientOnly>
-          <CallToAction
-            v-if="$page.markdownPage.cta"
-            :cta="$page.markdownPage.cta"
-          />
-        </ClientOnly>
-      </template>
+      <CallToAction
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
+      />
 
       <g-image
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
       />
 
-      <template>
-        <ClientOnly>
-          <SignUp
-            v-if="$page.markdownPage.signup"
-            :signup="$page.markdownPage.signup"
-          />
-        </ClientOnly>
-      </template>
+      <SignUp
+        v-if="$page.markdownPage.signup"
+        :signup="$page.markdownPage.signup"
+      />
 
       <BrandPanel
         :brand="$page.markdownPage.brandPanel"
@@ -220,11 +208,11 @@
        header{
          title
          subtitle
+         content
          btn1
          link1
          btn2
          link2
-         content
        }
        headerSolution{
          subtitle
@@ -236,15 +224,15 @@
        }
         headerSolution3{
          subtitle
+         content
          btn1
          link1
-         content
        }
         headerSolution4{
         subtitle
+        content
         btn1
         link1
-        content
        }
        howItWorks{
          id

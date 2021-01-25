@@ -39,7 +39,7 @@ query ($private: Int){
     }
   }
 
-  memberships: allMembership(filter: {title: {in: ["foundation", "tech", "cofounders"]}}){
+   memberships: allMembership(filter: {title: {in: ["foundation", "tech", "cofounders"]}}){
      edges{
       node{
         id

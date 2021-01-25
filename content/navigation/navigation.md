@@ -10,7 +10,7 @@ navLinks:
     link: /solution
     external: false
     expandable: false
- 
+
   - name: 3Node
     link: /participate
     external: false
@@ -30,7 +30,7 @@ navLinks:
         path: /team
 
       - title: Partners
-        path: /Partners
+        path: /partners
 
       - title: NewsRoom
         path: /news

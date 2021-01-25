@@ -22,7 +22,7 @@
           > -->
           <span>{{ section.title }}</span>
         </h3>
-        <p class="text-gray-700" v-html="section.content"></p>
+        <div class="text-gray-700" v-html="section.content"></div>
       </div>
     </div>
     <div>
