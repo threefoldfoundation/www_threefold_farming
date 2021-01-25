@@ -1,10 +1,6 @@
 <template>
   <Layout>
-    <TagFilterHeader
-      :tags="memberships"
-      selected="all"
-      v-if="$page.memberships.edges.length > 1"
-    />
+    <TagFilterHeader :tags="memberships" selected="all" v-if="$page.memberships.edges.length > 1"/>
     <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
@@ -60,11 +56,6 @@ export default {
     PostListItem,
     TagFilterHeader,
   },
-  metaInfo() {
-    return {
-      title: this.pageName,
-    };
-  },
   computed: {
     memberships() {
       var res = [{ title: "All", path: "/team" }];
@@ -72,11 +63,6 @@ export default {
         res.push({ title: edge.node.title, path: edge.node.path })
       );
       return res;
-    },
-    pageName() {
-      let path = this.$route.path.substring(1);
-      let name = path[0].toUpperCase() + path.slice(1);
-      return name;
     },
   },
 };
