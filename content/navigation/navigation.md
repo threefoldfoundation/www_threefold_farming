@@ -32,7 +32,7 @@ navLinks:
       - title: Partners
         path: /Partners
 
-      - title: NewsRoom
+      - title: Newsroom
         path: /news
 
       - title: Blog
