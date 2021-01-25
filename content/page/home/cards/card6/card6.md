@@ -5,5 +5,4 @@ image: ./card6.jpeg
 button: Support
 link: ''
 order: 6
-excerpt:
 ---

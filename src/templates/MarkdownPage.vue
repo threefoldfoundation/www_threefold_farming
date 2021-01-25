@@ -5,7 +5,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
+
       <g-image
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
@@ -15,7 +15,7 @@
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
-      
+
       <g-image
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
@@ -98,24 +98,20 @@
         :key="card.id"
         :card="card"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"
       />
 
-      <template>
-        <ClientOnly>
-          <Comparison
-            v-if="
-              $page.markdownPage.comparisonSecs &&
-              $page.markdownPage.comparisonSecs.length > 0
-            "
-            :main="$page.markdownPage.comparisonMain"
-            :sections="$page.markdownPage.comparisonSecs"
-          />
-        </ClientOnly>
-      </template>
+      <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain"
+        :sections="$page.markdownPage.comparisonSecs"
+      />
 
       <Features
         v-if="$page.markdownPage.features2.length > 0"
@@ -134,28 +130,20 @@
         :card="card"
       />
 
-      <template>
-        <ClientOnly>
-          <CallToAction
-            v-if="$page.markdownPage.cta"
-            :cta="$page.markdownPage.cta"
-          />
-        </ClientOnly>
-      </template>
+      <CallToAction
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
+      />
 
       <g-image
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
       />
 
-      <template>
-        <ClientOnly>
-          <SignUp
-            v-if="$page.markdownPage.signup"
-            :signup="$page.markdownPage.signup"
-          />
-        </ClientOnly>
-      </template>
+      <SignUp
+        v-if="$page.markdownPage.signup"
+        :signup="$page.markdownPage.signup"
+      />
 
       <BrandPanel
         :brand="$page.markdownPage.brandPanel"
@@ -200,7 +188,7 @@
           button
           link
           order
-          excerpt(length: 2000)
+          content
         }
         cards2{
           id
@@ -209,7 +197,7 @@
           button
           link
           order
-          excerpt(length: 2000)
+          content
         }
        contactData{
          id
@@ -220,7 +208,7 @@
        header{
          title
          subtitle
-         excerpt(length: 2000)
+         content
          btn1
          link1
          btn2
@@ -228,35 +216,34 @@
        }
        headerSolution{
          subtitle
-         excerpt(length: 2000)
+         content
        }
         headerSolution2{
         subtitle
-        excerpt(length: 2000)
         content
        }
         headerSolution3{
          subtitle
-         excerpt(length: 2000)
+         content
          btn1
          link1
        }
         headerSolution4{
         subtitle
-        excerpt(length: 2000)
+        content
         btn1
         link1
        }
        howItWorks{
          id
          title
-         excerpt(length: 2000)
+         content
        }
        brandPanel{
          id
          title
          subtitle
-         excerpt(length: 2000)
+         content
          sourceUrl
          btnTxt
          image
@@ -265,7 +252,7 @@
          id
          subtitle
          title
-         excerpt(length: 2000)
+         content
          sourceUrl
          btnTxt
          image
@@ -285,21 +272,21 @@
           title 
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         featuresMain2{
           id
           title
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         featuresMain3{
           id
           title
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         logos{
           id
@@ -309,25 +296,24 @@
           id
           title 
           svg
-          excerpt(length: 2000)
+          content
         }
         features2{
           id
           title 
           svg
-          excerpt(length: 2000)
+          content
         }
         features3{
           id
           title 
           svg
-          excerpt(length: 2000)
+          content
         }
         cta{
           id
           title
           content
-          excerpt(length: 2000)
           button
           link
         }
@@ -350,7 +336,7 @@
           id
           svg
           title
-          excerpt(length: 2000)
+          content
         }
     }
   }
@@ -372,7 +358,6 @@ import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
-
 
 export default {
   components: {

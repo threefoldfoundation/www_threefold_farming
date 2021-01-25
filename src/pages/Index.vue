@@ -51,23 +51,12 @@
       :news="$page.markdownPage.inTheNews"
     />
 
-    <template>
-      <ClientOnly>
-        <SignUp
-          :signup="$page.markdownPage.signup"
-          v-if="$page.markdownPage.signup"
-        />
-      </ClientOnly>
-    </template>
+    <SignUp
+      :signup="$page.markdownPage.signup"
+      v-if="$page.markdownPage.signup"
+    />
 
-    <template>
-      <ClientOnly>
-        <CallToAction
-          v-if="$page.markdownPage.cta"
-          :cta="$page.markdownPage.cta"
-        />
-      </ClientOnly>
-    </template>
+    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
 
     <g-image
       v-if="$page.markdownPage.solution_image"
@@ -98,12 +87,12 @@
           button
           link
           order
-          excerpt(length: 2000)
+          content
         }
         header{
          title
          subtitle
-         excerpt(length: 2000)
+         content
          btn1
          link1
          btn2
@@ -111,21 +100,21 @@
        }
         headerSolution{
          subtitle
-         excerpt(length: 2000)
+         content
        }
        featuresMain{
           id
           title 
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         featuresMain2{
           id
           title 
           btn 
           link
-          excerpt(length: 2000)
+          content
         }
         logos{
           id
@@ -136,13 +125,13 @@
           id
           title 
           svg
-          excerpt(length: 2000)
+          content
         }
         features2{
           id
           title 
           svg
-          excerpt(length: 2000)
+          content
         }
         signup{
           id
@@ -155,13 +144,13 @@
         cta{
           id
           title
-          excerpt(length: 2000)
+          content
           button
           link
         }
         inTheNews {
           id
-          excerpt(length: 2000)
+          content
           partners {
             path
             logo

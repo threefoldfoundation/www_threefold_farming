@@ -5,5 +5,6 @@ image: ./card5.jpeg
 button: Token
 link: /community
 order: 5
-excerpt: Support the project by joining our community or by buying our token.
 ---
+
+Support the project by joining our community or by buying our token.

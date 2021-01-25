@@ -23,14 +23,15 @@
         >
           {{ split.title }}
         </h2>
-        <p class="mt-3 text-lg leading-7 text-gray-300">
-          {{ split.excerpt }}
-        </p>
+        <div
+          class="mt-3 text-lg leading-7 text-gray-300"
+          v-html="split.content"
+        ></div>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
             <a
               :href="split.sourceUrl"
-              class="mt-2 text-gray-900 bg-white hover:text-gray-600 shadow px-6 py-3 inline-flex items-center text-base rounded shadow leading-none font-semibold"
+              class="mt-2 text-gray-900 bg-white hover:text-gray-600 shadow px-6 py-3 inline-flex items-center text-base rounded leading-none font-semibold"
             >
               {{ split.btnTxt }}
               <!-- Heroicon name: external-link -->

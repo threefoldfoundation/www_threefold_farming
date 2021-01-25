@@ -26,7 +26,7 @@
           "
           :alt="slides[activeIndex].title"
         />
-        <p v-html="slides[activeIndex].content"></p>
+        <div v-html="slides[activeIndex].content"></div>
       </div>
     </div>
   </div>
