@@ -61,8 +61,8 @@
               :key="element.name"
               v-for="(element, index) in navigation.social"
               class="hover:text-white sm:block"
-              :class="{
-                'px-2 mr-2': index != Object.keys(navigation.navLinks).length,
+              v-bind:class="{
+                'mr-6': index != Object.keys(navigation.social).length - 1,
               }"
             >
               <span class="telegram_icon">
@@ -81,17 +81,17 @@
 
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="md:order-2 px-2 pt-2 pb-4 sm:flex sm:p-0 bg-white"
+        class="md:order-2 px-2 pt-2 pb-4 sm:flex sm:p-0 bg-white "
       >
         <ul
-          class="list-none sm:flex justify-left uppercase transition-all transition-500"
+          class="list-none sm:flex justify-left uppercase transition-all transition-500 "
         >
           <li
             class="py-1"
             :key="element.name"
             v-for="(element, index) in navigation.navLinks"
             :class="{
-              'px-2 mr-2': index != Object.keys(navigation.navLinks).length,
+              'mr-2': index != Object.keys(navigation.navLinks).length - 1,
             }"
           >
             <div
@@ -135,7 +135,7 @@
                   v-if="open"
                   class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-700"
                 >
-                  <div v-for="(link, i) in element.submenu" :key="i">
+                  <div v-for="link in element.submenu" :key="link.title">
                     <a
                       v-if="link.external"
                       class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -147,10 +147,7 @@
                     <a
                       v-else
                       class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      @click="
-                        removeActive(i);
-                        open = false;
-                      "
+                      @click="open = false"
                       :href="link.path"
                       >{{ link.title }}</a
                     >
@@ -166,13 +163,9 @@
               class="animated-link"
               >{{ element.name }}</g-link
             >
-            <g-link
-              v-else
-              @click.native="isActive(index, $event)"
-              :to="element.link"
-              class="animated-link"
-              >{{ element.name }}</g-link
-            >
+            <g-link v-else :to="element.link" class="animated-link">{{
+              element.name
+            }}</g-link>
           </li>
         </ul>
         <!-- <div
@@ -263,7 +256,6 @@ export default {
       search: "",
       open: false,
       active: null,
-      currentLink: null,
     };
   },
   methods: {
@@ -279,21 +271,6 @@ export default {
     setActive(index) {
       this.active = index;
       this.open = !this.open;
-    },
-    isActive(index, e) {
-      let link = document.querySelector(".active--exact");
-
-      if (link.parentElement) {
-        link.parentElement.classList.add("act-link");
-      } else {
-        link.parentElement.classList.remove("act-link");
-      }
-    },
-    removeActive() {
-      let link = document.querySelector(".act-link");
-      if (link) {
-        link.classList.remove("act-link");
-      }
     },
     close(e) {
       if (!this.$el.contains(e.target)) {
