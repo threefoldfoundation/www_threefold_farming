@@ -3,7 +3,7 @@ id: why3
 title: A better solution for our planet
 image: ./why_card3.png
 button: Learn More
-link: https://www2.farming.threefold.io/blog/post/for_our_planet/
+link: /blog/post/for_our_planet/
 order: 3
 ---
 

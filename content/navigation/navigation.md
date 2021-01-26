@@ -7,12 +7,12 @@ navLinks:
     expandable: false
 
   - name: Tech
-    link: /solution
+    link: /tech
     external: false
     expandable: false
 
   - name: 3Node
-    link: /participate
+    link: /3node
     external: false
     expandable: false
 

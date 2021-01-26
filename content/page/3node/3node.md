@@ -1,5 +1,5 @@
 ---
-id: participate
+id: 3node
 header_title: Plug & Earn
 header_image: ./3_nodes.png
 header_altImg: participate_header

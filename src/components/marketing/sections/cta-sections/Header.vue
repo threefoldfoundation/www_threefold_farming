@@ -5,7 +5,7 @@
         <h2 class="text-8xl mb-6 leading-tight font-semibold font-heading">
           {{ title }}
         </h2>
-        <div class="mb-8 text-gray-700 leading-relaxed" v-html="content"></div>
+        <div class="mb-8 text-gray-700 leading-relaxed" v-html="excerpt"></div>
         <div v-if="button">
           <a
             v-if="link.includes('http')"
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  props: ["title", "content", "altImg", "image", "button", "link"],
+  props: ["title", "excerpt", "altImg", "image", "button", "link"],
   computed: {
     img: function () {
       if (!this.image) return "";

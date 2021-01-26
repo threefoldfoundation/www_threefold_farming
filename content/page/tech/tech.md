@@ -1,5 +1,5 @@
 ---
-id: solution
+id: tech
 header: solution_header
 solution_image2: ./solution_image.png
 headerSolution4: headerSolution4
