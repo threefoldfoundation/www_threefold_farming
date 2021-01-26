@@ -54,7 +54,7 @@
               excerpt
               image(width:800)
               path
-              humanTime : startdate(format:"DD MM YYYY")
+              humanTime : startdate(format:"DD MMM YYYY")
               datetime : created
               
             }
@@ -80,7 +80,7 @@
               image(width:800)
               path
               timeToRead
-              humanTime : created(format:"DD MM YYYY")
+              humanTime : created(format:"DD MMM YYYY")
               datetime : created
               authors {
                 id
@@ -111,7 +111,7 @@
               image(width:800)
               path
               timeToRead
-              humanTime : created(format:"DD MM YYYY")
+              humanTime : created(format:"DD MMM YYYY")
               datetime : created
               authors {
                 id
