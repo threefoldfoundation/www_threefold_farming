@@ -3,7 +3,7 @@ id: why2
 title: An Internet available to everyone
 image: ./why_card2.png
 button: Learn More
-link: https://www2.farming.threefold.io/blog/post/more_inclusive_internet/
+link: /blog/post/more_inclusive_internet/
 order: 1
 ---
 
