@@ -38,8 +38,6 @@ items:
       link: 'https://forum.threefold.io/'
     - name: Community
       link: 'https://t.me/threefoldnews'
-    - name: Contact
-      link: '/contact'
  - title: LEGAL
    links:
     - name: Terms&Conditions

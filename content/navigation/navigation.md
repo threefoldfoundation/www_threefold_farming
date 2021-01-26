@@ -42,9 +42,6 @@ navLinks:
         path: https://forums.threefold.io/
         external: true
 
-      - title: Contact
-        path: /contact
-
 social:
   - icon: telegram-plane
     link: https://t.me/threefoldnews
