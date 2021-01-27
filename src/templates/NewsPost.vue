@@ -68,7 +68,7 @@
         <g-image :src="$page.news.image"></g-image>
       </section>
 
-      <div class="">
+      <div class="py-5">
         <section
           class="post-content container mx-auto relative font-serif text-gray-700"
         >
