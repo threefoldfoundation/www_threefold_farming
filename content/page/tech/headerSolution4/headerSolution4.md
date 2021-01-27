@@ -2,7 +2,7 @@
 id: headerSolution4
 subtitle: Introducing 3Node
 btn1: Learn More
-link1: /participate
+link1: /3node
 ---
 
 3Node enables everyone to extend the ThreeFold Grid.

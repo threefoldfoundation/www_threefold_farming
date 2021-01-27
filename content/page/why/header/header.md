@@ -3,9 +3,9 @@ id: header_why
 title:
 subtitle: Today's Internet is broken
 btn1: A New Internet
-link1: /solution
+link1: /tech
 btn2: Be a part of it
-link2: /participate
+link2: /3node
 ---
 
 The Internet is controlled by large corporations.
