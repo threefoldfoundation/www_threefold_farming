@@ -11,7 +11,6 @@
         v-for="(logo, idx) in logos"
         :key="idx"
         :to="logo.url"
-        target="_blank"
         class="w-1/2 md:w-1/6 px-8 mb-8"
       >
         <g-image :src="img(logo.image)" />

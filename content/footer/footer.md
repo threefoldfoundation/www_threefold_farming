@@ -13,9 +13,9 @@ items:
  - title: LEARN
    links:
     - name: 3Node
-      link: '/participate'
+      link: '/3node'
     - name: Tech
-      link: '/solution'
+      link: '/tech'
     - name: Token
       link: '/token'
     - name: Blog
