@@ -32,7 +32,7 @@
         :currentPage="$page.entries.pageInfo.currentPage"
         :totalPages="$page.entries.pageInfo.totalPages"
         :maxVisibleButtons="5"
-        v-if="$page.entries.pageInfo.totalPages > 1"
+        v-if="$page.entries.pageInfo.totalPages > 1 && news.edges.length > 0"
       />
     </div>
   </Layout>
