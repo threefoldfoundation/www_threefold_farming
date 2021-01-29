@@ -26,6 +26,9 @@ navLinks:
     external: false
     expandable: true
     submenu:
+      - title: Register
+        path: /register
+
       - title: Team
         path: /team
 
@@ -46,20 +49,3 @@ social:
   - icon: telegram-plane
     link: https://t.me/threefoldnews
 ---
-
-<!--       - title: Future
-        path: /future -->
-
-<!--             submenu:
-      - title: Solution
-        path: /solution
-
-      - title: Participate
-        path: /participate
-
-      - title: Token
-        path: /token
-
-      - title: Knowledge Base
-        path: https://wiki.threefold.io/#/what_is_farming
-        external: true -->

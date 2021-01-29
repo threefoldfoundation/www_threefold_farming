@@ -9,6 +9,11 @@
             >filter:</span
           >
         </div>
+        <div class="sm:block md:hidden">
+          <ul class="list-none inline-flex justify-center md:justify-end">
+            <li class="py-1 mx-5 cursor-pointer" @click="resetAll()">Reset</li>
+          </ul>
+        </div>
       </div>
 
       <nav
@@ -70,6 +75,11 @@
           </li>
         </ul>
       </nav>
+      <div class="hidden md:ml-auto md:inline-block md:order-last">
+        <ul class="list-none inline-flex justify-center md:justify-end">
+          <li class="py-1 mx-5 cursor-pointer" @click="resetAll()">Reset</li>
+        </ul>
+      </div>
     </header>
   </div>
 </template>
@@ -104,6 +114,9 @@ export default {
       if (!this.$el.contains(e.target)) {
         this.open = false;
       }
+    },
+    resetAll() {
+      this.$emit("resetAll", true);
     },
   },
   mounted() {

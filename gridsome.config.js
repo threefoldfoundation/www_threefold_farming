@@ -23,7 +23,13 @@ module.exports = {
                 path: './content/page/**/cards2/**/*.md',
             }
         },
-
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Card3',
+                path: './content/page/**/cards3/**/*.md',
+            }
+        },
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -179,11 +185,26 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'PricingPlans',
+                path: './content/page/**/pricing_plans/**/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Plans',
+                path: './content/page/**/withComparisonTable/**/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
                     cards: 'Card',
                     cards2: 'Card2',
+                    cards3: 'Card3',
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',
@@ -209,7 +230,10 @@ module.exports = {
                     headerSolution2: 'SolutionsHeader',
                     headerSolution3: 'SolutionsHeader',
                     headerSolution4: 'SolutionsHeader',
-                    inTheNews: 'InTheNews'
+                    inTheNews: 'InTheNews',
+                    pricing_plansMain: 'PricingPlans',
+                    pricingPlans: 'PricingPlans',
+                    plans: 'Plans',
                 }
             }
         },

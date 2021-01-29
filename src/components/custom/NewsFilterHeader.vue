@@ -259,7 +259,7 @@ export default {
     resetAll() {
       this.$emit("resetAll", true);
       this.topic = "All Topics";
-      this.year = "All Year";
+      this.year = "All Years";
       this.month = "All Months";
     },
     close(e) {
