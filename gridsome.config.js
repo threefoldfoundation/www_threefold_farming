@@ -23,7 +23,13 @@ module.exports = {
                 path: './content/page/**/cards2/**/*.md',
             }
         },
-
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Card3',
+                path: './content/page/**/cards3/**/*.md',
+            }
+        },
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -198,6 +204,7 @@ module.exports = {
                 refs: {
                     cards: 'Card',
                     cards2: 'Card2',
+                    cards3: 'Card3',
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',

@@ -1,14 +1,14 @@
 ---
 id: why
-header: header_why
+header_title: Today's Internet is broken
+header_image: ./broken.png
+header_altImg: internet_broken
+header_excerpt: The Internet is controlled by large corporations. This centralized approach is highly inefficient, extremely costly, and unsustainable. Our data isn't owned by us, and it isn't safe.
+button: The new Internet
+link: /tech
 cards: [why1, why2, why3]
 brandPanel : why_brandPanel
 ---
-
-<!-- header_title: The world needs a Technological Reset
-header_image: ./why_header.png
-header_altImg: why_header
-header_excerpt: Fast forward to today, the Internet is run by large corporations and their hyper-scale data centers. Their centralized approach is highly inefficent, extremely costly and unsustainable. Our data isn't even safe anymore in the current paradigm. This needs to change, the world needs a technological reset. -->
 
 <!-- slides:
   [
@@ -16,3 +16,5 @@ header_excerpt: Fast forward to today, the Internet is run by large corporations
     availability,
     sustainability,
   ] -->
+
+<!-- header: header_why -->

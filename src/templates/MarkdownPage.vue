@@ -2,25 +2,15 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       
-      <SolutionsHeader
+    <!-- <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
-      />
+      /> -->
 
-      <g-image
+    <!-- <g-image
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution4"
-        :header="$page.markdownPage.headerSolution4"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
-      />
+      /> -->
 
       <Header
         v-if="
@@ -35,15 +25,33 @@
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
       />
+
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution4"
+        :header="$page.markdownPage.headerSolution4"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image3"
+        :src="$page.markdownPage.solution_image3.src"
+      />
+      
+      <NewCard
+        v-for="card in $page.markdownPage.cards3"
+        :key="card.id"
+        :card="card"
+      />
       
       <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans.length > 0"
+        v-if="$page.markdownPage.pricingPlans && 
+        $page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       />
       
       <WithComparisonTable
-        v-if="$page.markdownPage.plans.length > 0"
+        v-if="$page.markdownPage.plans &&
+        $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
       /> 
 
@@ -103,7 +111,7 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
-
+     
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -182,7 +190,7 @@
         button
         link
         solution_image
-        solution_image2
+     #  solution_image2
         solution_image3
         solution_image4
         slides{
@@ -202,6 +210,15 @@
           content
         }
         cards2{
+          id
+          title
+          image
+          button
+          link
+          order
+          content
+        }
+        cards3{
           id
           title
           image
@@ -235,7 +252,6 @@
             title
             firstCol
             secCol
-            thirdCol
           }
         }
        contactData{
@@ -244,14 +260,14 @@
          mail
          phone
        }
-       header{
-         title
-         subtitle
-         content
-         btn1
-         link1
-         btn2
-         link2
+      header{
+          title
+          subtitle
+          content
+          btn1
+          link1
+          btn2
+          link2
        }
        headerSolution{
          subtitle
