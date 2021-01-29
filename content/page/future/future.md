@@ -1,9 +1,10 @@
 ---
 id: future
-header_title: Future
-header_image: ./header.png
-header_altImg: Future
-header_excerpt:  Welcome to the growing ecosystem of ThreeFold.
+header_title: Pre - Register Today
+header_image: ./pre_order.jpg
+header_excerpt: The next batch of 3Nodes will close March 31st 2021, or when the total of 150 Nodes is reached whichever is first. Pre-register today and be the internet.
+title: ''
+pricing_plansMain: participate_pricing
+pricingPlans: [plan1, plan2]
+plans: [sec1, sec2, sec3]
 ---
-
-# Future

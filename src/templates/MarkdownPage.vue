@@ -35,6 +35,17 @@
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
       />
+      
+      <FourTiersWithToggle
+        v-if="$page.markdownPage.pricingPlans.length > 0"
+        :main="$page.markdownPage.pricing_plansMain"
+        :pricingPlans="$page.markdownPage.pricingPlans"
+      />
+      
+      <WithComparisonTable
+        v-if="$page.markdownPage.plans.length > 0"
+        :plans="$page.markdownPage.plans"
+      /> 
 
       <Features
         v-if="$page.markdownPage.features3.length > 0"
@@ -93,7 +104,6 @@
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
 
-      <div v-html="$page.markdownPage.content"></div>
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -199,6 +209,34 @@
           link
           order
           content
+        }
+        pricing_plansMain{
+          id
+          title
+          button1
+          button2
+          excerpt
+        }
+        pricingPlans{
+          id
+          title
+          excerpt
+          price
+          duration
+          button
+          link
+          includeTitle
+          options
+        }
+        plans{
+          id
+          title
+          rows {
+            title
+            firstCol
+            secCol
+            thirdCol
+          }
         }
        contactData{
          id
@@ -359,6 +397,8 @@ import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
+import FourTiersWithToggle from "~/components/marketing/sections/pricing/four_tiers_with_toggle.vue";
+import WithComparisonTable from "~/components/marketing/sections/pricing/with_comparison_table.vue";
 
 export default {
   components: {
@@ -376,6 +416,8 @@ export default {
     Comparison,
     BrandPanel,
     SplitWithImage,
+    FourTiersWithToggle,
+    WithComparisonTable,
   },
   metaInfo() {
     return {
