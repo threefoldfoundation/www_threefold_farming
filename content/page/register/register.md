@@ -1,5 +1,5 @@
 ---
-id: future
+id: register
 header_title: Pre - Register Today
 header_image: ./pre_order.jpg
 header_excerpt: The next batch of 3Nodes will close March 31st 2021, or when the total of 150 Nodes is reached whichever is first. Pre-register today and be the internet.
