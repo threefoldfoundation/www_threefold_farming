@@ -9,6 +9,7 @@ header: home_header
 headerSolution: headerHome
 solution_image_2: ./Data_Graph.png
 featuresMain: Feature_home
+productsMain: showProducts
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
 cards: [home_card]
 featuresMain2: Features_home_2

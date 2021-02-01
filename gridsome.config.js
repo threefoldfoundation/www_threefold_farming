@@ -199,10 +199,11 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'Product',
-                path: './content/page/**/productData/**/*.md',
+                typeName: 'ProductTitle',
+                path: './content/page/**/home/**/*.md',
             }
         },
+        
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -217,7 +218,7 @@ module.exports = {
                     header: 'Header',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
-                    productMain: 'Product',
+                    productsMain: 'ProductTitle',
                     productData: 'Product',
                     featuresMain: 'Features',
                     features: 'Features',

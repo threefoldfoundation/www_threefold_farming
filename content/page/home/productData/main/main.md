@@ -1,5 +1,5 @@
 ---
-id: tech_graph
+id: showProducts
 title: Title
 subtitle: Subtitle
 ---

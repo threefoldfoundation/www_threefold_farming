@@ -4,8 +4,8 @@
 
     
       <div class="w-full text-center">
-        <p class="text-sm tracking-widest text-gray-700">subtitle</p>
-        <h1 class="font-bold text-5xl text-gray-700">title</h1>
+        <p class="text-sm tracking-widest text-gray-700">{{ main.subtitle}}</p>
+        <h1 class="font-bold text-5xl text-gray-700">{{ main.title }}</h1>
       </div>
 
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  props: ["products"],
+  props: ["products" ,"main"],
   methods: {
     img(image) {
       if (!image) return "";
