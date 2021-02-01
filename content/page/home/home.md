@@ -6,9 +6,9 @@ header_excerpt: This is the era of decentralization. Plug in a server (3Node) fr
 button: Reserve your 3Node
 link: /3node
 header: home_header
-headerSolution: headerHome
 featuresMain: Feature_home
-productsMain: showProducts
+productsMain: graph_home
+productData: [img_1, img_2, img_3, img_4]
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
 cards: [home_card]
 featuresMain2: Features_home_2
@@ -23,10 +23,9 @@ logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 inTheNews: in_the_news
 cta: home_cta
 solution_image: ./home_image.png
-productData: [img_1, img_2, img_3,img_4]
 ---
 
-<!-- header: home_header -->
+<!--  -->
 <!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
 <!-- signup: home_signup -->
 

@@ -1,6 +1,6 @@
 ---
 id: img_2
-title: myproducts2
-excerpt: ayklamdsf2
-image : ./digibyte.png
+title: ''
+excerpt: ''
+image : ./img_2.png
 ---
