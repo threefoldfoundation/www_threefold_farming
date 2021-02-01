@@ -77,13 +77,13 @@
         v-if="$page.markdownPage.contactData.length > 0"
       />
 
-      <ShowcaseProducts
+      <!-- <ShowcaseProducts
         :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
-      />
+      /> -->
 
       <g-image
         v-if="$page.markdownPage.solution_image"

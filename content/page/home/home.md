@@ -23,6 +23,7 @@ logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 inTheNews: in_the_news
 cta: home_cta
 solution_image: ./home_image.png
+productData: [img_1, img_2, img_3,]
 ---
 
 <!-- header: home_header -->
