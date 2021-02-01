@@ -81,7 +81,7 @@
 
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="md:order-2 px-2 pt-2 pb-4 md:w-auto sm:flex sm:p-0 sm:w-100 bg-white"
+        class="navbar md:order-2 px-2 pt-2 pb-4 sm:flex sm:p-0 sm:w-100 bg-white"
       >
         <div
           :key="index"
@@ -301,5 +301,14 @@ nav li a {
 a.active--exact.active {
   background-color: rgba(237, 242, 247, 1);
   border-radius: 0.5rem;
+}
+
+.navbar {
+  width: auto;
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
 }
 </style>
