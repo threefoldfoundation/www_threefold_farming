@@ -121,6 +121,12 @@ button:focus {
     font-size: 1.2rem;
 }
 
+.post-content a {
+    color: #4ec48f;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
     .with-large>.flex-post:nth-child(5n),
     .with-large>.flex-post:nth-child(5n-1) {
