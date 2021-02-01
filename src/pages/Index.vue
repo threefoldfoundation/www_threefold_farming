@@ -19,10 +19,19 @@
         :header="$page.markdownPage.headerSolution"
       />
 
-      <g-image
+        <ShowcaseProducts
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
+      />
+
+      <!-- <g-image
         v-if="$page.markdownPage.solution_image_2"
         :src="$page.markdownPage.solution_image_2.src"
-      />
+      /> -->
 
       <Features
         :main="$page.markdownPage.featuresMain"
@@ -79,7 +88,7 @@
         button
         link
         solution_image
-        solution_image_2
+     #  solution_image_2
         cards{
           id
           title
@@ -133,6 +142,17 @@
           svg
           content
         }
+        productsMain{
+          id
+          title
+          subtitle
+        }
+        productData{
+         id
+         title
+         excerpt
+         image
+       }
         signup{
           id
           title
@@ -171,6 +191,7 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
+import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 
 export default {
   components: {
@@ -183,6 +204,7 @@ export default {
     SignUp,
     CallToAction,
     InTheNews,
+    ShowcaseProducts,
   },
   metaInfo() {
     return {

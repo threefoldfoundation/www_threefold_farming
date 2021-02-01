@@ -199,6 +199,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'ProductTitle',
+                path: './content/page/**/home/**/*.md',
+            }
+        },
+        
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -210,6 +218,7 @@ module.exports = {
                     header: 'Header',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
+                    productsMain: 'ProductTitle',
                     productData: 'Product',
                     featuresMain: 'Features',
                     features: 'Features',
@@ -430,7 +439,7 @@ module.exports = {
             path: '/news/post/:id',
             component: '~/templates/NewsPost.vue'
         }],
-
+       
         Person: [{
             path: '/team/:id',
             component: '~/templates/Person.vue'
