@@ -5,11 +5,7 @@ button:
 link: 
 ---
 
-The TFT is valuable in different ways to different people.
-
-<br />
-
-For TFT holders, TFT is valuable because it is worth actual compute and storage capacity.
+The TFT is valuable in different ways to different people. For TFT holders, TFT is valuable because it is worth actual compute and storage capacity.
 
 <br />
 Today, TFT is becoming valuable to developers and enterprises deploying their solutions on the ThreeFold Grid. That's because you can use TFT to reserve fully private and secure capacity in the most technologically advanced Internet architecture.
