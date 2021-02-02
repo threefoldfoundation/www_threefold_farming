@@ -2,7 +2,7 @@
   <div class="fixed inset-0 h-16 bg-white">
     <header
       class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4 transition-all transition-500"
-      v-bind:class="{
+      :class="{
         'opacity-100': !disableScroll && scrollPosition > headerHeight,
         'opacity-0': !disableScroll && scrollPosition < headerHeight,
       }"
@@ -153,6 +153,7 @@
           <g-link
             v-else-if="element.external"
             :to="element.link"
+            @click.native="clicked"
             target="_blank"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</g-link
@@ -160,6 +161,7 @@
           <g-link
             v-else
             :to="element.link"
+            @click.native="clicked"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</g-link
           >
@@ -271,7 +273,11 @@ export default {
       if (!this.$el.contains(e.target)) {
         this.open = false;
         this.active = !this.active;
+        this.isOpen = !this.isOpen;
       }
+    },
+    clicked() {
+      this.isOpen = false;
     },
   },
   mounted() {
