@@ -53,7 +53,7 @@
                   }}</time>
                 </g-link>
                 <!-- &nbsp;&middot;&nbsp; {{ $page.blog.timeToRead }} min read -->
-                &nbsp;&middot;&nbsp;
+                <!-- &nbsp;&middot;&nbsp; -->
                 <g-link :to="$page.blog.path">
                   <time :datetime="$page.blog.datetime">{{
                     $page.blog.startDate
