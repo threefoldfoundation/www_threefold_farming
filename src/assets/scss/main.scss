@@ -127,6 +127,11 @@ button:focus {
     font-weight: bold;
 }
 
+.text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+}
+
 @media (min-width: 768px) {
     .with-large>.flex-post:nth-child(5n),
     .with-large>.flex-post:nth-child(5n-1) {
@@ -271,6 +276,12 @@ button:focus {
     //         @apply text-xl;
     //     }
     // }
+}
+
+@media (max-width: 768px) {
+    .text-8xl {
+        font-size: 4rem !important;
+    }
 }
 
 body[data-theme="dark"] {
