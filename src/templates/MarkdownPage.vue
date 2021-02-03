@@ -1,11 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      
-    <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      /> -->
 
     <!-- <g-image
         v-if="$page.markdownPage.solution_image2"
@@ -27,6 +22,11 @@
       />
 
       <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      /> 
+
+      <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
@@ -42,18 +42,18 @@
         :card="card"
       />
       
-      <WithComparisonTable
+      <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
-      /> 
+      /> -->
     
-      <FourTiersWithToggle
+      <!-- <FourTiersWithToggle
         v-if="$page.markdownPage.pricingPlans && 
         $page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
-      />
+      /> -->
       
   
       <Features
