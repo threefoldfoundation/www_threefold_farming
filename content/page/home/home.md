@@ -1,9 +1,9 @@
 ---
 id: home
 header_title: Be the Internet
-header_image: ./farming_header.png
+header_image: ./farming_header2.png 
 header_excerpt: This is the era of decentralization. Plug in a server (3Node) from your home or office and start generating passive revenue by selling decentralized storage and compute capacity.
-button: Pre-Register for a 3Node
+button: Meet the 3Node
 link: /3node
 header: home_header
 featuresMain: Feature_home
@@ -24,7 +24,7 @@ features2:
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 inTheNews: in_the_news
 cta: home_cta
-solution_image: ./home_image.png
+solution_image: ./home_grid.png
 ---
 
 <!--  -->

@@ -26,6 +26,9 @@ navLinks:
     external: false
     expandable: true
     submenu:
+      - title: Pre-Register
+        path: /pre-register
+
       - title: Team
         path: /team
 

@@ -5,9 +5,10 @@
       <h1 class="text-4xl mt-2 mb-6 leading-tight font-heading">
         {{ main.title }}
       </h1>
+      <g-image :src="img(main.image)" class="hidden md:block" />
     </div>
 
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:hidden">
       <div
         v-for="(product, idx) in products"
         :key="idx"
