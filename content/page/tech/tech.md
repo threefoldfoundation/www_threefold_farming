@@ -6,11 +6,11 @@ header_excerpt: Bringing a smart, secure and efficent network solution that allo
 button: ''
 link: ''
 headerSolution4: headerSolution4
-solution_image3: ./solution_node.png
+solution_image3: ./tech_node.png
 cards3: [card1]
 headerSolution2: headerSolution2
 cards: [solution_card4, solution_card5]
-solution_image4: ./participate_image.png
+solution_image4: ./tech_image.png
 cta: solution_cta
 brandPanel: solution_brandPanel
 ---
