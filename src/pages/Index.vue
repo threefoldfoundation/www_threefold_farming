@@ -14,12 +14,7 @@
         :header="$page.markdownPage.header"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      />
-
-        <ShowcaseProducts
+      <ShowcaseProducts
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
         v-if="
@@ -28,14 +23,19 @@
         "
       />
 
-      <!-- <g-image
-        v-if="$page.markdownPage.solution_image_2"
-        :src="$page.markdownPage.solution_image_2.src"
-      /> -->
-
       <Features
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
+      />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image_2"
+        :src="$page.markdownPage.solution_image_2.src"
       />
 
       <NewCard
@@ -88,7 +88,7 @@
         button
         link
         solution_image
-     #  solution_image_2
+        solution_image_2
         cards{
           id
           title

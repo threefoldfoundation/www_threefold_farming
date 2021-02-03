@@ -1,6 +1,6 @@
 ---
 id: participate_pricing
-title: Pricing Plans
+title: Pre-Register Fee
 button1: ''
 button2: ''
 ---

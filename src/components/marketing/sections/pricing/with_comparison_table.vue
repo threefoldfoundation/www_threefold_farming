@@ -163,21 +163,21 @@
                 scope="col"
               >
                 <span class="sr-only">Feature by</span>
-                <span>3Nodes</span>
+                <span>Titan V2</span>
               </th>
 
               <th
                 class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-900 text-left"
                 scope="col"
               >
-                Titan v2
+                
               </th>
 
               <th
                 class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-900 text-left"
                 scope="col"
               >
-                Venus v2
+              
               </th>
 
            <!-- <th

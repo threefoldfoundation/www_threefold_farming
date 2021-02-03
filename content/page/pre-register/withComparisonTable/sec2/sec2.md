@@ -4,13 +4,13 @@ title: 'Dimentions'
 rows:
   - title: 'Width (mm)'
     firstCol: '80'
-    secCol: '203'
+    secCol: ''
 
   - title: 'Height (mm)'
     firstCol: '155'
-    secCol: '330'
+    secCol: ''
 
   - title: 'Depth (mm)'
     firstCol: '155'
-    secCol: '400'
+    secCol: ''
 ---

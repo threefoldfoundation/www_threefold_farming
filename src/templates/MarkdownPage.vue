@@ -42,6 +42,12 @@
         :card="card"
       />
       
+      <WithComparisonTable
+        v-if="$page.markdownPage.plans &&
+        $page.markdownPage.plans.length > 0"
+        :plans="$page.markdownPage.plans"
+      /> 
+    
       <FourTiersWithToggle
         v-if="$page.markdownPage.pricingPlans && 
         $page.markdownPage.pricingPlans.length > 0"
@@ -49,12 +55,7 @@
         :pricingPlans="$page.markdownPage.pricingPlans"
       />
       
-      <WithComparisonTable
-        v-if="$page.markdownPage.plans &&
-        $page.markdownPage.plans.length > 0"
-        :plans="$page.markdownPage.plans"
-      /> 
-
+  
       <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
