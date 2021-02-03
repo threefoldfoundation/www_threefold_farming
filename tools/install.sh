@@ -7,13 +7,20 @@ export NAME=threefold_farming
 
 sudo rm -rf `which ct`
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then 
-    sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/crystaluniverse/crystaltools/master/tools/install.sh)"
-    sudo chmod 777 /usr/local/bin/ct
-elif [[ "OSTYPE" == "darwin"* ]]; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/crystaluniverse/crystaltools/master/tools/install.sh)"
-fi
-
+case "$OSTYPE" in
+  linux*) 
+        sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/crystaluniverse/crystaltools/master/tools/install.sh)"
+        sudo chmod 777 /usr/local/bin/ct
+        sudo npm install --global @gridsome/cli
+        sudo npm install --global nvm
+        ;;
+  darwin*)
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/crystaluniverse/crystaltools/master/tools/install.sh)"
+        brew update && brew install node
+        npm install --global @gridsome/cli
+        npm install --global nvm
+        ;; 
+esac
 
 # GET REQUIRED REPOSITORIES
 ct git pull -u git@github.com:threefoldfoundation/www_$NAME.git
@@ -27,15 +34,6 @@ cd ~/code/github/threefoldfoundation/www_$NAME
 rm -f yarn.lock
 rm -rf node_modules
 rm -rf .cache
-
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    sudo npm install --global @gridsome/cli
- elif [[ "OSTYPE" == "darwin"* ]]; then
-    brew update && brew install node
-    npm install --global @gridsome/cli
-fi
-
-npm install --global nvm
 
 export NVM_DIR="$HOME/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
