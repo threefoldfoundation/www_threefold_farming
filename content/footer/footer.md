@@ -45,5 +45,5 @@ items:
     - name: PrivacyPolicy
       link: 'https://wiki.threefold.io/#/privacypolicy'
     - name: Impressum
-      link: '#'
+      link: 'https://www.farming.threefold.io/tech'
 ---
