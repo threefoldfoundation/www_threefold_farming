@@ -2,11 +2,11 @@
 id: tech
 header_title: The ThreeFold Grid
 header_image: ./tech_header.png
-header_excerpt: Bringing a smart, secure and efficent network solution that allows anyone (farmers) to connect capacity and participate in the internet economy. An upgrade from today’s centralized data center model.
+header_excerpt: Bringing a smart, secure and efficient Internet solution that allows anyone to connect capacity and participate in the internet economy. An upgrade from today’s centralized data center model.
 button: ''
 link: ''
 headerSolution4: headerSolution4
-solution_image3: ./tech_node.png
+solution_image3: ./intro_3node.png
 cards3: [card1]
 headerSolution2: headerSolution2
 cards: [solution_card4, solution_card5]

@@ -1,6 +1,6 @@
 ---
 id: token_features
-title: Features
+title: Token Features
 btn: ""
 link: ""
 ---

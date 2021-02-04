@@ -21,4 +21,4 @@ partners:
     logo: btc.png
 ---
 
-In the news
+In the News
