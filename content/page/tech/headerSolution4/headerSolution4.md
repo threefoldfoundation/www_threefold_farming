@@ -5,4 +5,4 @@ btn1: Learn More
 link1: /3node
 ---
 
-3Node enables everyone to extend the ThreeFold Grid. It is powered by ThreeFold technology that permits tech users to host their IT workloads in the most advanced internet architecture in the world.
+3Node is the building block of the ThreeFold Grid and is powered by ThreeFold’s technology. It can host open internet services, secure enterprise systems, websites, applications and beyond. It runs the world's software via smart contracts and all data remains fully private to the user.
