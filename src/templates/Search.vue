@@ -4,12 +4,7 @@
       class="container sm:pxi-0 mx-auto"
       :style="{ 'min-height': contentHeight + 'px' }"
     >
-      <img
-        v-if="loading"
-        class="m-auto"
-        src="/img/loader.gif"
-        alt=""
-      />
+      <g-image v-if="loading" class="m-auto" src="/img/loader.gif" alt="" />
       <div
         v-if="searchResults.length > 0"
         class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4"
@@ -62,7 +57,7 @@ query ($private: Int){
     }
   }
 
-  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech"]}}}) {   
+  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech", "cofounders"]}}}) { 
      edges {
       node {
         id
