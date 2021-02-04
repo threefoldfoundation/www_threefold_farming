@@ -1,6 +1,6 @@
 ---
 id: Features_home_2
-title: New Paradigm
+title: A New Paradigm
 btn: Learn More
 link: /tech
 ---
