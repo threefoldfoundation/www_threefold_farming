@@ -3,7 +3,7 @@ id: 3node
 header_title: Plug & Earn
 header_image: ./3node_header.png
 header_altImg: participate_header
-header_excerpt: Plug & Earn nodes don't require any technical knowledge to set up. An electricity outlet, internet connection, and a 3Node are all you need to start earning.
+header_excerpt: Plug & Earn nodes don't require any technical knowledge to set up. All you need is an electricity outlet, internet connection, and a 3Node to start earning.
 button: Pre-Register Today
 link: /pre-register
 howItWorksMain: participate_main

@@ -7,4 +7,4 @@ link:
 order: 1
 ---
 
-Electricity + Network + 3Node = all you need to connect decentralized capacity to a faster, more secure, & scalable Internet.
+**Electricity + Network + 3Node = all you need** to offer your own capacity to the ThreeFold Grid.
