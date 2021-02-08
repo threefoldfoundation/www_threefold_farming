@@ -20,14 +20,17 @@ navLinks:
     link: /token
     external: false
     expandable: false
-
+    
+  - name: Pre-Register
+    link: /pre-register
+    external: false
+    expandable: false
+      
   - name: More
     link: /more
     external: false
     expandable: true
     submenu:
-      - title: Pre-Register
-        path: /pre-register
 
       - title: Team
         path: /team
