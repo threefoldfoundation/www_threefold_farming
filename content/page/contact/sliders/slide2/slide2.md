@@ -19,4 +19,4 @@ We agree that the world needs healing and that raising consciousness is the way 
 <br />
 <br />
 
-Our current internet is seriously broken, and it needs to be fixed.
+Our current Internet is seriously broken, and it needs to be fixed.

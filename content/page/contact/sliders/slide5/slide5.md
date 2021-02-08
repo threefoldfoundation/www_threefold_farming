@@ -1,6 +1,6 @@
 ---
 id: digital_sovereignty_for_everyone
-title: digital sovereignty | for everyone
+title: Digital Sovereignty | For Everyone
 image:
 order: 2
 ---
@@ -9,7 +9,7 @@ The Internet evolved to become the world's largest database of information and k
 <br />
 <br />
 
-The current approach of many governments and countries is to cut the Internet into pieces by limiting its accessibility and enforcing regulations. We need an internet that protects our digital freedom and fair access to global information for everyone, everywhere.
+The current approach of many governments and countries is to cut the Internet into pieces by limiting its accessibility and enforcing regulations. We need an Internet that protects our digital freedom and fair access to global information for everyone, everywhere.
 <br />
 <br />
 

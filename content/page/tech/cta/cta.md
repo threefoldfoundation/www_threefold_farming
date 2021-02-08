@@ -7,4 +7,4 @@ link:
 
 **Electricity + Network + 3Node = All that you require**
 <br />
-to offer your own capacity on a faster, more secure, decentralized and scalable internet!
+to offer your own capacity on a faster, more secure, decentralized and scalable Internet!
