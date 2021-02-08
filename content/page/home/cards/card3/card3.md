@@ -7,4 +7,4 @@ link: /participate
 order: 3
 ---
 
-Get your 3Node now to connect compute and storage capacity on the edge. Our lightwieght & autonomous operating system empowers the builders of the Internet with more freedom, performance & sustainability.
+Get your 3Node now to connect compute and storage capacity on the edge. Our light-weight & autonomous operating system empowers the builders of the Internet with more freedom, performance & sustainability.
