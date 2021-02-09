@@ -151,28 +151,28 @@ module.exports = {
             use: '@gridsome/source-filesystem',
             options: {
                 typeName: 'SolutionsHeader',
-                path: './content/page/**/headersolution/*.md',
+                path: './content/page/**/headerSolution/*.md',
             }
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'SolutionsHeader',
-                path: './content/page/**/headersolution2/*.md',
+                typeName: 'SolutionsHeader2',
+                path: './content/page/**/headerSolution2/*.md',
             }
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'SolutionsHeader',
-                path: './content/page/**/headersolution3/*.md',
+                typeName: 'SolutionsHeader3',
+                path: './content/page/**/headerSolution3/*.md',
             }
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'SolutionsHeader',
-                path: './content/page/**/headersolution4/*.md',
+                typeName: 'SolutionsHeader4',
+                path: './content/page/**/headerSolution4/*.md',
             }
         },
         {
@@ -203,7 +203,7 @@ module.exports = {
                 path: './content/page/**/home/**/*.md',
             }
         },
-        
+
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -236,9 +236,9 @@ module.exports = {
                     brandPanel: 'BrandPanel',
                     splitWithImage: 'SplitWithImage',
                     headersolution: 'SolutionsHeader',
-                    headersolution2: 'SolutionsHeader',
-                    headersolution3: 'SolutionsHeader',
-                    headersolution4: 'SolutionsHeader',
+                    headersolution2: 'SolutionsHeader2',
+                    headersolution3: 'SolutionsHeader3',
+                    headersolution4: 'SolutionsHeader4',
                     inTheNews: 'InTheNews',
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',
@@ -438,7 +438,7 @@ module.exports = {
             path: '/news/post/:id',
             component: '~/templates/NewsPost.vue'
         }],
-       
+
         Person: [{
             path: '/team/:id',
             component: '~/templates/Person.vue'
