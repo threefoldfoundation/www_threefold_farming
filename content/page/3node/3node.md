@@ -8,11 +8,11 @@ button: Pre-Register Today
 link: /pre-register
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
-headersolution : headerParticipate
+headerSolution : headerParticipate
 solution_image: ./participate_main2.png 
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]
-brandpanel : participate_brandpanel
+brandPanel : participate_brandPanel
 ---
 
 <!-- header: participate_header -->
@@ -32,4 +32,4 @@ comparisonSecs:
 
 <!-- cta: participate_cta -->
 
-<!-- splitwithimage : participate_splitWihImage -->
+<!-- splitWithImage : participate_splitWihImage -->

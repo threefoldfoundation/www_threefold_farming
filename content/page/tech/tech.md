@@ -5,14 +5,14 @@ header_image: ./tech_header.png
 header_excerpt: Bringing a smart, secure and efficient Internet solution that allows anyone to connect capacity and participate in the Internet economy. An upgrade from today’s centralized data center model.
 button: ''
 link: ''
-headersolution4: headersolution4
+headerSolution4: headerSolution4
 solution_image3: ./intro_3node.png
 cards3: [card1]
-headersolution2: headersolution2
+headerSolution2: headerSolution2
 cards: [solution_card4, solution_card5]
 solution_image4: ./tech_image.png
 cta: solution_cta
-brandpanel: solution_brandpanel
+brandPanel: solution_brandPanel
 ---
 
 <!-- 
@@ -21,7 +21,7 @@ features: [high_durability, versatility, value_based_price, variety] -->
 
 <!-- signup: solution_signup -->
 
-<!-- productdata: [solution_product1, solution_product2, solution_product3] -->
+<!-- productData: [solution_product1, solution_product2, solution_product3] -->
 
 <!-- header_title: Powering the next-gen Internet
 header_image: ./solution_header.png
@@ -40,7 +40,7 @@ header_excerpt: Our open-source lightweight OS and autonomous technology powers 
 <!--   cta: solution_cta -->
 
 <!-- solution_image: ./grid_live.png -->
-<!-- headersolution3: headersolution3 -->
+<!-- headerSolution3: headerSolution3 -->
 
 
 <!-- header: solution_header

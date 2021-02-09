@@ -1,5 +1,5 @@
 ---
-id: headertoken3
+id: headerToken3
 subtitle: TFT underpins the ThreeFold financial system
 btn1: Stay up to date
 link1: https://t.me/threefoldnews

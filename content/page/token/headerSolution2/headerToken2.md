@@ -1,5 +1,5 @@
 ---
-id: headertoken2
+id: headerToken2
 subtitle: TFT fuels the Peer-to-Peer Internet
 ---
 

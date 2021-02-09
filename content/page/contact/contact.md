@@ -1,6 +1,6 @@
 ---
 id: contact
-contactdata: [collaborate, support, press, join]
+contactData: [collaborate, support, press, join]
 ---
 
 <!-- slides:

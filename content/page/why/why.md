@@ -7,7 +7,7 @@ header_excerpt: The Internet is controlled by large corporations. This centraliz
 button: Meet the New Internet
 link: /tech
 cards: [why1, why2, why3]
-brandpanel : why_brandpanel
+brandPanel : why_brandPanel
 ---
 
 <!-- slides:
