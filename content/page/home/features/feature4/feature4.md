@@ -1,6 +1,6 @@
 ---
 id: not_sustainable
-svg: ./not_sustainable.png
+svg: ./Not_Sustainable.png
 title: Not Sustainable
 ---
 

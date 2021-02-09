@@ -1,6 +1,6 @@
 ---
 id: versatility
-svg: ./multi_gateway.png
+svg: ./Multi Gateway.png
 title: Privacy
 ---
 

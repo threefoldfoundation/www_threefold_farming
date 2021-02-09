@@ -1,6 +1,6 @@
 ---
 id: solution_sustainability
-svg: ./full_privacy.png
+svg: ./Full_Privacy.png
 title: Sustainable
 ---
 

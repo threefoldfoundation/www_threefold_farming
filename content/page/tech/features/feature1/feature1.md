@@ -1,6 +1,6 @@
 ---
 id: high_durability
-svg: ./full_privacy.png
+svg: ./Full_Privacy.png
 title: Performance
 ---
 
