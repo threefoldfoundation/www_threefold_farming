@@ -27,8 +27,8 @@
       /> 
 
       <SolutionsHeader
-        v-if="$page.markdownPage.headersolution4"
-        :header="$page.markdownPage.headersolution4"
+        v-if="$page.markdownPage.headerSolution4"
+        :header="$page.markdownPage.headerSolution4"
       />
 
       <g-image
@@ -69,8 +69,8 @@
       />
 
       <SolutionsHeader
-        v-if="$page.markdownPage.headersolution"
-        :header="$page.markdownPage.headersolution"
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
       />
 
       <GetInTouch
@@ -92,8 +92,8 @@
       />
 
       <SolutionsHeader
-        v-if="$page.markdownPage.headersolution2"
-        :header="$page.markdownPage.headersolution2"
+        v-if="$page.markdownPage.headerSolution2"
+        :header="$page.markdownPage.headerSolution2"
       />
 
       <Features
@@ -120,8 +120,8 @@
       />
 
       <SolutionsHeader
-        v-if="$page.markdownPage.headersolution3"
-        :header="$page.markdownPage.headersolution3"
+        v-if="$page.markdownPage.headerSolution3"
+        :header="$page.markdownPage.headerSolution3"
       />
 
       <Comparison
@@ -270,21 +270,21 @@
           btn2
           link2
        }
-       headersolution{
+       headerSolution{
          subtitle
          content
        }
-        headersolution2{
+        headerSolution2{
         subtitle
         content
        }
-        headersolution3{
+        headerSolution3{
          subtitle
          content
          btn1
          link1
        }
-        headersolution4{
+        headerSolution4{
         subtitle
         content
         btn1

@@ -157,21 +157,21 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'SolutionsHeader2',
+                typeName: 'SolutionsHeader',
                 path: './content/page/**/headerSolution2/*.md',
             }
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'SolutionsHeader3',
+                typeName: 'SolutionsHeader',
                 path: './content/page/**/headerSolution3/*.md',
             }
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'SolutionsHeader4',
+                typeName: 'SolutionsHeader',
                 path: './content/page/**/headerSolution4/*.md',
             }
         },
@@ -235,10 +235,10 @@ module.exports = {
                     howItWorks_2: 'HowItWorks_2',
                     brandPanel: 'BrandPanel',
                     splitWithImage: 'SplitWithImage',
-                    headersolution: 'SolutionsHeader',
-                    headersolution2: 'SolutionsHeader2',
-                    headersolution3: 'SolutionsHeader3',
-                    headersolution4: 'SolutionsHeader4',
+                    headerSolution: 'SolutionsHeader',
+                    headerSolution2: 'SolutionsHeader',
+                    headerSolution3: 'SolutionsHeader',
+                    headerSolution4: 'SolutionsHeader',
                     inTheNews: 'InTheNews',
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',
