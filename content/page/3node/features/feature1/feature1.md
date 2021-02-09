@@ -1,6 +1,6 @@
 ---
 id: feature1
-svg: ./Participate_plugnadfarm.png
+svg: ./participate_plugnadfarm.png
 title: Simply Plug & Farm
 ---
 

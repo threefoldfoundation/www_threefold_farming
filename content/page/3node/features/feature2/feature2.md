@@ -1,6 +1,6 @@
 ---
 id: feature2
-svg: ./Participate_capacity.png
+svg: ./participate_capacity.png
 title: Offer Capacity
 ---
 
