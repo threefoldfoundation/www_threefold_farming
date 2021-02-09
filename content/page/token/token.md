@@ -8,11 +8,11 @@ button: Get TFT
 link: https://app.liquid.com/quick-exchange/
 featuresMain3: token_features
 features3: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
-headerSolution: headerToken
+headersolution: headertoken
 solution_image: ./token_img.png
-headerSolution2: headerToken2
+headersolution2: headertoken2
 cards: [token_card1]
-headerSolution3: headerToken3
+headersolution3: headertoken3
 comparisonMain: token_comparison
 comparisonSecs:
   [token_comparison1, token_comparison2, token_comparison3]

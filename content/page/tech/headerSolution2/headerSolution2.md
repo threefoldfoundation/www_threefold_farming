@@ -1,5 +1,5 @@
 ---
-id: headerSolution2
+id: headersolution2
 subtitle:  Revolutionary tech powers the 3Node
 ---
 

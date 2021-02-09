@@ -8,9 +8,9 @@ link: /3node
 header: home_header
 featuresMain: Feature_home
 productsMain: graph_home
-productData: [img_1, img_2, img_3, img_4]
+productdata: [img_1, img_2, img_3, img_4]
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
-headerSolution : header_map
+headersolution : header_map
 solution_image_2: ./home_map.png
 cards: [home_card]
 featuresMain2: Features_home_2
@@ -22,7 +22,7 @@ features2:
     earn_passive_income,
   ]
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
-inTheNews: in_the_news
+inthenews: in_the_news
 cta: home_cta
 solution_image: ./home_grid.png
 ---

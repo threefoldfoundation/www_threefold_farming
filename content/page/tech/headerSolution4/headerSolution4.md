@@ -1,5 +1,5 @@
 ---
-id: headerSolution4
+id: headersolution4
 subtitle: Introducing 3Node
 btn1: Learn More
 link1: /3node
