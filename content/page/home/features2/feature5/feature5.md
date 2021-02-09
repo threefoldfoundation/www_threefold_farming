@@ -1,6 +1,6 @@
 ---
 id: features2_sustainability
-svg: ./Full_Privacy.png
+svg: ./full_privacy.png
 title: Sustainable
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: not_decentralized
-svg: ./Not_Centralized.png
+svg: ./not_centralized.png
 title: Not Decentralized
 ---
 

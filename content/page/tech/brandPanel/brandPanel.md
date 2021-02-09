@@ -1,10 +1,10 @@
 ---
-id: solution_brandPanel
+id: solution_brandpanel
 title: PLUG & EARN
 subtitle: Farmers earn in TFT's
 sourceUrl: /token
 btnTxt: Know More
-image: tech_cta.png # Please add images in src/assets/brandPanel/\
+image: tech_cta.png # Please add images in src/assets/brandpanel/\
 ---
 
 The ThreeFold Token (TFT) allows farmers to lease out and developers to purchase compute and storage capacity on the ThreeFold Grid.

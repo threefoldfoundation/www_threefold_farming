@@ -29,8 +29,8 @@
       />
       
       <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
+        v-if="$page.markdownPage.headersolution"
+        :header="$page.markdownPage.headersolution"
       />
 
       <g-image
@@ -107,7 +107,7 @@
          btn2
          link2
        }
-        headerSolution{
+        headersolution{
          subtitle
          content
        }
