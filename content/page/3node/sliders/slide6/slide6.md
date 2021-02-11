@@ -1,15 +1,15 @@
 ---
 id: participateSlide6
-title: a new internet | for our planet
+title: A New Internet | For Our Planet
 image:
 order: 1
 ---
 
-The current internet consumes about 10% of global energy production. With the imminent boom of emerging technologies such as Blockchain, Internet of Things, Virtual Reality, Artificial Intelligence and 5G, the Internet’s energy consumption is expected to increase exponentially.
+The current Internet consumes about 10% of global energy production. With the imminent boom of emerging technologies such as Blockchain, Internet of Things, Virtual Reality, Artificial Intelligence and 5G, the Internet’s energy consumption is expected to increase exponentially.
 <br />
 <br />
 
-The current industry solutions focus on increasing the use of renewable energies to power data centers. However this is not a viable solution as data centers consume enormous amounts of energy. Therefore, a new solution that can drastically reduce the global internet’s energy consumption is needed.
+The current industry solutions focus on increasing the use of renewable energies to power data centers. However this is not a viable solution as data centers consume enormous amounts of energy. Therefore, a new solution that can drastically reduce the global Internet’s energy consumption is needed.
 <br />
 <br />
 

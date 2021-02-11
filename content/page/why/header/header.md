@@ -1,6 +1,6 @@
 ---
 id: header_why
-title:
+title: ''
 subtitle: Today's Internet is broken
 btn1: A New Internet
 link1: /tech

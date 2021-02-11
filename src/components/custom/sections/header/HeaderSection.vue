@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-4 text-center">
+  <section class="mt-20 py-12 px-4 text-center">
     <div class="w-full max-w-2xl mx-auto">
       <span class="text-sm font-semibold">{{ header.title }}</span>
       <h2 class="text-4xl mt-2 mb-6 leading-tight font-heading">

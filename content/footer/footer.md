@@ -40,9 +40,9 @@ items:
       link: 'https://t.me/threefoldnews'
  - title: LEGAL
    links:
-    - name: Terms&Conditions
+    - name: Terms & Conditions
       link: 'https://wiki.threefold.io/#/terms_conditions_websites'
-    - name: PrivacyPolicy
+    - name: Privacy Policy
       link: 'https://wiki.threefold.io/#/privacypolicy'
     - name: Impressum
       link: 'https://www.farming.threefold.io/tech'

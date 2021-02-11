@@ -204,7 +204,7 @@ module.exports = {
                 path: './content/page/**/home/**/*.md',
             }
         },
-        
+
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -439,7 +439,7 @@ module.exports = {
             path: '/news/post/:id',
             component: '~/templates/NewsPost.vue'
         }],
-       
+
         Person: [{
             path: '/team/:id',
             component: '~/templates/Person.vue'
