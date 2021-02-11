@@ -33,16 +33,16 @@ navLinks:
     submenu:
 
       - title: Team
-        path: /team
+        path: /farming/team
 
       - title: Partners
-        path: /partners
+        path: /farming/partners
 
       - title: NewsRoom
-        path: /news
+        path: /farming/news
 
       - title: Blog
-        path: /blog
+        path: /farming/blog
 
       - title: Community
         path: https://forums.threefold.io/
