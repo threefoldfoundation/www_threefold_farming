@@ -6,6 +6,7 @@
 
 module.exports = {
     siteName: 'Threefold Farming',
+    pathPrefix: 'farming',
     plugins: [
 
         // Local models
