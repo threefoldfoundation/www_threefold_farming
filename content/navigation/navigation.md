@@ -38,6 +38,9 @@ navLinks:
       - title: Partners
         path: /farming/partners
 
+      - title: KnowledgeBase
+        path: https://wiki.threefold.io/#/what_is_farming
+
       - title: NewsRoom
         path: /farming/news
 
