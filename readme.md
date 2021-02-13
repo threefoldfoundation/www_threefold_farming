@@ -1,5 +1,5 @@
 
-# ThreeFold Website www_threefold_farming
+# ThreeFold Farming website
 
 ### how to get started
 
