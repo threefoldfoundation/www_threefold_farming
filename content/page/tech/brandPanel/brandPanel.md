@@ -3,7 +3,7 @@ id: solution_brandPanel
 title: PLUG & EARN
 subtitle: Farmers earn in TFT's
 sourceUrl: /token
-btnTxt: Know More
+btnTxt: What are TFT?
 image: tech_cta.png # Please add images in src/assets/brandPanel/\
 ---
 

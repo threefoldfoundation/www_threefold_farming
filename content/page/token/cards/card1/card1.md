@@ -2,7 +2,7 @@
 id: token_card1
 title: Dive Deeper into TFT
 image: ./token_card1.png
-button: Learn More
+button: Check Out The Token Wiki
 link: https://wiki.threefold.io/#/token_valuation?id=tf-grid-token-tft-valuation
 order: 1
 ---

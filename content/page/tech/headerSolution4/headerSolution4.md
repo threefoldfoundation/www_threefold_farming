@@ -1,7 +1,7 @@
 ---
 id: headerSolution4
 subtitle: Introducing 3Node
-btn1: Learn More
+btn1: Meet the 3Node
 link1: /3node
 ---
 

@@ -2,7 +2,7 @@
 id: home_card
 title: Introducing the 3Node
 image: ./home_card_1.png
-button: Learn More
+button: Meet the 3Node
 link: /3node
 order: 1
 ---
