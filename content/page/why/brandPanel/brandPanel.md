@@ -1,8 +1,8 @@
 ---
 id: why_brandPanel
 title: A strong community of believers
-subtitle: ""
-sourceUrl: "/team"
+subtitle: ''
+sourceUrl: /team
 btnTxt: Meet the Believers
 image: teamcollage.png # Please add images in src/assets/brandPanel/
 ---

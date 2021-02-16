@@ -20,14 +20,17 @@ navLinks:
     link: /token
     external: false
     expandable: false
-
+    
+  - name: Pre-Register
+    link: /pre-register
+    external: false
+    expandable: false
+      
   - name: More
     link: /more
     external: false
     expandable: true
     submenu:
-      - title: Pre-Register
-        path: /pre-register
 
       - title: Team
         path: /team
@@ -35,11 +38,15 @@ navLinks:
       - title: Partners
         path: /partners
 
+      - title: Knowledge Base
+        path: https://wiki.threefold.io/#/what_is_farming
+        external: true
+
       - title: NewsRoom
         path: /news
 
       - title: Blog
-        path: /blog
+        path: blog
 
       - title: Community
         path: https://forums.threefold.io/

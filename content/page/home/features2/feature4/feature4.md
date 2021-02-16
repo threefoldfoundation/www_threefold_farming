@@ -4,4 +4,4 @@ svg: ./earn.png
 title: Earn Passive Income
 ---
 
-Connect capacity to the largest and most valuable economy in the world and get rewarded for it.
+Take part in the most valuable and rapidly growing economy in the world, the Internet and cloud.

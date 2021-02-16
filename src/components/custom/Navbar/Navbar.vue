@@ -10,18 +10,17 @@
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <div class="inline-flex items-center flex-shrink-0">
           <a href="/" class="flex">
-            <img
-              src="/img/TFN_black.svg"
-              class="mr-3 fill-current"
-              width="180"
+     
+            <g-image
+              :src="require(`!!assets-loader!@images/TFN_black.svg`)"
+              class="mr-3 fill-current logo"
               v-if="theme == 'light'"
               alt=""
             />
 
-            <img
-              src="/img/TFN_white.svg"
-              class="mr-3 fill-current"
-              width="180"
+            <g-image
+              :src="require(`!!assets-loader!@images/TFN_white.svg`)"
+              class="mr-3 fill-current logo"
               v-else
               alt=""
             />
@@ -132,7 +131,7 @@
                 <div v-for="(link, i) in element.submenu" :key="i">
                   <a
                     v-if="link.external"
-                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="block px-4 py-1 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     @click="open = false"
                     :href="link.path"
                     target="_blank"
@@ -140,7 +139,7 @@
                   >
                   <a
                     v-else
-                    class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="block px-4 py-1 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     @click="open = false"
                     :href="link.path"
                     >{{ link.title }}</a
@@ -273,11 +272,11 @@ export default {
       if (!this.$el.contains(e.target)) {
         this.open = false;
         this.active = !this.active;
-        this.isOpen = !this.isOpen;
+        // this.isOpen = !this.isOpen;
       }
     },
     clicked() {
-      this.isOpen = false;
+      this.isOpen = true;
     },
   },
   mounted() {
@@ -311,6 +310,9 @@ a.active--exact.active {
 
 .navbar {
   width: auto;
+}
+.logo {
+  max-width: 180px;
 }
 @media (max-width: 768px) {
   .navbar {
