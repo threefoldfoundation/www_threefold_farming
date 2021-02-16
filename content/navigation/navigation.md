@@ -33,20 +33,20 @@ navLinks:
     submenu:
 
       - title: Team
-        path: /farming/team
+        path: /team
 
       - title: Partners
-        path: /farming/partners
+        path: /partners
 
       - title: Knowledge Base
         path: https://wiki.threefold.io/#/what_is_farming
         external: true
 
       - title: NewsRoom
-        path: /farming/news
+        path: /news
 
       - title: Blog
-        path: /farming/blog
+        path: blog
 
       - title: Community
         path: https://forums.threefold.io/
