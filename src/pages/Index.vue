@@ -60,6 +60,8 @@
       :news="$page.markdownPage.inTheNews"
     />
 
+    <NewsLetter v-if="$page.markdownPage.NewsLetter" :NewsLetter="$page.markdownPage.NewsLetter" />
+
     <SignUp
       :signup="$page.markdownPage.signup"
       v-if="$page.markdownPage.signup"
@@ -169,6 +171,13 @@
           button
           link
         }
+        NewsLetter{
+          id
+          title
+          content
+          button
+          link
+        }
         inTheNews {
           id
           content
@@ -191,6 +200,7 @@ import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import NewsLetter from "~/components/custom/sections/NewsLetter.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 
@@ -204,6 +214,7 @@ export default {
     logoShowcase,
     SignUp,
     CallToAction,
+    NewsLetter,
     InTheNews,
     ShowcaseProducts,
   },

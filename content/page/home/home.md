@@ -24,6 +24,7 @@ features2:
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 inTheNews: in_the_news
 cta: home_cta
+NewsLetter : NewsLetter_signup
 solution_image: ./home_grid.png
 ---
 

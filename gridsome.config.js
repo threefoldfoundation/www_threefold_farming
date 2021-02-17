@@ -114,6 +114,13 @@ module.exports = {
                 path: './content/page/**/cta/*.md',
             }
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'NewsLetter',
+                path: './content/page/**/NewsLetter/*.md',
+            }
+        },
 
         {
             use: '@gridsome/source-filesystem',
@@ -228,6 +235,7 @@ module.exports = {
                     features3: 'Features3',
                     logos: 'Logos',
                     cta: 'Cta',
+                    NewsLetter : 'NewsLetter',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
                     comparisonSecs: 'Comparison',
