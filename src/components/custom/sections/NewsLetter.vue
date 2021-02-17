@@ -16,7 +16,7 @@
         >{{ NewsLetter.button }}</g-link
       > -->
       <a 
-        class="bg-green-500 learn-button hover:bg-green-600 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+        class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         href="javascript:;"
         onclick="ml_account('webforms', '3562741', 'n7q9l7', 'show')"
       >
