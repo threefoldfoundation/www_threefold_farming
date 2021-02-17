@@ -60,7 +60,7 @@
               v-for="(element, index) in navigation.social"
               class="hover:text-white sm:block"
               :class="{
-                'px-2 mr-2': index != Object.keys(navigation.navLinks).length,
+                'px-1 mr-4': index != Object.keys(navigation.navLinks).length,
               }"
             >
               <span class="telegram_icon">
@@ -83,7 +83,7 @@
                 focusable="false"
                 data-prefix="far"
                 data-icon="envelope"
-                class="h-6 w-5"
+                class="h-5 w-5 mt-1"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -221,7 +221,7 @@
           <li
             :key="element.name"
             v-for="(element, index) in navigation.social"
-            class="sm:block"
+            class="mr-1 sm:block"
             v-bind:class="{
               'mr-2': index != Object.keys(navigation.social).length - 1,
             }"
@@ -232,7 +232,7 @@
               </a>
             </span>
           </li>
-          <li class="mr-0 ml-4">
+          <li class="ml-4 mt-1">
             <a
               href="javascript:;"
               onclick="ml_account('webforms', '3562741', 'n7q9l7', 'show')"
@@ -242,7 +242,7 @@
                 focusable="false"
                 data-prefix="far"
                 data-icon="envelope"
-                class="h-6 w-6"
+                class="h-5 w-5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
