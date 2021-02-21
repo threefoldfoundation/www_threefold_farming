@@ -16,7 +16,7 @@
 
           <g-image
             class="h-10"
-            :src="require(`!!assets-loader!@images/tf_icon_white.svg`)"
+            :src="require(`!!assets-loader!@images/tf_icon_black.svg`)"
             alt="Company name"
             v-else
           />

@@ -18,7 +18,7 @@
             />
 
             <g-image
-              :src="require(`!!assets-loader!@images/TFN_white.svg`)"
+              :src="require(`!!assets-loader!@images/TFN_black.svg`)"
               class="mr-3 fill-current logo"
               v-else
               alt=""
@@ -52,9 +52,9 @@
         </div>
         <div class="text-gray-400 sm:block md:hidden">
           <ul class="list-none flex justify-center md:justify-end">
-            <li class="mr-0 sm:mr-6">
+            <!-- <li class="mr-0 sm:mr-6">
               <theme-switcher v-on="$listeners" :theme="theme" />
-            </li>
+            </li> -->
             <li
               :key="element.name"
               v-for="(element, index) in navigation.social"
@@ -215,9 +215,9 @@
           />
         </div> -->
         <ul class="list-none inline-flex justify-center md:justify-end">
-          <li class="mr-0 sm:mr-2">
+          <!-- <li class="mr-0 sm:mr-2">
             <ThemeSwitcher v-on="$listeners" :theme="theme" />
-          </li>
+          </li> -->
           <li
             :key="element.name"
             v-for="(element, index) in navigation.social"
