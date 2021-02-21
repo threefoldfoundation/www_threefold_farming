@@ -10,7 +10,6 @@
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <div class="inline-flex items-center flex-shrink-0">
           <a href="/" class="flex">
-     
             <g-image
               :src="require(`!!assets-loader!@images/TFN_black.svg`)"
               class="mr-3 fill-current logo"
@@ -19,7 +18,7 @@
             />
 
             <g-image
-              :src="require(`!!assets-loader!@images/TFN_white.svg`)"
+              :src="require(`!!assets-loader!@images/TFN_black.svg`)"
               class="mr-3 fill-current logo"
               v-else
               alt=""
@@ -53,15 +52,15 @@
         </div>
         <div class="text-gray-400 sm:block md:hidden">
           <ul class="list-none flex justify-center md:justify-end">
-            <li class="mr-0 sm:mr-6">
+            <!-- <li class="mr-0 sm:mr-6">
               <theme-switcher v-on="$listeners" :theme="theme" />
-            </li>
+            </li> -->
             <li
               :key="element.name"
               v-for="(element, index) in navigation.social"
               class="hover:text-white sm:block"
               :class="{
-                'px-2 mr-2': index != Object.keys(navigation.navLinks).length,
+                'px-1 mr-4': index != Object.keys(navigation.navLinks).length,
               }"
             >
               <span class="telegram_icon">
@@ -73,6 +72,28 @@
                   <font-awesome :icon="['fab', element.icon]" />
                 </a>
               </span>
+            </li>
+            <li class="mr-2">
+              <a
+                href="javascript:;"
+                onclick="ml_account('webforms', '3562741', 'n7q9l7', 'show')"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="envelope"
+                  class="h-5 w-5 mt-1"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+                  ></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -194,15 +215,15 @@
           />
         </div> -->
         <ul class="list-none inline-flex justify-center md:justify-end">
-          <li class="mr-0 sm:mr-6">
+          <!-- <li class="mr-0 sm:mr-2">
             <ThemeSwitcher v-on="$listeners" :theme="theme" />
-          </li>
+          </li> -->
           <li
             :key="element.name"
             v-for="(element, index) in navigation.social"
-            class="sm:block"
+            class="mr-1 sm:block"
             v-bind:class="{
-              'mr-6': index != Object.keys(navigation.social).length - 1,
+              'mr-2': index != Object.keys(navigation.social).length - 1,
             }"
           >
             <span class="telegram_icon">
@@ -210,6 +231,28 @@
                 <font-awesome :icon="['fab', element.icon]" />
               </a>
             </span>
+          </li>
+          <li class="ml-4 mt-1">
+            <a
+              href="javascript:;"
+              onclick="ml_account('webforms', '3562741', 'n7q9l7', 'show')"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="envelope"
+                class="h-5 w-5"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+                ></path>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -276,7 +319,7 @@ export default {
       }
     },
     clicked() {
-      this.isOpen = true;
+      this.isOpen = false;
     },
   },
   mounted() {
