@@ -1,6 +1,8 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto min-h-screen overflow-x-hidden pt-24">
+    <div
+      class="container sm:pxi-0 mx-auto min-h-screen overflow-x-hidden pt-24"
+    >
       <div class="flex flex-row flex-wrap items-center mx-4 sm:mx-0">
         <div class="w-full md:w-1/6 mx-auto sm:mx-0">
           <g-image
@@ -24,33 +26,30 @@
           <p class="text-gray-700 text-xl" v-if="$page.person.bio">
             {{ $page.person.bio }}
           </p>
-          <div class="author-social">
-            
-          </div>
-                <section>
-        <div class="avatars">
-          <div class="flex items-center">
-            <div class="flex justify-between items-center">
-              <ul class="list-none flex author-list m-0 py-2">
-                <li
-                  v-for="project in $page.person.projects"
-                  :key="project.id"
-                  class="author-list-item"
-                >
-                  <g-link :to="project.path" v-tooltip="project.title">
-                    <g-image
-                      :src="project.logo"
-                      :alt="project.title"
-                      class="w-20 h-20 rounded-full bg-gray-200 border-2 border-white"
-                    />
-                  </g-link>
-                </li>
-              </ul>
+          <div class="author-social"></div>
+          <section>
+            <div class="avatars">
+              <div class="flex items-center">
+                <div class="flex justify-between items-center">
+                  <ul class="list-none flex author-list m-0 py-2">
+                    <li
+                      v-for="project in $page.person.projects"
+                      :key="project.id"
+                      class="author-list-item"
+                    >
+                      <g-link :to="project.path" v-tooltip="project.title">
+                        <g-image
+                          :src="project.logo"
+                          :alt="project.title"
+                          class="w-20 h-20 rounded-full bg-gray-200 border-2 border-white"
+                        />
+                      </g-link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            
-          </div>
-        </div>
-      </section>
+          </section>
         </div>
       </div>
 
@@ -74,8 +73,6 @@
           :record="edge.node"
         />
       </div>
-
-   
     </div>
   </Layout>
 </template>
@@ -144,7 +141,7 @@
       }
     }
 
-     memberships: allMembership(filter: {title: {in: ["foundation", "tech"]}}){
+     memberships: allMembership(filter: {title: {in: ["foundation", "tech", "farmers"]}}){
      edges{
       node{
         id
@@ -171,17 +168,17 @@ export default {
       return pluralize("post", this.$page.person.belongsTo.totalCount);
     },
 
-    memberships(){
-      var all = []
-      this.$page.memberships.edges.forEach((edgs) => all.push(edge.node.title))
-      var res = []
-      this.$page.person.memberships.forEach(function(membership){
-        if (all.includes(membership.title)){
-          res.push(membership)
+    memberships() {
+      var all = [];
+      this.$page.memberships.edges.forEach((edgs) => all.push(edge.node.title));
+      var res = [];
+      this.$page.person.memberships.forEach(function (membership) {
+        if (all.includes(membership.title)) {
+          res.push(membership);
         }
       });
-      return res
-    }
+      return res;
+    },
   },
   metaInfo() {
     return {

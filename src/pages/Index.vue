@@ -218,10 +218,10 @@ export default {
     InTheNews,
     ShowcaseProducts,
   },
-  metaInfo() {
-    return {
-      title: this.$page.markdownPage.title,
-    };
+metaInfo: {
+    title: "",
+    titleTemplate: "ThreeFold Farming",
+ 
   },
 };
 </script>

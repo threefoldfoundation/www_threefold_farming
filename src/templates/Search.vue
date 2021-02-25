@@ -44,10 +44,8 @@ query ($private: Int){
       }
         rank
         linkedin
-        startDate : startdate(format:"MM YYYY")
         humanTime : created(format:"DD MMMM YYYY")
         datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
-        status
         excerpt
         image(width:800)
         path
@@ -62,7 +60,7 @@ query ($private: Int){
     }
   }
 
-  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech", "cofounders"]}}}) { 
+  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech", "farmers"]}}}) { 
      edges {
       node {
         id
