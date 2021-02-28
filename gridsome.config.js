@@ -406,6 +406,13 @@ module.exports = {
                 ]
             }
         },
+        {
+            use: 'gridsome-plugin-matomo',
+            options: {
+                host: 'https://analytics.threefold.io/',
+                siteId: 1
+            }
+        }
     ],
     chainWebpack: config => {
         config.resolve.alias.set('@images', '@/assets/images')
