@@ -235,7 +235,7 @@ module.exports = {
                     features3: 'Features3',
                     logos: 'Logos',
                     cta: 'Cta',
-                    NewsLetter : 'NewsLetter',
+                    NewsLetter: 'NewsLetter',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
                     comparisonSecs: 'Comparison',
@@ -409,7 +409,7 @@ module.exports = {
         {
             use: 'gridsome-plugin-matomo',
             options: {
-                host: 'https://analytics.threefold.io',
+                host: 'https://analytics.threefold.io/',
                 siteId: 1
             }
         }
