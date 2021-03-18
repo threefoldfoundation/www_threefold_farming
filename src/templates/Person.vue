@@ -65,14 +65,14 @@
       </section>
 
       <div class="pt-8 border-b mx-4 sm:-mx-4"></div>
-
+<!-- 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
           v-for="edge in $page.person.belongsTo.edges"
           :key="edge.node.id"
           :record="edge.node"
         />
-      </div>
+      </div> -->
     </div>
   </Layout>
 </template>
