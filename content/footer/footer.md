@@ -38,12 +38,9 @@ items:
       link: 'https://forum.threefold.io/'
     - name: Community
       link: 'https://t.me/threefoldnews'
- - title: LEGAL
-   links:
-    - name: Terms & Conditions
-      link: 'https://wiki.threefold.io/#/terms_conditions_websites'
-    - name: Privacy Policy
-      link: 'https://wiki.threefold.io/#/privacypolicy'
-    - name: Impressum
-      link: 'https://www.farming.threefold.io/tech'
 ---
+
+[Terms & Conditions](https://new.threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://new.threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
+
+<br/>
+&#xA9; 2021 ThreeFold, All rights reserved.
