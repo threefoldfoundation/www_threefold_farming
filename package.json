@@ -34,7 +34,5 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "node-sass": "^5.0.0"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }
