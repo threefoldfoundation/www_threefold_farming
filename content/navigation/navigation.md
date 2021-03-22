@@ -39,14 +39,14 @@ navLinks:
         path: /partners
 
       - title: Knowledge Base
-        path: https://wiki.threefold.io/#/what_is_farming
+        path: https://new.threefold.io/info/threefold#/threefold__farming_intro
         external: true
 
       - title: NewsRoom
         path: /news
 
       - title: Blog
-        path: blog
+        path: /blog
 
       - title: Community
         path: https://forums.threefold.io/
