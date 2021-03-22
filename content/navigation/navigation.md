@@ -39,7 +39,7 @@ navLinks:
         path: /partners
 
       - title: Knowledge Base
-        path: https://new.threefold.io/info/threefold#/threefold__farming_intro
+        path: /info/threefold#/threefold__farming_intro
         external: true
 
       - title: NewsRoom
