@@ -3,7 +3,7 @@ id: solution_card5
 title: Zero People
 image: ./solution_card_5.png
 button: Learn More
-link: https://wiki.threefold.io/#/threefold_layers?id=autonomous-layer
+link: /info/threefold#/threefold_layers?id=autonomous-layer
 order: 3
 ---
 

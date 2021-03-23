@@ -3,7 +3,7 @@ id: solution_card4
 title: Zero OS
 image: ./solution_card_4.png
 button: Learn More
-link: https://wiki.threefold.io/#/grid_tech_opensource?id=zero-os
+link: /info/threefold#/grid_tech_opensource?id=zero-os
 order: 2
 ---
 

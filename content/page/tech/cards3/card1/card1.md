@@ -3,7 +3,7 @@ id: card1
 title: Fast, Secure & Sustainable
 image: ./solution_main.png
 button: Dive Into The Tech
-link: 'https://wiki.threefold.io/#/hercules_components'
+link: /info/threefold#/hercules_components
 order: 1
 ---
 

@@ -3,7 +3,7 @@ id: solution_card3
 title: Plug & Earn
 image: ./solution_card_3.png
 button: Learn More
-link: https://wiki.threefold.io/#/token_valuation?id=tf-grid-token-tft-valuation
+link: /info/threefold#/token_valuation?id=tf-grid-token-tft-valuation
 order: 4
 ---
 
