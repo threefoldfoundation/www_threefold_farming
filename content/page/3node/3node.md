@@ -8,7 +8,7 @@ button: Pre-Register Today
 link: /pre-register
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
-headerSolution : headerParticipate
+header2: tfgrid_explorer
 solution_image: ./participate_main2.png 
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]

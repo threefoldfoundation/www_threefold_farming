@@ -67,6 +67,11 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+      /> 
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
@@ -262,6 +267,15 @@
          phone
        }
       header{
+          title
+          subtitle
+          content
+          btn1
+          link1
+          btn2
+          link2
+       }
+        header2{
           title
           subtitle
           content
