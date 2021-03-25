@@ -220,7 +220,7 @@ export default {
   },
 metaInfo: {
     title: "",
-    titleTemplate: "ThreeFold Farming",
+    titleTemplate: "ThreeFold Farming | Be the Internet",
  
   },
 };
