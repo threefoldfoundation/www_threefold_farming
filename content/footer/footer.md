@@ -13,7 +13,7 @@ items:
  - title: LEARN
    links:
     - name: Knowledge Base
-      link: /info/threefold#/threefold__farming_intro
+      link: https://new.threefold.io/info/threefold#/threefold__farming_intro
     - name: About ThreeFold
       link: /
     - name: 3Node
@@ -24,20 +24,20 @@ items:
  - title: PARTICIPATE
    links:
     - name: Become a Farmer
-      link: /info/threefold#/threefold__become_a_farmer
+      link: https://new.threefold.io/info/threefold#/threefold__become_a_farmer
     - name: Pre-Register
       link: /farming/pre-register
     - name: How to Get TFT's
-      link: /info/threefold#/threefold__how_to_buy_and_sell
+      link: https://new.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
     - name: Store TFT's
-      link: /info/threefold#/threefold__storing_tft
+      link: https://new.threefold.io/info/threefold#/threefold__storing_tft
 
  - title: COMMUNITY
    links:
     - name: Join our Forum
       link: https://forum.threefold.io/
     - name: Join Farmer Chat
-      link: https://t.me/joinchat/B2ISCkNpZjNv7WJ2eiNJJw%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B
+      link: https://t.me/joinchat/B2ISCkNpZjNv7WJ2eiNJJw
     - name: Stay Updated
       link: https://t.me/threefoldnews
     - name: Contact Us

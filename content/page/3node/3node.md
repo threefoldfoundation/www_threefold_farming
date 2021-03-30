@@ -5,7 +5,7 @@ header_image: ./3node_header.png
 header_altImg: participate_header
 header_excerpt: Plug & Earn nodes don't require any technical knowledge to set up. All you need is an electricity outlet, Internet connection, and a 3Node to start earning.
 button: Pre-Register Today
-link: /pre-register
+link: /farming/pre-register
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
 header2: tfgrid_explorer
