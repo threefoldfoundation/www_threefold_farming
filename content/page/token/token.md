@@ -5,7 +5,7 @@ header_image: ./token_header.png
 header_altImg: token_header
 header_excerpt: The currency of the peer-to-peer Internet, the ThreeFold Grid. 
 button: Get TFT
-link: /info/threefold#/how_to_buy_and_sell # https://app.liquid.com/quick-exchange/
+link: https://threefold.io/info/threefold#/how_to_buy_and_sell # https://app.liquid.com/quick-exchange/
 featuresMain3: token_features
 features3: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
 headerSolution: headerToken

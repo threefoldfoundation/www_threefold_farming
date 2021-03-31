@@ -3,7 +3,7 @@ id: solution_card5
 title: Zero People
 image: ./solution_card_5.png
 button: Learn More
-link: /info/threefold#/grid_tech_opensource?id=our-automation-layer
+link: https://threefold.io/info/threefold#/grid_tech_opensource?id=our-automation-layer
 order: 3
 ---
 

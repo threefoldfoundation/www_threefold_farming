@@ -3,7 +3,7 @@ id: tfgrid_explorer
 title: ''
 subtitle: Join the most advanced peer-to-peer network!
 btn1: TFGrid Explorer
-link1: https://explorer.grid.tf/
+link1: https://explorer.threefold.io
 btn2: ''
 link2: ''
 ---

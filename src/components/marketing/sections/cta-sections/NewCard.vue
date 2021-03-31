@@ -11,12 +11,12 @@
           <h2 class="text-3xl text-gray-700 font-bold">{{ card.title }}</h2>
           <div class="mt-4 text-gray-700" v-html="card.content"></div>
           <div class="mt-8" v-if="card.button">
-            <g-link
+            <a
               v-if="card.link.includes('http')"
               target="_blank"
-              :to="card.link"
+              :href="card.link"
               class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
-              >{{ card.button }}</g-link
+              >{{ card.button }}</a
             >
             <g-link
               v-else

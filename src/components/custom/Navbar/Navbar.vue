@@ -110,7 +110,7 @@
         >
           <div
             v-if="element.expandable"
-            class="relative mt-2"
+            class="relative mt-2 mr-4"
             x-data="{ open: false }"
           >
             <button
@@ -170,13 +170,13 @@
             </div>
           </div>
 
-          <g-link
+          <a
             v-else-if="element.external"
-            :to="element.link"
+            :href="element.link"
             @click.native="clicked"
             target="_blank"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
-            >{{ element.name }}</g-link
+            >{{ element.name }}</a
           >
           <g-link
             v-else
