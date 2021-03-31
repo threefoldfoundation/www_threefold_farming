@@ -13,9 +13,9 @@ items:
  - title: LEARN
    links:
     - name: Knowledge Base
-      link: https://new.threefold.io/info/threefold#/threefold__farming_intro
+      link: https://threefold.io/info/threefold#/threefold__farming_intro
     - name: About ThreeFold
-      link: /
+      link: https://threefold.io/
     - name: 3Node
       link: /farming/3node
     - name: ThreeFold Token
@@ -24,13 +24,13 @@ items:
  - title: PARTICIPATE
    links:
     - name: Become a Farmer
-      link: https://new.threefold.io/info/threefold#/threefold__become_a_farmer
+      link: https://threefold.io/info/threefold#/threefold__become_a_farmer
     - name: Pre-Register
       link: /farming/pre-register
     - name: How to Get TFT's
-      link: https://new.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+      link: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
     - name: Store TFT's
-      link: https://new.threefold.io/info/threefold#/threefold__storing_tft
+      link: https://threefold.io/info/threefold#/threefold__storing_tft
 
  - title: COMMUNITY
    links:
@@ -44,7 +44,7 @@ items:
       link: 'mailto:info@threefold.io'
 ---
 
-[Terms & Conditions](https://new.threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://new.threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
+[Terms & Conditions](https://threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
 
 <br/>
 &#xA9; 2021 ThreeFold, All rights reserved.

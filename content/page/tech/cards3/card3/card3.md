@@ -3,7 +3,7 @@ id: solution_card3
 title: Plug & Earn
 image: ./solution_card_3.png
 button: Learn More
-link: https://new.threefold.io/info/threefold#/grid_tech_opensource?id=our-automation-layer
+link: https://threefold.io/info/threefold#/grid_tech_opensource?id=our-automation-layer
 order: 4
 ---
 

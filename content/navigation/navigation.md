@@ -25,7 +25,7 @@ navLinks:
     link: /pre-register
     external: false
     expandable: false
-      
+ 
   - name: More
     link: /more
     external: false
@@ -51,6 +51,11 @@ navLinks:
       - title: Community
         path: https://forums.threefold.io/
         external: true
+
+  - name : TF Home
+    link: /
+    external: true
+    expandable: false     
 
 social:
   - icon: telegram-plane
