@@ -6,12 +6,12 @@ header_excerpt: This is the era of decentralization. Plug in a server (3Node) fr
 button: Meet the 3Node
 link: /3node
 header: home_header
+header2 : header_map
+solution_image_2: ./home_map.png
 featuresMain: Feature_home
 productsMain: graph_home
 productData: [img_1, img_2, img_3, img_4]
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
-headerSolution : header_map
-solution_image_2: ./home_map.png
 cards: [home_card]
 featuresMain2: Features_home_2
 features2:
