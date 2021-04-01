@@ -8,7 +8,7 @@
     <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
       <div class="mx-4 sm:mx-0">
         <h1 class="pb-0 mb-0 text-5xl font-medium capitalize">
-          {{ $page.membership.title }}
+          {{ $page.membership.title.replace("_", " ") }}
         </h1>
         <p class="text-gray-700 text-xl">
           <span class="self-center"
@@ -63,7 +63,7 @@
       }
     }  
 
-   allMembership(filter: {title: {in: ["foundation", "tech", "farmers", "ambassadors"]}}){
+   allMembership(filter: {title: {in: ["cofounders", "tech", "foundation", "ambassadors", "matchmakers", "farmers", "aci_members", "partners", "wisdom_council", "technology_council", "grid_guardians"]}}){
      edges{
       node{
         id
