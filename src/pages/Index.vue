@@ -10,6 +10,16 @@
       />
 
       <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image_2"
+        :src="$page.markdownPage.solution_image_2.src"
+      />
+
+      <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
@@ -28,15 +38,10 @@
         :features="$page.markdownPage.features"
       />
       
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image_2"
-        :src="$page.markdownPage.solution_image_2.src"
-      />
+      /> -->
 
       <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -101,6 +106,15 @@
           content
         }
         header{
+         title
+         subtitle
+         content
+         btn1
+         link1
+         btn2
+         link2
+       }
+        header2{
          title
          subtitle
          content
