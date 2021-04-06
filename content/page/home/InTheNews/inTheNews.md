@@ -3,10 +3,10 @@ id: in_the_news
 # Add logos in src/assets/images/
 partners:
   - path: https://www.forbes.com/sites/johnkoetsier/2020/06/20/largest-distributed-peer-to-peer-grid-on-the-planet-laying-foundation-for-a-decentralized-internet/?fbclid=IwAR1WKCpqLcWPRWg5bPD6RCQE5JJjRPt6ey5vbEnu3db2FvJnp6-YKeVZNW8#79aa340e6798'
-    logo: forbers.png
+    logo: forbes.png
 
   - path: https://cointelegraph.com/news/peer-to-peer-internet-has-lofty-goal-to-bring-true-decentralization
-    logo: thecointel.png
+    logo: cointelegraph.png
 
   - path: https://hackernoon.com/is-it-possible-to-create-a-decentralized-internet-this-startup-and-its-farmers-think-so-ey2e3ycf
     logo: hackernoon.png
