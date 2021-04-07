@@ -1,8 +1,8 @@
 ---
 id: tfgrid_explorer
 title: ''
-subtitle: Join the most advanced peer-to-peer network!
-btn1: TFGrid Explorer
+subtitle: Join the Peer-to-Peer Internet
+btn1: Live Stats
 link1: https://explorer.threefold.io
 btn2: ''
 link2: ''

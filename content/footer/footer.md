@@ -12,36 +12,57 @@ telegram: 'https://t.me/threefoldnews'
 items:
  - title: LEARN
    links:
-    - name: Knowledge Base
-      link: https://threefold.io/info/threefold#/threefold__farming_intro
-    - name: About ThreeFold
-      link: https://threefold.io/
-    - name: 3Node
+    - name: Live Capacity
+      link: https://explorer.threefold.io
+    - name: Buy TFT
+      link: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+    - name: Get a 3Node
       link: /farming/3node
-    - name: ThreeFold Token
-      link: /farming/token
-
- - title: PARTICIPATE
-   links:
+    - name: Grid Architecture
+      link: https://threefold.io/info/threefold#/threefold__grid_architecture
+    - name: What is P2P?
+      link: https://threefold.io/info/threefold#/threefold__grid_compare
+    - name: What is Farming?
+      link: https://threefold.io/info/threefold#/threefold__farming_intro
     - name: Become a Farmer
       link: https://threefold.io/info/threefold#/threefold__become_a_farmer
-    - name: Pre-Register
-      link: /farming/pre-register
-    - name: How to Get TFT's
-      link: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
-    - name: Store TFT's
-      link: https://threefold.io/info/threefold#/threefold__storing_tft
+    - name: ThreeFold Glossary
+      link: https://www.threefold.io/info/threefold#/threefold__defs
 
- - title: COMMUNITY
+ - title: UNIVERSE
    links:
-    - name: Join our Forum
-      link: https://forum.threefold.io/
-    - name: Join Farmer Chat
-      link: https://t.me/joinchat/B2ISCkNpZjNv7WJ2eiNJJw
-    - name: Stay Updated
-      link: https://t.me/threefoldnews
+    - name: ThreeFold
+      link: https://threefold.io
+    - name: ThreeFold Token
+      link: https://threefold.io/token
+    - name: ThreeFold Grid
+      link: /farming/tech
+    - name: P2P Cloud
+      link: https://threefold.io/cloud
+    - name: P2P Marketplace
+      link: https://threefold.io/marketplace
+    - name: Digital Twin
+      link: https://mydigitaltwin.io
+    - name: Conscious Internet
+      link: https://threefold.io/aci
+    - name: ThreeFold Tech
+      link: https://threefold.tech
+
+ - title: ABOUT US
+   links:
+    - name: ThreeFold
+      link: https://threefold.io/info/threefold
+    - name: Blog
+      link: /farming/blog
+    - name: NewsRoom
+      link: /farming/news
+    - name: Forum
+      link: https://forum.threefold.io
+    - name: Team
+      link: /farming/team
     - name: Contact Us
-      link: 'mailto:info@threefold.io'
+      link: mailto:info@threefold.io
+
 ---
 
 [Terms & Conditions](https://threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
