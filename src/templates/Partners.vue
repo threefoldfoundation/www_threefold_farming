@@ -20,7 +20,7 @@
 
 <page-query>
 query ($private: Int){
-  entries: allProject (sortBy: "rank", order: DESC, filter: { private: { ne: $private }, tags: { id: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}}){
+  entries: allProject (sortBy: "rank", order: ASC, filter: { private: { ne: $private }, category: { contains: ["farming"]}}){
     totalCount
     edges {
       node {

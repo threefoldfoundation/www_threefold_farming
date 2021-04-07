@@ -19,7 +19,7 @@
 
 <page-query>
 query ($private: Int){
-  entries: allPerson (sortBy: "rank", order: DESC, filter: { private: { ne: $private }, memberships: { id: {in: ["cofounders", "tech", "foundation", "ambassadors", "matchmakers", "farmers", "aci_members", "partners", "wisdom_council", "technology_council", "grid_guardians"]}}}){
+  entries: allPerson (sortBy: "rank", order: ASC, filter: { private: { ne: $private }, category: { contains: ["farming"]}}){
     totalCount
     edges {
       node {

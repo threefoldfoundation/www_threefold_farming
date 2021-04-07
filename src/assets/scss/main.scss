@@ -76,7 +76,6 @@ ul {
     @apply bg-gray-500;
 }
 
-
 // .animated-link:hover:after {
 //     width: 100%;
 // }
@@ -94,7 +93,7 @@ ul {
     @apply flex-col;
     @apply w-full;
     .post-card-image {
-        @apply h-56;
+        @apply h-full;
         @apply w-full;
         @apply object-cover;
         @apply rounded;
@@ -124,8 +123,6 @@ button:focus {
 
 .post-content a {
     color: #4ec48f;
-    
-    
 }
 
 .text-8xl {
@@ -189,10 +186,9 @@ button:focus {
         .post-card-excerpt {
             @apply text-xl;
         }
-
         .h-64 {
             height: 20rem !important;
-          }
+        }
     }
     // .news>.flex-post:nth-child(9n+1),
     // .news>.flex-post:nth-child(9n+2) {
@@ -289,7 +285,7 @@ button:focus {
     }
     .h-64 {
         height: 20rem !important;
-      }
+    }
 }
 
 // body[data-theme="dark"] {
