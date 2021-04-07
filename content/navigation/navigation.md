@@ -17,8 +17,8 @@ navLinks:
     expandable: false
 
   - name: Token
-    link: https://threefold.io/token
-    external: true
+    link: /token
+    external: false
     expandable: false
 
   - name: Learn
@@ -27,32 +27,32 @@ navLinks:
     expandable: true
     submenu:
       - title: Live Capacity
-      - path: https://explorer.threefold.io
-      - external: true
+        path: https://explorer.threefold.io
+        external: true
 
       - title: Buy TFT
-      - path: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
-      - external: true
+        path: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+        external: true
 
       - title: What is Farming?
-      - path: https://threefold.io/info/threefold#/threefold__farming_intro
-      - external: true
+        path: https://threefold.io/info/threefold#/threefold__farming_intro
+        external: true
 
       - title: Become a Farmer
-      - path: https://threefold.io/info/threefold#/threefold__become_a_farmer
-      - external: true
+        path: https://threefold.io/info/threefold#/threefold__become_a_farmer
+        external: true
 
       - title: Grid Architecture
-      - path: https://threefold.io/info/threefold#/threefold__grid_architecture
-      - external: true
+        path: https://threefold.io/info/threefold#/threefold__grid_architecture
+        external: true
 
       - title: What is P2P?
-      - path: https://threefold.io/info/threefold#/threefold__grid_compare
-      - external: true
+        path: https://threefold.io/info/threefold#/threefold__grid_compare
+        external: true
 
       - title: ThreeFold Glossary
-      - path: https://www.threefold.io/info/threefold#/threefold__defs
-      - external: true
+        path: https://www.threefold.io/info/threefold#/threefold__defs
+        external: true
 
   - name: About Us
     link: "" # /dropdown
