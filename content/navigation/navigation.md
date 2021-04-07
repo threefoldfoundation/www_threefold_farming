@@ -18,15 +18,14 @@ navLinks:
 
   - name: Token
     link: https://threefold.io/token
-    external: false
-    expandable: true
-  
+    external: true
+    expandable: false
+
   - name: Learn
     link: "" # /dropdown
     external: false
     expandable: true
     submenu:
-
       - title: Live Capacity
       - path: https://explorer.threefold.io
       - external: true
@@ -54,13 +53,12 @@ navLinks:
       - title: ThreeFold Glossary
       - path: https://www.threefold.io/info/threefold#/threefold__defs
       - external: true
- 
+
   - name: About Us
     link: "" # /dropdown
     external: false
     expandable: true
     submenu:
-
       - title: Blog
         path: /blog
 
@@ -80,12 +78,11 @@ navLinks:
       - title: Contact Us
         path: mailto:info@threefold.io
 
-  - name : Universe
+  - name: Universe
     link: "" # /dropdown
     external: false
     expandable: true
     submenu:
-    
       - title: ThreeFold
         path: https://threefold.io
         external: true
@@ -100,11 +97,11 @@ navLinks:
       - title: P2P Cloud
         path: https://threefold.io/cloud
         external: true
-      
+
       - title: P2P Marketplace
         path: https://threefold.io/marketplace
         external: true
-      
+
       - title: Digital Twin
         path: https://mydigitaltwin.io
         external: true
