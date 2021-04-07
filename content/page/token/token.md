@@ -15,7 +15,7 @@ cards: [token_card1]
 headerSolution3: headerToken3
 comparisonMain: token_comparison
 comparisonSecs:
-  [token_comparison1, token_comparison2, token_comparison3]
+  [buy_tft, swap_tft, spend_tft]
 cards2: [token2_card1]
 cta: home_token
 ---

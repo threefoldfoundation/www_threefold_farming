@@ -1,7 +1,7 @@
 ---
-id: token_comparison1
-svg: ./swap.png
-title: Swap TFT
+id: buy_tft
+svg: ./buy_tft.png
+title: Buy TFT
 ---
 
-Exchange your TFT with other tokens including Bitcoin.
+Get your hands on the currency of the new P2P Internet.

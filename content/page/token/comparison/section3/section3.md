@@ -1,6 +1,7 @@
 ---
-id: token_comparison3
-svg: ./earn.png
-title: Earn interest
+id: spend_tft
+svg: ./spend_tft.png
+title: Spend TFT
 ---
-Earn by vesting your TFTs (coming 2021).
+
+Purchase products and services on the ThreeFold Grid.
