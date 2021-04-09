@@ -1,6 +1,42 @@
 ---
 id: navigation
 navLinks:
+  - name: Universe
+    link: "" # /dropdown
+    external: false
+    expandable: true
+    submenu:
+      - title: ThreeFold
+        path: https://threefold.io
+        external: true
+
+      - title: ThreeFold Token
+        path: https://threefold.io/token
+        external: true
+
+      - title: ThreeFold Grid
+        path: /tech
+
+      - title: P2P Cloud
+        path: https://threefold.io/cloud
+        external: true
+
+      - title: P2P Marketplace
+        path: https://threefold.io/marketplace
+        external: true
+
+      - title: Digital Twin
+        path: https://mydigitaltwin.io
+        external: true
+
+      - title: Conscious Internet
+        path: https://threefold.io/aci
+        external: true
+
+      - title: ThreeFold Tech
+        path: https://threefold.tech
+        external: true
+        
   - name: Why
     link: /why
     external: false
@@ -77,42 +113,6 @@ navLinks:
 
       - title: Contact Us
         path: mailto:info@threefold.io
-
-  - name: Universe
-    link: "" # /dropdown
-    external: false
-    expandable: true
-    submenu:
-      - title: ThreeFold
-        path: https://threefold.io
-        external: true
-
-      - title: ThreeFold Token
-        path: https://threefold.io/token
-        external: true
-
-      - title: ThreeFold Grid
-        path: /tech
-
-      - title: P2P Cloud
-        path: https://threefold.io/cloud
-        external: true
-
-      - title: P2P Marketplace
-        path: https://threefold.io/marketplace
-        external: true
-
-      - title: Digital Twin
-        path: https://mydigitaltwin.io
-        external: true
-
-      - title: Conscious Internet
-        path: https://threefold.io/aci
-        external: true
-
-      - title: ThreeFold Tech
-        path: https://threefold.tech
-        external: true
 
 social:
   - icon: telegram-plane
