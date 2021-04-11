@@ -27,7 +27,7 @@
           :currentPage="blogs.pageInfo.currentPage"
           :totalPages="blogs.pageInfo.totalPages"
           :maxVisibleButtons="5"
-          v-if="blogs.pageInfo.totalPages > 1 && blogs.edges.length > 0"
+          v-if="blogs.pageInfo.totalPages > 1 && blogs.edges.length >= 10"
         />
       </div>
     </div>
@@ -36,7 +36,7 @@
 <page-query>
 
 query($page: Int){
-  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { id: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}}) @paginate{
+  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { contains: ["farming"]}}) @paginate{
     totalCount
     pageInfo {
       totalPages
@@ -69,7 +69,7 @@ query($page: Int){
     }
   }
 
-   topics:  allBlogTag(filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) {
+   topics:  allBlogTag{
     edges{
       node{
 				title        

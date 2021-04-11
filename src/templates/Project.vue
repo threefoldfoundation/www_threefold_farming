@@ -78,13 +78,13 @@
                 </li>
               </ul>
 
-              <!-- <g-link
-                v-for="edge in $page.tags.edges"
-                :key="edge.node.id"
-                :to="edge.node.path"
+              <g-link
+                v-for="tag in $page.project.tags"
+                :key="tag.id"
+                :to="tag.path"
                 class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
-                >{{ edge.node.title }}</g-link
-              > -->
+                >{{ tag.title }}</g-link
+              >
             </section>
           </div>
         </div>
@@ -156,6 +156,11 @@
                   path
                   logo
                   image
+                  tags {
+                    id
+                    title
+                    path
+                  }
               }
             }
           }

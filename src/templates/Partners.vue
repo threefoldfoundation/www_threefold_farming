@@ -8,6 +8,7 @@
     <div class="container mt-8 sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
+          :showtags="true"
           v-for="partner in $page.entries.edges"
           :key="partner.id"
           :record="partner.node"
@@ -39,6 +40,11 @@ query ($private: Int){
         image(width:800)
         timeToRead
         logo
+        tags{
+          id
+          title
+          path
+        }
       }
     }
   }

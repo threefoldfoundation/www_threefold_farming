@@ -11,20 +11,14 @@
           {{ $page.membership.title.replace("_", " ") }}
         </h1>
         <p class="text-gray-700 text-xl">
-          <span class="self-center"
-            >{{ $page.membership.belongsTo.totalCount }} People</span
-          >
+          <span class="self-center">{{ items.length }} People</span>
         </p>
       </div>
 
       <div class="pt-8 border-b"></div>
 
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
-        <PostListItem
-          v-for="edge in $page.membership.belongsTo.edges"
-          :key="edge.node.id"
-          :record="edge.node"
-        />
+        <PostListItem v-for="item in items" :key="item.id" :record="item" />
       </div>
     </div>
   </Layout>
@@ -57,6 +51,7 @@
               cities
               private
               image
+              category
             }
           }
         }
@@ -93,6 +88,14 @@ export default {
         res.push({ title: edge.node.title, path: edge.node.path })
       );
       return res;
+    },
+    items() {
+      let farmingItems = [];
+      this.$page.membership.belongsTo.edges.map((edge) => {
+        if (edge.node.category.includes("farming"))
+          farmingItems.push(edge.node);
+      });
+      return farmingItems;
     },
   },
 
