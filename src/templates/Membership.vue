@@ -18,7 +18,12 @@
       <div class="pt-8 border-b"></div>
 
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
-        <PostListItem v-for="item in items" :key="item.id" :record="item" />
+        <PostListItem
+          :showtags="true"
+          v-for="item in items"
+          :key="item.id"
+          :record="item"
+        />
       </div>
     </div>
   </Layout>
