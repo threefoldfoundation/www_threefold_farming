@@ -149,7 +149,7 @@
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <NewCard
+      <NewCard class="my-10"
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"
