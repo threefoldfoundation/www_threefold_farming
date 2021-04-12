@@ -58,8 +58,8 @@ items:
       link: /farming/news
     - name: Forum
       link: https://forum.threefold.io
-    - name: Team
-      link: /farming/team
+    - name: People
+      link: /farming/people
     - name: Contact Us
       link: mailto:info@threefold.io
 
