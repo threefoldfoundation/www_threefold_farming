@@ -2,11 +2,6 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
 
-    <!-- <g-image
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-      /> -->
-
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -25,6 +20,11 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       /> 
+
+      <g-image
+        v-if="$page.markdownPage.solution_image2"
+        :src="$page.markdownPage.solution_image2.src"
+      />
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
@@ -196,7 +196,7 @@
         button
         link
         solution_image
-     #  solution_image2
+        solution_image2
         solution_image3
         solution_image4
         slides{

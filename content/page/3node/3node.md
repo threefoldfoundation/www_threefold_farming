@@ -8,8 +8,6 @@ button: Pre-Register Today
 link: /farming/pre-register
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
-header2: tfgrid_explorer
-solution_image: ./participate_main2.png 
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4, feature5, feature6]
 brandPanel : participate_brandPanel
@@ -17,6 +15,9 @@ brandPanel : participate_brandPanel
 
 <!-- header: participate_header -->
 <!-- solution_image: ./participate_main.png -->
+
+<!-- header2: tfgrid_explorer
+solution_image: ./participate_main2.png  -->
 
 <!-- howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3] -->

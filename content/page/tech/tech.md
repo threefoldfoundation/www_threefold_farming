@@ -5,6 +5,8 @@ header_image: ./tech_header.png
 header_excerpt: Bringing a smart, secure and efficient Internet solution that allows anyone to connect capacity and participate in the Internet economy. An upgrade from today’s centralized data center model.
 button: ''
 link: ''
+header: tfgrid_explorer
+solution_image2: ./participate_main2.png
 headerSolution4: headerSolution4
 solution_image3: ./intro_3node.png
 cards3: [card1]
