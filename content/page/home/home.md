@@ -7,7 +7,7 @@ button: Meet the 3Node
 link: /3node
 header2 : header_map
 solution_image_2: ./home_map.png
-cards2: carbon_neutral
+cards2: [carbon_neutral]
 header: home_header
 featuresMain: Feature_home
 productsMain: graph_home
