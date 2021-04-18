@@ -1,7 +1,7 @@
 ---
 id: carbon_neutral
 title: Truly Better for Our Planet
-image: ./carbon_neutral_farming.png
+image: ./carbon_neutral_farming1.png
 button: ''
 link: ''
 order: 1
