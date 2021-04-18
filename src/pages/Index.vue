@@ -18,6 +18,12 @@
         v-if="$page.markdownPage.solution_image_2"
         :src="$page.markdownPage.solution_image_2.src"
       />
+      
+      <NewCard
+        v-for="card in $page.markdownPage.cards2"
+        :key="card.id"
+        :card="card"
+      />
 
       <SolutionsHeader
         v-if="$page.markdownPage.header"
@@ -97,6 +103,15 @@
         solution_image
         solution_image_2
         cards{
+          id
+          title
+          image
+          button
+          link
+          order
+          content
+        }
+        cards2{
           id
           title
           image

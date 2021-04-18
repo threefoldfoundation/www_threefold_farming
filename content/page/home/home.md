@@ -5,9 +5,10 @@ header_image: ./farming_header2.png
 header_excerpt: This is the era of decentralization. Plug in a server (3Node) from your home or office and start generating passive revenue by selling peer-to-peer storage and compute capacity.
 button: Meet the 3Node
 link: /3node
-header: home_header
 header2 : header_map
 solution_image_2: ./home_map.png
+cards2: carbon_neutral
+header: home_header
 featuresMain: Feature_home
 productsMain: graph_home
 productData: [img_1, img_2, img_3, img_4]
