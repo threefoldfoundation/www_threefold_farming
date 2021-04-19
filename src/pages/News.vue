@@ -66,6 +66,11 @@ query($page: Int){
     }
   }
 
+    markdownPage(id: "home") {
+        id
+        metaImg
+  }
+
   topics: allNewsTag{
     edges{
       node{
@@ -115,8 +120,48 @@ export default {
     };
   },
 
-  metaInfo: {
-    title: "Newsroom",
+  metaInfo() {
+    return {
+      title: "",
+      titleTemplate: "ThreeFold Farming | News",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content: "Updates and announcements from the ThreeFold Foundation.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: "ThreeFold Farming | News",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: "Updates and announcements from the ThreeFold Foundation.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: "Updates and announcements from the ThreeFold Foundation.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: "ThreeFold Farming | News",
+        },
+      ],
+    };
   },
   components: {
     PostListItem,
@@ -254,6 +299,19 @@ export default {
       if (process.isClient) {
         return window.innerHeight - 570;
       }
+    },
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };

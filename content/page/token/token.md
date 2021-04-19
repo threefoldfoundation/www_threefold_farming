@@ -1,5 +1,8 @@
 ---
 id: token
+metaTitle: ThreeFold Farming | Token (TFT)
+metaDesc: The ThreeFold Token is the currency of the fastest growing P2P internet network on the planet. Earn tokens by becoming a ThreeFold Farmer.
+metaImg: ./token_header.png
 header_title: What is ThreeFold Token? 
 header_image: ./token_header.png
 header_altImg: token_header

@@ -44,6 +44,10 @@ query ($private: Int){
       }
     }
   }
+    markdownPage(id: "home") {
+        id
+        metaImg
+  }
 
    memberships: allMembership(filter: {title: {in: ["cofounders", "tech", "foundation", "ambassadors", "matchmakers", "farmers", "aci_members", "partners", "wisdom_council", "technology_council", "grid_guardians"]}}){
      edges{
@@ -68,7 +72,48 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.pageName,
+      title: "",
+      titleTemplate: " ThreeFold Farming | People",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content:
+            "Meet the wide range of passionate and dedicated individuals involved in the ThreeFold movement.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: " ThreeFold Farming | People",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content:
+            "Meet the wide range of passionate and dedicated individuals involved in the ThreeFold movement.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Meet the wide range of passionate and dedicated individuals involved in the ThreeFold movement.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: " ThreeFold Farming | People",
+        },
+      ],
     };
   },
   computed: {
@@ -79,10 +124,18 @@ export default {
       );
       return res;
     },
-    pageName() {
-      let path = this.$route.path.substring(1);
-      let name = path[0].toUpperCase() + path.slice(1);
-      return name;
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };

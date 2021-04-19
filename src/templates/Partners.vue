@@ -48,7 +48,11 @@ query ($private: Int){
       }
     }
   }
-  
+    markdownPage(id: "home") {
+        id
+        metaImg
+  }
+
   tags: allProjectTag (filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) {
      edges{
       node{
@@ -73,7 +77,48 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.pageName,
+      title: "",
+      titleTemplate: "ThreeFold Farming | Partners",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content:
+            "Meet the incredible organizations that make up the ThreeFold Farming ecosystem.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: "ThreeFold Farming | Partners",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content:
+            "Meet the incredible organizations that make up the ThreeFold Farming ecosystem.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Meet the incredible organizations that make up the ThreeFold Farming ecosystem.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: "ThreeFold Farming | Partners",
+        },
+      ],
     };
   },
   computed: {
@@ -84,10 +129,18 @@ export default {
       );
       return res;
     },
-    pageName() {
-      let path = this.$route.path.substring(1);
-      let name = path[0].toUpperCase() + path.slice(1);
-      return name;
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };

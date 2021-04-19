@@ -18,7 +18,7 @@
         v-if="$page.markdownPage.solution_image_2"
         :src="$page.markdownPage.solution_image_2.src"
       />
-      
+
       <NewCard
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
@@ -43,7 +43,7 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
-      
+
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
@@ -71,7 +71,10 @@
       :news="$page.markdownPage.inTheNews"
     />
 
-    <NewsLetter v-if="$page.markdownPage.NewsLetter" :NewsLetter="$page.markdownPage.NewsLetter" />
+    <NewsLetter
+      v-if="$page.markdownPage.NewsLetter"
+      :NewsLetter="$page.markdownPage.NewsLetter"
+    />
 
     <SignUp
       :signup="$page.markdownPage.signup"
@@ -95,6 +98,9 @@
         id
         path
         content
+        metaTitle
+        metaDesc
+        metaImg
         header_title
         header_image
         header_excerpt
@@ -247,10 +253,63 @@ export default {
     InTheNews,
     ShowcaseProducts,
   },
-metaInfo: {
-    title: "",
-    titleTemplate: "ThreeFold Farming | Be the Internet",
- 
+  computed: {
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
+    },
+  },
+  metaInfo() {
+    return {
+      title: "",
+      titleTemplate: this.$page.markdownPage.metaTitle,
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+      ],
+    };
   },
 };
 </script>

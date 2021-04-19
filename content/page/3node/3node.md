@@ -1,5 +1,8 @@
 ---
 id: 3node
+metaTitle: ThreeFold Farming | 3Node
+metaDesc: All you need is an electricity outlet, Internet connection, and a 3Node to start earning.
+metaImg: ./3node_header.png
 header_title: Plug & Earn
 header_image: ./3node_header.png
 header_altImg: participate_header

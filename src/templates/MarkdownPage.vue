@@ -1,7 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -19,7 +18,7 @@
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
-      /> 
+      />
 
       <g-image
         v-if="$page.markdownPage.solution_image2"
@@ -35,27 +34,26 @@
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
       />
-      
+
       <NewCard
         v-for="card in $page.markdownPage.cards3"
         :key="card.id"
         :card="card"
       />
-      
+
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
       /> -->
-    
+
       <!-- <FourTiersWithToggle
         v-if="$page.markdownPage.pricingPlans && 
         $page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       /> -->
-      
-  
+
       <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
@@ -67,11 +65,11 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
-      /> 
+      />
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
@@ -117,7 +115,7 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
-     
+
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -149,7 +147,8 @@
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <NewCard class="my-10"
+      <NewCard
+        class="my-10"
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"
@@ -189,6 +188,9 @@
         id
         path
         content
+        metaTitle
+        metaDesc
+        metaImg
         header_excerpt
         header_altImg
         header_title
@@ -452,14 +454,60 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.pageName,
+      title: "",
+      titleTemplate: this.$page.markdownPage.metaTitle,
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+      ],
     };
   },
   computed: {
-    pageName() {
-      let path = this.$route.path.substring(1);
-      let name = path[0].toUpperCase() + path.slice(1);
-      return name;
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };
