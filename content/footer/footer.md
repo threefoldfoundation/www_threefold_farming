@@ -28,23 +28,26 @@ items:
       link: https://threefold.io/aci
     - name: ThreeFold Tech
       link: https://threefold.tech
+
+ - title: PARTICIPATE
+   links:
+    - name: Buy TFT
+      link: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+    - name: Get a 3Node
+      link: /farming/3node
+    - name: Become a Farmer
+      link: https://threefold.io/info/threefold#/threefold__become_a_farmer
       
  - title: LEARN
    links:
     - name: Live Capacity
       link: https://explorer.threefold.io
-    - name: Buy TFT
-      link: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
-    - name: Get a 3Node
-      link: /farming/3node
     - name: Grid Architecture
       link: https://threefold.io/info/threefold#/threefold__grid_architecture
     - name: What is P2P?
       link: https://threefold.io/info/threefold#/threefold__grid_compare
     - name: What is Farming?
       link: https://threefold.io/info/threefold#/threefold__farming_intro
-    - name: Become a Farmer
-      link: https://threefold.io/info/threefold#/threefold__become_a_farmer
     - name: ThreeFold Glossary
       link: https://www.threefold.io/info/threefold#/threefold__defs
 

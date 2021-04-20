@@ -5,7 +5,7 @@
 <template>
   <footer class="bg-white">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="xl:grid xl:grid-cols-4 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
           <g-image
             class="h-10"
@@ -145,7 +145,7 @@
           </div>
         </div>
         <div
-          class="mt-12 grid md:grid-cols-3 sm:grid-cols-2 xl:mt-0 xl:col-span-2"
+          class="mt-12 grid md:grid-cols-4 sm:grid-cols-2 xl:mt-0 xl:col-span-3"
         >
           <!-- class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2" -->
 
