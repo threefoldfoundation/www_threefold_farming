@@ -9,9 +9,14 @@
         :link="$url($page.markdownPage.link)"
       />
 
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
+      /> -->
+
+      <Stats
+        v-if="$page.markdownPage.stats"
+        :section="$page.markdownPage.stats"
       />
 
       <g-image
@@ -20,6 +25,7 @@
       />
 
       <NewCard
+        id="card"
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"
@@ -221,6 +227,13 @@
             logo
           }
         }
+        stats {
+          id
+          title
+          content
+          button
+          link
+        }
     }  
   }
 
@@ -238,6 +251,7 @@ import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import NewsLetter from "~/components/custom/sections/NewsLetter.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
+import Stats from "~/components/marketing/sections/stats-sections/simple_in_card.vue";
 
 export default {
   components: {
@@ -252,6 +266,7 @@ export default {
     NewsLetter,
     InTheNews,
     ShowcaseProducts,
+    Stats,
   },
   computed: {
     getImg() {

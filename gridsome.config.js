@@ -222,6 +222,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Stats',
+                path: './content/page/**/stats/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -260,6 +268,7 @@ module.exports = {
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',
                     plans: 'Plans',
+                    stats: 'Stats'
                 }
             }
         },
@@ -383,34 +392,34 @@ module.exports = {
             options: {
                 searchFields: ['title', 'name', 'content', 'status', 'linkedin', 'excerpt', 'cities', 'countries', 'websites'],
                 collections: [{
-                        typeName: 'Blog',
-                        indexName: 'Blog',
-                        fields: ['path']
-                    },
+                    typeName: 'Blog',
+                    indexName: 'Blog',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'Project',
-                        indexName: 'Project',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'Project',
+                    indexName: 'Project',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'Person',
-                        indexName: 'Person',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'Person',
+                    indexName: 'Person',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'News',
-                        indexName: 'News',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'News',
+                    indexName: 'News',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'MarkdownPage',
-                        indexName: 'MarkdownPage',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'MarkdownPage',
+                    indexName: 'MarkdownPage',
+                    fields: ['path']
+                },
 
                 ]
             }
@@ -486,19 +495,19 @@ module.exports = {
             anchorClassName: 'icon icon-link',
             plugins: [
                 ['gridsome-plugin-remark-prismjs-all', {
-                        highlightClassName: "gridsome-highlight",
-                        codeTitleClassName: "gridsome-code-title",
-                        classPrefix: 'language-',
-                        aliases: {},
-                        noInlineHighlight: false,
-                        showLineNumbers: false, //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-                        languageExtensions: [],
-                        prompt: { //  `require("prismjs/plugins/command-line/prism-command-line.css");`
-                            user: `root`,
-                            host: `localhost`,
-                            global: false,
-                        }
-                    },
+                    highlightClassName: "gridsome-highlight",
+                    codeTitleClassName: "gridsome-code-title",
+                    classPrefix: 'language-',
+                    aliases: {},
+                    noInlineHighlight: false,
+                    showLineNumbers: false, //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+                    languageExtensions: [],
+                    prompt: { //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+                        user: `root`,
+                        host: `localhost`,
+                        global: false,
+                    }
+                },
                     // '@noxify/gridsome-remark-table-align', ['@noxify/gridsome-remark-classes', {
                     //     'table': 'table table-striped',
                     //     'tableCell[align=center]': 'text-center',

@@ -32,6 +32,7 @@ inTheNews: in_the_news
 cta: home_cta
 NewsLetter : NewsLetter_signup
 solution_image: ./home_grid.png
+stats: stats
 ---
 
 <!--  -->
