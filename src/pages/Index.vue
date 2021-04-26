@@ -24,8 +24,15 @@
         :src="$page.markdownPage.solution_image_2.src"
       />
 
+      <div class="text-center my-10" v-if="$page.markdownPage.stats.button">
+        <a
+          :href="$page.markdownPage.stats.link"
+          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+          >{{ $page.markdownPage.stats.button }}</a
+        >
+      </div>
+
       <NewCard
-        id="card"
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"

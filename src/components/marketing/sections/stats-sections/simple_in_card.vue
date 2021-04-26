@@ -13,13 +13,13 @@
         ></div>
       </div>
     </div>
-    <div class="text-center my-10">
+    <!-- <div class="text-center my-10">
       <a
         :href="section.link"
         class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         >{{ section.button }}</a
       >
-    </div>
+    </div> -->
     <div class="mt-10 pb-12 bg-white sm:pb-16">
       <div class="relative">
         <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
@@ -33,7 +33,7 @@
               >
                 <div v-for="(value, key) in item" :key="key">
                   <dd
-                    class="text-5xl leading-none font-extrabold text-indigo-600"
+                    class="text-5xl leading-none font-extrabold green-color"
                     aria-describedby="item-1"
                   >
                     {{ value }}
@@ -69,8 +69,8 @@ export default {
       const results = await axios.get(
         "https://explorer.threefold.io/api/stats"
       );
-      let sru = results.data.sru / 1000;
-      let hru = (results.data.hru / 1000000).toFixed(2);
+      let sru = (results.data.sru / 1000).toFixed();
+      let hru = (results.data.hru / 1000000).toFixed();
       this.stats.push(
         { countries: results.data.countries },
         { "cores online": results.data.cru },
@@ -83,3 +83,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.green-color {
+  color: #4ec38f;
+}
+</style>
