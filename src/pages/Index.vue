@@ -1,14 +1,16 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden">
       <Header
+        :id="$page.markdownPage.id"
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$url($page.markdownPage.link)"
       />
-
+    </div>
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"

@@ -1,7 +1,10 @@
 <template>
-  <div class="fixed inset-0 h-16 bg-white">
+  <div
+    class="fixed inset-0 h-16 px-16"
+    :class="{ scrolled: !view.atTopOfPage }"
+  >
     <header
-      class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4 transition-all transition-500"
+      class="flex items-center justify-between flex-wrap container-fluid mx-auto px-4 sm:px-0 py-4 transition-all transition-500"
       :class="{
         'opacity-100': !disableScroll && scrollPosition > headerHeight,
         'opacity-0': !disableScroll && scrollPosition < headerHeight,
@@ -101,7 +104,7 @@
 
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="navbar md:order-2 px-2 pt-2 pb-4 sm:flex sm:p-0 sm:w-100 bg-white"
+        class="navbar md:order-2 px-2 pt-2 ml-auto pb-4 sm:flex sm:p-0 sm:w-100 bg-transparent"
       >
         <div
           :key="index"
@@ -175,14 +178,14 @@
             :href="element.link"
             @click="clicked"
             target="_blank"
-            class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
+            class="inline-flex sm:flex uppercase p-2 mr-5 animated-link"
             >{{ element.name }}</a
           >
           <g-link
             v-else
             :to="element.link"
             @click="clicked"
-            class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
+            class="inline-flex sm:flex uppercase p-2 mr-5 animated-link"
             >{{ element.name }}</g-link
           >
         </div>
@@ -295,6 +298,9 @@ export default {
       open: false,
       active: null,
       currentLink: -1,
+      view: {
+        atTopOfPage: true,
+      },
     };
   },
   methods: {
@@ -321,7 +327,21 @@ export default {
     clicked() {
       this.isOpen = false;
     },
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.pageYOffset > 0) {
+        // user is scrolled
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false;
+      } else {
+        // user is at top of page
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true;
+      }
+    },
   },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+
   mounted() {
     if (!this.disableScroll) {
       var height = document.getElementById("header").clientHeight;
@@ -356,6 +376,21 @@ a.active--exact.active {
 }
 .logo {
   max-width: 180px;
+}
+
+nav {
+  z-index: 10;
+}
+
+.scrolled {
+  @apply shadow-2xl;
+  border-bottom: 0px;
+  background-color: white;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 @media (max-width: 768px) {
   .navbar {

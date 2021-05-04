@@ -1,10 +1,5 @@
 <template>
   <div class="mx-auto">
-    <NavBar
-      :navigation="$static.navigation"
-      @setTheme="setTheme"
-      :theme="this.theme"
-    />
     <slot />
     <Footer :record="$static.footer" @setTheme="setTheme" :theme="this.theme" />
   </div>
@@ -12,11 +7,9 @@
 
 
 <script>
-import NavBar from "~/components/application-ui/navigation/navbars/simple_dark_with_menu_button_on_left.vue";
 import Footer from "~/components/marketing/sections/cta-sections/Footer.vue";
 export default {
   components: {
-    NavBar,
     Footer,
   },
   data() {
@@ -74,9 +67,13 @@ query {
 </static-query>
 
 <style>
+@font-face {
+  font-family: "Ego";
+  src: url("../assets/fonts/Ego-Regular.ttf");
+  font-weight: normal;
+}
+
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   line-height: 1.5;
 }

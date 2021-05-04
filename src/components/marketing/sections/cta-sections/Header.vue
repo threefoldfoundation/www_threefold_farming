@@ -1,5 +1,40 @@
 <template>
-  <section class="py-12 px-4">
+  <section class="header pt-12 px-4" v-if="id == 'home'">
+    <NavBar :navigation="$static.navigation" />
+    <div
+      class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
+    >
+      <div class="pt-16 lg:w-1/2 px-2">
+        <g-image :src="img" :alt="altImg" />
+      </div>
+
+      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 order-1 px-10 lg:order-none">
+        <h1 class="mb-6 green uppercase font-normal font-heading">
+          {{ title }}
+        </h1>
+        <div class="mb-8 text-white leading-relaxed" v-html="excerpt"></div>
+        <div v-if="button" class="border-wrap">
+          <a
+            v-if="link.includes('http')"
+            target="_blank"
+            class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+            :href="link"
+            >{{ button }}</a
+          >
+
+          <a
+            v-else
+            class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+            :href="link"
+            >{{ button }}</a
+          >
+          <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 px-4" v-else>
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
       <div class="lg:w-1/2 px-2 lg:pr-10 mt-10 lg:mt-0 order-1 lg:order-none">
         <h2 class="text-8xl mb-6 leading-tight font-semibold font-heading">
@@ -28,10 +63,35 @@
     </div>
   </section>
 </template>
+<static-query>
+query {
+  navigation(id: "navigation"){
+    navLinks{
+      name
+      link
+      external
+      expandable
+    #  submenu {
+    #    title
+    #    path
+    #    external
+    #  }
+    }
+    social{
+      icon
+      link
+    }
+  }
+}
+</static-query>
 
 <script>
+import NavBar from "~/components/custom/Navbar/Navbar.vue";
 export default {
-  props: ["title", "excerpt", "altImg", "image", "button", "link"],
+  components: {
+    NavBar,
+  },
+  props: ["id", "title", "excerpt", "altImg", "image", "button", "link"],
   computed: {
     img: function () {
       if (!this.image) return "";
@@ -41,3 +101,42 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.header {
+  background: linear-gradient(to bottom left, #b8a5e9, #2e3192);
+  height: auto;
+}
+h1 {
+  font-size: 9rem;
+  color: #95ffd9;
+  font-family: Ego;
+  line-height: 0.8;
+}
+
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #2e3192);
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .header {
+    padding-bottom: 20px;
+  }
+}
+</style>
