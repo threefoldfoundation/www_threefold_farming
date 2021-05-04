@@ -1,6 +1,6 @@
 ---
 id: footer
-description: BE THE INTERNET
+description: BE THE INTERNET2
 linkedin: 'https://www.linkedin.com/company/threefold-foundation/'
 facebook: 'https://www.facebook.com/threefold.io'
 twitter: 'https://twitter.com/threefold_io'
