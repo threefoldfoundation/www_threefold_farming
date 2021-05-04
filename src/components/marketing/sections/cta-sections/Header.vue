@@ -4,11 +4,9 @@
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
     >
-      <div class="pt-16 lg:w-1/2 px-2">
-        <g-image :src="img" :alt="altImg" />
-      </div>
+      
 
-      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 order-1 px-10 lg:order-none">
+      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 px-10 lg:order-2">
         <h1 class="mb-6 green uppercase font-normal font-heading">
           {{ title }}
         </h1>
@@ -30,6 +28,9 @@
           >
           <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
         </div>
+      </div>
+      <div class="pt-16 lg:w-1/2 px-2 order-1">
+        <g-image :src="img" :alt="altImg" />
       </div>
     </div>
   </section>
@@ -108,7 +109,7 @@ export default {
   height: auto;
 }
 h1 {
-  font-size: 9rem;
+  font-size: 7rem;
   color: #95ffd9;
   font-family: Ego;
   line-height: 0.8;
