@@ -1,6 +1,6 @@
 ---
 id: img_2
 title: ''
-excerpt: ''
-image : ./img_2.png
+img : ./2_offer.jpg
 ---
+Provide peer-to-peer storage and compute capacity to host humanity's edge workloads.

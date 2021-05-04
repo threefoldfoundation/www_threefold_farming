@@ -1,6 +1,6 @@
 ---
 id: img_1
 title: ''
-excerpt: ''
-image : ./img_1.png
+img : ./1_plug.jpg
 ---
+All you need to get started is electricity, a network connection, and a 3Node.

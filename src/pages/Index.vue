@@ -11,10 +11,14 @@
       />
     </div>
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header2"
-        :header="$page.markdownPage.header2"
-      /> -->
+      <ShowProductCaseHome
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
+      />
 
       <Stats
         v-if="$page.markdownPage.stats"
@@ -43,15 +47,6 @@
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
-      />
-
-      <ShowcaseProducts
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
       />
 
       <Features
@@ -203,8 +198,8 @@
         productData{
          id
          title
-         excerpt
-         image
+         content
+         img
        }
         signup{
           id
@@ -261,6 +256,7 @@ import NewsLetter from "~/components/custom/sections/NewsLetter.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Stats from "~/components/marketing/sections/stats-sections/simple_in_card.vue";
+import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 
 export default {
   components: {
@@ -276,6 +272,7 @@ export default {
     InTheNews,
     ShowcaseProducts,
     Stats,
+    ShowProductCaseHome,
   },
   computed: {
     getImg() {
