@@ -1,21 +1,18 @@
 <template>
-  <div class="container mx-auto">
+  <div class="mx-auto">
     <NavBar
       :navigation="$static.navigation"
       @setTheme="setTheme"
       :theme="this.theme"
     />
     <slot />
-    <Footer 
-      :record="$static.footer"
-      @setTheme="setTheme"
-      :theme="this.theme" />
+    <Footer :record="$static.footer" @setTheme="setTheme" :theme="this.theme" />
   </div>
 </template>
 
 
 <script>
-import NavBar from "~/components/custom/Navbar/Navbar.vue";
+import NavBar from "~/components/application-ui/navigation/navbars/simple_dark_with_menu_button_on_left.vue";
 import Footer from "~/components/marketing/sections/cta-sections/Footer.vue";
 export default {
   components: {
@@ -46,11 +43,11 @@ query {
       link
       external
       expandable
-      submenu {
-        title
-        path
-        external
-      }
+    #  submenu {
+    #    title
+    #    path
+    #    external
+    #  }
     }
     social{
       icon
