@@ -26,6 +26,13 @@
         :features="$page.markdownPage.features2"
       />
 
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :id="$page.markdownPage.id"
+        :key="card.id"
+        :card="card"
+      />
+
       <Stats
         v-if="$page.markdownPage.stats"
         :section="$page.markdownPage.stats"
@@ -44,12 +51,6 @@
         >
       </div>
 
-      <NewCard
-        v-for="card in $page.markdownPage.cards2"
-        :key="card.id"
-        :card="card"
-      />
-
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -64,12 +65,6 @@
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
       /> -->
-
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
     </div>
 
     <logoShowcase

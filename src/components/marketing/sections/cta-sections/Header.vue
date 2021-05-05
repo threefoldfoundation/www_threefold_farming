@@ -4,7 +4,7 @@
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
     >
-      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 px-10 lg:order-2">
+      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 px-10 order-2">
         <h1 class="mb-6 green uppercase font-normal font-heading">
           {{ title }}
         </h1>
