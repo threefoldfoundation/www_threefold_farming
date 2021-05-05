@@ -1,5 +1,5 @@
 ---
-id: participate_comparison4
+id: howitworks_comparison4
 svg: ./farmer_earn.png
 title: 
 ---

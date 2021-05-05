@@ -1,5 +1,5 @@
 ---
-id: participate_comparison2
+id: howitworks_comparison2
 svg: ./grid_expands.png
 title: 
 ---

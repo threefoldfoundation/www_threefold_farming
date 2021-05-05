@@ -1,5 +1,5 @@
 ---
-id: participate_comparison1
+id: howitworks_comparison1
 svg: ./developers_purchase.png
 title: 
 ---
