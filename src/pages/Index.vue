@@ -40,17 +40,9 @@
         "
         :partnerships="$page.markdownPage.statsDetails"
       />
-
-      <Stats
-        v-if="$page.markdownPage.stats"
-        :section="$page.markdownPage.stats"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image_2"
-        :src="$page.markdownPage.solution_image_2.src"
-      />
-
+    </div>
+    <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
@@ -59,11 +51,27 @@
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
       />
+    </div>
+    <g-image
+      v-if="$page.markdownPage.solution_image"
+      :src="$page.markdownPage.solution_image.src"
+    />
+    <div v-if="$page.markdownPage.button" class="border-wrap mx-auto">
+      <a
+        v-if="$page.markdownPage.link.includes('http')"
+        target="_blank"
+        class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+        :href="$url($page.markdownPage.link)"
+        >{{ $page.markdownPage.button }}</a
+      >
 
-      <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
+      <a
+        v-else
+        class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+        :href="$url($page.markdownPage.link)"
+        >{{ $page.markdownPage.button }}</a
+      >
+      <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
     </div>
   </Layout>
 </template>
@@ -137,6 +145,7 @@
           content
           button
           link
+          image
         }
        statsDetails {
         id
@@ -153,7 +162,7 @@ import Features from "~/components/custom/sections/Features.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
-import Stats from "~/components/marketing/sections/stats-sections/simple_in_card.vue";
+import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
 import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
 
@@ -164,7 +173,7 @@ export default {
     NewCard,
     logoShowcase,
     CallToAction,
-    Stats,
+    Map,
     ShowProductCaseHome,
     StatsDetails,
   },
@@ -228,3 +237,22 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #2e3192);
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+</style>
