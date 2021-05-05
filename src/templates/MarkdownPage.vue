@@ -15,15 +15,31 @@
         :link="$page.markdownPage.link"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
+      <CallToAction
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
       />
 
       <g-image
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
+
+        <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain"
+        :sections="$page.markdownPage.comparisonSecs"
+      />
+
+      <!-- <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
+
+      
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
@@ -39,7 +55,7 @@
         v-for="card in $page.markdownPage.cards3"
         :key="card.id"
         :card="card"
-      />
+      /> -->
 
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
@@ -54,7 +70,7 @@
         :pricingPlans="$page.markdownPage.pricingPlans"
       /> -->
 
-      <Features
+      <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
         :features="$page.markdownPage.features3"
@@ -79,7 +95,7 @@
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
-      />
+      /> -->
 
       <!-- <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -89,7 +105,7 @@
         "
       /> -->
 
-      <g-image
+      <!-- <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -103,7 +119,7 @@
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      />
+      /> -->
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -111,7 +127,7 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
-      <VerticalNav
+      <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
@@ -127,37 +143,27 @@
         :header="$page.markdownPage.headerSolution3"
       />
 
-      <Comparison
-        v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
-        "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
-      />
+    
 
       <Features
         v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
-      />
+      /> -->
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <NewCard
+      <!-- <NewCard
         class="my-10"
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"
       />
 
-      <CallToAction
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
+     
 
       <g-image
         v-if="$page.markdownPage.solution_image4"
@@ -172,7 +178,7 @@
       <BrandPanel
         :brand="$page.markdownPage.brandPanel"
         v-if="$page.markdownPage.brandPanel"
-      />
+      /> -->
 
       <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
