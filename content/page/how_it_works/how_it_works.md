@@ -13,13 +13,14 @@ solution_image2: ./home_grid.png
 cta: threefold_farming_cta
 comparisonMain: howitworks_comparison_main
 comparisonSecs: [howitworks_comparison1, howitworks_comparison2, howitworks_comparison3 ,howitworks_comparison4] 
+brandPanel : howitworks_brandPanel
 
 ---
 <!-- howItWorksMain: participate_main -->
 <!-- howItWorks: [participate_sec1, participate_sec2, participate_sec3] -->
 <!-- featuresMain: participate_features -->
 <!-- features: [feature1, feature2, feature3, feature4, feature5, feature6] -->
-<!-- brandPanel : participate_brandPanel -->
+
 
 <!-- header: participate_header -->
 <!-- solution_image: ./participate_main.png -->
