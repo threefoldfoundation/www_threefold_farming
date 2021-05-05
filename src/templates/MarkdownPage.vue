@@ -34,6 +34,11 @@
         :sections="$page.markdownPage.comparisonSecs"
       />
 
+       <BrandPanel
+        :brand="$page.markdownPage.brandPanel"
+        v-if="$page.markdownPage.brandPanel"
+      />
+
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -173,11 +178,6 @@
       <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      />
-
-      <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        v-if="$page.markdownPage.brandPanel"
       /> -->
 
       <!-- <SplitWithImage
