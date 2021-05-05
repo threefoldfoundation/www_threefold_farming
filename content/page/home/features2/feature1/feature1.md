@@ -1,7 +1,7 @@
 ---
 id: decentralize_the_internet
-svg: ./decentralize.png
-title: Decentralize the Internet
+svg: 
+title: Help Decentralize the Internet
 ---
 
-Join a participatory economy that brings a more performant, secure, and sustainable Internet.
+Join a participatory economy that brings a more performant, secure, and sustainable Internet.

@@ -20,6 +20,12 @@
         :products="$page.markdownPage.productData"
       />
 
+      <Features
+        :id="$page.markdownPage.id"
+        :main="$page.markdownPage.featuresMain2"
+        :features="$page.markdownPage.features2"
+      />
+
       <Stats
         v-if="$page.markdownPage.stats"
         :section="$page.markdownPage.stats"
@@ -65,11 +71,6 @@
         :card="card"
       />
     </div>
-
-    <Features
-      :main="$page.markdownPage.featuresMain2"
-      :features="$page.markdownPage.features2"
-    />
 
     <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
@@ -168,6 +169,7 @@
         featuresMain2{
           id
           title 
+          subtitle
           btn 
           link
           content

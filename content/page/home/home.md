@@ -22,9 +22,11 @@ features2:
   [
 
     decentralize_the_internet,
-    connect_the_world,
     make_data_safe,
     earn_passive_income,
+    connect_the_world,
+    empty,
+    features2_sustainability
 
   ]
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
