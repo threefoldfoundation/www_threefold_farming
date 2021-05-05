@@ -35,6 +35,7 @@ cta: home_cta
 NewsLetter : NewsLetter_signup
 solution_image: ./home_grid.png
 stats: stats
+statsDetails: [state1, state2, state3]
 ---
 
 <!--  -->

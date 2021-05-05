@@ -230,6 +230,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'StatesDetails',
+                path: './content/page/**/statsDetails/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -268,7 +276,8 @@ module.exports = {
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',
                     plans: 'Plans',
-                    stats: 'Stats'
+                    stats: 'Stats',
+                    statsDetails: 'StatesDetails'
                 }
             }
         },

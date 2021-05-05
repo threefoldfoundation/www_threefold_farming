@@ -33,6 +33,14 @@
         :card="card"
       />
 
+      <StatsDetails
+        v-if="
+          $page.markdownPage.statsDetails &&
+          $page.markdownPage.statsDetails.length > 0
+        "
+        :partnerships="$page.markdownPage.statsDetails"
+      />
+
       <Stats
         v-if="$page.markdownPage.stats"
         :section="$page.markdownPage.stats"
@@ -43,58 +51,20 @@
         :src="$page.markdownPage.solution_image_2.src"
       />
 
-      <div class="text-center my-10" v-if="$page.markdownPage.stats.button">
-        <a
-          :href="$page.markdownPage.stats.link"
-          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
-          >{{ $page.markdownPage.stats.button }}</a
-        >
-      </div>
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :logos="$page.markdownPage.logos"
+      />
+      <CallToAction
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
       />
 
-      <Features
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
+      <g-image
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
       />
-
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      /> -->
     </div>
-
-    <logoShowcase
-      v-if="$page.markdownPage.logos.length > 0"
-      :logos="$page.markdownPage.logos"
-    />
-
-    <InTheNews
-      v-if="$page.markdownPage.inTheNews"
-      :news="$page.markdownPage.inTheNews"
-    />
-
-    <NewsLetter
-      v-if="$page.markdownPage.NewsLetter"
-      :NewsLetter="$page.markdownPage.NewsLetter"
-    />
-
-    <SignUp
-      :signup="$page.markdownPage.signup"
-      v-if="$page.markdownPage.signup"
-    />
-
-    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
-
-    <g-image
-      v-if="$page.markdownPage.solution_image"
-      :src="$page.markdownPage.solution_image.src"
-    />
-
-    <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
 </template>
 
@@ -123,44 +93,6 @@
           order
           content
         }
-        cards2{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
-        header{
-         title
-         subtitle
-         content
-         btn1
-         link1
-         btn2
-         link2
-       }
-        header2{
-         title
-         subtitle
-         content
-         btn1
-         link1
-         btn2
-         link2
-       }
-        headerSolution{
-         subtitle
-         content
-       }
-       featuresMain{
-          id
-          title 
-          btn 
-          link
-          content
-        }
         featuresMain2{
           id
           title 
@@ -173,12 +105,6 @@
           id
           image
           url
-        }
-        features{
-          id
-          title 
-          svg
-          content
         }
         features2{
           id
@@ -198,35 +124,12 @@
          content
          img
        }
-        signup{
-          id
-          title
-          button1
-          link1
-          button2
-          link2
-        }
         cta{
           id
           title
           content
           button
           link
-        }
-        NewsLetter{
-          id
-          title
-          content
-          button
-          link
-        }
-        inTheNews {
-          id
-          content
-          partners {
-            path
-            logo
-          }
         }
         stats {
           id
@@ -235,41 +138,35 @@
           button
           link
         }
+       statsDetails {
+        id
+        image
+        content
+      }
     }  
   }
-
 </page-query>
 
 <script>
-import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import Features from "~/components/custom/sections/Features.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
-import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
-import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
-import NewsLetter from "~/components/custom/sections/NewsLetter.vue";
-import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
-import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Stats from "~/components/marketing/sections/stats-sections/simple_in_card.vue";
 import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
+import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
 
 export default {
   components: {
-    SolutionsHeader,
     Header,
     Features,
     NewCard,
-    Getintouch,
     logoShowcase,
-    SignUp,
     CallToAction,
-    NewsLetter,
-    InTheNews,
-    ShowcaseProducts,
     Stats,
     ShowProductCaseHome,
+    StatsDetails,
   },
   computed: {
     getImg() {
@@ -331,8 +228,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-/* h2 {
-  padding-bottom: 8rem;
-} */
-</style> >

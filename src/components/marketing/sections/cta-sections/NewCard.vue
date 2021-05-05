@@ -29,7 +29,10 @@
         </div>
       </div>
       <div class="lg:w-1/2">
-        <div class="h-64 bg-cover lg:rounded-lg" :style="img"></div>
+        <div
+          class="h-64 bg-center bg-no-repeat bg-contain lg:rounded-lg"
+          :style="img"
+        ></div>
       </div>
     </div>
   </div>
