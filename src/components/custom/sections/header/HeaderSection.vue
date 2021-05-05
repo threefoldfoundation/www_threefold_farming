@@ -1,17 +1,17 @@
 <template>
-  <section class="mt-8 py-12 px-4 text-center">
+  <section class="mt-8 px-4 text-center">
     <div class="w-full max-w-2xl mx-auto">
-      <span class="text-sm font-semibold">{{ header.title }}</span>
-      <h2 class="text-4xl mt-2 mb-6 leading-tight font-heading">
+      <span class="text-sm font-medium">{{ header.title }}</span>
+      <h2 class="text-4xl mt-2 mb-6 leading-tight font-medium">
         {{ header.subtitle }}
       </h2>
       <div
         v-html="header.content"
-        class="mb-8 text-gray-700 leading-relaxed"
+        class="mb-8 text-gray-700"
       ></div>
       <div>
         <g-link
-          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+          class="inline-block bg-blue-900 learn-button hover:bg-blue-800 text-gray-100 px-12 py-1 mr-5 rounded shadow rounded-full"
           v-if="header.btn1"
           :to="header.link1"
           >{{ header.btn1 }}</g-link

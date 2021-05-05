@@ -1,14 +1,14 @@
 ---
 id: participate_header
 title: ''
-subtitle: Plug & Earn
+subtitle: REQUIREMENTS
 btn1: ''
 link1: ''
 btn2: ''
 link2: ''
 ---
 
-Plug and Earn nodes don't require any technical knowledge to set up. An electricity outlet, Internet connection, and a 3Node are all you need to start earning.
+All that you require to start farming is electricity, a network connection and a 3Node to start earning as a farmer!
 
 
 <!-- Buttons:

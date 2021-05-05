@@ -25,7 +25,7 @@
         :src="$page.markdownPage.solution_image2.src"
       />
 
-        <Comparison
+      <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
@@ -34,28 +34,38 @@
         :sections="$page.markdownPage.comparisonSecs"
       />
 
-       <BrandPanel
+      <BrandPanel
         :brand="$page.markdownPage.brandPanel"
         v-if="$page.markdownPage.brandPanel"
       />
 
-      <!-- <SolutionsHeader
+      <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
 
-      
+      <g-image class="m-auto mb-20"
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
 
+      <g-image class="w-1/2 m-auto mt-10"
+        v-if="$page.markdownPage.solution_image3"
+        :src="$page.markdownPage.solution_image3.src"
+      />
+
+       <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+      />
+
+      <!--
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
 
-      <g-image
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
-      />
-
+   
       <NewCard
         v-for="card in $page.markdownPage.cards3"
         :key="card.id"
@@ -87,10 +97,7 @@
         :main="$page.markdownPage.howItWorksMain"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header2"
-        :header="$page.markdownPage.header2"
-      />
+     
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
@@ -110,10 +117,7 @@
         "
       /> -->
 
-      <!-- <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
+      <!-- 
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution2"

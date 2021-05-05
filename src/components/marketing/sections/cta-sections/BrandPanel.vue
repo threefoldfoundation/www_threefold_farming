@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="py-10">
     
       <div
         class="brandpanel flex flex-wrap items-center lg:px-16 text-center lg:text-left py-4 -mx-2"
