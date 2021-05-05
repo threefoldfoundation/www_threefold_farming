@@ -14,6 +14,10 @@ cta: threefold_farming_cta
 comparisonMain: howitworks_comparison_main
 comparisonSecs: [howitworks_comparison1, howitworks_comparison2, howitworks_comparison3 ,howitworks_comparison4] 
 brandPanel : howitworks_brandPanel
+header: participate_header
+solution_image: ./requirements.png
+solution_image3: ./decenteralize.png
+header2: tfgrid_explorer
 
 ---
 <!-- howItWorksMain: participate_main -->
@@ -22,10 +26,10 @@ brandPanel : howitworks_brandPanel
 <!-- features: [feature1, feature2, feature3, feature4, feature5, feature6] -->
 
 
-<!-- header: participate_header -->
-<!-- solution_image: ./participate_main.png -->
 
-<!-- header2: tfgrid_explorer
+
+
+<!-- 
 solution_image: ./participate_main2.png  -->
 
 
