@@ -1,6 +1,6 @@
 ---
 id: howitworks_comparison1
-svg: ./developers_purchase.png
+svg: ./farmers_add.png
 title: 
 ---
 
