@@ -35,6 +35,15 @@
           :main="$page.markdownPage.comparisonMain"
           :sections="$page.markdownPage.comparisonSecs"
         />
+
+        <ShowcaseProducts
+          v-if="
+            $page.markdownPage.productData &&
+            $page.markdownPage.productData.length > 0
+          "
+          :id="$page.markdownPage.id"
+          :products="$page.markdownPage.productData"
+        />
       </div>
 
       <BrandPanel
@@ -63,7 +72,6 @@
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
       />
-
       <!--
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
@@ -112,14 +120,6 @@
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
-      /> -->
-
-      <!-- <ShowcaseProducts
-        :products="$page.markdownPage.productData"
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
       /> -->
 
       <!-- 
@@ -352,7 +352,7 @@
        }
        productData{
         id
-         title
+        title
         content
        }
         featuresMain{
