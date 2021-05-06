@@ -1,12 +1,13 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden">
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
           $page.markdownPage.header_title &&
           $page.markdownPage.header_title != ''
         "
+        :id="$page.markdownPage.id"
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
@@ -24,15 +25,16 @@
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
-
-      <Comparison
-        v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
-        "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
-      />
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <Comparison
+          v-if="
+            $page.markdownPage.comparisonSecs &&
+            $page.markdownPage.comparisonSecs.length > 0
+          "
+          :main="$page.markdownPage.comparisonMain"
+          :sections="$page.markdownPage.comparisonSecs"
+        />
+      </div>
 
       <BrandPanel
         :brand="$page.markdownPage.brandPanel"
@@ -43,18 +45,21 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
 
-      <g-image class="m-auto mb-20"
+      <g-image
+        class="mx-auto mb-20"
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
 
-      <g-image class="w-1/2 m-auto mt-10"
+      <g-image
+        class="w-1/2 mx-auto mt-10"
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
       />
-
-       <SolutionsHeader
+      </div>
+      <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
       />

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed inset-0 h-16 px-16"
+    class="fixed inset-0 h-16 lg:px-16"
     :class="{ scrolled: !view.atTopOfPage }"
   >
     <header
