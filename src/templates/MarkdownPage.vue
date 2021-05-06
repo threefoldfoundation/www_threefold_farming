@@ -46,18 +46,17 @@
         :header="$page.markdownPage.header"
       />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <g-image
+          class="mx-auto mb-20"
+          v-if="$page.markdownPage.solution_image"
+          :src="$page.markdownPage.solution_image.src"
+        />
 
-      <g-image
-        class="mx-auto mb-20"
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
-
-      <g-image
-        class="w-1/2 mx-auto mt-10"
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
-      />
+        <g-image
+          class="w-1/2 mx-auto mt-10"
+          v-if="$page.markdownPage.solution_image3"
+          :src="$page.markdownPage.solution_image3.src"
+        />
       </div>
       <SolutionsHeader
         v-if="$page.markdownPage.header2"
