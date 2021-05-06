@@ -72,6 +72,14 @@
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
       />
+
+      <Features
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain"
+        :features="$page.markdownPage.features"
+      /> 
+      
+
       <!--
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
@@ -129,11 +137,7 @@
         :header="$page.markdownPage.headerSolution2"
       />
 
-      <Features
-        v-if="$page.markdownPage.features.length > 0"
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
-      /> -->
+      -->
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -358,6 +362,7 @@
         featuresMain{
           id
           title 
+          subtitle
           btn 
           link
           content

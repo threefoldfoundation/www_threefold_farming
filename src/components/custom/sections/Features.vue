@@ -44,6 +44,9 @@
     <h2 class="text-4xl text-center mb-12 font-semibold font-heading">
       {{ main.title }}
     </h2>
+     <p v-if="main.subtitle" class="mb-6 text-2xl text-center text-gray-800">
+      {{ main.subtitle }}
+    </p>
     <div class="flex flex-wrap -mx-4 mb-6">
       <div
         v-for="feature in features"
