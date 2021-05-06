@@ -41,7 +41,7 @@
   </section>
 
   <section class="py-12 px-4" v-else>
-    <h2 class="text-4xl text-center mb-12 font-semibold font-heading">
+    <h2 class="text-4xl text-center mb-12 font-medium font-heading">
       {{ main.title }}
     </h2>
      <p v-if="main.subtitle" class="mb-6 text-2xl text-center text-gray-800">
@@ -59,9 +59,9 @@
           :src="feature.svg.src"
           :alt="feature.svg"
         ></g-image>
-        <h3 class="text-xl my-3 font-semibold font-heading">
+        <h2 class="text-xl mt-5 mb-3 font-normal font-heading">
           {{ feature.title }}
-        </h3>
+        </h2>
         <div
           v-html="feature.content"
           class="text-sm text-gray-700 leading-relaxed"

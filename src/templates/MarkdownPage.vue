@@ -84,17 +84,19 @@
           v-if="$page.markdownPage.solution_image3"
           :src="$page.markdownPage.solution_image3.src"
         />
+
+         <Features
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain"
+        :features="$page.markdownPage.features"
+      />
       </div>
       <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
       />
 
-      <Features
-        v-if="$page.markdownPage.features.length > 0"
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
-      />
+     
 
       <!--
       <SolutionsHeader
