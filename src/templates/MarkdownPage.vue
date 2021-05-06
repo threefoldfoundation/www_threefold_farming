@@ -56,6 +56,11 @@
           :main="$page.markdownPage.logosMain"
           :logos="$page.markdownPage.logos"
         />
+
+        <NewCard
+          :id="$page.markdownPage.id"
+          :cards="$page.markdownPage.cards"
+        />
       </div>
 
       <BrandPanel
@@ -96,13 +101,6 @@
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
-
-   
-      <NewCard
-        v-for="card in $page.markdownPage.cards3"
-        :key="card.id"
-        :card="card"
-      /> -->
 
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&

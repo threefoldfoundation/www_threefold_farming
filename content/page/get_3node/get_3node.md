@@ -14,6 +14,7 @@ productData: [product1, product2, product3]
 cta2: getnode_cta
 logosMain: node_logo
 logos: [node_logo1, node_logo2, node_logo3]
+cards: [node_card1, node_card2]
 ---
 
 <!-- featuresMain3: token_features

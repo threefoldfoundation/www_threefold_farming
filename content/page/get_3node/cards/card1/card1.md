@@ -1,10 +1,10 @@
 ---
-id: token_card1
-title: Dive Deeper into TFT
-image: ./token_card1.png
-button: Check Out The Token Wiki
-link: https://threefold.io/info/threefold#/threefold__token_home
+id: node_card1
+title: ZERO OS
+image: ./zero_os.png
+button:
+link: ''
 order: 1
 ---
 
-TFT represents a unit of compute and storage capacity (CPU, RAM, SDD/HDD) on the ThreeFold Grid. From our favorite application to our chats and videos, everything we use digitally needs compute and storage to be live.
+Zero-OS has been designed from the bottom up, started from scratch from a Linux kernel. It is a stateless and scalable operating system with a lightweight architecture that makes it  cost and energy-efﬁcient. Zero-OS eliminates multiple layers of complexity, enabling the delivery compute and storage everywhere, much closer to the source of the hardware.
