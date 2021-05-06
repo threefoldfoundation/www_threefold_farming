@@ -1,33 +1,56 @@
 <template>
-  <section class="header pt-12 px-4" v-if="id == 'home'">
+  <section class="header pt-12 px-4" v-if="id == 'home' || id == 'get_3node'">
     <NavBar :navigation="$static.navigation" />
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
     >
-      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 px-10 order-2">
-        <h1 class="mb-6 green uppercase font-normal font-heading">
+      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 lg:px-12 order-2">
+        <h1
+          v-if="id == 'get_3node'"
+          class="text-8xl mb-6 green uppercase font-normal font-heading"
+        >
           {{ title }}
         </h1>
-        <div class="mb-8 text-black leading-relaxed" v-html="excerpt"></div>
+        <h1
+          v-else
+          class="text-8xl mb-6 green uppercase font-normal font-heading"
+        >
+          {{ title }}
+        </h1>
+        <div
+          v-if="id == 'get_3node'"
+          class="mb-8 text-white font-light text-3xl leading-10"
+        >
+          <span class="green font-bold">{{ span }}</span>
+          {{ excerpt }}
+        </div>
+        <div
+          v-else
+          class="mb-8 text-black leading-relaxed"
+          v-html="excerpt"
+        ></div>
         <div v-if="button" class="border-wrap">
           <a
             v-if="link.includes('http')"
             target="_blank"
-            class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+            class="inline-block module py-2 px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
             :href="link"
             >{{ button }}</a
           >
 
           <a
             v-else
-            class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+            class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
             :href="link"
             >{{ button }}</a
           >
           <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
         </div>
       </div>
-      <div class="pt-32 lg:w-1/2 px-2 order-1">
+      <div v-if="id == 'get_3node'" class="lg:w-1/2 px-20 order-1">
+        <g-image :src="img" :alt="altImg" />
+      </div>
+      <div v-else class="pt-32 lg:w-1/2 px-2 order-1">
         <g-image :src="img" :alt="altImg" />
       </div>
     </div>
@@ -43,7 +66,7 @@
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left lg:pt-16 -mx-2"
     >
       <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 px-10 order-1">
-        <h1 class="text-8xl	mb-6 green uppercase font-normal font-heading ">
+        <h1 class="text-8xl mb-6 green uppercase font-normal font-heading">
           {{ title }}
         </h1>
         <div
@@ -131,7 +154,16 @@ export default {
   components: {
     NavBar,
   },
-  props: ["id", "title", "excerpt", "altImg", "image", "button", "link"],
+  props: [
+    "id",
+    "span",
+    "title",
+    "excerpt",
+    "altImg",
+    "image",
+    "button",
+    "link",
+  ],
   computed: {
     img() {
       if (!this.image) return "";
@@ -153,9 +185,12 @@ export default {
 }
 h1,
 .hiwHeader h1 {
-  color: #95ffd9;
   font-family: Ego;
   line-height: 0.8;
+}
+
+.green {
+  color: #95ffd9;
 }
 
 .hiwHeader h1 {
@@ -188,6 +223,10 @@ h1,
 
   .hiwHeader {
     background-image: none !important;
+  }
+
+  .border-wrap {
+    margin: auto;
   }
 }
 </style>

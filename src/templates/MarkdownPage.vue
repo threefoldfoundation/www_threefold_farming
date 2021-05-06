@@ -8,6 +8,7 @@
           $page.markdownPage.header_title != ''
         "
         :id="$page.markdownPage.id"
+        :span="$page.markdownPage.header_span"
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
@@ -209,6 +210,7 @@
         header_altImg
         header_title
         header_image
+        header_span
         button
         link
         solution_image
