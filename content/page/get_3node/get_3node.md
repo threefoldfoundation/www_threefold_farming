@@ -11,6 +11,7 @@ header_span: €999
 button: Pre Register
 link: https://threefold.io/info/threefold#/how_to_buy_and_sell # https://app.liquid.com/quick-exchange/
 productData: [product1, product2, product3]
+cta2: getnode_cta
 ---
 
 <!-- featuresMain3: token_features

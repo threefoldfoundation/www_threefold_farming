@@ -44,6 +44,11 @@
           :id="$page.markdownPage.id"
           :products="$page.markdownPage.productData"
         />
+
+        <CallToAction
+          v-if="$page.markdownPage.cta2"
+          :cta="$page.markdownPage.cta2"
+        />
       </div>
 
       <BrandPanel
@@ -77,8 +82,7 @@
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      /> 
-      
+      />
 
       <!--
       <SolutionsHeader
@@ -409,6 +413,13 @@
           content
           button
           link
+          image
+        }
+        cta2{
+          id
+          title
+          content
+          image
         }
         signup{
           id

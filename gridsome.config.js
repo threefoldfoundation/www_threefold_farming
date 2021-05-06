@@ -260,6 +260,7 @@ module.exports = {
                     features3: 'Features3',
                     logos: 'Logos',
                     cta: 'Cta',
+                    cta2: 'Cta',
                     NewsLetter: 'NewsLetter',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
