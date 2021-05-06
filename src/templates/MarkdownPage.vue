@@ -49,6 +49,13 @@
           v-if="$page.markdownPage.cta2"
           :cta="$page.markdownPage.cta2"
         />
+
+        <logoShowcase
+          v-if="$page.markdownPage.logos"
+          :id="$page.markdownPage.id"
+          :main="$page.markdownPage.logosMain"
+          :logos="$page.markdownPage.logos"
+        />
       </div>
 
       <BrandPanel
@@ -184,9 +191,7 @@
         :key="card.id"
         :card="card"
       />
-
-     
-
+      
       <g-image
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
@@ -384,6 +389,12 @@
           btn 
           link
           content
+        }
+        logosMain {
+          id
+          title
+          title2
+          span
         }
         logos{
           id

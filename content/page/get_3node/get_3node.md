@@ -12,6 +12,8 @@ button: Pre Register
 link: https://threefold.io/info/threefold#/how_to_buy_and_sell # https://app.liquid.com/quick-exchange/
 productData: [product1, product2, product3]
 cta2: getnode_cta
+logosMain: node_logo
+logos: [node_logo1, node_logo2, node_logo3]
 ---
 
 <!-- featuresMain3: token_features

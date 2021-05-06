@@ -29,6 +29,7 @@ features2:
     features2_sustainability
 
   ]
+logosMain: home_logo
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 inTheNews: in_the_news
 cta: home_cta

@@ -45,6 +45,7 @@
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
+        :main="$page.markdownPage.logosMain"
         :logos="$page.markdownPage.logos"
       />
       <CallToAction
@@ -108,6 +109,10 @@
           btn 
           link
           content
+        }
+        logosMain {
+          id
+          title
         }
         logos{
           id
