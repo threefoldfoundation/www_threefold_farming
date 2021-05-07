@@ -10,40 +10,65 @@ youtube: 'https://www.youtube.com/threefoldfoundation'
 github: 'https://github.com/threefoldfoundation'
 telegram: 'https://t.me/threefoldnews'
 items:
+ - title: UNIVERSE
+   links:
+    - name: ThreeFold
+      link: https://threefold.io
+    - name: ThreeFold Token
+      link: https://threefold.io/token
+    - name: ThreeFold Grid
+      link: /farming/tech
+    - name: P2P Cloud
+      link: https://threefold.io/cloud
+    - name: P2P Marketplace
+      link: https://threefold.io/marketplace
+    - name: Digital Twin
+      link: https://mydigitaltwin.io
+    - name: Conscious Internet
+      link: https://threefold.io/aci
+    - name: ThreeFold Tech
+      link: https://threefold.tech
+
+ - title: PARTICIPATE
+   links:
+    - name: Buy TFT
+      link: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+    - name: Get a 3Node
+      link: /farming/3node
+    - name: Become a Farmer
+      link: https://threefold.io/info/threefold#/threefold__become_a_farmer
+      
  - title: LEARN
    links:
-    - name: 3Node
-      link: '/3node'
-    - name: Tech
-      link: '/tech'
-    - name: Token
-      link: '/token'
+    - name: Live Capacity
+      link: https://explorer.threefold.io
+    - name: Grid Architecture
+      link: https://threefold.io/info/threefold#/threefold__grid_architecture
+    - name: What is P2P?
+      link: https://threefold.io/info/threefold#/threefold__grid_compare
+    - name: What is Farming?
+      link: https://threefold.io/info/threefold#/threefold__farming_intro
+    - name: ThreeFold Glossary
+      link: https://www.threefold.io/info/threefold#/threefold__defs
+
+ - title: ABOUT US
+   links:
+    - name: ThreeFold
+      link: https://threefold.io/info/threefold
     - name: Blog
-      link: '/blog'
-    - name: KnowledgeBase
-      link: 'https://wiki.threefold.io/#/'
- - title: ABOUT
-   links:
-    - name: Newsroom
-      link: '/news'
-    - name: Team
-      link: '/team'
-    - name: Partners
-      link: '/partners'
-    - name: Company
-      link: 'https://wiki.threefold.io/#/threefold_foundation?id=threefold-foundation'
- - title: SUPPORT
-   links:
-    - name: FAQ
-      link: 'https://forum.threefold.io/'
-    - name: Community
-      link: 'https://t.me/threefoldnews'
- - title: LEGAL
-   links:
-    - name: Terms & Conditions
-      link: 'https://wiki.threefold.io/#/terms_conditions_websites'
-    - name: Privacy Policy
-      link: 'https://wiki.threefold.io/#/privacypolicy'
-    - name: Impressum
-      link: 'https://www.farming.threefold.io/tech'
+      link: /farming/blog
+    - name: NewsRoom
+      link: /farming/news
+    - name: Forum
+      link: https://forum.threefold.io
+    - name: People
+      link: /farming/people
+    - name: Contact Us
+      link: mailto:info@threefold.io
+
 ---
+
+[Terms & Conditions](https://threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
+
+<br/>
+&#xA9; 2021 ThreeFold, All rights reserved.

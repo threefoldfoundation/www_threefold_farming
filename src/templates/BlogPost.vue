@@ -1,6 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden pt-20">
+    <div class="container sm:pxi-0 px-4 overflow-x-hidden pt-20">
       <div class="pt-8">
         <section class="post-header container mx-auto px-0 mb-4 border-b">
           <h1 class="text-5xl font-medium leading-none mt-0">
@@ -84,7 +84,7 @@
             :key="tag.id"
             :to="tag.path"
             class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
-            >{{ tag.title }}</g-link
+            >{{ tag.title.replace("_", " ") }}</g-link
           >
         </section>
       </div>
@@ -176,7 +176,6 @@
 <script>
 import PostListItem from "~/components/custom/Cards/PostListItem.vue";
 
-
 export default {
   components: {
     PostListItem,
@@ -186,7 +185,6 @@ export default {
       title: this.$page.blog.title,
     };
   },
-
 };
 </script>
 

@@ -6,7 +6,36 @@
         :image="$page.markdownPage.header_image"
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
-        :link="$page.markdownPage.link"
+        :link="$url($page.markdownPage.link)"
+      />
+
+      <!-- <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+      /> -->
+
+      <Stats
+        v-if="$page.markdownPage.stats"
+        :section="$page.markdownPage.stats"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image_2"
+        :src="$page.markdownPage.solution_image_2.src"
+      />
+
+      <div class="text-center my-10" v-if="$page.markdownPage.stats.button">
+        <a
+          :href="$page.markdownPage.stats.link"
+          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+          >{{ $page.markdownPage.stats.button }}</a
+        >
+      </div>
+
+      <NewCard
+        v-for="card in $page.markdownPage.cards2"
+        :key="card.id"
+        :card="card"
       />
 
       <SolutionsHeader
@@ -27,16 +56,11 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
-      
-      <SolutionsHeader
+
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image_2"
-        :src="$page.markdownPage.solution_image_2.src"
-      />
+      /> -->
 
       <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -60,7 +84,10 @@
       :news="$page.markdownPage.inTheNews"
     />
 
-    <NewsLetter v-if="$page.markdownPage.NewsLetter" :NewsLetter="$page.markdownPage.NewsLetter" />
+    <NewsLetter
+      v-if="$page.markdownPage.NewsLetter"
+      :NewsLetter="$page.markdownPage.NewsLetter"
+    />
 
     <SignUp
       :signup="$page.markdownPage.signup"
@@ -84,6 +111,9 @@
         id
         path
         content
+        metaTitle
+        metaDesc
+        metaImg
         header_title
         header_image
         header_excerpt
@@ -100,7 +130,25 @@
           order
           content
         }
+        cards2{
+          id
+          title
+          image
+          button
+          link
+          order
+          content
+        }
         header{
+         title
+         subtitle
+         content
+         btn1
+         link1
+         btn2
+         link2
+       }
+        header2{
          title
          subtitle
          content
@@ -186,6 +234,13 @@
             logo
           }
         }
+        stats {
+          id
+          title
+          content
+          button
+          link
+        }
     }  
   }
 
@@ -203,6 +258,7 @@ import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import NewsLetter from "~/components/custom/sections/NewsLetter.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
+import Stats from "~/components/marketing/sections/stats-sections/simple_in_card.vue";
 
 export default {
   components: {
@@ -217,11 +273,65 @@ export default {
     NewsLetter,
     InTheNews,
     ShowcaseProducts,
+    Stats,
   },
-metaInfo: {
-    title: "",
-    titleTemplate: "ThreeFold Farming",
- 
+  computed: {
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
+    },
+  },
+  metaInfo() {
+    return {
+      title: "",
+      titleTemplate: this.$page.markdownPage.metaTitle,
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+      ],
+    };
   },
 };
 </script>

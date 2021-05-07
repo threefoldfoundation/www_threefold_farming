@@ -16,7 +16,6 @@
     >
       <div class="flex flex-wrap news pt-12 mt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
-          :showtags="true"
           v-for="edge in news.edges"
           :key="edge.node.id"
           :record="edge.node"
@@ -40,7 +39,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allNews(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { id: {in: ["farming"]}}}) @paginate{
+  entries: allNews(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { contains: ["farming"]}}) @paginate{
     totalCount
     pageInfo {
       totalPages
@@ -67,7 +66,12 @@ query($page: Int){
     }
   }
 
-  topics:  allNewsTag{
+    markdownPage(id: "home") {
+        id
+        metaImg
+  }
+
+  topics: allNewsTag{
     edges{
       node{
 				title        
@@ -116,8 +120,48 @@ export default {
     };
   },
 
-  metaInfo: {
-    title: "Newsroom",
+  metaInfo() {
+    return {
+      title: "",
+      titleTemplate: "ThreeFold Farming | News",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content: "Updates and announcements from the ThreeFold Foundation.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: "ThreeFold Farming | News",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content: "Updates and announcements from the ThreeFold Foundation.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: "Updates and announcements from the ThreeFold Foundation.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: "ThreeFold Farming | News",
+        },
+      ],
+    };
   },
   components: {
     PostListItem,
@@ -255,6 +299,19 @@ export default {
       if (process.isClient) {
         return window.innerHeight - 570;
       }
+    },
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-16 left-0 z-50 mb-5 h-16 bg-gray-100 w-full">
+  <div class="top-16 left-0 z-50 mb-5 h-16 bg-gray-200 w-full rounded shadow">
     <header
       class="flex items-center flex-wrap container mx-auto pt-1 pb-0 sm:px-0 transition-all transition-500"
     >
@@ -29,7 +29,7 @@
                 @click="setActive(0)"
                 class="flex flex-row items-center w-full md:w-auto md:inline md:mt-0 md:ml-4 animated-link"
               >
-                <span class="capitalize">{{ selected }}</span>
+                <span class="capitalize">{{ selected.replace("_", " ") }}</span>
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -67,7 +67,7 @@
                     class="cursor-pointer block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     :href="$url(tag.path)"
                     @click.self="open = false"
-                    >{{ tag.title }}</a
+                    >{{ tag.title.replace("_", " ") }}</a
                   >
                 </div>
               </div>

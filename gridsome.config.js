@@ -73,6 +73,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Header2',
+                path: './content/page/**/header2/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Product',
                 path: './content/page/**/productData/**/*.md',
             }
@@ -214,6 +222,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'Stats',
+                path: './content/page/**/stats/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -223,6 +239,7 @@ module.exports = {
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',
+                    header2: 'Header2',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
                     productsMain: 'ProductTitle',
@@ -235,7 +252,7 @@ module.exports = {
                     features3: 'Features3',
                     logos: 'Logos',
                     cta: 'Cta',
-                    NewsLetter : 'NewsLetter',
+                    NewsLetter: 'NewsLetter',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
                     comparisonSecs: 'Comparison',
@@ -251,6 +268,7 @@ module.exports = {
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',
                     plans: 'Plans',
+                    stats: 'Stats'
                 }
             }
         },
@@ -374,34 +392,34 @@ module.exports = {
             options: {
                 searchFields: ['title', 'name', 'content', 'status', 'linkedin', 'excerpt', 'cities', 'countries', 'websites'],
                 collections: [{
-                        typeName: 'Blog',
-                        indexName: 'Blog',
-                        fields: ['path']
-                    },
+                    typeName: 'Blog',
+                    indexName: 'Blog',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'Project',
-                        indexName: 'Project',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'Project',
+                    indexName: 'Project',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'Person',
-                        indexName: 'Person',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'Person',
+                    indexName: 'Person',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'News',
-                        indexName: 'News',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'News',
+                    indexName: 'News',
+                    fields: ['path']
+                },
 
-                    {
-                        typeName: 'MarkdownPage',
-                        indexName: 'MarkdownPage',
-                        fields: ['path']
-                    },
+                {
+                    typeName: 'MarkdownPage',
+                    indexName: 'MarkdownPage',
+                    fields: ['path']
+                },
 
                 ]
             }
@@ -440,7 +458,7 @@ module.exports = {
         }],
 
         Membership: [{
-            path: '/team/memberships/:id',
+            path: '/people/memberships/:id',
             component: '~/templates/Membership.vue'
         }],
 
@@ -455,11 +473,11 @@ module.exports = {
         }],
 
         Person: [{
-            path: '/team/:id',
+            path: '/people/:id',
             component: '~/templates/Person.vue'
         }],
         PersonTag: [{
-            path: '/team/tags/:id',
+            path: '/people/tags/:id',
             component: '~/templates/Tag.vue'
         }],
 
@@ -477,21 +495,19 @@ module.exports = {
             anchorClassName: 'icon icon-link',
             plugins: [
                 ['gridsome-plugin-remark-prismjs-all', {
-                        highlightClassName: "gridsome-highlight",
-                        codeTitleClassName: "gridsome-code-title",
-                        classPrefix: 'language-',
-                        aliases: {},
-                        noInlineHighlight: false,
-                        showLineNumbers: false, //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
-                        languageExtensions: [],
-                        prompt: { //  `require("prismjs/plugins/command-line/prism-command-line.css");`
-                            user: `root`,
-                            host: `localhost`,
-                            global: false,
-                        }
-                    },{
-                        pathPrefix:'grid'
+                    highlightClassName: "gridsome-highlight",
+                    codeTitleClassName: "gridsome-code-title",
+                    classPrefix: 'language-',
+                    aliases: {},
+                    noInlineHighlight: false,
+                    showLineNumbers: false, //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+                    languageExtensions: [],
+                    prompt: { //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+                        user: `root`,
+                        host: `localhost`,
+                        global: false,
                     }
+                },
                     // '@noxify/gridsome-remark-table-align', ['@noxify/gridsome-remark-classes', {
                     //     'table': 'table table-striped',
                     //     'tableCell[align=center]': 'text-center',

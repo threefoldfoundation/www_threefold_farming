@@ -9,7 +9,7 @@
     >
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <div class="inline-flex items-center flex-shrink-0">
-          <a href="/" class="flex">
+          <a :href="$url('/')" class="flex">
             <g-image
               :src="require(`!!assets-loader!@images/TFN_black.svg`)"
               class="mr-3 fill-current logo"
@@ -110,7 +110,7 @@
         >
           <div
             v-if="element.expandable"
-            class="relative mt-2"
+            class="relative mt-2 mr-4"
             x-data="{ open: false }"
           >
             <button
@@ -170,18 +170,18 @@
             </div>
           </div>
 
-          <g-link
+          <a
             v-else-if="element.external"
-            :to="element.link"
-            @click.native="clicked"
+            :href="element.link"
+            @click="clicked"
             target="_blank"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
-            >{{ element.name }}</g-link
+            >{{ element.name }}</a
           >
           <g-link
             v-else
             :to="element.link"
-            @click.native="clicked"
+            @click="clicked"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</g-link
           >

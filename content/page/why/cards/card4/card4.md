@@ -3,7 +3,7 @@ id: why4
 title: A strong Community of Believers
 image: ./card3.jpeg
 button: Meet the Believers
-link: "/team"
+link: /people
 order: 3
 ---
 

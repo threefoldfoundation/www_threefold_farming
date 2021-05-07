@@ -10,7 +10,7 @@
         class="lg:w-1/2 px-4 mb-6 text-center"
       >
         <g-image
-          class="w-10 h-10 mx-auto"
+          class="w-20 h-20 mx-auto"
           v-if="feature.svg"
           :src="feature.svg.src"
           :alt="feature.svg"

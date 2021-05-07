@@ -27,7 +27,7 @@
           :currentPage="blogs.pageInfo.currentPage"
           :totalPages="blogs.pageInfo.totalPages"
           :maxVisibleButtons="5"
-          v-if="blogs.pageInfo.totalPages > 1 && blogs.edges.length > 0"
+          v-if="blogs.pageInfo.totalPages > 1 && blogs.edges.length >= 10"
         />
       </div>
     </div>
@@ -36,7 +36,7 @@
 <page-query>
 
 query($page: Int){
-  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { id: {in: ["farming"]}}}) @paginate{
+  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { contains: ["farming"]}}) @paginate{
     totalCount
     pageInfo {
       totalPages
@@ -67,6 +67,10 @@ query($page: Int){
         }
       }
     }
+  }
+    markdownPage(id: "home") {
+        id
+        metaImg
   }
 
    topics:  allBlogTag{
@@ -117,8 +121,51 @@ export default {
     };
   },
 
-  metaInfo: {
-    title: "Blog",
+  metaInfo() {
+    return {
+      title: "",
+      titleTemplate: "ThreeFold Farming | Blog",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content:
+            " A collection of posts from the ThreeFold Foundation team about our products, our technology, our ecosystem, our why, and more.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: "ThreeFold Farming | Blog",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content:
+            " A collection of posts from the ThreeFold Foundation team about our products, our technology, our ecosystem, our why, and more.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content:
+            " A collection of posts from the ThreeFold Foundation team about our products, our technology, our ecosystem, our why, and more.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: "ThreeFold Farming | Blog",
+        },
+      ],
+    };
   },
   components: {
     PostListItem,
@@ -228,6 +275,19 @@ export default {
     },
     baseurl() {
       return "/blog/";
+    },
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };

@@ -49,6 +49,13 @@
                 </div>
               </div>
             </div>
+            <g-link
+              v-for="edge in $page.memberships.edges"
+              :key="edge.node.id"
+              :to="edge.node.path"
+              class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
+              >{{ edge.node.title }}</g-link
+            >
           </section>
         </div>
       </div>
@@ -65,14 +72,14 @@
       </section>
 
       <div class="pt-8 border-b mx-4 sm:-mx-4"></div>
-
+      <!-- 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
           v-for="edge in $page.person.belongsTo.edges"
           :key="edge.node.id"
           :record="edge.node"
         />
-      </div>
+      </div> -->
     </div>
   </Layout>
 </template>
@@ -141,7 +148,7 @@
       }
     }
 
-     memberships: allMembership(filter: {title: {in: ["foundation", "tech", "farmers"]}}){
+     memberships: allMembership(filter: {title: {in: ["foundation", "tech", "farmers", "ambassadors"]}}){
      edges{
       node{
         id

@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-16 left-0 z-50 mb-5 h-16 bg-gray-100 w-full">
+  <div class="flex flex-wrap items-center -mx-4 bg-gray-200 rounded shadow">
     <header
       class="flex items-center justify-between flex-wrap container mx-auto px-4 py-1 sm:px-0 transition-all transition-500"
     >
@@ -37,7 +37,7 @@
 
       <nav
         :class="isOpen ? 'flex' : 'hidden'"
-        class="inline-flex md:order-2 sm:w-28 px-2 pt-2 pb-4 sm:flex sm:p-0 bg-gray-100"
+        class="inline-flex md:order-2 sm:w-28 px-2 pt-2 pb-4 sm:flex sm:p-0"
       >
         <ul
           class="list-none sm:flex justify-left capitalize transition-all transition-500"
@@ -49,7 +49,7 @@
                 @click="setActive(0)"
                 class="flex flex-row items-center w-full md:w-auto md:inline md:mt-0 md:ml-4 animated-link"
               >
-                <span class="capitalize">{{ topic }}</span>
+                <span class="capitalize">{{ topic.replace("_", " ") }}</span>
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -84,12 +84,12 @@
                   <a
                     v-for="topic in topics"
                     :key="topic"
-                    class="cursor-pointer block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     @click.self="
                       setTopic(topic);
                       open = false;
                     "
-                    >{{ topic }}</a
+                    class="cursor-pointer block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    >{{ topic.replace("_", " ") }}</a
                   >
                 </div>
               </div>

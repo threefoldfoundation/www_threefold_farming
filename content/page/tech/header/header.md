@@ -1,11 +1,16 @@
 ---
-id: solution_header
+id: tfgrid_explorer 
 title: ''
-subtitle: The ThreeFold Grid
-btn1: ''
-link1: ''
+subtitle: Join the Peer-to-Peer Internet
+btn1: Live Stats
+link1: https://explorer.threefold.io
 btn2: ''
 link2: ''
 ---
 
-Bringing a smart, secure and efficient Internet solution that allows anyone to connect capacity and participate in the Internet economy. An upgrade from today’s centralized data center model.
+With significant storage and compute capacity already available around the globe, the most advanced peer-to-peer network continues to expand.
+
+
+<!-- Buttons:
+Join Us
+Visit the Grid Explorer -->

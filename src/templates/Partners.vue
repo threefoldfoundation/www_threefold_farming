@@ -8,6 +8,7 @@
     <div class="container mt-8 sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
+          :showtags="true"
           v-for="partner in $page.entries.edges"
           :key="partner.id"
           :record="partner.node"
@@ -20,7 +21,7 @@
 
 <page-query>
 query ($private: Int){
-  entries: allProject (sortBy: "rank", order: DESC, filter: { private: { ne: $private }, tags: { id: {in: ["farming"]}}}){
+  entries: allProject (sortBy: "rank", order: ASC, filter: { private: { ne: $private }, category: { contains: ["farming"]}}){
     totalCount
     edges {
       node {
@@ -39,11 +40,20 @@ query ($private: Int){
         image(width:800)
         timeToRead
         logo
+        tags{
+          id
+          title
+          path
+        }
       }
     }
   }
-  
-  tags: allProjectTag (filter: { title: {in: ["farming"]}}) {
+    markdownPage(id: "home") {
+        id
+        metaImg
+  }
+
+  tags: allProjectTag (filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) {
      edges{
       node{
         id
@@ -67,7 +77,48 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.pageName,
+      title: "",
+      titleTemplate: "ThreeFold Farming | Partners",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content:
+            "Meet the incredible organizations that make up the ThreeFold Farming ecosystem.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: "ThreeFold Farming | Partners",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content:
+            "Meet the incredible organizations that make up the ThreeFold Farming ecosystem.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Meet the incredible organizations that make up the ThreeFold Farming ecosystem.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: "ThreeFold Farming | Partners",
+        },
+      ],
     };
   },
   computed: {
@@ -78,10 +129,18 @@ export default {
       );
       return res;
     },
-    pageName() {
-      let path = this.$route.path.substring(1);
-      let name = path[0].toUpperCase() + path.slice(1);
-      return name;
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
     },
   },
 };
