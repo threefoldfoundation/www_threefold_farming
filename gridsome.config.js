@@ -489,7 +489,9 @@ module.exports = {
                             host: `localhost`,
                             global: false,
                         }
-                    },
+                    },{
+                        pathPrefix:'grid'
+                    }
                     // '@noxify/gridsome-remark-table-align', ['@noxify/gridsome-remark-classes', {
                     //     'table': 'table table-striped',
                     //     'tableCell[align=center]': 'text-center',
