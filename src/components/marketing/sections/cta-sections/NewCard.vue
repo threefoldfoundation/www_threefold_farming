@@ -53,11 +53,11 @@
         ></div>
       </div>
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-        <h2 class="text-2xl text-black font-normal text-center">
+        <h2 class="text-4xl text-black font-normal text-center">
           {{ card.title }}
         </h2>
         <div
-          class="mt-4 text-black font-light text-center"
+          class="mt-4 text-lg text-black font-light text-center"
           v-html="card.content"
         ></div>
         <div class="mt-8" v-if="card.button">

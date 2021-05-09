@@ -46,14 +46,14 @@
   </div>
 
   <div class="take_apart2 py-20 mb-5 bg-gray-100 text-white" v-else>
-    <div class="w-full text-center lg:px-20 sm:px-4">
+    <div class="w-full text-center lg:px-40 sm:px-4">
       <h2
         v-if="main !== null"
         class="text-4xl text-white mx-4 font-normal leading-tight font-heading"
       >
         {{ main.title }}
       </h2>
-      <p v-if="main !== null" class="mb-6 text-2xl">
+      <p v-if="main !== null" class="mb-6 max-w-4xl m-auto text-2xl font-light leading-8">
         {{ main.subtitle }}
       </p>
 
@@ -67,8 +67,8 @@
         >
           <div class="text-center pb-8 my-5">
             <g-image :src="img(product.img)" />
-            <h3 class="font-bold text-2xl">{{ product.title }}</h3>
-            <div v-html="product.content" class="px-5 mb-8"></div>
+            <h3 class="font-normal text-3xl">{{ product.title }}</h3>
+            <div v-html="product.content" class="px-5 mb-8 font-light text-2xl"></div>
             <div class="border-wrap mx-auto mt-5">
               <div v-if="product.button">
                 <a

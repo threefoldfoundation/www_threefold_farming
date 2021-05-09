@@ -41,10 +41,10 @@
   </section>
 
   <section class="py-12 px-4" v-else>
-    <h2 class="text-4xl text-center mb-12 font-medium font-heading">
+    <h2 class="text-4xl text-center mb-12 font-normal font-heading">
       {{ main.title }}
     </h2>
-     <p v-if="main.subtitle" class="mb-6 text-2xl text-center text-gray-800">
+     <p v-if="main.subtitle" class="mb-6 text-2xl text-center font-ligh text-gray-800">
       {{ main.subtitle }}
     </p>
     <div class="flex flex-wrap -mx-4 mb-6">
@@ -54,17 +54,17 @@
         class="lg:w-1/2 px-4 mb-6 text-center"
       >
         <g-image
-          class="w-20 h-20 mx-auto"
+          class="w-1/3 mx-auto"
           v-if="feature.svg"
           :src="feature.svg.src"
           :alt="feature.svg"
         ></g-image>
-        <h2 class="text-xl mt-5 mb-3 font-normal font-heading">
+        <h2 class="text-3xl mt-5 mb-3 font-normal font-heading">
           {{ feature.title }}
         </h2>
         <div
           v-html="feature.content"
-          class="text-sm text-gray-700 leading-relaxed"
+          class="text-lg text-gray-700 leading-relaxed"
         ></div>
       </div>
     </div>
