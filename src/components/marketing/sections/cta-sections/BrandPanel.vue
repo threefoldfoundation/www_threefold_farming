@@ -6,14 +6,14 @@
       <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 px-10">
         <div class="lg:self-center text-center">
           <h2
-            class="text-3xl leading-9 font-medium text-white sm:text-3xl sm:leading-10"
+            class="text-4xl leading-9 font-normal text-white sm:text-3xl sm:leading-10"
           >
             <span class="block">{{ brand.title }}</span>
             <span class="block" v-if="brand.subtitle">{{
               brand.subtitle
             }}</span>
           </h2>
-          <div class="mt-4 text-white" v-html="brand.content"></div>
+          <div class="mt-4 text-2xl font-light text-white" v-html="brand.content"></div>
           <!-- <div class="border-wrap">
             <g-link
               :to="brand.sourceUrl"
@@ -21,7 +21,7 @@
               >{{ brand.btnTxt }}</g-link
             >
             </div> -->
-          <div v-if="brand.btnTxt" class="border-wrap mx-auto mt-5">
+          <div v-if="brand.btnTxt" class="border-wrap mx-auto mt-10">
             <a
               v-if="brand.sourceUrl.includes('http')"
               target="_blank"
@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <div class="py-4 lg:w-1/2 px-2">
+      <div class="py-8 lg:w-1/2 px-2">
         <g-image :src="image" class="w-1/2 mx-auto" :alt="brand.title" />
       </div>
     </div>

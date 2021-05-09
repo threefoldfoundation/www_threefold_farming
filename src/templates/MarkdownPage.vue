@@ -17,7 +17,7 @@
         :link="$page.markdownPage.link"
       />
 
-      <CallToAction
+      <CallToAction class="lg:mt-20"
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
       />

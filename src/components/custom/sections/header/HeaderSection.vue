@@ -2,12 +2,12 @@
   <section class="mt-8 px-4 text-center">
     <div class="w-full max-w-4xl mx-auto">
       <span class="text-sm font-medium">{{ header.title }}</span>
-      <h2 class="text-4xl mt-2 mb-6 leading-tight font-medium">
+      <h2 class="text-4xl mt-2 mb-6 leading-tight font-normal">
         {{ header.subtitle }}
       </h2>
       <div
         v-html="header.content"
-        class="mb-8 text-gray-700"
+        class="mb-8 text-2xl font-light text-gray-900"
       ></div>
       <div>
         <g-link
