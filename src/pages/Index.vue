@@ -58,18 +58,18 @@
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
     />
-    <div v-if="$page.markdownPage.button" class="border-wrap mx-auto">
+    <div v-if="$page.markdownPage.button" class="border-wrap mx-auto mb-10">
       <a
         v-if="$page.markdownPage.link.includes('http')"
         target="_blank"
-        class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+        class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-normal rounded shadow"
         :href="$url($page.markdownPage.link)"
         >{{ $page.markdownPage.button }}</a
       >
 
       <a
         v-else
-        class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+        class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-normal rounded shadow"
         :href="$url($page.markdownPage.link)"
         >{{ $page.markdownPage.button }}</a
       >

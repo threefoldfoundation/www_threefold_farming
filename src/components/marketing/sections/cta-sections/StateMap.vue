@@ -34,7 +34,7 @@
         class="lg:w-3/4 text-center rounded lg:pr-10 mt-10 lg:mt-0 order-1 lg:order-none"
       >
         <h2
-          class="text-3xl mb-6 leading-tight text-center text-white font-normal font-heading"
+          class="text-4xl mb-6 leading-tight text-center text-white font-normal font-heading"
         >
           {{ section.title }}
         </h2>
