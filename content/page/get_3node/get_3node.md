@@ -6,7 +6,7 @@ metaImg: ./server_3node.png
 header_title: Ready To Start Farming? 
 header_image: ./server_3node.png
 header_altImg: token_header
-header_excerpt: Reserve your Titan V2 3Node to begin your journey towards generating income by selling capacity. Limited 3Nodes are open to reservation before June 30th, 2021
+header_excerpt: '| Reserve your Titan V2 3Node to begin your journey towards generating income by selling capacity. Limited 3Nodes are open to reservation before June 30th, 2021'
 header_span: €999 
 button: Pre Register
 link: https://threefold.io/info/threefold#/how_to_buy_and_sell # https://app.liquid.com/quick-exchange/

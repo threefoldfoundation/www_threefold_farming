@@ -3,7 +3,7 @@
     <div class="w-full text-center">
       <h2
         v-if="main !== null"
-        class="text-4xl font-semibold leading-tight font-heading"
+        class="text-4xl font-normal leading-tight font-heading"
       >
         {{ main.title }}
       </h2>
@@ -22,7 +22,7 @@
           <div class="take_apart text-center pb-8 my-5">
             <g-image :src="img(product.img)" />
             <h3 class="font-bold text-2xl">{{ product.title }}</h3>
-            <div v-html="product.content" class="px-5 text-gray-900"></div>
+            <div v-html="product.content" class="px-5 text-gray-900 font-light text-2xl leading-7"></div>
 
             <div v-if="product.button">
               <a
@@ -49,7 +49,7 @@
     <div class="w-full text-center lg:px-20 sm:px-4">
       <h2
         v-if="main !== null"
-        class="text-4xl text-white mx-4 font-semibold leading-tight font-heading"
+        class="text-4xl text-white mx-4 font-normal leading-tight font-heading"
       >
         {{ main.title }}
       </h2>

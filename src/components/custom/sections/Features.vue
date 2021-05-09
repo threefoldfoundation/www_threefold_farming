@@ -1,9 +1,9 @@
 <template>
-  <section class="py-12 px-4" v-if="id == 'home'">
-    <h2 class="text-4xl text-center font-semibold font-heading">
+  <section class="py-12 px-4 text-center" v-if="id == 'home'">
+    <h2 class="text-4xl font-normal leading-tight font-heading">
       {{ main.title }}
     </h2>
-    <p v-if="main.subtitle" class="mb-6 text-2xl text-center text-gray-800">
+    <p v-if="main.subtitle" class="mb-6 text-2xl text-gray-800">
       {{ main.subtitle }}
     </p>
     <div class="flex flex-wrap items-center -mx-4 mb-6">
@@ -20,23 +20,23 @@
 
         <div v-else>
           <span v-if="index !== 4" class="img-border"></span>
-          <h2 class="text-xl mt-5 mb-3 font-normal font-heading">
+          <h2 class="text-x2 mt-5 mb-3 font-normal font-heading leading-9">
             {{ feature.title }}
           </h2>
           <div
             v-html="feature.content"
-            class="text-sm text-gray-700 leading-relaxed"
+            class="text-lg text-gray-700 leading-relaxed"
           ></div>
         </div>
       </div>
     </div>
-    <div class="text-center mt-20" v-if="main.btn">
+    <div class="border-wrap mx-auto mt-20" v-if="main.btn">
       <g-link
-        class="bg-blue-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+        class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
         :to="main.link"
         >{{ main.btn }}</g-link
       >
-      <div v-html="main.content" class="text-sm text-gray-400 mt-5"></div>
+      <!-- <div v-html="main.content" class="text-sm text-gray-400 mt-5"></div> -->
     </div>
   </section>
 
@@ -94,6 +94,22 @@ export default {
   background: linear-gradient(to right, #b8a5e9, #2e3192);
 }
 
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #23256e);
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
 .feature {
   max-height: 315px !important;
 }

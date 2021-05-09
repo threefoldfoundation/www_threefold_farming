@@ -29,10 +29,10 @@
             :alt="partnership.id"
           />
           <div class="space-y-2">
-            <div class="text-lg leading-6 font-medium space-y-1">
+            <div class="text-2xl leading-7  space-y-1">
               <h4>{{ partnership.title }}</h4>
               <div
-                class="text-xl text-gray-900"
+                class="text-2xl text-gray-800 leading-7"
                 v-html="partnership.content"
               ></div>
             </div>

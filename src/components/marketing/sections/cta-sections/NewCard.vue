@@ -5,11 +5,11 @@
   >
     <div class="bg-white lg:mx-8 lg:flex items-center lg:max-w-5xl">
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-        <h2 class="text-2xl text-black font-normal text-center">
+        <h2 class="text-4xl font-normal leading-tight font-heading">
           {{ card.title }}
         </h2>
         <div
-          class="mt-4 text-black font-light text-center"
+          class="mt-4 text-2xl text-gray-800 leading-8"
           v-html="card.content"
         ></div>
         <div class="mt-8" v-if="card.button">

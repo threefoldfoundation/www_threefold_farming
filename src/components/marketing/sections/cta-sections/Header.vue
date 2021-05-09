@@ -4,7 +4,7 @@
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
     >
-      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 lg:px-12 order-2">
+      <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 lg:px-20 order-2">
         <h1
           v-if="id == 'get_3node'"
           class="text-8xl mb-6 green uppercase font-normal font-heading"
@@ -19,14 +19,14 @@
         </h1>
         <div
           v-if="id == 'get_3node'"
-          class="mb-8 text-white font-light text-3xl leading-10"
+          class="mb-8 text-white font-light text-2xl leading-8"
         >
           <span class="green font-bold">{{ span }}</span>
           {{ excerpt }}
         </div>
         <div
           v-else
-          class="mb-8 text-black leading-relaxed"
+          class="mb-8 text-white font-light text-2xl leading-8"
           v-html="excerpt"
         ></div>
         <div v-if="button" class="border-wrap">
@@ -70,7 +70,7 @@
           {{ title }}
         </h1>
         <div
-          class="mb-8 text-black lg:text-3xl text-xl font-light leading-6 lg:leading-10"
+          class="mb-8 text-black lg:text-2xl text-xl font-light leading-6 lg:leading-8"
           v-html="excerpt"
         ></div>
         <div v-if="button" class="border-wrap">
@@ -111,7 +111,7 @@
           {{ title }}
         </h1>
 
-        <div class="mb-8 text-white font-light text-3xl leading-10">
+        <div class="mb-8 text-white font-light text-2xl leading-8">
           <span class="green font-bold">{{ span }}</span>
           {{ excerpt }}
         </div>
