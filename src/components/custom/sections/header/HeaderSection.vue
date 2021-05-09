@@ -1,6 +1,6 @@
 <template>
   <section class="mt-8 px-4 text-center">
-    <div class="w-full max-w-2xl mx-auto">
+    <div class="w-full max-w-4xl mx-auto">
       <span class="text-sm font-medium">{{ header.title }}</span>
       <h2 class="text-4xl mt-2 mb-6 leading-tight font-medium">
         {{ header.subtitle }}

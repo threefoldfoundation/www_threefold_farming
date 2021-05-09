@@ -104,12 +104,20 @@
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
       />
+<div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+      <g-image class="lg:w-1/2 mx-auto mt-10"
+        v-if="$page.markdownPage.solution_image4"
+        :src="$page.markdownPage.solution_image4.src"
+      />
 
-      <!--
-      <SolutionsHeader
+    
+      </div>
+        <SolutionsHeader class="mb-10"
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
+      <!--
+      
 
       <WithComparisonTable
         v-if="$page.markdownPage.plans &&
