@@ -16,6 +16,7 @@
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
+        :id="$page.markdownPage.id"
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
       />

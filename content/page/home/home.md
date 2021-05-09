@@ -14,7 +14,7 @@ cards2: [carbon_neutral]
 header: home_header
 featuresMain: Feature_home
 productsMain: graph_home
-productData: [img_1, img_2, img_3, img_4]
+productData: [img_1, img_2, img_3]
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
 cards: [home_card]
 featuresMain2: Features_home_2

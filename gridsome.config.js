@@ -222,7 +222,7 @@ module.exports = {
             use: '@gridsome/source-filesystem',
             options: {
                 typeName: 'ProductTitle',
-                path: './content/page/**/home/**/*.md',
+                path: './content/page/**/productData/**/*.md',
             }
         },
 

@@ -45,7 +45,6 @@
     </div>
   </div>
 
-
   <div class="py-12 mb-5 bg-gray-100" v-else>
     <div class="w-full text-center">
       <h2

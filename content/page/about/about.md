@@ -8,7 +8,7 @@ button: ''
 link: ''
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4]
-productsMain: graph_home
+productsMain: graph_about
 productData: [product_1, product_2, product_3]
 
 ---
