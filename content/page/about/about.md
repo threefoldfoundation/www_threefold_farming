@@ -8,6 +8,8 @@ button: ''
 link: ''
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4]
+productsMain: graph_home
+productData: [product_1, product_2, product_3]
 
 ---
 <!-- cards: [why1, why2, why3]

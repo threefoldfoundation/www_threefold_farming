@@ -85,18 +85,25 @@
           :src="$page.markdownPage.solution_image3.src"
         />
 
-         <Features
-        v-if="$page.markdownPage.features.length > 0"
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
-      />
+        <Features
+          v-if="$page.markdownPage.features.length > 0"
+          :main="$page.markdownPage.featuresMain"
+          :features="$page.markdownPage.features"
+        />
       </div>
       <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
       />
 
-     
+      <ShowProductCaseHome
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
+      />
 
       <!--
       <SolutionsHeader
@@ -104,7 +111,7 @@
         :header="$page.markdownPage.headerSolution4"
       />
 
-      <!-- <WithComparisonTable
+      <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
@@ -363,10 +370,17 @@
          title
          image
        }
-       productData{
-        id
-        title
-        content
+       productsMain{
+          id
+          title
+          subtitle
+          image
+        }
+        productData{
+         id
+         title
+         content
+         img
        }
         featuresMain{
           id
@@ -464,6 +478,7 @@ import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
+import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
@@ -485,6 +500,7 @@ export default {
     SolutionsHeader,
     HowItWorks,
     ShowcaseProducts,
+    ShowProductCaseHome,
     Features,
     logoShowcase,
     CallToAction,
