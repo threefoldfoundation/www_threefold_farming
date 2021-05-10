@@ -39,7 +39,6 @@ stats: stats
 statsDetails: [state1, state2, state3]
 ---
 
-<!--  -->
 <!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
 <!-- signup: home_signup -->
 
