@@ -19,17 +19,17 @@
         </h1>
         <div
           v-if="id == 'get_3node'"
-          class="mb-8 text-white font-light text-2xl leading-8"
+          class="mb-8 text-white font-light text-xl leading-8"
         >
           <span class="green font-bold">{{ span }}</span>
           {{ excerpt }}
         </div>
         <div
           v-else
-          class="mb-8 text-white font-light text-2xl leading-8"
+          class="mb-8 text-white font-light text-xl leading-8"
           v-html="excerpt"
         ></div>
-        <div v-if="button" class="border-wrap">
+        <div v-if="button" class="border-wrap mb-12">
           <a
             v-if="link.includes('http')"
             target="_blank"
@@ -70,7 +70,7 @@
           {{ title }}
         </h1>
         <div
-          class="mb-8 text-black lg:text-2xl text-xl font-light leading-6 lg:leading-8"
+          class="mb-8 text-black text-xl font-light leading-6 lg:leading-8"
           v-html="excerpt"
         ></div>
         <div v-if="button" class="border-wrap">
@@ -100,7 +100,7 @@
   <section class="header2 pt-12 px-4" v-else>
     <NavBar :navigation="$static.navigation" />
     <div
-      class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-20 -mx-2"
+      class="flex flex-wrap items-center lg:px-16 text-center lg:pb-20 lg:text-left pt-20 -mx-2"
     >
       <div class="lg:w-1/2 px-10 my-44 order-2">
         <g-image :src="img" :alt="altImg" />
@@ -111,7 +111,7 @@
           {{ title }}
         </h1>
 
-        <div class="mb-8 text-white font-light text-2xl leading-8">
+        <div class="mb-8 text-white font-light text-xl leading-8">
           <span class="green font-bold">{{ span }}</span>
           {{ excerpt }}
         </div>
