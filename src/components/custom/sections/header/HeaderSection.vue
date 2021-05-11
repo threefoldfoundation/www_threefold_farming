@@ -9,14 +9,14 @@
         v-html="header.content"
         class="mb-8 text-2xl font-light text-gray-900"
       ></div>
-      <div>
+      <div class="border-wrap mx-auto">
         <g-link
-          class="inline-block bg-blue-900 learn-button hover:bg-blue-800 text-gray-100 px-12 py-1 mr-5 rounded shadow rounded-full"
+          class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
           v-if="header.btn1"
           :to="header.link1"
           >{{ header.btn1 }}</g-link
         ><g-link
-          class="text-gray-900 bg-transparent hover:underline"
+          class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
           v-if="header.btn2"
           :to="header.link2"
           >{{ header.btn2 }}</g-link
@@ -31,3 +31,22 @@ export default {
   props: ["header"],
 };
 </script>
+<style scoped>
+
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #23256e);
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+</style>
