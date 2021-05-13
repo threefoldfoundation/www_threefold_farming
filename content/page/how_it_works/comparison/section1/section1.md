@@ -4,4 +4,4 @@ svg: ./farmers_add.png
 title: 
 ---
 
-Farmers add capacity to the ThreeFold Grid and earn ThreeFold Tokens.
+Farmers add capacity to the TF Grid and earn ThreeFold Tokens.

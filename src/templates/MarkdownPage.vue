@@ -91,6 +91,7 @@
           :features="$page.markdownPage.features"
         />
       </div>
+
       <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
@@ -104,22 +105,21 @@
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
       />
+
 <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+
       <g-image class="lg:w-1/2 mx-auto mt-10"
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
       />
 
-    
       </div>
         <SolutionsHeader class="mb-10"
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
-      <!--
       
-
-      <WithComparisonTable
+      <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
@@ -143,8 +143,6 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
-
-     
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
@@ -186,8 +184,6 @@
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"
       />
-
-    
 
       <Features
         v-if="$page.markdownPage.features2.length > 0"

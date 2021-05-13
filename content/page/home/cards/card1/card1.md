@@ -1,6 +1,6 @@
 ---
 id: home_card
-title: TAKE ADVANTAGE OF THE INSANE DEMAND FOR DATA STORAGE
+title: TAKE ADVANTAGE OF THE HIGH DEMAND FOR DATA STORAGE
 image: ./125zb.png
 button: 
 link: 

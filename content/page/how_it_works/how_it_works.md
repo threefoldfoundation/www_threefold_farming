@@ -8,7 +8,7 @@ header_image: ./how_it_work_header.jpg
 header_altImg: participate_header
 header_excerpt: ThreeFold Farming doesn't require any technical knowledge to set up. All you need is an electricity outlet, Internet connection and a 3Node to start your farming journey.
 button: Get 3Node
-link: /farming/pre-register
+link: /get_3node
 solution_image2: ./home_grid.png
 cta: threefold_farming_cta
 comparisonMain: howitworks_comparison_main

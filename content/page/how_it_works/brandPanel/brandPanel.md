@@ -2,7 +2,7 @@
 id: howitworks_brandPanel
 title: THE CURRENCY OF THE NEW INTERNET
 subtitle: 
-sourceUrl: /pre-register
+sourceUrl: https://threefold.io/token
 btnTxt: Learn More About TFT
 image: new_currency.png # Please add images in src/assets/brandPanel/\
 ---
