@@ -10,14 +10,12 @@ youtube: 'https://www.youtube.com/threefoldfoundation'
 github: 'https://github.com/threefoldfoundation'
 telegram: 'https://t.me/threefoldnews'
 items:
- - title: UNIVERSE
+ - title: TF UNIVERSE
    links:
     - name: ThreeFold
       link: https://threefold.io
     - name: ThreeFold Token
       link: https://threefold.io/token
-    - name: ThreeFold Grid
-      link: /farming/tech
     - name: P2P Cloud
       link: https://threefold.io/cloud
     - name: P2P Marketplace
@@ -34,7 +32,7 @@ items:
     - name: Buy TFT
       link: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
     - name: Get a 3Node
-      link: /farming/3node
+      link: /get_3node
     - name: Become a Farmer
       link: https://threefold.io/info/threefold#/threefold__become_a_farmer
       
@@ -56,13 +54,13 @@ items:
     - name: ThreeFold
       link: https://threefold.io/info/threefold
     - name: Blog
-      link: /farming/blog
+      link: https://threefold.io/farming/blog
     - name: NewsRoom
-      link: /farming/news
+      link: https://threefold.io/farming/news
     - name: Forum
       link: https://forum.threefold.io
     - name: People
-      link: /farming/people
+      link: https://threefold.io/farming/people
     - name: Contact Us
       link: mailto:info@threefold.io
 
