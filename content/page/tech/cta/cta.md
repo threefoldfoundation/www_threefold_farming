@@ -1,8 +1,8 @@
 ---
 id: solution_cta
 title: As simple as it gets
-button:
-link:
+button: ''
+link: ''
 ---
 
 **Electricity + Network + 3Node = All that you require**

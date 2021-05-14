@@ -2,8 +2,8 @@
 id: solution_card2
 title: As simple as it gets
 image: ./solution_card_2.png
-button:
-link:
+button: ''
+link: ''
 order: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: tech
-metaTitle: ThreeFold Farming |  Grid
+metaTitle: ThreeFold Farming | Grid
 metaDesc: Bringing a smart, secure and efficient Internet solution that allows anyone to connect capacity and participate in the Internet economy.
 metaImg: ./tech_header.png
 header_title: The ThreeFold Grid
