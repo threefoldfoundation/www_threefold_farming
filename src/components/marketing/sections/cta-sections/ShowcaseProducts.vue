@@ -23,7 +23,7 @@
             </h3>
             <div
               v-html="product.content"
-              class="content text-gray-700 text-md"
+              class="content text-gray-700 text-md" 
             ></div>
 
             <div class="grad-border sm:hidden" :class="{ hidden: idx == 2 }"></div>
