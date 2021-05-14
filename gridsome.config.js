@@ -110,6 +110,13 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'LogosMain',
+                path: './content/page/**/logos/main/*.md',
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'Logos',
                 path: './content/page/**/logos/**/*.md',
             }
@@ -215,7 +222,7 @@ module.exports = {
             use: '@gridsome/source-filesystem',
             options: {
                 typeName: 'ProductTitle',
-                path: './content/page/**/home/**/*.md',
+                path: './content/page/**/productData/**/*.md',
             }
         },
 
@@ -224,6 +231,14 @@ module.exports = {
             options: {
                 typeName: 'Stats',
                 path: './content/page/**/stats/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'StatesDetails',
+                path: './content/page/**/statsDetails/**/*.md',
             }
         },
 
@@ -250,8 +265,10 @@ module.exports = {
                     features2: 'Features2',
                     featuresMain3: 'Features3',
                     features3: 'Features3',
+                    logosMain: 'LogosMain',
                     logos: 'Logos',
                     cta: 'Cta',
+                    cta2: 'Cta',
                     NewsLetter: 'NewsLetter',
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
@@ -268,7 +285,8 @@ module.exports = {
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',
                     plans: 'Plans',
-                    stats: 'Stats'
+                    stats: 'Stats',
+                    statsDetails: 'StatesDetails'
                 }
             }
         },

@@ -1,25 +1,15 @@
 <template>
-  <div class="container mx-auto">
-    <NavBar
-      :navigation="$static.navigation"
-      @setTheme="setTheme"
-      :theme="this.theme"
-    />
+  <div class="mx-auto">
     <slot />
-    <Footer 
-      :record="$static.footer"
-      @setTheme="setTheme"
-      :theme="this.theme" />
+    <Footer :record="$static.footer" @setTheme="setTheme" :theme="this.theme" />
   </div>
 </template>
 
 
 <script>
-import NavBar from "~/components/custom/Navbar/Navbar.vue";
 import Footer from "~/components/marketing/sections/cta-sections/Footer.vue";
 export default {
   components: {
-    NavBar,
     Footer,
   },
   data() {
@@ -46,11 +36,11 @@ query {
       link
       external
       expandable
-      submenu {
-        title
-        path
-        external
-      }
+    #  submenu {
+    #    title
+    #    path
+    #    external
+    #  }
     }
     social{
       icon
@@ -77,9 +67,13 @@ query {
 </static-query>
 
 <style>
+@font-face {
+  font-family: "Ego";
+  src: url("../assets/fonts/Ego-Regular.ttf");
+  font-weight: normal;
+}
+
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   line-height: 1.5;
 }

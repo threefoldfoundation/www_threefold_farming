@@ -134,9 +134,6 @@ export default {
       return image;
     },
   },
-  mounted() {
-    console.log(this.record.memberships);
-  },
 };
 </script>
 

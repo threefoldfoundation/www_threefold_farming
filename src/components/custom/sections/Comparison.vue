@@ -1,12 +1,12 @@
 <template>
   <section class="py-12 px-4 text-center">
-    <h2 class="text-4xl mb-2 leading-tight font-semibold font-heading">
+    <h2 class="text-4xl mb-2 leading-tight font-normal font-heading">
       {{ main.title }}
     </h2>
-    <p class="text-gray-600">{{ main.description }}</p>
+    <p class="text-2xl font-light text-gray-800">{{ main.description }}</p>
     <div class="flex flex-wrap items-center -mx-8 mt-12 mb-2">
       <div
-        class="lg:w-1/3 px-8 mb-8"
+        class="lg:w-1/4 px-8 mb-8"
         v-for="(section, index) in sections"
         :key="index"
       >
@@ -22,7 +22,7 @@
           > -->
           <span>{{ section.title }}</span>
         </h3>
-        <div class="text-gray-700" v-html="section.content"></div>
+        <div class="mb-4 text-lg font-light leading-7" v-html="section.content"></div>
       </div>
     </div>
     <div>

@@ -1,107 +1,80 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden">
       <Header
+        :id="$page.markdownPage.id"
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$url($page.markdownPage.link)"
       />
-
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header2"
-        :header="$page.markdownPage.header2"
-      /> -->
-
-      <Stats
-        v-if="$page.markdownPage.stats"
-        :section="$page.markdownPage.stats"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image_2"
-        :src="$page.markdownPage.solution_image_2.src"
-      />
-
-      <div class="text-center my-10" v-if="$page.markdownPage.stats.button">
-        <a
-          :href="$page.markdownPage.stats.link"
-          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
-          >{{ $page.markdownPage.stats.button }}</a
-        >
-      </div>
-
-      <NewCard
-        v-for="card in $page.markdownPage.cards2"
-        :key="card.id"
-        :card="card"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      />
-
-      <ShowcaseProducts
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
+    </div>
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <ShowProductCaseHome
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
+        :id="$page.markdownPage.id"
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
       />
 
       <Features
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
+        :id="$page.markdownPage.id"
+        :main="$page.markdownPage.featuresMain2"
+        :features="$page.markdownPage.features2"
       />
-
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      /> -->
 
       <NewCard
         v-for="card in $page.markdownPage.cards"
+        :id="$page.markdownPage.id"
         :key="card.id"
         :card="card"
       />
+
+      <StatsDetails
+        v-if="
+          $page.markdownPage.statsDetails &&
+          $page.markdownPage.statsDetails.length > 0
+        "
+        :partnerships="$page.markdownPage.statsDetails"
+      />
     </div>
-
-    <Features
-      :main="$page.markdownPage.featuresMain2"
-      :features="$page.markdownPage.features2"
-    />
-
-    <logoShowcase
-      v-if="$page.markdownPage.logos.length > 0"
-      :logos="$page.markdownPage.logos"
-    />
-
-    <InTheNews
-      v-if="$page.markdownPage.inTheNews"
-      :news="$page.markdownPage.inTheNews"
-    />
-
-    <NewsLetter
-      v-if="$page.markdownPage.NewsLetter"
-      :NewsLetter="$page.markdownPage.NewsLetter"
-    />
-
-    <SignUp
-      :signup="$page.markdownPage.signup"
-      v-if="$page.markdownPage.signup"
-    />
-
-    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
-
+    <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :main="$page.markdownPage.logosMain"
+        :logos="$page.markdownPage.logos"
+      />
+      <CallToAction
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
+      />
+    </div>
     <g-image
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
     />
+    <div v-if="$page.markdownPage.button" class="border-wrap mx-auto mb-10">
+      <a
+        v-if="$page.markdownPage.link.includes('http')"
+        target="_blank"
+        class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-normal rounded shadow"
+        :href="$url($page.markdownPage.link)"
+        >{{ $page.markdownPage.button }}</a
+      >
 
-    <!-- <Getintouch :contacts="contacts"/> -->
+      <a
+        v-else
+        class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-normal rounded shadow"
+        :href="$url($page.markdownPage.link)"
+        >{{ $page.markdownPage.button }}</a
+      >
+      <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
+    </div>
   </Layout>
 </template>
 
@@ -130,61 +103,22 @@
           order
           content
         }
-        cards2{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
-        header{
-         title
-         subtitle
-         content
-         btn1
-         link1
-         btn2
-         link2
-       }
-        header2{
-         title
-         subtitle
-         content
-         btn1
-         link1
-         btn2
-         link2
-       }
-        headerSolution{
-         subtitle
-         content
-       }
-       featuresMain{
-          id
-          title 
-          btn 
-          link
-          content
-        }
         featuresMain2{
           id
           title 
+          subtitle
           btn 
           link
           content
+        }
+        logosMain {
+          id
+          title
         }
         logos{
           id
           image
           url
-        }
-        features{
-          id
-          title 
-          svg
-          content
         }
         features2{
           id
@@ -201,17 +135,9 @@
         productData{
          id
          title
-         excerpt
-         image
+         content
+         img
        }
-        signup{
-          id
-          title
-          button1
-          link1
-          button2
-          link2
-        }
         cta{
           id
           title
@@ -219,61 +145,43 @@
           button
           link
         }
-        NewsLetter{
-          id
-          title
-          content
-          button
-          link
-        }
-        inTheNews {
-          id
-          content
-          partners {
-            path
-            logo
-          }
-        }
         stats {
           id
           title
           content
           button
           link
+          image
         }
+       statsDetails {
+        id
+        image
+        content
+      }
     }  
   }
-
 </page-query>
 
 <script>
-import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import Features from "~/components/custom/sections/Features.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
-import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
-import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
-import NewsLetter from "~/components/custom/sections/NewsLetter.vue";
-import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
-import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
-import Stats from "~/components/marketing/sections/stats-sections/simple_in_card.vue";
+import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
+import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
+import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
 
 export default {
   components: {
-    SolutionsHeader,
     Header,
     Features,
     NewCard,
-    Getintouch,
     logoShowcase,
-    SignUp,
     CallToAction,
-    NewsLetter,
-    InTheNews,
-    ShowcaseProducts,
-    Stats,
+    Map,
+    ShowProductCaseHome,
+    StatsDetails,
   },
   computed: {
     getImg() {
@@ -335,8 +243,22 @@ export default {
   },
 };
 </script>
+
 <style scoped>
-/* h2 {
-  padding-bottom: 8rem;
-} */
-</style> >
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #2e3192);
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+</style>

@@ -1,6 +1,7 @@
 ---
 id: img_3
 title: ''
-excerpt: ''
-image : ./img_3.png
+img : ./earn.jpg
 ---
+Earn in the most valuable and rapidly growing economy:
+the Internet and cloud.

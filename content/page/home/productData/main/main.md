@@ -1,6 +1,6 @@
 ---
 id: graph_home
-title: Exponential Growth Across the Industry
-subtitle: ''
-image : ./big_one.png
+title: HOW IT WORKS
+subtitle: Our farming model is based on sheer simplicity.
+image : ''
 ---

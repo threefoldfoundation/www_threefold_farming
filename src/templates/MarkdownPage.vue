@@ -1,12 +1,14 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden">
       <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
           $page.markdownPage.header_title &&
           $page.markdownPage.header_title != ''
         "
+        :id="$page.markdownPage.id"
+        :span="$page.markdownPage.header_span"
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
@@ -15,32 +17,108 @@
         :link="$page.markdownPage.link"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
+      <CallToAction class="lg:mt-20"
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
       />
 
       <g-image
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <Comparison
+          v-if="
+            $page.markdownPage.comparisonSecs &&
+            $page.markdownPage.comparisonSecs.length > 0
+          "
+          :main="$page.markdownPage.comparisonMain"
+          :sections="$page.markdownPage.comparisonSecs"
+        />
+
+        <ShowcaseProducts
+          v-if="
+            $page.markdownPage.productData &&
+            $page.markdownPage.productData.length > 0
+          "
+          :id="$page.markdownPage.id"
+          :products="$page.markdownPage.productData"
+        />
+
+        <CallToAction
+          v-if="$page.markdownPage.cta2"
+          :cta="$page.markdownPage.cta2"
+        />
+
+        <logoShowcase
+          v-if="$page.markdownPage.logos"
+          :id="$page.markdownPage.id"
+          :main="$page.markdownPage.logosMain"
+          :logos="$page.markdownPage.logos"
+        />
+
+        <NewCard
+          :id="$page.markdownPage.id"
+          :cards="$page.markdownPage.cards"
+        />
+      </div>
+
+      <BrandPanel
+        :brand="$page.markdownPage.brandPanel"
+        v-if="$page.markdownPage.brandPanel"
+      />
 
       <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <g-image
+          class="mx-auto mb-20"
+          v-if="$page.markdownPage.solution_image"
+          :src="$page.markdownPage.solution_image.src"
+        />
+
+        <g-image
+          class="w-1/2 mx-auto mt-10"
+          v-if="$page.markdownPage.solution_image3"
+          :src="$page.markdownPage.solution_image3.src"
+        />
+
+        <Features
+          v-if="$page.markdownPage.features.length > 0"
+          :main="$page.markdownPage.featuresMain"
+          :features="$page.markdownPage.features"
+        />
+      </div>
+
+      <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+      />
+
+      <ShowProductCaseHome
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
+      />
+
+<div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+
+      <g-image class="lg:w-1/2 mx-auto mt-10"
+        v-if="$page.markdownPage.solution_image4"
+        :src="$page.markdownPage.solution_image4.src"
+      />
+
+      </div>
+        <SolutionsHeader class="mb-10"
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
-      />
-
-      <NewCard
-        v-for="card in $page.markdownPage.cards3"
-        :key="card.id"
-        :card="card"
-      />
-
+      
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
@@ -54,7 +132,7 @@
         :pricingPlans="$page.markdownPage.pricingPlans"
       /> -->
 
-      <Features
+      <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
         :features="$page.markdownPage.features3"
@@ -67,11 +145,6 @@
       />
 
       <SolutionsHeader
-        v-if="$page.markdownPage.header2"
-        :header="$page.markdownPage.header2"
-      />
-
-      <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
       />
@@ -79,31 +152,16 @@
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
-      />
-
-      <!-- <ShowcaseProducts
-        :products="$page.markdownPage.productData"
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
       /> -->
 
-      <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
+      <!-- 
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution2"
         :header="$page.markdownPage.headerSolution2"
       />
 
-      <Features
-        v-if="$page.markdownPage.features.length > 0"
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
-      />
+      -->
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -111,7 +169,7 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
-      <VerticalNav
+      <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
@@ -127,38 +185,24 @@
         :header="$page.markdownPage.headerSolution3"
       />
 
-      <Comparison
-        v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
-        "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
-      />
-
       <Features
         v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
-      />
+      /> -->
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <NewCard
+      <!-- <NewCard
         class="my-10"
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"
       />
-
-      <CallToAction
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
-
+      
       <g-image
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
@@ -167,12 +211,7 @@
       <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      />
-
-      <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        v-if="$page.markdownPage.brandPanel"
-      />
+      /> -->
 
       <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
@@ -195,6 +234,7 @@
         header_altImg
         header_title
         header_image
+        header_span
         button
         link
         solution_image
@@ -334,14 +374,24 @@
          title
          image
        }
-       productData{
-        id
+       productsMain{
+          id
+          title
+          subtitle
+          image
+        }
+        productData{
+         id
          title
-        content
+         content
+         img
+         button
+         url
        }
         featuresMain{
           id
           title 
+          subtitle
           btn 
           link
           content
@@ -359,6 +409,12 @@
           btn 
           link
           content
+        }
+        logosMain {
+          id
+          title
+          title2
+          span
         }
         logos{
           id
@@ -388,6 +444,13 @@
           content
           button
           link
+          image
+        }
+        cta2{
+          id
+          title
+          content
+          image
         }
         signup{
           id
@@ -421,6 +484,7 @@ import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
+import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
@@ -442,6 +506,7 @@ export default {
     SolutionsHeader,
     HowItWorks,
     ShowcaseProducts,
+    ShowProductCaseHome,
     Features,
     logoShowcase,
     CallToAction,

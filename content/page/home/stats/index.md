@@ -1,8 +1,10 @@
 ---
 id: stats
-title: Join the Peer-to-Peer Internet
+title: JOIN A GLOBAL NETWORK OF FARMERS ON THE THREEFOLD GRID
 button: More Stats
 link: https://explorer.threefold.io
+image: ./map.png
 ---
 
-With significant storage and compute capacity already available around the globe, the most advanced peer-to-peer network continues to expand.
+With signiﬁcant storage and compute capacity already available around <br />
+the globe, the most advanced peer-to-peer network continues to expand.

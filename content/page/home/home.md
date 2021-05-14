@@ -1,20 +1,20 @@
 ---
 id: home
-metaTitle: ThreeFold Farming | Be the Internet
-metaDesc: This is the era of decentralization. Plug in a server (3Node) from your home or office and start generating passive revenue by selling peer-to-peer storage and compute capacity.
-metaImg: ./farming_header2.png
-header_title: Be the Internet
-header_image: ./farming_header2.png
-header_excerpt: This is the era of decentralization. Plug in a server (3Node) from your home or office and start generating passive revenue by selling peer-to-peer storage and compute capacity.
-button: Meet the 3Node
-link: /3node
+metaTitle: Hello Future Farmer
+metaDesc: Become a ThreeFold Farmer by plugging in a 3Node server from your home or ofﬁce and start generating income by selling decentralized peer-to-peer storage and compute capacity to the world.
+metaImg: ./home_header.png
+header_title: Hello Future Farmer
+header_image: ./home_header.png
+header_excerpt: Become a ThreeFold Farmer by plugging in a 3Node server from your home or ofﬁce and start generating income by selling decentralized peer-to-peer storage and compute capacity to the world.
+button: Get 3Node
+link: /get_3node
 header2 : header_map
 solution_image_2: ./home_map.png
 cards2: [carbon_neutral]
 header: home_header
 featuresMain: Feature_home
 productsMain: graph_home
-productData: [img_1, img_2, img_3, img_4]
+productData: [img_1, img_2, img_3]
 features: [not_decentralized, not_scalable, not_secure, not_sustainable]
 cards: [home_card]
 featuresMain2: Features_home_2
@@ -22,20 +22,23 @@ features2:
   [
 
     decentralize_the_internet,
-    connect_the_world,
     make_data_safe,
     earn_passive_income,
+    connect_the_world,
+    empty,
+    features2_sustainability
 
   ]
+logosMain: home_logo
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 inTheNews: in_the_news
 cta: home_cta
 NewsLetter : NewsLetter_signup
 solution_image: ./home_grid.png
 stats: stats
+statsDetails: [state1, state2, state3]
 ---
 
-<!--  -->
 <!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
 <!-- signup: home_signup -->
 
