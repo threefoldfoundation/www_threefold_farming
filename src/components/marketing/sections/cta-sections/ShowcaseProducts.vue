@@ -18,7 +18,7 @@
         >
           <div class="px-2 py-2">
             <g-image v-if="product.img" :src="img(product.img)" />
-            <h3 class="font-normal text-2xl mb-2">
+            <h3 class="font-normal text-xl mb-2 content">
               {{ product.title }}
             </h3>
             <div
@@ -26,7 +26,10 @@
               class="content text-gray-700 text-md"
             ></div>
 
-            <div class="grad-border sm:hidden" :class="{ hidden: idx == 2 }"></div>
+            <div
+              class="grad-border sm:hidden"
+              :class="{ hidden: idx == 2 }"
+            ></div>
           </div>
         </div>
       </div>
@@ -79,7 +82,7 @@ export default {
 
 .grad-border {
   display: inline-block;
-  height: 100px;
+  height: 115px;
   width: 5px;
   top: 0px;
   border-radius: 5px;
@@ -90,5 +93,11 @@ export default {
   display: none !important;
   padding-right: 0px;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .grad-border {
+    display: none;
+  }
 }
 </style>
