@@ -67,8 +67,8 @@
         >
           <div class="text-center pb-8 my-5">
             <g-image :src="img(product.img)" />
-            <h3 class="font-normal text-3xl">{{ product.title }}</h3>
-            <div v-html="product.content" class="px-5 mb-8 font-light text-2xl"></div>
+            <h3 class="font-normal text-2xl">{{ product.title }}</h3>
+            <div v-html="product.content" class="px-5 mb-8 font-light text-lg lg:h-40"></div>
             <div class="border-wrap mx-auto mt-5">
               <div v-if="product.button">
                 <a
