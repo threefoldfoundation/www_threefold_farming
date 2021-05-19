@@ -28,10 +28,9 @@
       />
 
       <NewCard
-        v-for="card in $page.markdownPage.cards"
         :id="$page.markdownPage.id"
-        :key="card.id"
-        :card="card"
+        v-if="$page.markdownPage.cards"
+        :cards="$page.markdownPage.cards"
       />
 
       <StatsDetails

@@ -17,7 +17,8 @@
         :link="$page.markdownPage.link"
       />
 
-      <CallToAction class="lg:mt-20"
+      <CallToAction
+        class="lg:mt-20"
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
       />
@@ -59,6 +60,7 @@
 
         <NewCard
           :id="$page.markdownPage.id"
+          v-if="$page.markdownPage.cards"
           :cards="$page.markdownPage.cards"
         />
       </div>
@@ -106,19 +108,19 @@
         :products="$page.markdownPage.productData"
       />
 
-<div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-
-      <g-image class="lg:w-1/2 mx-auto mt-10"
-        v-if="$page.markdownPage.solution_image4"
-        :src="$page.markdownPage.solution_image4.src"
-      />
-
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <g-image
+          class="lg:w-1/2 mx-auto mt-10"
+          v-if="$page.markdownPage.solution_image4"
+          :src="$page.markdownPage.solution_image4.src"
+        />
       </div>
-        <SolutionsHeader class="mb-10"
+      <SolutionsHeader
+        class="mb-10"
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
       />
-      
+
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
@@ -258,15 +260,6 @@
           content
         }
         cards2{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
-        cards3{
           id
           title
           image

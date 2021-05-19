@@ -28,7 +28,7 @@
   </section>
 
   <section class="pt-8 px-4 text-center" v-else>
-    <div class="max-w-2xl mx-auto mb-8">
+    <div class="max-w-2xl mx-auto mb-8" v-if="main">
       <h2
         class="text-4xl leading-tight mb-6 uppercase font-normal font-heading"
       >

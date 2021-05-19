@@ -3,7 +3,11 @@
     class="lg:py-12 lg:flex lg:justify-center flex flex-col"
     v-if="id == 'home'"
   >
-    <div class="bg-white lg:mx-8 lg:flex items-center lg:max-w-5xl">
+    <div
+      class="bg-white lg:mx-8 lg:flex items-center lg:max-w-5xl"
+      v-for="(card, index) in cards"
+      :key="index"
+    >
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
         <h2 class="text-4xl font-normal leading-tight font-heading">
           {{ card.title }}
@@ -31,7 +35,7 @@
       <div class="lg:w-1/2">
         <div
           class="h-64 bg-center bg-no-repeat bg-contain lg:rounded-lg"
-          :style="img"
+          :style="multiImgs(card.image)"
         ></div>
       </div>
     </div>
@@ -79,12 +83,12 @@
     </div>
   </div>
 
-  <div class="lg:py-12 lg:flex lg:justify-center flex flex-col" v-else>
+  <!-- <div class="lg:py-12 lg:flex lg:justify-center flex flex-col" v-else>
     <div
       class="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg"
     >
       <div class="lg:w-1/2">
-        <div class="h-64 bg-cover lg:rounded-lg lg:h-full" :style="img"></div>
+        <div class="h-64 bg-cover lg:rounded-lg lg:h-full" :style="multiImgs(card.image)"></div>
       </div>
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
         <h2 class="text-3xl text-gray-700 font-bold">{{ card.title }}</h2>
@@ -106,18 +110,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
 export default {
-  computed: {
-    img: function () {
-      if (this.card.image.src)
-        return "background-image:url(" + this.card.image.src + ")";
-      return this.card.image;
-    },
-  },
   methods: {
     multiImgs(image) {
       if (image.src) return "background-image:url(" + image.src + ")";
