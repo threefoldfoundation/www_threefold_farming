@@ -235,6 +235,7 @@ h1,
 .hiwHeader h1 {
   font-family: "Roboto", sans-serif;
   line-height: 0.8;
+  font-weight: 800;
 }
 
 .green {
