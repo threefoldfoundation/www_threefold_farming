@@ -219,6 +219,8 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .header {
   background: linear-gradient(to bottom left, #b8a5e9, #2e3192);
   height: auto;
@@ -231,7 +233,7 @@ export default {
 
 h1,
 .hiwHeader h1 {
-  font-family: Ego;
+  font-family: "Roboto", sans-serif;
   line-height: 0.8;
 }
 
