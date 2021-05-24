@@ -67,15 +67,18 @@ export default {
   },
   async mounted() {
     try {
+      const getFarms = await axios.get(
+        "https://explorer.threefold.io/api/farms?network=all"
+      );
       const results = await axios.get(
         "https://explorer.threefold.io/api/stats"
       );
-      let sru = (results.data.sru / 1000).toFixed();
+      let farms = getFarms.data.length;
       let hru = (results.data.hru / 1000000).toFixed();
       this.stats.push(
-        { "Farms": results.data.cru },
-        { "capacity (HDD PB)": hru },
-        { "countries": results.data.countries }
+        { farms: farms },
+        { "HDD PB": hru },
+        { countries: results.data.countries }
       );
     } catch (error) {
       console.log(error);
