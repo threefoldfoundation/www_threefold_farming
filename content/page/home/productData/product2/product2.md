@@ -1,6 +1,6 @@
 ---
 id: img_2
 title: ''
-img : ./offer.jpg
+img : ./offer.png
 ---
-Provide p2p storage and compute capacity to host humanity's edge workloads.
+Your capacity will be automatically detected by the OS and registered in the blockchain.

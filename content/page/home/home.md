@@ -1,7 +1,7 @@
 ---
 id: home
 metaTitle: Hello Future Farmer
-metaDesc: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world
+metaDesc: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world.
 metaImg: ./home_header.png
 header_title: Hello Future Farmer
 header_image: ./home_header.png

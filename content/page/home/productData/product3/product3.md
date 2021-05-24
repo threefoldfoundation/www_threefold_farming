@@ -1,7 +1,6 @@
 ---
 id: img_3
 title: ''
-img : ./earn.jpg
+img : ./earn.png
 ---
-Earn in the most valuable and rapidly growing economy:
-the Internet and cloud.
+Earn ThreeFold Tokens for connecting and offering planet positive capacity.
