@@ -42,7 +42,7 @@
           class="text-2xl font-light text-white leading-relaxed"
           v-html="section.content"
         ></div>
-        <g-image :src="img(section.image)" :alt="section.title" />
+        <g-image class="lg:w-3/4 mx-auto" :src="img(section.image)" :alt="section.title" />
       </div>
     </div>
   </section>
@@ -97,12 +97,12 @@ export default {
 }
 
 dd {
-  height: 200px;
-  width: 200px;
+  height: 140px;
+  width: 140px;
   margin: auto;
   border-radius: 50%;
-  line-height: 180px;
-  border: 10px solid #847fc2;
+  line-height: 130px;
+  border: 3px solid #847fc2;
   background-color: #313f92;
   color: #dacef5;
 }
