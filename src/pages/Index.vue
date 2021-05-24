@@ -108,11 +108,14 @@
           subtitle
           btn 
           link
+          btn2
+          link2
           content
         }
         logosMain {
           id
           title
+          content
         }
         logos{
           id

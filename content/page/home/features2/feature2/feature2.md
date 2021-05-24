@@ -1,7 +1,7 @@
 ---
 id: connect_the_world
 svg: 
-title: Make Data Safe
+title: Connect the world
 ---
 
-Join a participatory economy that brings a more performant, secure, and sustainable Internet.
+Enable a more accessible, affordable, and sustainable Internet by creating shorter bridges between people and capacity.

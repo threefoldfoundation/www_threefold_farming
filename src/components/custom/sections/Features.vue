@@ -1,9 +1,9 @@
 <template>
   <section class="py-12 px-4 text-center" v-if="id == 'home'">
-    <h2 class="text-4xl font-normal leading-tight font-heading">
+    <h2 class="text-4xl leading-tight mb-6 font-bold font-heading uppercase">
       {{ main.title }}
     </h2>
-    <p v-if="main.subtitle" class="mb-6 text-2xl text-gray-800">
+    <p v-if="main.subtitle" class="mb-6 text-gray-700">
       {{ main.subtitle }}
     </p>
     <div class="flex flex-wrap items-center -mx-4 mb-6">
@@ -20,21 +20,23 @@
 
         <div v-else>
           <span v-if="index !== 4" class="img-border"></span>
-          <h2 class="text-x2 mt-5 mb-3 font-normal font-heading leading-9">
+          <h5>
             {{ feature.title }}
-          </h2>
-          <div
-            v-html="feature.content"
-            class="text-lg text-gray-700 leading-relaxed"
-          ></div>
+          </h5>
+          <div v-html="feature.content" class="text-gray-700"></div>
         </div>
       </div>
     </div>
-    <div class="border-wrap mx-auto mt-20" v-if="main.btn">
+    <div class="mx-auto mt-20" v-if="main.btn">
       <g-link
-        class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+        class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
         :to="main.link"
-        >{{ main.btn }}</g-link
+        >{{ main.btn }}
+      </g-link>
+      <g-link
+        class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
+        :to="main.link2"
+        >{{ main.btn2 }}</g-link
       >
       <!-- <div v-html="main.content" class="text-sm text-gray-400 mt-5"></div> -->
     </div>
@@ -44,7 +46,10 @@
     <h2 class="text-4xl text-center mb-12 font-normal font-heading">
       {{ main.title }}
     </h2>
-     <p v-if="main.subtitle" class="mb-6 text-2xl text-center font-ligh text-gray-800">
+    <p
+      v-if="main.subtitle"
+      class="mb-6 text-2xl text-center font-ligh text-gray-800"
+    >
       {{ main.subtitle }}
     </p>
     <div class="flex flex-wrap -mx-4 mb-6">

@@ -1,11 +1,11 @@
 ---
 id: home
 metaTitle: Hello Future Farmer
-metaDesc: Become a ThreeFold Farmer by plugging in a 3Node server from your home or ofﬁce and start generating income by selling decentralized peer-to-peer storage and compute capacity to the world.
+metaDesc: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world
 metaImg: ./home_header.png
 header_title: Hello Future Farmer
 header_image: ./home_header.png
-header_excerpt: Become a ThreeFold Farmer by plugging in a 3Node server from your home or ofﬁce and start generating income by selling decentralized peer-to-peer storage and compute capacity to the world.
+header_excerpt: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world
 button: Get 3Node
 link: /get_3node
 header2 : header_map

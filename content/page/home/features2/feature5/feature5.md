@@ -4,4 +4,4 @@ svg:
 title: Earn Income
 ---
 
-Join a participatory economy that brings a more performant, secure, and sustainable Internet.
+Simply plug in your 3Node to electricity and network, and start earning ThreeFold Tokens.

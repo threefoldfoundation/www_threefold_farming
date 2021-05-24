@@ -1,7 +1,7 @@
 ---
 id: earn_passive_income
 svg: 
-title: Help Connect the World
+title: Make Data Safe
 ---
 
-Join a participatory economy that brings a more performant, secure, and sustainable Internet.
+Give people unbreakable storage for their data, while they keep full ownership and access rights.

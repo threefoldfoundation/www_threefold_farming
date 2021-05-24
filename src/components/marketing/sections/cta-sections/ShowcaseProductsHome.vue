@@ -113,7 +113,7 @@ export default {
 
 .take_apart {
   background-color: #f2f2f2;
-  min-height: 296px;
+  min-height: 335px;
 }
 
 .take_apart2 {

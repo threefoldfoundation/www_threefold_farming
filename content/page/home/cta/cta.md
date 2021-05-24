@@ -4,4 +4,4 @@ title: The ThreeFold grid is the new internet
 button: ''
 link: ''  
 ---
-Connect your 3Node to the world's most advance P2P grid in the world and start earning!
+Who says you can’t earn while doing good? Join the movement by connecting a 3Node and empower a better Internet for humanity and our planet.

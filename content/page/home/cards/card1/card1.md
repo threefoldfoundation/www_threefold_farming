@@ -1,9 +1,9 @@
 ---
 id: home_card
-title: TAKE ADVANTAGE OF THE HIGH DEMAND FOR DATA STORAGE
+title: Take advantage of the high demand for data
 image: ./125zb.png
 button: 
 link: 
 order: 1
 ---
-125 zetabytes of storage capacity needs to be created to meet demand for data in the upcoming years. That is a number with 21 zeroes!
+125 Zetabytes of compute and storage capacity needs to be connected to meet rising data demands. That is a number with 21 zeros!

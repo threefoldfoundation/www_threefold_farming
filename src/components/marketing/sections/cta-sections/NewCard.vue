@@ -9,7 +9,7 @@
       :key="index"
     >
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-        <h2 class="text-4xl font-normal leading-tight font-heading">
+        <h2 class="text-4xl font-normal leading-tight font-heading uppercase">
           {{ card.title }}
         </h2>
         <div

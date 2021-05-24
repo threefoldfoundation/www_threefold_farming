@@ -34,7 +34,11 @@
       >
         {{ main.title }}
       </h2>
-      <p class="text-gray-400 leading-relaxed"></p>
+      <div
+        v-if="main.content"
+        class="mt-4 text-2xl text-gray-800 leading-8"
+        v-html="main.content"
+      ></div>
     </div>
     <div class="flex flex-wrap mx-0">
       <g-link
