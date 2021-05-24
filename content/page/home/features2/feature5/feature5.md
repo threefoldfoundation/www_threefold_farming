@@ -4,4 +4,4 @@ svg:
 title: Earn Income
 ---
 
-Simply plug in your 3Node to electricity and network, and start earning ThreeFold Tokens.
+All you need is to plug-in your 3Node to electricity and network to start earning from the new Internet economy.
