@@ -1,7 +1,7 @@
 ---
 id: navigation
-navLinks: 
-  - name: TF UNIVERSE
+navLinks:
+  - name: UNIVERSE
     link: ''
     external: false
     expandable: true
