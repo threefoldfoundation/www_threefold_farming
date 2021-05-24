@@ -14,14 +14,14 @@
         <div class="inline-flex items-center flex-shrink-0">
           <a :href="$url('/')" class="flex">
             <g-image
-              :src="require(`!!assets-loader!@images/TFN_black.svg`)"
+              :src="require(`!!assets-loader!@images/tfn_black.svg`)"
               class="mr-3 fill-current logo"
               v-if="theme == 'light'"
               alt=""
             />
 
             <g-image
-              :src="require(`!!assets-loader!@images/TFN_black.svg`)"
+              :src="require(`!!assets-loader!@images/tfn_black.svg`)"
               class="mr-3 fill-current logo"
               v-else
               alt=""
