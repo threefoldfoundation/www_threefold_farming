@@ -4,4 +4,4 @@ svg: ./developers_purchase.png
 title: 
 ---
 
-Users, developers and organizations runhost IT workloads.
+Users, developers and organizations run IT workloads.
