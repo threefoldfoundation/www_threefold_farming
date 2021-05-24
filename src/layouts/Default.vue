@@ -65,13 +65,12 @@ query {
     }
 }
 </static-query>
-<style lang="sass">
-@font-face
-  font-family: "Ego"
-  src: url("../assets/fonts/Ego-Regular.ttf") format("truetype")
-  font-weight: normal
-</style>
 <style>
+@font-face {
+  font-family: "Ego";
+  src: url("../assets/fonts/Ego-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
 body {
   margin: 0;
   line-height: 1.5;
