@@ -73,10 +73,9 @@ export default {
       let sru = (results.data.sru / 1000).toFixed();
       let hru = (results.data.hru / 1000000).toFixed();
       this.stats.push(
-        { "countries today": results.data.countries },
-        { "Farms online": results.data.cru },
-        { "SSD storage capacity": sru },
-        { "PB of live capacity": hru }
+        { "Farms": results.data.cru },
+        { "capacity (HDD PB)": hru },
+        { "countries": results.data.countries }
       );
     } catch (error) {
       console.log(error);
