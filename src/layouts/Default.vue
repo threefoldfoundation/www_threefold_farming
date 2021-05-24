@@ -68,7 +68,7 @@ query {
 <style>
 @font-face {
   font-family: "Ego";
-  src: url("../assets/fonts/Ego-Regular.ttf") format("truetype");
+  src: url("../assets/scss/fonts/Ego-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 body {
