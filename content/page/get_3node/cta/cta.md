@@ -6,4 +6,4 @@ link:
 image: ./size.png
 ---
 
-The Titan v2 3Node might look small, but packs quite a punch! Buy your pre-register slot for the next batch of Titan v2 Nodes today.
+The Titan 3Node might be small, but it packs quite a punch. Don’t miss your chance, pre-register for the next batch today.

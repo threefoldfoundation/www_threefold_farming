@@ -99,14 +99,14 @@
         :header="$page.markdownPage.header2"
       />
 
-      <ShowProductCaseHome
+      <!-- <ShowProductCaseHome
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
-      />
+      /> -->
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
         <g-image
