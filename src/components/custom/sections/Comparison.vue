@@ -1,6 +1,6 @@
 <template>
   <section class="py-12 px-4 text-center">
-    <h2 class="text-4xl mb-2 leading-tight font-normal font-heading">
+    <h2 class="text-4xl mb-2 leading-tight font-normal font-heading uppercase">
       {{ main.title }}
     </h2>
     <p class="text-2xl font-light text-gray-800">{{ main.description }}</p>
@@ -11,7 +11,7 @@
         :key="index"
       >
         <g-image
-          class="mx-auto mb-8 "
+          class="mx-auto mb-8"
           :src="section.svg.src"
           :alt="section.title"
         />
@@ -22,7 +22,10 @@
           > -->
           <span>{{ section.title }}</span>
         </h3>
-        <div class="mb-4 text-lg font-light leading-7" v-html="section.content"></div>
+        <div
+          class="mb-4 text-lg font-light leading-7"
+          v-html="section.content"
+        ></div>
       </div>
     </div>
     <div>

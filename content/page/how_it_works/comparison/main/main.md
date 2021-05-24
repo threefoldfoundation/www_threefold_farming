@@ -1,7 +1,7 @@
 ---
 id: howitworks_comparison_main
-title: HOW FARMERS EARN CRYPTOCURRENCY
-description: A ThreeFold Token is created only when a farmer adds capacity to the ThreeFold Grid.  Farmers earn even more as users purchase storage and compute from them.  This is all automated by ThreeFold.
+title: How Farmer earn ThreeFold Tokens
+description: ThreeFold Tokens are created only when farmers add compute and storage capacity to the ThreeFold Grid. Farmers earn for connecting capacity, and when their capacity is reserved by users.
 button: 
 link: '' #Add button link here
 ---

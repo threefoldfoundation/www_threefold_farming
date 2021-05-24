@@ -70,7 +70,7 @@
           {{ title }}
         </h1>
         <div
-          class="mb-8 text-black text-xl font-light leading-6 lg:leading-8"
+          class="mb-8 text-black text-lg font-light leading-6 lg:leading-8"
           v-html="excerpt"
         ></div>
         <div v-if="button" class="border-wrap">
@@ -225,7 +225,7 @@ export default {
 }
 
 .header2 {
-  background-color :#2e3192;
+  background-color: #2e3192;
   height: auto;
 }
 

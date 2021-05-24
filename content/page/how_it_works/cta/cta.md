@@ -5,4 +5,4 @@ button: ''
 link: '' 
 ---
 
-ThreeFold Farming is the process of connecting capacity to the ThreeFold Grid. The individuals and organizations that connect the servers are called Farmers.
+ThreeFold Farming is the process of connecting capacity to the ThreeFold Grid. Individuals and organizations that connect 3Nodes are called Farmers.

@@ -8,8 +8,7 @@ btn2: ''
 link2: ''
 ---
 
-All that you require to start farming is electricity, a network connection and a 3Node to start earning as a farmer!
-
+All you need is electricity, a network connection, and a 3Node to start your farming journey – and start earning!
 
 <!-- Buttons:
 Join Us

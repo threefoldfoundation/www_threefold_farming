@@ -4,5 +4,4 @@ svg: ./farmer_earn.png
 title: 
 ---
 
-Farmers earn additional tokens by leasing capacity.
-
+Farmers earn additional tokens when hosting workloads.

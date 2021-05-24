@@ -3,10 +3,10 @@ id: how_it_works
 metaTitle: ThreeFold Farming | 3Node
 metaDesc: All you need is an electricity outlet, Internet connection, and a 3Node to start earning.
 metaImg: ./3node_header.png
-header_title: This Can't Be More Simple!
+header_title: It Can't Be More Simple!
 header_image: ./how_it_work_header.jpg
 header_altImg: participate_header
-header_excerpt: ThreeFold Farming doesn't require any technical knowledge to set up. All you need is an electricity outlet, Internet connection and a 3Node to start your farming journey.
+header_excerpt: No technical knowledge required to start your farming journey. Anyone can host a 3Node at their home or office.
 button: Get 3Node
 link: /get_3node
 solution_image2: ./home_grid.png

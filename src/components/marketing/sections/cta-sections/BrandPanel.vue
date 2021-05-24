@@ -8,12 +8,15 @@
           <h2
             class="text-4xl leading-9 font-normal text-white sm:text-3xl sm:leading-10"
           >
-            <span class="block">{{ brand.title }}</span>
+            <span class="block uppercase">{{ brand.title }}</span>
             <span class="block" v-if="brand.subtitle">{{
               brand.subtitle
             }}</span>
           </h2>
-          <div class="mt-4 text-2xl font-light text-white" v-html="brand.content"></div>
+          <div
+            class="mt-4 text-2xl font-light text-white"
+            v-html="brand.content"
+          ></div>
           <!-- <div class="border-wrap">
             <g-link
               :to="brand.sourceUrl"

@@ -4,5 +4,4 @@ svg: ./developers_purchase.png
 title: 
 ---
 
-Developers purchase and host on decentralized hosting space
-
+Users, developers and organizations runhost IT workloads.

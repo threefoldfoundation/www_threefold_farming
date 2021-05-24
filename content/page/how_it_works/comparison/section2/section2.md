@@ -4,4 +4,4 @@ svg: ./grid_expands.png
 title: 
 ---
 
-The TF Grid expands as more capacity is added by farmers. 
+The ThreeFold Grid expands as Farmers add more capacity.
