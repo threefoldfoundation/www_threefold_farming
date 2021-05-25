@@ -57,11 +57,11 @@ items:
     - name: What is the Internet?
       link: https://info.threefold.io/info/threefold#/threefold__grid_intro
     - name: Planet Positive
-      link: /
+      link: /blog/post/threefold_regenerates/
     - name: Peer-to-Peer
       link: /blog/post/what_is_peer_to_peer
     - name: Data Sovereignty
-      link: /
+      link: /blog/post/threefold_data_sovereignty/
     - name: ThreeFold Glossary
       link: /
 
