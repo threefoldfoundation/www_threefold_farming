@@ -1,6 +1,6 @@
 ---
 id: footer
-description: BE THE INTERNET
+description: THREEFOLD
 linkedin: 'https://www.linkedin.com/company/threefold-foundation/'
 facebook: 'https://www.facebook.com/threefold.io'
 twitter: 'https://twitter.com/threefold_io'
@@ -10,15 +10,17 @@ youtube: 'https://www.youtube.com/threefoldfoundation'
 github: 'https://github.com/threefoldfoundation'
 telegram: 'https://t.me/threefoldnews'
 items:
- - title: UNIVERSE
+ - title: TF Universe
    links:
-    - name: ThreeFold
-      link: https://threefold.io
+    - name: Universe Home
+      link: https://threefold.io/universe
     - name: ThreeFold Token
       link: https://threefold.io/token
-    - name: P2P Cloud
+    - name: ThreeFold Farming
+      link: /
+    - name: ThreeFold Kube Cloud
       link: https://threefold.io/cloud
-    - name: P2P Marketplace
+    - name: ThreeFold Marketplace
       link: https://threefold.io/marketplace
     - name: Digital Twin
       link: https://mydigitaltwin.io
@@ -26,44 +28,60 @@ items:
       link: https://threefold.io/aci
     - name: ThreeFold Tech
       link: https://threefold.tech
-
+  
  - title: PARTICIPATE
    links:
-    - name: Buy TFT
-      link: https://www.threefold.io/info/threefold#/threefold__how_to_buy_and_sell
-    - name: Get a 3Node
-      link: /get_3node
-    - name: Become a Farmer
-      link: https://threefold.io/info/threefold#/threefold__become_a_farmer
-      
+    - name: Start Farming
+      link: /farming/get_3node
+    - name: Buy the Token
+      link: https://threefold.io/token
+    - name: Test the Cloud
+      link: https://threefold.io/cloud
+    - name: Try the Marketplace
+      link: https://threefold.io/marketplace
+    - name: Build with the SDK
+      link: https://threefold.io/info/sdk
+    - name: Testing Community
+      link: https://t.me/joinchat/BwOvOxxgK59GmRoZ2_sM0w
+ 
  - title: LEARN
    links:
+    - name: About Farming
+      link: /
+    - name: How Farming works
+      link: /how_it_works
+    - name: What is TFT?
+      link: https://threefold.io/token
     - name: Live Capacity
       link: https://explorer.threefold.io
-    - name: Grid Architecture
-      link: https://threefold.io/info/threefold#/threefold__grid_architecture
-    - name: What is P2P?
-      link: https://threefold.io/info/threefold#/threefold__grid_compare
-    - name: What is Farming?
-      link: https://threefold.io/info/threefold#/threefold__farming_intro
+    - name: What is the Internet?
+      link: https://info.threefold.io/info/threefold#/threefold__grid_intro
+    - name: Planet Positive
+      link: /
+    - name: Peer-to-Peer
+      link: /blog/post/what_is_peer_to_peer
+    - name: Data Sovereignty
+      link: /
     - name: ThreeFold Glossary
-      link: https://www.threefold.io/info/threefold#/threefold__defs
+      link: /
 
  - title: ABOUT US
    links:
     - name: ThreeFold
       link: https://threefold.io/info/threefold
-    - name: Blog
-      link: https://threefold.io/farming/blog
-    - name: NewsRoom
-      link: https://threefold.io/farming/news
-    - name: Forum
-      link: https://forum.threefold.io
+    - name: Partners
+      link: /partners
     - name: People
-      link: https://threefold.io/farming/people
+      link: /people
+    - name: Blog
+      link: /blog
+    - name: NewsRoom
+      link: /news
+    - name: Forum
+      link: https://forum.threefold.io/
+ 
     - name: Contact Us
-      link: mailto:info@threefold.io
-
+      link: 'mailto:info@threefold.io'
 ---
 
 [Terms & Conditions](https://threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
