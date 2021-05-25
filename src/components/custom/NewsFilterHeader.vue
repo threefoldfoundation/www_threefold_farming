@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-wrap items-center -mx-4 bg-gray-200 rounded shadow">
+  <div
+    class="top-16 left-0 z-50 mb-5 h-16 bg-gray-200 w-full mt-24 rounded shadow"
+  >
     <header
       class="flex items-center justify-between flex-wrap container mx-auto px-4 py-1 sm:px-0 transition-all transition-500"
     >

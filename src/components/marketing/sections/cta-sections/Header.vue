@@ -1,6 +1,6 @@
 <template>
   <section class="header pt-12 px-4" v-if="id == 'home' || id == 'get_3node'">
-    <NavBar :navigation="$static.navigation" />
+    <!-- <NavBar :navigation="$static.navigation" /> -->
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
     >

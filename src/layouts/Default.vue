@@ -1,5 +1,10 @@
 <template>
-  <div class="mx-auto">
+  <div class="">
+    <NavBar
+      :navigation="$static.navigation"
+      @setTheme="setTheme"
+      :theme="this.theme"
+    />
     <slot />
     <Footer :record="$static.footer" @setTheme="setTheme" :theme="this.theme" />
   </div>
@@ -7,9 +12,11 @@
 
 
 <script>
+import NavBar from "~/components/custom/Navbar/Navbar.vue";
 import Footer from "~/components/marketing/sections/cta-sections/Footer.vue";
 export default {
   components: {
+    NavBar,
     Footer,
   },
   data() {
@@ -36,11 +43,11 @@ query {
       link
       external
       expandable
-    #  submenu {
-    #    title
-    #    path
-    #    external
-    #  }
+      submenu {
+        title
+        path
+        external
+      }
     }
     social{
       icon
@@ -65,13 +72,10 @@ query {
     }
 }
 </static-query>
+
 <style>
-@font-face {
-  font-family: "Ego";
-  src: url("../assets/scss/fonts/Ego-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
 body {
+  font-family: Futura Book font, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   line-height: 1.5;
 }
