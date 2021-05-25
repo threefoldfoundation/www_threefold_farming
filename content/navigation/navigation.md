@@ -97,15 +97,15 @@ navLinks:
 
       
       - title: Planet Positive
-        path: /
-        external: true
+        path: /blog/post/threefold_regenerates/
+       
 
       - title: Peer-to-Peer
         path: /blog/post/what_is_peer_to_peer/
 
       - title: Data Sovereignty
-        path: /
-        external: true
+        path: /blog/post/threefold_data_sovereignty/
+        
 
       - title: ThreeFold Glossary
         path: /
