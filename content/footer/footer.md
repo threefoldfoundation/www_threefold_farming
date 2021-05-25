@@ -63,7 +63,7 @@ items:
     - name: Data Sovereignty
       link: /blog/post/threefold_data_sovereignty/
     - name: ThreeFold Glossary
-      link: /
+      link: https://threefold.io/info/threefold#/threefold__defs
 
  - title: ABOUT US
    links:

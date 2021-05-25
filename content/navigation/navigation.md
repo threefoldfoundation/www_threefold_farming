@@ -108,7 +108,7 @@ navLinks:
         
 
       - title: ThreeFold Glossary
-        path: /
+        path: https://threefold.io/info/threefold#/threefold__defs
         external: true
 
 
