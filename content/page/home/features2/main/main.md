@@ -3,7 +3,7 @@ id: Features_home_2
 title: Introducing 3Node
 subtitle: ''
 btn: Reserve your 3Node
-link: /farming/get_3node
+link: /get_3node
 btn2: Discover Zero OS
 link2: https://threefold.io/info/threefold#/threefold__grid_architecture?id=zero-os
 btn3: What is ThreeFold Token

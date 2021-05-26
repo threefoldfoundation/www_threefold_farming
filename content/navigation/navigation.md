@@ -75,14 +75,9 @@ navLinks:
     external: false
     expandable: true
     submenu:
-      - title: About Farming
-        path: /
-        
-
       - title: How Farming works
         path: /how_it_works
         
-
       - title: What is TFT?
         path: https://threefold.io/token
         external: true
@@ -94,11 +89,9 @@ navLinks:
       - title: What is the Internet?
         path: https://info.threefold.io/info/threefold#/threefold__grid_intro
         external: true
-
       
       - title: Planet Positive
-        path: /blog/post/threefold_regenerates/
-       
+        path: /blog/post/threefold_regenerates/      
 
       - title: Peer-to-Peer
         path: /blog/post/what_is_peer_to_peer/
@@ -106,7 +99,6 @@ navLinks:
       - title: Data Sovereignty
         path: /blog/post/threefold_data_sovereignty/
         
-
       - title: ThreeFold Glossary
         path: https://threefold.io/info/threefold#/threefold__defs
         external: true
@@ -119,18 +111,13 @@ navLinks:
     submenu:
       - title: Partners
         path: /partners
-        
 
       - title: People
-        path: /people
-        
+        path: /people      
 
       - title: Alliance
         path: https://threefold.io/aci
         external: true
-
-
-
 
   - name: More Info
     link: "" # /dropdown
@@ -139,7 +126,6 @@ navLinks:
     submenu:
       - title: Blog
         path: /blog
-        
 
       - title: NewsRoom
         path: /news
@@ -147,11 +133,11 @@ navLinks:
 
       - title: Forum
         path: https://forum.threefold.io
-        
+        external: true
 
       - title: Contact Us
         path: "mailto:info@threefold.io"
-        
+        external: true
 
 social:
   - icon: telegram-plane

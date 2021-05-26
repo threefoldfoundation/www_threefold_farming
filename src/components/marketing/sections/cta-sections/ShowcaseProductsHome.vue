@@ -22,7 +22,10 @@
           <div class="take_apart text-center pb-8 my-5">
             <g-image :src="img(product.img)" />
             <h3 class="font-bold text-2xl">{{ product.title }}</h3>
-            <div v-html="product.content" class="px-5 text-gray-900 font-light text-2xl leading-7"></div>
+            <div
+              v-html="product.content"
+              class="px-5 text-gray-900 font-light text-2xl leading-7"
+            ></div>
 
             <div v-if="product.button">
               <a
@@ -53,7 +56,10 @@
       >
         {{ main.title }}
       </h2>
-      <p v-if="main !== null" class="mb-6 max-w-4xl m-auto text-2xl font-light leading-8">
+      <p
+        v-if="main !== null"
+        class="mb-6 max-w-4xl m-auto text-2xl font-light leading-8"
+      >
         {{ main.subtitle }}
       </p>
 
@@ -68,7 +74,10 @@
           <div class="text-center pb-8 my-5">
             <g-image :src="img(product.img)" />
             <h3 class="font-normal text-2xl">{{ product.title }}</h3>
-            <div v-html="product.content" class="px-5 mb-8 font-light text-lg lg:h-40"></div>
+            <div
+              v-html="product.content"
+              class="px-5 mb-8 font-light text-lg lg:h-40"
+            ></div>
             <div class="border-wrap mx-auto mt-5">
               <div v-if="product.button">
                 <a
@@ -98,7 +107,6 @@ export default {
   props: ["id", "products", "main"],
   methods: {
     img(image) {
-      if (!image) return "";
       if (image.src) return image.src;
       return image;
     },
