@@ -104,7 +104,7 @@
 
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="bg-white navbar md:order-2 px-2 pt-2 ml-auto pb-4 sm:flex sm:p-0 sm:w-100 bg-transparent"
+        class="bg-white navbar md:order-2 px-2 pt-2 ml-auto pb-4 sm:flex sm:p-0 sm:w-100 md:bg-transparent"
       >
         <div
           :key="index"
