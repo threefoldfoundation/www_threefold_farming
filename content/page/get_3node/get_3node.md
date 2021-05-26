@@ -1,6 +1,6 @@
 ---
 id: get_3node
-metaTitle: ThreeFold Farming | Token (TFT)
+metaTitle: ThreeFold Farming | Get 3Node
 metaDesc: The ThreeFold Token is the currency of the fastest growing P2P internet network on the planet. Earn tokens by becoming a ThreeFold Farmer.
 metaImg: ./server_3node.png
 header_title: Ready to start farming?
