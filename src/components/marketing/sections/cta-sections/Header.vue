@@ -1,6 +1,6 @@
 <template>
   <section class="header pt-12 px-4" v-if="id == 'home' || id == 'get_3node'">
-    <!-- <NavBar :navigation="$static.navigation" /> -->
+    <NavBar :navigation="$static.navigation" />
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:text-left pt-10 -mx-2"
     >
@@ -96,6 +96,7 @@
       </div>
     </div>
   </section>
+  
 
   <section class="header2 pt-12 px-4" v-else>
     <NavBar :navigation="$static.navigation" />
@@ -111,7 +112,15 @@
           {{ title }}
         </h1>
 
-        <div class="mb-8 text-white font-light text-xl leading-8">
+                <div
+          v-if="id == 'pre-register'"
+          class="mb-8 text-white font-light text-xl leading-8"
+        >
+          <span class="green font-bold">{{ span }}</span>
+          {{ excerpt }}
+        </div>
+
+        <div v-else class="mb-8 text-white font-light text-xl leading-8">
           <span class="green font-bold">{{ span }}</span>
           {{ excerpt }}
         </div>
