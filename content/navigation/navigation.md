@@ -117,7 +117,7 @@ navLinks:
     external: false
     expandable: true
     submenu:
-      - title: PARTNERS
+      - title: Partners
         path: /partners
         
 
