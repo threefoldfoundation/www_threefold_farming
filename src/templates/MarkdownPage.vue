@@ -3,7 +3,7 @@
     <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden">
       <Header
         v-if="
-          $page.markdownPage.id !== 'contact' &&
+          $page.markdownPage.id !== 'get_3node' &&
           $page.markdownPage.header_title &&
           $page.markdownPage.header_title != ''
         "
@@ -15,6 +15,18 @@
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
+      />
+
+      <Header
+        v-if="$page.markdownPage.id == 'get_3node'"
+        :id="$page.markdownPage.id"
+        :span="$page.markdownPage.header_span"
+        :title="$page.markdownPage.header_title"
+        :image="$page.markdownPage.header_image"
+        :altImg="$page.markdownPage.header_altImg"
+        :excerpt="$page.markdownPage.header_excerpt"
+        :button="$page.markdownPage.button"
+        :link="$url($page.markdownPage.link)"
       />
 
       <CallToAction
