@@ -38,6 +38,11 @@
         :to="main.link2"
         >{{ main.btn2 }}</g-link
       >
+      <g-link
+        class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
+        :to="main.link3"
+        >{{ main.btn3 }}</g-link
+      >
       <!-- <div v-html="main.content" class="text-sm text-gray-400 mt-5"></div> -->
     </div>
   </section>
