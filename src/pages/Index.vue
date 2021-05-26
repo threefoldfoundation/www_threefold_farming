@@ -149,12 +149,16 @@
           button
           link
         }
-        stats {
+       stats {
           id
           title
           content
           button
           link
+          btn1
+          btn2
+          link1
+          link2
           image
         }
        statsDetails {

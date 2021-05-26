@@ -1,8 +1,8 @@
 <template>
-  <section class="py-12 px-2">
+  <section class="px-2">
     <div class="flex flex-wrap blue p-12 text-center lg:text-left -mx-2">
       <div
-        class="lg:w-1/4 light-blue text-center rounded-lg mt-10 lg:mt-0 order-1 lg:order-none"
+        class="lg:w-1/4 light-blue text-center rounded-lg py-10 mt-10 lg:mt-0 order-1 lg:order-none"
       >
         <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <dl class="">
@@ -31,18 +31,32 @@
         </div>
       </div>
       <div
-        class="lg:w-3/4 text-center rounded lg:pr-10 mt-10 lg:mt-0 order-1 lg:order-none"
+        class="lg:w-3/4 text-center rounded lg:px-6 mt-10 lg:mt-0 order-1 lg:order-none"
       >
         <h2
-          class="text-4xl mb-6 leading-tight text-center text-white font-normal font-heading"
+          class="text-4xl text-white leading-tight mb-6 font-bold font-heading uppercase"
         >
           {{ section.title }}
         </h2>
-        <div
-          class="text-2xl font-light text-white leading-relaxed"
-          v-html="section.content"
-        ></div>
-        <g-image class="lg:w-3/4 mx-auto" :src="img(section.image)" :alt="section.title" />
+        <div class="text-white mt-4" v-html="section.content"></div>
+        <g-image
+          class="lg:w-3/4 mx-auto"
+          :src="img(section.image)"
+          :alt="section.title"
+        />
+        <div class="mx-auto mt-6">
+          <g-link
+            class="inline-block green text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
+            :to="section.link1"
+            >{{ section.btn1 }}
+          </g-link>
+          <g-link
+            class="inline-block green text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
+            :to="section.link2"
+            >{{ section.btn2 }}</g-link
+          >
+          <!-- <div v-html="main.content" class="text-sm text-gray-400 mt-5"></div> -->
+        </div>
       </div>
     </div>
   </section>
