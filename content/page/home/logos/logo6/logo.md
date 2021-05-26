@@ -1,5 +1,5 @@
 ---
 id: logo6
-image: ./tomo_chain.png
-url: /partners/tomochain
+image: ./casperlabs.png
+url: /partners/casperlabs
 ---

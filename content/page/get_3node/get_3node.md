@@ -8,7 +8,7 @@ header_image: ./server_3node.png
 header_altImg: token_header
 header_excerpt: '| Reserve your Titan 3Node to begin your journey towards generating income by selling capacity. The next limited batch of 3Nodes closes 30th of June, 2021.'
 header_span: €999 
-button: Pre Register
+button: Pre-Register
 link: /pre-register # https://app.liquid.com/quick-exchange/
 productData: [product1, product2, product3]
 cta2: getnode_cta
