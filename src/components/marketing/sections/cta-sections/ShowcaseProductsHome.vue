@@ -27,7 +27,7 @@
               class="px-5 text-gray-900 font-light text-2xl leading-7"
             ></div>
 
-            <div v-if="product.button">
+            <div v-if="product.button" class="border-wrap">
               <a
                 v-if="product.url.includes('http')"
                 target="_blank"
@@ -45,32 +45,33 @@
           </div>
         </a>
       </div>
-      <div v-if="main.btn1" class="mt-12">
+      <div v-if="main.btn1" class="border-wrap inline-flex mx-auto">
         <a
           v-if="main.link1.includes('http')"
           target="_blank"
           :href="main.link1"
-          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
           >{{ main.btn1 }}</a
         >
         <a
           v-else
           :href="main.link1"
-          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
           >{{ main.btn1 }}</a
         >
-
+      </div>
+      <div v-if="main.btn2" class="border-wrap inline-flex mx-auto">
         <a
           v-if="main.link2.includes('http')"
           target="_blank"
           :href="main.link2"
-          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
           >{{ main.btn2 }}</a
         >
         <a
           v-else
           :href="main.link2"
-          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
           >{{ main.btn2 }}</a
         >
       </div>
@@ -79,7 +80,7 @@
 
   <div class="take_apart2 py-20 mb-5 bg-gray-100 text-white" v-else>
     <div class="w-full text-center lg:px-40 sm:px-4">
-        <h2
+      <h2
         v-if="main !== null"
         class="text-4xl text-white mx-4 font-normal leading-tight font-heading"
       >

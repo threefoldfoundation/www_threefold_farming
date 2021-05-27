@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="py-12 px-4 text-center"
-    v-if="id == 'home' || id == 'get_3node'"
-  >
+  <section class="py-12 px-4 text-center" v-if="id == 'home'">
     <h2 class="text-4xl leading-tight mb-6 font-bold font-heading uppercase">
       {{ main.title }}
     </h2>
@@ -51,7 +48,7 @@
   </section>
 
   <section class="py-12 px-4" v-else>
-    <h2 class="text-4xl leading-tight text-center mb-12 font-normal font-heading uppercase"> 
+    <h2 class="text-4xl text-center mb-12 font-normal font-heading">
       {{ main.title }}
     </h2>
     <p

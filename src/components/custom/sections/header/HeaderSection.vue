@@ -31,22 +31,3 @@ export default {
   props: ["header"],
 };
 </script>
-<style scoped>
-
-.border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, #b8a5e9, #23256e);
-  padding: 3px;
-  border-radius: 20px;
-}
-
-.module {
-  width: 245px;
-  background: #252e6e;
-  color: white;
-  text-align: center;
-  border-radius: 20px;
-}
-</style>

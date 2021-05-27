@@ -71,6 +71,15 @@ ul {
 .brandpanel {
   background-color: #2e3092;
 }
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #23256e);
+  padding: 3px;
+  border-radius: 20px;
+}
+
 .module {
   width: 245px;
   background: #252e6e;
