@@ -111,11 +111,11 @@ export default {
 }
 
 dd {
-  height: 140px;
-  width: 140px;
+  height: 180px;
+  width: 180px;
   margin: auto;
   border-radius: 50%;
-  line-height: 130px;
+  line-height: 180px;
   border: 3px solid #847fc2;
   background-color: #313f92;
   color: #dacef5;
