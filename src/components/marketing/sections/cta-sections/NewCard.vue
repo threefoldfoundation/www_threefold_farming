@@ -64,7 +64,7 @@
           class="mt-4 text-2xl text-gray-800 leading-8"
           v-html="card.content"
         ></div>
-        <div class="mt-8" v-if="card.button">
+        <div class="mt-8 border-wrap mx-auto" v-if="card.button">
           <a
             v-if="card.link.includes('http')"
             target="_blank"
