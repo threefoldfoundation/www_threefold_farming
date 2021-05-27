@@ -45,7 +45,7 @@
           </div>
         </a>
       </div>
-      <div v-if="main.btn1" class="border-wrap inline-flex mx-auto">
+      <div v-if="main.btn1" class="border-wrap inline-flex mr-5 mt-5 mx-auto">
         <a
           v-if="main.link1.includes('http')"
           target="_blank"
@@ -60,7 +60,7 @@
           >{{ main.btn1 }}</a
         >
       </div>
-      <div v-if="main.btn2" class="border-wrap inline-flex mx-auto">
+      <div v-if="main.btn2" class="border-wrap inline-flex mt-5 mx-auto">
         <a
           v-if="main.link2.includes('http')"
           target="_blank"
