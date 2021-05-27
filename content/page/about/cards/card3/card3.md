@@ -1,10 +1,10 @@
 ---
-id: why3
-title: A better solution for our planet
-image: ./why_card3.png
-button: Learn More
-link: /blog/post/for_our_planet
+id: node_card3
+title: Peer-to-Peer Network 
+image: ./zero_os.png
+button: ''
+link: ''
 order: 3
 ---
 
-The current Internet infrastructure consumes about 10% of the world's energy, much of that power being used to cool down servers in large data centers. This is not needed in a decentralized model. Testing has shown ThreeFold achieves between 50% & 99% power savings when running edge workloads.
+A Peer-to-Peer network connects all 3Nodes and containers in full privacy and security. To connect with the public Internet, a Web Gateway connects with existing Internet protocols and allows public access if and when required only, eliminating the risk of malicious attacks.

@@ -41,7 +41,7 @@
         :partnerships="$page.markdownPage.statsDetails"
       />
     </div>
-    <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
+   
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
@@ -149,18 +149,7 @@
           button
           link
         }
-       stats {
-          id
-          title
-          content
-          button
-          link
-          btn1
-          btn2
-          link1
-          link2
-          image
-        }
+       
        statsDetails {
         id
         image
@@ -176,7 +165,6 @@ import Features from "~/components/custom/sections/Features.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
-import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
 import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
 
@@ -187,7 +175,7 @@ export default {
     NewCard,
     logoShowcase,
     CallToAction,
-    Map,
+    
     ShowProductCaseHome,
     StatsDetails,
   },

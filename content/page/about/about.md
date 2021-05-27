@@ -12,4 +12,8 @@ productsMain: graph_about
 productData: [product_1, product_2, product_3]
 solution_image4: ./many_servers.png
 headerSolution4: headerSolution4
+cards: [node_card1, node_card2, node_card3]
+stats: stats
+solution_image2: ./home_grid.png
+cta: threefold_farming_cta
 ---

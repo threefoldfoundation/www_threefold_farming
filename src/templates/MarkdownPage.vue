@@ -29,16 +29,6 @@
         :link="$url($page.markdownPage.link)"
       />
 
-      <CallToAction
-        class="lg:mt-20"
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-      />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
         <Comparison
           v-if="
@@ -70,11 +60,7 @@
           :logos="$page.markdownPage.logos"
         />
 
-        <NewCard
-          :id="$page.markdownPage.id"
-          v-if="$page.markdownPage.cards"
-          :cards="$page.markdownPage.cards"
-        />
+     
       </div>
 
       <BrandPanel
@@ -111,16 +97,23 @@
         :header="$page.markdownPage.header2"
       />
 
-      <!-- <ShowProductCaseHome
+      <ShowProductCaseHome
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
-      /> -->
+      />
+       <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+
+           <NewCard
+          :id="$page.markdownPage.id"
+          v-if="$page.markdownPage.cards"
+          :cards="$page.markdownPage.cards"
+        />
         <g-image
           class="lg:w-1/2 mx-auto mt-10"
           v-if="$page.markdownPage.solution_image4"
@@ -131,6 +124,17 @@
         class="mb-10"
         v-if="$page.markdownPage.headerSolution4"
         :header="$page.markdownPage.headerSolution4"
+      />
+
+      <CallToAction
+        class="lg:mt-20"
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image2"
+        :src="$page.markdownPage.solution_image2.src"
       />
 
       <!-- <WithComparisonTable
@@ -478,6 +482,18 @@
           title
           content
         }
+        stats {
+          id
+          title
+          content
+          button
+          link
+          btn1
+          btn2
+          link1
+          link2
+          image
+        }
     }
   }
 
@@ -493,6 +509,7 @@ import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/Sh
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
+import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
@@ -506,6 +523,7 @@ export default {
   components: {
     NewCard,
     Header,
+    Map,
     VerticalNav,
     GetInTouch,
     SolutionsHeader,

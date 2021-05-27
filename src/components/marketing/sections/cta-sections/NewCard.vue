@@ -43,7 +43,7 @@
 
   <div
     class="lg:py-12 lg:flex lg:justify-center flex flex-col"
-    v-else-if="id == 'get_3node'"
+    v-else-if="id == 'get_3node' || 'about'"
   >
     <div
       v-for="(card, index) in cards"

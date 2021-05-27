@@ -1,10 +1,10 @@
 ---
-id: why2
-title: An Internet available to everyone
-image: ./why_card2.png
-button: Learn More
-link: /blog/post/more_inclusive_internet
-order: 1
+id: node_card2
+title: Smart Contract for IT layer
+image: ./zero_people.png
+button: ''
+link: ''
+order: 2
 ---
 
-Only 57% of the world is connected to the Internet today, despite Internet access being a human right. This is not acceptable, as digital access represents a gateway to information, knowledge, and economic opportunities. We bring a more affordable and accessible Internet solution to the world.
+ThreeFold’s Smart Contract for IT ensures the correct execution of IT workloads with consensus and multisignature capabilities. A major efficiency gain comes from removing the human requirement for the deployment and operation of IT infrastructures and services.

@@ -9,8 +9,6 @@ header_altImg: participate_header
 header_excerpt: No technical knowledge required to start your farming journey. Anyone can host a 3Node at their home or office.
 button: Get 3Node
 link: /farming/get_3node
-solution_image2: ./home_grid.png
-cta: threefold_farming_cta
 comparisonMain: howitworks_comparison_main
 comparisonSecs: [howitworks_comparison1, howitworks_comparison2, howitworks_comparison3 , howitworks_comparison4] 
 brandPanel : howitworks_brandPanel
