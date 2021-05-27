@@ -4,4 +4,4 @@ svg: ./line.png
 title: Not Secure
 ---
 
-The current system's complexity and band-aid approach leaves it very vulnerable for hackers and data breaches.
+The current system’s pain-killer approach and complexity leaves it very vulnerable for hackers and data breaches.

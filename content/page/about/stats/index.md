@@ -1,6 +1,6 @@
 ---
 id: stats
-title: TOGETHER WE CO-CREATE THE NEW INTERNET 
+title: Together we co-create the new Internet 
 button: More Stats
 link: https://explorer.threefold.io
 image: ./map.png
@@ -10,4 +10,4 @@ btn2: What is Internet Capacity?
 link2: https://threefold.io/info/threefold#/threefold__grid_intro
 ---
 
-The ThreeFold Grid is formed by a global network of independent Farmers – people and organizations who expand Internet capacity to where it is needed the most.
+The ThreeFold Grid is formed by a global network of independent farmers - people and organizations who expand internet capacity to where it is needed the most.

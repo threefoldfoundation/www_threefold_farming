@@ -3,6 +3,7 @@ id: product_1
 title: Truly Decentralized
 img : ./truly.png
 button: Know More
-url: ''
+url: https://threefold.io/blog/post/threefold_data_sovereignty/
 ---
-The users on ThreeFold Grid have 100% ownership and  access rights over their data.
+On the ThreeFold Grid, you have 100% ownership of your data and define access rights.
+

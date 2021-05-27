@@ -1,9 +1,9 @@
 ---
 id: about
-header_title: Let's Fix The Internet Togethe
+header_title: We build a new internet together
 header_image: ./about_header2.png
 header_altImg: internet_broken
-header_excerpt: The Internet is controlled by large corporations. This centralized approach is highly inefﬁcient, extremely costly, and unsustainable. Our data isn't owned by us, and it isn't safe. With your help, ThreeFold is going to give the world a new, better internet.
+header_excerpt: Large corporations control today’s Internet. This centralized approach is highly inefficient, extremely costly, and unsustainable. We don’t own our data, and it isn’t safe. With your help, ThreeFold is going to give the world a new, better Internet. 
 button: ''
 link: ''
 featuresMain: participate_features

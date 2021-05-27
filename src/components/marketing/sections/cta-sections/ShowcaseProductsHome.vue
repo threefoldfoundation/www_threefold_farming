@@ -79,7 +79,7 @@
 
   <div class="take_apart2 py-20 mb-5 bg-gray-100 text-white" v-else>
     <div class="w-full text-center lg:px-40 sm:px-4">
-      <h2
+        <h2
         v-if="main !== null"
         class="text-4xl text-white mx-4 font-normal leading-tight font-heading"
       >
@@ -105,7 +105,7 @@
             <h3 class="font-normal text-2xl">{{ product.title }}</h3>
             <div
               v-html="product.content"
-              class="px-5 mb-8 font-light text-lg lg:h-40"
+              class="px-5 mb-8 font-light text-lg"
             ></div>
             <div class="border-wrap mx-auto mt-5">
               <div v-if="product.button">

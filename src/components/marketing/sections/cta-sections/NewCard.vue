@@ -99,25 +99,25 @@
         ></div>
       </div>
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-        <h2 class="text-4xl text-black font-normal text-center">
+        <h2 class="text-4xl font-normal leading-tight font-heading uppercase text-center">
           {{ card.title }}
         </h2>
         <div
           class="mt-4 text-lg text-black font-light text-center"
           v-html="card.content"
         ></div>
-        <div class="mt-8" v-if="card.button">
+        <div class="border-wrap mx-auto mt-5">
           <a
             v-if="card.link.includes('http')"
             target="_blank"
             :href="card.link"
-            class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
+            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
             >{{ card.button }}</a
           >
           <g-link
             v-else
             :to="card.link"
-            class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
+            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
             >{{ card.button }}</g-link
           >
         </div>
@@ -166,3 +166,22 @@ export default {
   props: ["id", "card", "cards", "reverseCard"],
 };
 </script>
+<style scoped>
+
+.border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #b8a5e9, #23256e);
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+</style>

@@ -1,6 +1,6 @@
 ---
 id: participate_features
-title: WHAT THE PROBLEMS WITH THE CURRENT INTERNET ARE
+title: the problems of the current internet
 subtitle: ''
 btn: ''
 link: ''
