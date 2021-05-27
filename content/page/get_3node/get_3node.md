@@ -14,6 +14,20 @@ productData: [product1, product2, product3]
 cta2: getnode_cta
 logosMain: node_logo
 logos: [node_logo1, node_logo2, node_logo3]
+featuresMain2: Features_home_2
+features2:
+  [
+
+    decentralize_the_internet,
+    make_data_safe,
+    earn_passive_income,
+    connect_the_world,
+    empty,
+    features2_sustainability
+
+  ]
+solution_image3: ./register_stats.png
+solution_image: ./register_specs.png
 ---
 
 <!-- featuresMain3: token_features
