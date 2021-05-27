@@ -75,8 +75,8 @@ navLinks:
     external: false
     expandable: true
     submenu:
-      - title: How Farming works
-        path: /how_it_works
+      - title: ThreeFold Grid
+        path: /about
         
       - title: What is TFT?
         path: https://threefold.io/token

@@ -38,7 +38,7 @@
         >
           {{ section.title }}
         </h2>
-        <div class="text-white mt-4" v-html="section.content"></div>
+        <div class="mb-8 text-white font-light text-xl leading-8 mt-4" v-html="section.content"></div>
         <g-image
           class="lg:w-3/4 mx-auto"
           :src="img(section.image)"
