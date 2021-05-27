@@ -48,10 +48,7 @@
           :products="$page.markdownPage.productData"
         />
 
-        <CallToAction
-          v-if="$page.markdownPage.cta2"
-          :cta="$page.markdownPage.cta2"
-        />
+        <CallToAction v-if="$page.markdownPage.cta2" :cta="$page.markdownPage.cta2" />
 
         <logoShowcase
           v-if="$page.markdownPage.logos"
@@ -59,19 +56,11 @@
           :main="$page.markdownPage.logosMain"
           :logos="$page.markdownPage.logos"
         />
-
-     
       </div>
 
-      <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        v-if="$page.markdownPage.brandPanel"
-      />
+      <BrandPanel :brand="$page.markdownPage.brandPanel" v-if="$page.markdownPage.brandPanel" />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      />
+      <SolutionsHeader v-if="$page.markdownPage.header" :header="$page.markdownPage.header" />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
         <g-image
           class="mx-auto mb-20"
@@ -92,11 +81,17 @@
         />
       </div>
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header2"
-        :header="$page.markdownPage.header2"
-      />
+      <SolutionsHeader v-if="$page.markdownPage.header2" :header="$page.markdownPage.header2" />
 
+      <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
+
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <NewCard
+          :id="$page.markdownPage.id"
+          v-if="$page.markdownPage.cards"
+          :cards="$page.markdownPage.cards"
+        />
+      </div>
       <ShowProductCaseHome
         v-if="
           $page.markdownPage.productData &&
@@ -105,15 +100,8 @@
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
       />
-       <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-
-           <NewCard
-          :id="$page.markdownPage.id"
-          v-if="$page.markdownPage.cards"
-          :cards="$page.markdownPage.cards"
-        />
         <g-image
           class="lg:w-1/2 mx-auto mt-10"
           v-if="$page.markdownPage.solution_image4"
@@ -126,11 +114,7 @@
         :header="$page.markdownPage.headerSolution4"
       />
 
-      <CallToAction
-        class="lg:mt-20"
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
+      <CallToAction class="lg:mt-20" v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
 
       <g-image
         v-if="$page.markdownPage.solution_image2"
@@ -141,14 +125,14 @@
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
-      /> -->
+      />-->
 
       <!-- <FourTiersWithToggle
         v-if="$page.markdownPage.pricingPlans && 
         $page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
-      /> -->
+      />-->
 
       <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
@@ -170,7 +154,7 @@
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
-      /> -->
+      />-->
 
       <!-- 
 
@@ -185,7 +169,7 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      /> -->
+      />-->
 
       <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
@@ -207,12 +191,12 @@
         v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
-      /> -->
+      />-->
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
-      /> -->
+      />-->
 
       <!-- <NewCard
         class="my-10"
@@ -229,12 +213,12 @@
       <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      /> -->
+      />-->
 
       <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
         v-if="$page.markdownPage.splitWithImage"
-      /> -->
+      />-->
     </div>
   </Layout>
 </template>
@@ -538,7 +522,7 @@ export default {
     BrandPanel,
     SplitWithImage,
     FourTiersWithToggle,
-    WithComparisonTable,
+    WithComparisonTable
   },
   metaInfo() {
     return {
@@ -548,39 +532,39 @@ export default {
         {
           key: "description",
           name: "description",
-          content: this.$page.markdownPage.metaDesc,
+          content: this.$page.markdownPage.metaDesc
         },
         {
           key: "og:title",
           property: "og:title",
-          content: this.$page.markdownPage.metaTitle,
+          content: this.$page.markdownPage.metaTitle
         },
         {
           key: "og:description",
           property: "og:description",
-          content: this.$page.markdownPage.metaDesc,
+          content: this.$page.markdownPage.metaDesc
         },
         {
           key: "og:image",
           property: "og:image",
-          content: this.getImg,
+          content: this.getImg
         },
         {
           key: "twitter:description",
           name: "twitter:description",
-          content: this.$page.markdownPage.metaDesc,
+          content: this.$page.markdownPage.metaDesc
         },
         {
           key: "twitter:image",
           property: "twitter:image",
-          content: this.getImg,
+          content: this.getImg
         },
         {
           key: "twitter:title",
           property: "twitter:title",
-          content: this.$page.markdownPage.metaTitle,
-        },
-      ],
+          content: this.$page.markdownPage.metaTitle
+        }
+      ]
     };
   },
   computed: {
@@ -596,8 +580,8 @@ export default {
       if (this.$page.markdownPage.metaImg.src)
         return this.$page.markdownPage.metaImg.src;
       return this.$page.markdownPage.metaImg;
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>
