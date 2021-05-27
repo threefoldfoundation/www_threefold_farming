@@ -71,7 +71,13 @@ ul {
 .brandpanel {
   background-color: #2e3092;
 }
-
+.module {
+  width: 245px;
+  background: #252e6e;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
 .animated-link:after {
   content: "";
   width: 0px;

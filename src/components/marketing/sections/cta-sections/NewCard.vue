@@ -1,7 +1,7 @@
 <template>
   <div
     class="lg:py-12 lg:flex lg:justify-center flex flex-col"
-    v-if="id == 'home'"
+    v-if="id == 'home' && !reverseCard"
   >
     <div
       class="bg-white lg:mx-8 lg:flex items-center lg:max-w-5xl"
@@ -37,6 +37,48 @@
           class="h-64 bg-center bg-no-repeat bg-contain lg:rounded-lg"
           :style="multiImgs(card.image)"
         ></div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="lg:py-12 lg:flex lg:justify-center flex flex-col"
+    v-else-if="id == 'home' && reverseCard"
+  >
+    <div
+      class="bg-white lg:mx-8 lg:flex items-center lg:max-w-5xl"
+      v-for="(card, index) in cards"
+      :key="index"
+    >
+      <div class="lg:w-1/2">
+        <div
+          class="h-64 bg-center bg-no-repeat bg-contain lg:rounded-lg"
+          :style="multiImgs(card.image)"
+        ></div>
+      </div>
+      <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2 text-center">
+        <h2 class="text-4xl font-normal leading-tight font-heading uppercase">
+          {{ card.title }}
+        </h2>
+        <div
+          class="mt-4 text-2xl text-gray-800 leading-8"
+          v-html="card.content"
+        ></div>
+        <div class="mt-8" v-if="card.button">
+          <a
+            v-if="card.link.includes('http')"
+            target="_blank"
+            :href="card.link"
+            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+            >{{ card.button }}</a
+          >
+          <g-link
+            v-else
+            :to="card.link"
+            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+            >{{ card.button }}</g-link
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -121,6 +163,6 @@ export default {
       return image;
     },
   },
-  props: ["id", "card", "cards"],
+  props: ["id", "card", "cards", "reverseCard"],
 };
 </script>

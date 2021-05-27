@@ -1,11 +1,15 @@
 ---
-id: header_map
+id: tfgrid_explorer
 title: ''
-subtitle: Join the Peer-to-Peer Internet
-btn1: Live Stats
-link1: https://explorer.threefold.io/
+subtitle: LET’S DECENTRALIZE THE WORLD TOGETHER
+btn1: Let’s Do This!
+link1: /get_3node
 btn2: ''
 link2: ''
 ---
 
-With significant storage and compute capacity already available around the globe, the most advanced peer-to-peer network continues to expand.
+Plug in your 3Node and take the initial step towards a better Iinternet for the entire world.
+
+<!-- Buttons:
+Join Us
+Visit the Grid Explorer -->

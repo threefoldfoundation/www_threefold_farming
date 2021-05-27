@@ -286,7 +286,7 @@ module.exports = {
                     pricingPlans: 'PricingPlans',
                     plans: 'Plans',
                     stats: 'Stats',
-                    statsDetails: 'StatesDetails'
+                    statsDetails: 'StatesDetails',
                 }
             }
         },

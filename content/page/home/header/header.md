@@ -1,11 +1,14 @@
 ---
-id: home_header
+id: header
 title: ''
-subtitle: Decentralization is taking over
+subtitle: As simple as it gets
 btn1: ''
 link1: ''
 btn2: ''
 link2: ''
 ---
 
-Emerging technologies demand edge solutions to scale. ThreeFold created secure and scaleable technology at the edge that allows anyone to connect capacity, anywhere.
+All you need is electricity, a network connection, and a 3Node to start your farming journey -- and start earning.
+<!-- Buttons:
+Join Us
+Visit the Grid Explorer -->

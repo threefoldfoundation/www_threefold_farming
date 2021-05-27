@@ -45,6 +45,35 @@
           </div>
         </a>
       </div>
+      <div v-if="main.btn1" class="mt-12">
+        <a
+          v-if="main.link1.includes('http')"
+          target="_blank"
+          :href="main.link1"
+          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          >{{ main.btn1 }}</a
+        >
+        <a
+          v-else
+          :href="main.link1"
+          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          >{{ main.btn1 }}</a
+        >
+
+        <a
+          v-if="main.link2.includes('http')"
+          target="_blank"
+          :href="main.link2"
+          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          >{{ main.btn2 }}</a
+        >
+        <a
+          v-else
+          :href="main.link2"
+          class="inline-block py-2 module px-2 mr-5 leading-none text-white hover:bg-gray-700 rounded shadow"
+          >{{ main.btn2 }}</a
+        >
+      </div>
     </div>
   </div>
 

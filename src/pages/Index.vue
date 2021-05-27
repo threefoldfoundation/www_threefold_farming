@@ -21,12 +21,6 @@
         :products="$page.markdownPage.productData"
       />
 
-      <Features
-        :id="$page.markdownPage.id"
-        :main="$page.markdownPage.featuresMain2"
-        :features="$page.markdownPage.features2"
-      />
-
       <NewCard
         :id="$page.markdownPage.id"
         v-if="$page.markdownPage.cards"
@@ -41,39 +35,35 @@
         :partnerships="$page.markdownPage.statsDetails"
       />
     </div>
-   
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <logoShowcase
-        v-if="$page.markdownPage.logos.length > 0"
-        :main="$page.markdownPage.logosMain"
-        :logos="$page.markdownPage.logos"
-      />
-      <CallToAction
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
-    </div>
-    <g-image
-      v-if="$page.markdownPage.solution_image"
-      :src="$page.markdownPage.solution_image.src"
-    />
-    <div v-if="$page.markdownPage.button" class="border-wrap mx-auto mb-10">
-      <a
-        v-if="$page.markdownPage.link.includes('http')"
-        target="_blank"
-        class="inline-block module py-2 px-10 mr-6 leading-none text-white hover:bg-gray-700 font-normal rounded shadow"
-        :href="$url($page.markdownPage.link)"
-        >{{ $page.markdownPage.button }}</a
-      >
 
-      <a
-        v-else
-        class="inline-block py-2 module px-10 mr-6 leading-none text-white hover:bg-gray-700 font-normal rounded shadow"
-        :href="$url($page.markdownPage.link)"
-        >{{ $page.markdownPage.button }}</a
-      >
-      <!-- <a class="text-gray-600 hover:underline" href="#">Learn more</a> -->
+    <SolutionsHeader
+      v-if="$page.markdownPage.header"
+      :header="$page.markdownPage.header"
+    />
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+      <g-image
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
+
+      <NewCard
+        :id="$page.markdownPage.id"
+        v-if="$page.markdownPage.cards2"
+        :cards="$page.markdownPage.cards2"
+        reverseCard="true"
+      />
+
+      <g-image
+        class="w-1/2 mx-auto mt-10"
+        v-if="$page.markdownPage.solution_image3"
+        :src="$page.markdownPage.solution_image3.src"
+      />
     </div>
+
+    <SolutionsHeader
+      v-if="$page.markdownPage.header2"
+      :header="$page.markdownPage.header2"
+    />
   </Layout>
 </template>
 
@@ -93,6 +83,7 @@
         link
         solution_image
         solution_image_2
+        solution_image3
         cards{
           id
           title
@@ -102,81 +93,71 @@
           order
           content
         }
-        featuresMain2{
-          id
-          title 
-          subtitle
-          btn 
-          link
-          btn2
-          link2
-          btn3
-          link3
-          content
-        }
-        logosMain {
-          id
-          title
-          content
-        }
-        logos{
-          id
-          image
-          url
-        }
-        features2{
-          id
-          title 
-          svg
-          content
-        }
         productsMain{
           id
           title
           subtitle
           image
+          btn1
+          link1
+          btn2
+          link2
         }
         productData{
          id
          title
          content
          img
-       }
-        cta{
-          id
-          title
-          content
-          button
-          link
-        }
-       
+       }     
        statsDetails {
         id
         image
         content
       }
+      header{
+        title
+        subtitle
+        content
+        btn1
+        link1
+        btn2
+        link2
+       }
+      cards2{
+        id
+        title
+        image
+        button
+        link
+        order
+        content
+      }
+      header2{
+        title
+        subtitle
+        content
+        btn1
+        link1
+        btn2
+        link2
+       }
     }  
   }
 </page-query>
 
 <script>
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
-import Features from "~/components/custom/sections/Features.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
-import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
-import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
+import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 
 export default {
   components: {
     Header,
-    Features,
     NewCard,
-    logoShowcase,
-    CallToAction,
-    
     ShowProductCaseHome,
+    SolutionsHeader,
     StatsDetails,
   },
   computed: {

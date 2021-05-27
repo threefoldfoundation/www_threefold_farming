@@ -405,13 +405,6 @@
           link
           content
         }
-        featuresMain2{
-          id
-          title
-          btn 
-          link
-          content
-        }
         featuresMain3{
           id
           title
@@ -430,12 +423,6 @@
           image
         }
         features{
-          id
-          title 
-          svg
-          content
-        }
-        features2{
           id
           title 
           svg
