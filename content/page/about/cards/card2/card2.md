@@ -1,10 +1,11 @@
 ---
 id: node_card2
-title: Smart Contract for IT layer
+title: Smart Contract for IT
 image: ./zero_people.png
-button: ''
-link: ''
+button: Learn More
+link: https://info.threefold.io/#/internet4__smartcontract_it
 order: 2
 ---
 
-ThreeFold’s Smart Contract for IT ensures the correct execution of IT workloads with consensus and multisignature capabilities. A major efficiency gain comes from removing the human requirement for the deployment and operation of IT infrastructures and services.
+Smart Contract for IT enables any expert to automate the deployment and operation of IT workloads. Users can then use these smart contracts to provision the compute, storage and network needed for their digital needs, without any intermediaries.
+

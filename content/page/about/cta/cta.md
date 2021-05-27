@@ -1,8 +1,12 @@
 ---
 id: threefold_farming_cta
-title: WHAT IS THREEFOLD FARMING? 
+title: Join the ThreeFold Grid 
 button: ''
 link: '' 
 ---
 
-ThreeFold Farming is the process of connecting capacity to the ThreeFold Grid. Individuals and organizations that connect 3Nodes are called Farmers.
+The foundation for a better Internet, built by people who care and for everyone.
+
+<br>
+
+The ThreeFold Grid is a movement lead by people who care about expanding a better Internet

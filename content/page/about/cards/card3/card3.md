@@ -2,9 +2,9 @@
 id: node_card3
 title: Peer-to-Peer Network 
 image: ./zero_os.png
-button: ''
-link: ''
+button: Learn More
+link: https://info.threefold.io/#/internet4__znet 
 order: 3
 ---
 
-A Peer-to-Peer network connects all 3Nodes and containers in full privacy and security. To connect with the public Internet, a Web Gateway connects with existing Internet protocols and allows public access if and when required only, eliminating the risk of malicious attacks.
+A private end-to-end encrypted network that comes with cryptographically-bound IPv6 addresses and a full separation between the IT workloads and the service exposure. A web gateway blocks TCP/UDP connections from the outside.

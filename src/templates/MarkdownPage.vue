@@ -384,7 +384,7 @@
         featuresMain{
           id
           title 
-          subtitle
+         # subtitle
           btn 
           link
           content

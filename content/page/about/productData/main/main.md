@@ -1,6 +1,6 @@
 ---
 id: graph_about
-title: THE P2P THREEFOLD GRID IS THE ONLY REAL SOLUTION
-subtitle: ThreeFold Farming is the process of connecting capacity to the ThreeFold Grid. The individuals and organizations that connect the servers are called Farmers.
+title: The ThreeFold Grid is the only real solution
+subtitle: The technology that powers the ThreeFold Grid is the most advanced peer-to-peer technology in the world and is best positioned to deliver what humanity and the world needs.
 image : ''
 ---
