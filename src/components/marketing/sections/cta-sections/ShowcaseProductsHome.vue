@@ -81,7 +81,7 @@
     <div class="w-full text-center lg:px-40 sm:px-4">
         <h2
         v-if="main !== null"
-        class="text-4xl text-white mx-4 font-normal leading-tight font-heading"
+        class="text-4xl leading-tight text-white text-center mb-12 font-normal font-heading uppercase"
       >
         {{ main.title }}
       </h2>
