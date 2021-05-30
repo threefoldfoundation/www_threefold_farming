@@ -3,12 +3,14 @@
     class="py-12 px-4 text-center"
     v-if="id == 'home' || id == 'get_3node'"
   >
-    <h2 class="text-4xl leading-tight mb-6 font-bold font-heading uppercase">
-      {{ main.title }}
-    </h2>
-    <p v-if="main.subtitle" class="mb-6 text-gray-700">
-      {{ main.subtitle }}
-    </p>
+    <div v-if="main">
+      <h2 class="text-4xl leading-tight mb-6 font-bold font-heading uppercase">
+        {{ main.title }}
+      </h2>
+      <p v-if="main.subtitle" class="mb-6 text-gray-700">
+        {{ main.subtitle }}
+      </p>
+    </div>
     <div class="flex flex-wrap items-center -mx-4 mb-6">
       <div
         v-for="(feature, index) in features"
@@ -30,18 +32,21 @@
         </div>
       </div>
     </div>
-    <div class="mx-auto mt-20" v-if="main.btn">
+    <div class="mx-auto mt-20" v-if="main">
       <g-link
+        v-if="main.btn"
         class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
         :to="main.link"
         >{{ main.btn }}
       </g-link>
       <g-link
+        v-if="main.btn2"
         class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
         :to="main.link2"
         >{{ main.btn2 }}</g-link
       >
       <g-link
+        v-if="main.btn3"
         class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 mb-4 rounded shadow rounded-full"
         :to="main.link3"
         >{{ main.btn3 }}</g-link
