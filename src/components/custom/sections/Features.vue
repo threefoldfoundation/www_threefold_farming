@@ -51,17 +51,19 @@
   </section>
 
   <section class="py-12 px-4" v-else>
-    <h2
-      class="text-4xl leading-tight text-center mb-12 font-normal font-heading uppercase"
-    >
-      {{ main.title }}
-    </h2>
-    <p
-      v-if="main.subtitle"
-      class="mb-6 text-2xl text-center font-ligh text-gray-800"
-    >
-      {{ main.subtitle }}
-    </p>
+    <div v-if="main">
+      <h2
+        class="text-4xl leading-tight text-center mb-12 font-normal font-heading uppercase"
+      >
+        {{ main.title }}
+      </h2>
+      <p
+        v-if="main.subtitle"
+        class="mb-6 text-2xl text-center font-ligh text-gray-800"
+      >
+        {{ main.subtitle }}
+      </p>
+    </div>
     <div class="flex flex-wrap -mx-4 mb-6">
       <div
         v-for="feature in features"
@@ -83,13 +85,18 @@
         ></div>
       </div>
     </div>
-    <div class="text-center" v-if="main.btn">
+    <div class="text-center" v-if="main">
       <g-link
+        v-if="main.btn"
         class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         :to="main.link"
         >{{ main.btn }}</g-link
       >
-      <div v-html="main.content" class="text-sm text-gray-400 mt-5"></div>
+      <div
+        v-if="main.content"
+        v-html="main.content"
+        class="text-sm text-gray-400 mt-5"
+      ></div>
     </div>
   </section>
 </template>
