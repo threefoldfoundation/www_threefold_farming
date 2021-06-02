@@ -7,11 +7,11 @@
       </h2>
       <div
         v-html="cta.content"
-        class="mt-4 text-2xl text-gray-800 leading-8"
+        class="my-4 text-2xl text-gray-800 leading-8"
       ></div>
       <g-link
         v-if="cta.button"
-        class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-normal rounded shadow"
+        class="inline-block bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 my-4 rounded shadow rounded-full"
         :to="cta.link"
         >{{ cta.button }}</g-link
       >

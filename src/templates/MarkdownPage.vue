@@ -31,12 +31,15 @@
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
         <Features
+        v-if="$page.markdownPage.features2.length > 0"
           :id="$page.markdownPage.id"
           :main="$page.markdownPage.featuresMain2"
           :features="$page.markdownPage.features2"
         />
+
+      
         <logoShowcase
-          v-if="$page.markdownPage.logos"
+          v-if="$page.markdownPage.logos.length > 0"
           :id="$page.markdownPage.id"
           :main="$page.markdownPage.logosMain"
           :logos="$page.markdownPage.logos"
@@ -62,17 +65,17 @@
 
         <CallToAction v-if="$page.markdownPage.cta2" :cta="$page.markdownPage.cta2" />
 
-        <g-image
+        <!-- <g-image
           class="mx-auto mb-20"
           v-if="$page.markdownPage.solution_image"
           :src="$page.markdownPage.solution_image.src"
-        />
+        /> -->
 
-        <g-image
+        <!-- <g-image
           class="w-1/2 mx-auto mt-10"
           v-if="$page.markdownPage.solution_image3"
           :src="$page.markdownPage.solution_image3.src"
-        />
+        /> -->
       </div>
 
       <BrandPanel :brand="$page.markdownPage.brandPanel" v-if="$page.markdownPage.brandPanel" />
@@ -437,6 +440,8 @@
           id
           title
           content
+          button
+          link
           image
         }
         signup{
