@@ -2,7 +2,7 @@
 id: getnode_cta
 title:
 button: Pre-register for our next batch 
-link: /farming/pre-register
+link: /pre-register
 image: ./size.png
 ---
 
