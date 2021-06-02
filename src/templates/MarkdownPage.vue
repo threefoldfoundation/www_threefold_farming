@@ -30,7 +30,7 @@
       />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <Features
+        <Features 
           v-if="$page.markdownPage.features2.length > 0"
           :id="$page.markdownPage.id"
           :main="$page.markdownPage.featuresMain2"
@@ -91,7 +91,7 @@
         :header="$page.markdownPage.header"
       />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <Features
+        <Features class="lg:mt-10"
           v-if="$page.markdownPage.features.length > 0"
           :main="$page.markdownPage.featuresMain"
           :features="$page.markdownPage.features"
