@@ -8,12 +8,12 @@ button: ''
 link: ''
 featuresMain: participate_features
 features: [feature1, feature2, feature3, feature4]
-productsMain: graph_about
-productData: [product_1, product_2, product_3]
-solution_image4: ./many_servers.png
+stats: stats
 headerSolution4: headerSolution4
 cards: [node_card1, node_card2, node_card3]
-stats: stats
-solution_image2: ./home_grid.png
 cta: threefold_farming_cta
+solution_image2: ./home_grid.png
 ---
+
+<!-- productsMain: graph_about
+productData: [product_1, product_2, product_3] -->

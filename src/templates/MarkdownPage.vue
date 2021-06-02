@@ -121,7 +121,7 @@
           :cards="$page.markdownPage.cards"
         />
       </div>
-      <ShowProductCaseHome
+      <!-- <ShowProductCaseHome
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0 &&
@@ -129,14 +129,14 @@
         "
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
-      />
+      /> -->
 
       <!-- <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <g-image
+        <!-- <g-image
           class="lg:w-1/2 mx-auto mt-10"
           v-if="$page.markdownPage.solution_image4"
           :src="$page.markdownPage.solution_image4.src"
-        />
+        /> -->
       </div>-->
 
       <CallToAction
@@ -271,7 +271,7 @@
         solution_image
         solution_image2
         solution_image3
-        solution_image4
+      #  solution_image4
         slides{
           id
           title
