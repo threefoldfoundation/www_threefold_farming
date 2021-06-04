@@ -3,7 +3,7 @@ id: register_header
 title: LIMITED AVAILABILITY!
 subtitle: '€999'
 btn1: Pre-Register
-link1: ''
+link1: https://forms.gle/2H42zGFUVNwyDEJ16
 btn2: Join the Community
 link2: https://t.me/threefold
 ---
