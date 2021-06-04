@@ -50,13 +50,13 @@
           v-if="main.link1.includes('http')"
           target="_blank"
           :href="main.link1"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
           >{{ main.btn1 }}</a
         >
         <a
           v-else
           :href="main.link1"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
           >{{ main.btn1 }}</a
         >
       </div>
@@ -65,13 +65,13 @@
           v-if="main.link2.includes('http')"
           target="_blank"
           :href="main.link2"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
           >{{ main.btn2 }}</a
         >
         <a
           v-else
           :href="main.link2"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
           >{{ main.btn2 }}</a
         >
       </div>

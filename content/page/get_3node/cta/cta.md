@@ -1,7 +1,7 @@
 ---
 id: getnode_cta
 title:
-button: Pre-register for our next batch 
+button: Pre-Register for our next batch 
 link: /pre-register
 image: ./size.png
 ---

@@ -32,14 +32,14 @@
           <a
             v-if="link.includes('http')"
             target="_blank"
-            class="inline-block module py-2 px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+            class="inline-block module py-2 px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
             :href="link"
             >{{ button }}</a
           >
 
           <a
             v-else
-            class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 font-semibold rounded shadow"
+            class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
             :href="link"
             >{{ button }}</a
           >

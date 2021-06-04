@@ -9,18 +9,23 @@
         v-html="header.content"
         class="mb-8 text-2xl font-light text-gray-900"
       ></div>
-      <div class="border-wrap mx-auto">
-        <g-link
-          class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
-          v-if="header.btn1"
-          :to="header.link1"
-          >{{ header.btn1 }}</g-link
-        ><g-link
-          class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
-          v-if="header.btn2"
-          :to="header.link2"
-          >{{ header.btn2 }}</g-link
-        >
+      <div class="mx-auto">
+        <div v-if="header.btn1" class="border-wrap inline-flex mt-5 mx-2">
+          <g-link
+            class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
+            v-if="header.btn1"
+            :to="header.link1"
+            >{{ header.btn1 }}</g-link
+          >
+        </div>
+        <div v-if="header.btn2" class="border-wrap inline-flex mt-5 mx-2">
+          <g-link
+            class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow" 
+            v-if="header.btn2"
+            :to="header.link2"
+            >{{ header.btn2 }}</g-link
+          >
+        </div>
       </div>
     </div>
   </section>

@@ -121,6 +121,7 @@
           :cards="$page.markdownPage.cards"
         />
       </div>
+
       <!-- <ShowProductCaseHome
         v-if="
           $page.markdownPage.productData &&
@@ -132,11 +133,11 @@
       /> -->
 
       <!-- <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <!-- <g-image
+        <g-image
           class="lg:w-1/2 mx-auto mt-10"
           v-if="$page.markdownPage.solution_image4"
           :src="$page.markdownPage.solution_image4.src"
-        /> -->
+        />
       </div>-->
 
       <CallToAction
@@ -183,22 +184,22 @@
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
-      />-->
-
-      <!-- 
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution2"
-        :header="$page.markdownPage.headerSolution2"
       />
 
-      -->
+      
+
+      <!-- <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution2"
+        :header="$page.markdownPage.headerSolution2"
+      /> -->
+
+     
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      />-->
+      /> -->
 
       <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
@@ -220,12 +221,12 @@
         v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
-      />-->
+      /> -->
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
-      />-->
+      /> -->
 
       <!-- <NewCard
         class="my-10"
@@ -242,12 +243,12 @@
       <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      />-->
+      /> -->
 
       <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
         v-if="$page.markdownPage.splitWithImage"
-      />-->
+      /> -->
     </div>
   </Layout>
 </template>
