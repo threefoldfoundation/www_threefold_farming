@@ -5,7 +5,7 @@ metaDesc: Plug in a 3Node at your home or office, and start generating income by
 metaImg: ./home_header.png
 header_title: Hello Future Farmer
 header_image: ./home_header.png
-header_excerpt: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world
+header_excerpt: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world.
 button: Get 3Node
 link: /get_3node
 solution_image: ./requirements.png

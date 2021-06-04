@@ -8,7 +8,7 @@ btn2: ''
 link2: ''
 ---
 
-Plug in your 3Node and take the initial step towards a better Iinternet for the entire world.
+Plug in your 3Node and take the initial step towards a better Internet for the entire world.
 
 <!-- Buttons:
 Join Us
