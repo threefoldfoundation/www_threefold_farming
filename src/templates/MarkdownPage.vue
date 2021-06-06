@@ -30,7 +30,7 @@
       />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <Features 
+        <Features
           v-if="$page.markdownPage.features2.length > 0"
           :id="$page.markdownPage.id"
           :main="$page.markdownPage.featuresMain2"
@@ -91,7 +91,8 @@
         :header="$page.markdownPage.header"
       />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <Features class="lg:mt-10"
+        <Features
+          class="lg:mt-10"
           v-if="$page.markdownPage.features.length > 0"
           :main="$page.markdownPage.featuresMain"
           :features="$page.markdownPage.features"
@@ -122,24 +123,6 @@
         />
       </div>
 
-      <!-- <ShowProductCaseHome
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0 &&
-          $page.markdownPage.id !== 'get_3node'
-        "
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
-      /> -->
-
-      <!-- <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <g-image
-          class="lg:w-1/2 mx-auto mt-10"
-          v-if="$page.markdownPage.solution_image4"
-          :src="$page.markdownPage.solution_image4.src"
-        />
-      </div>-->
-
       <CallToAction
         class="lg:mt-20"
         v-if="$page.markdownPage.cta"
@@ -150,105 +133,6 @@
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
-
-      <!-- <WithComparisonTable
-        v-if="$page.markdownPage.plans &&
-        $page.markdownPage.plans.length > 0"
-        :plans="$page.markdownPage.plans"
-      />-->
-
-      <!-- <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans && 
-        $page.markdownPage.pricingPlans.length > 0"
-        :main="$page.markdownPage.pricing_plansMain"
-        :pricingPlans="$page.markdownPage.pricingPlans"
-      />-->
-
-      <!-- <Features
-        v-if="$page.markdownPage.features3.length > 0"
-        :main="$page.markdownPage.featuresMain3"
-        :features="$page.markdownPage.features3"
-      />
-
-      <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      />
-
-      <GetInTouch
-        :contacts="$page.markdownPage.contactData"
-        v-if="$page.markdownPage.contactData.length > 0"
-      />
-
-      
-
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution2"
-        :header="$page.markdownPage.headerSolution2"
-      /> -->
-
-     
-
-      <!-- <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      /> -->
-
-      <!-- <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
-      />
-
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution3"
-        :header="$page.markdownPage.headerSolution3"
-      />
-
-      <Features
-        v-if="$page.markdownPage.features2.length > 0"
-        :main="$page.markdownPage.featuresMain2"
-        :features="$page.markdownPage.features2"
-      /> -->
-
-      <!-- <logoShowcase
-        v-if="$page.markdownPage.logos"
-        :logos="$page.markdownPage.logos"
-      /> -->
-
-      <!-- <NewCard
-        class="my-10"
-        v-for="card in $page.markdownPage.cards2"
-        :key="card.id"
-        :card="card"
-      />
-      
-      <g-image
-        v-if="$page.markdownPage.solution_image4"
-        :src="$page.markdownPage.solution_image4.src"
-      />
-
-      <SignUp
-        v-if="$page.markdownPage.signup"
-        :signup="$page.markdownPage.signup"
-      /> -->
-
-      <!-- <SplitWithImage
-      :split="$page.markdownPage.splitWithImage"
-        v-if="$page.markdownPage.splitWithImage"
-      /> -->
     </div>
   </Layout>
 </template>
@@ -273,13 +157,6 @@
         solution_image2
         solution_image3
       #  solution_image4
-        slides{
-          id
-          title
-          content
-          image
-          order
-        }
         cards{
           id
           title
@@ -289,48 +166,6 @@
           order
           content
         }
-        cards2{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
-        pricing_plansMain{
-          id
-          title
-          button1
-          button2
-          excerpt
-        }
-        pricingPlans{
-          id
-          title
-          excerpt
-          price
-          duration
-          button
-          link
-          includeTitle
-          options
-        }
-        plans{
-          id
-          title
-          rows {
-            title
-            firstCol
-            secCol
-          }
-        }
-       contactData{
-         id
-         title
-         mail
-         phone
-       }
       header{
           title
           subtitle
@@ -349,30 +184,11 @@
           btn2
           link2
        }
-       headerSolution{
-         subtitle
-         content
-       }
-        headerSolution2{
-        subtitle
-        content
-       }
-        headerSolution3{
-         subtitle
-         content
-         btn1
-         link1
-       }
         headerSolution4{
         subtitle
         content
         btn1
         link1
-       }
-       howItWorks{
-         id
-         title
-         content
        }
        brandPanel{
          id
@@ -383,26 +199,6 @@
          btnTxt
          image
        }
-       splitWithImage{
-         id
-         subtitle
-         title
-         content
-         sourceUrl
-         btnTxt
-         image
-       }
-       howItWorksMain{
-         id
-         title
-         image
-       }
-       productsMain{
-          id
-          title
-          subtitle
-          image
-        }
         productData{
          id
          title
@@ -415,13 +211,6 @@
           id
           title 
          # subtitle
-          btn 
-          link
-          content
-        }
-        featuresMain3{
-          id
-          title
           btn 
           link
           content
@@ -442,12 +231,6 @@
           svg
           content
         }
-        features3{
-          id
-          title 
-          svg
-          content
-        }
         cta{
           id
           title
@@ -463,14 +246,6 @@
           button
           link
           image
-        }
-        signup{
-          id
-          title
-          button1
-          link1
-          button2
-          link2
         }
         comparisonMain{
           id
@@ -523,43 +298,27 @@
 <script>
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
-import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
-import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
-import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
-import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
 import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
-import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
-import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
-import FourTiersWithToggle from "~/components/marketing/sections/pricing/four_tiers_with_toggle.vue";
-import WithComparisonTable from "~/components/marketing/sections/pricing/with_comparison_table.vue";
 
 export default {
   components: {
     NewCard,
     Header,
     Map,
-    VerticalNav,
-    GetInTouch,
     SolutionsHeader,
-    HowItWorks,
     ShowcaseProducts,
-    ShowProductCaseHome,
     Features,
     logoShowcase,
     CallToAction,
-    SignUp,
     Comparison,
     BrandPanel,
-    SplitWithImage,
-    FourTiersWithToggle,
-    WithComparisonTable,
   },
   metaInfo() {
     return {

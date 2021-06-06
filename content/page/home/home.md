@@ -19,8 +19,3 @@ statsDetails: [state1, state2, state3]
 header: header
 header2: tfgrid_explorer
 ---
-
-<!-- logos: [logo1, logo2, logo3, logo4, logo5, logo6] -->
-<!-- signup: home_signup -->
-
-<!-- Join the movement by connecting the 3Node to the most advanced peer-to-peer grid on the planet. -->

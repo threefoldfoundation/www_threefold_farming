@@ -14,8 +14,3 @@ header: register_header
 solution_image3: ./register_stats.png
 solution_image: ./register_specs.png
 ---
-
-<!-- pricing_plansMain: participate_pricing
-pricingPlans: [plan1]
-plans: [sec1, sec2, sec3] -->
-
