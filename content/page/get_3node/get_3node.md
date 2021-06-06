@@ -26,8 +26,7 @@ features2:
     features2_sustainability
 
   ]
-solution_image3: ./register_stats.png
-solution_image: ./register_specs.png
+
 ---
 
 <!-- featuresMain3: token_features
@@ -55,3 +54,6 @@ slides:
 
   ] -->
 <!-- signup: signup -->
+
+<!-- solution_image3: ./register_stats.png
+solution_image: ./register_specs.png -->
