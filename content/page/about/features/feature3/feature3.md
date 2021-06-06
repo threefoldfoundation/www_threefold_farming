@@ -1,6 +1,6 @@
 ---
 id: feature3
-svg: ./line.png
+svg: ./line3.png
 title: Not Secure
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: feature2
-svg: ./line.png
+svg: ./line2.png
 title: Not Scalable
 ---
 

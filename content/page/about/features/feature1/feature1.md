@@ -1,6 +1,6 @@
 ---
 id: feature1
-svg: ./line.png
+svg: ./line1.png
 title: Not Decentralized
 ---
 
