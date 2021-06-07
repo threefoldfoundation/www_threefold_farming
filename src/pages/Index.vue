@@ -107,7 +107,7 @@
          id
          title
          content
-         img
+         image
        }     
        statsDetails {
         id

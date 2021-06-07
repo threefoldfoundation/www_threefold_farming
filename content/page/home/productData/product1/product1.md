@@ -1,7 +1,7 @@
 ---
 id: img_1
 title: ''
-img : ./plug.png
+image : plug.png
 button: ''
 url: ''
 ---

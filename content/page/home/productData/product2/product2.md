@@ -1,7 +1,7 @@
 ---
 id: img_2
 title: ''
-img : ./offer.png
+image : offer.png
 button: ''
 url: ''
 ---

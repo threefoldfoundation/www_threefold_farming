@@ -20,7 +20,9 @@
           class="m-auto rounded overflow-hidden transition duration-500"
         >
           <div class="take_apart text-center pb-8 my-5">
-            <g-image :src="img(product.img)" />
+            <g-image
+              :src="require(`!!assets-loader!@images/${product.image}`)"
+            />
             <h3 class="font-bold text-2xl">{{ product.title }}</h3>
             <div
               v-html="product.content"
@@ -102,7 +104,9 @@
           class="m-auto mx-6 rounded overflow-hidden transition duration-500"
         >
           <div class="text-center pb-8 my-5">
-            <g-image :src="img(product.img)" />
+            <g-image
+              :src="require(`!!assets-loader!@images/${product.image}`)"
+            />
             <h3 class="font-normal text-2xl">{{ product.title }}</h3>
             <div
               v-html="product.content"

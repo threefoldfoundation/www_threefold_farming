@@ -1,7 +1,7 @@
 ---
 id: img_3
 title: ''
-img : ./earn.png
+image : earn.png
 button: ''
 url: ''
 ---
