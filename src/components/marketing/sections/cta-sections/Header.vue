@@ -95,7 +95,7 @@
     </div>
   </section>
 
-  <section class="header2 pt-12 px-4" v-else>
+  <section class="header pt-12 px-4" v-else>
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:pb-20 lg:text-left pt-20 -mx-2"
     >
