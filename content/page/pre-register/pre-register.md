@@ -11,6 +11,6 @@ button: ''
 link: ''
 title: ''
 header: register_header
-solution_image3: ./register_stats.png
-solution_image: ./register_specs.png
+solution_image2: ./register_specs.png
+solution_image4: ./register_stats.png
 ---

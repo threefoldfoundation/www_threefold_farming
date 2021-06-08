@@ -90,6 +90,7 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
         <Features
           class="lg:mt-10"
@@ -133,6 +134,13 @@
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
+      
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <g-image
+          v-if="$page.markdownPage.solution_image4"
+          :src="$page.markdownPage.solution_image4.src"
+        />
+      </div>
     </div>
   </Layout>
 </template>
@@ -156,7 +164,7 @@
         solution_image
         solution_image2
         solution_image3
-      #  solution_image4
+        solution_image4
         cards{
           id
           title
