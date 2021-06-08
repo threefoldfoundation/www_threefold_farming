@@ -73,8 +73,7 @@
         <ShowcaseProducts
           v-if="
             $page.markdownPage.productData &&
-            $page.markdownPage.productData.length > 0 &&
-            $page.markdownPage.id !== 'about'
+            $page.markdownPage.productData.length > 0
           "
           :id="$page.markdownPage.id"
           :products="$page.markdownPage.productData"
