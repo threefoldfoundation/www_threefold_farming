@@ -38,13 +38,64 @@ navLinks:
     link: https://threefold.io/why
     external: true
     expandable: false
+  
+  - name: FARMING
+    link: /farming
+    external: false
+    expandable: false
+
+  - name: 3NODE
+    link: /get_3node
+    external: false
+    expandable: false
 
   - name: TOKEN
     link: https://threefold.io/token
     external: true
     expandable: false
 
-  - name: PARTICIPATE
+  - name: Collaborators
+    link: "" # /dropdown
+    external: false
+    expandable: true
+    submenu:
+      - title: Partners
+        path: /partners
+
+      - title: People
+        path: /people      
+
+      - title: Alliance
+        path: https://threefold.io/aci
+        external: true
+
+  - name: More Info
+    link: "" # /dropdown
+    external: false
+    expandable: true
+    submenu:
+      - title: Blog
+        path: /blog
+
+      - title: NewsRoom
+        path: /news
+        
+
+      - title: Forum
+        path: https://forum.threefold.io
+        external: true
+
+      - title: Contact Us
+        path: "mailto:info@threefold.io"
+        external: true
+
+social:
+  - icon: telegram-plane
+    link: "https://t.me/threefoldnews"
+---
+
+
+<!--   - name: PARTICIPATE
     link: "" # /dropdown
     external: false
     expandable: true
@@ -101,45 +152,4 @@ navLinks:
         
       - title: ThreeFold Glossary
         path: https://threefold.io/info/threefold#/threefold__defs
-        external: true
-
-
-  - name: Collaborators
-    link: "" # /dropdown
-    external: false
-    expandable: true
-    submenu:
-      - title: Partners
-        path: /partners
-
-      - title: People
-        path: /people      
-
-      - title: Alliance
-        path: https://threefold.io/aci
-        external: true
-
-  - name: More Info
-    link: "" # /dropdown
-    external: false
-    expandable: true
-    submenu:
-      - title: Blog
-        path: /blog
-
-      - title: NewsRoom
-        path: /news
-        
-
-      - title: Forum
-        path: https://forum.threefold.io
-        external: true
-
-      - title: Contact Us
-        path: "mailto:info@threefold.io"
-        external: true
-
-social:
-  - icon: telegram-plane
-    link: "https://t.me/threefoldnews"
----
+        external: true -->
