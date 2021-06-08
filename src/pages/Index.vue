@@ -64,12 +64,15 @@
       v-if="$page.markdownPage.header2"
       :header="$page.markdownPage.header2"
     />
+
+
+    <!-- new home -->
   </Layout>
 </template>
 
 <page-query>
   query {
-    markdownPage(id: "farming") {
+    markdownPage(id: "home") {
         id
         path
         content
