@@ -11,10 +11,13 @@ header_span: €999
 button: Pre-Register
 link: /pre-register # https://app.liquid.com/quick-exchange/
 productData: [product1, product2, product3]
-cta2: getnode_cta
+solution_image5: ./size.png
 logosMain: node_logo
 logos: [node_logo1, node_logo2, node_logo3]
-featuresMain2: Features_home_2
+cta2: getnode_cta
+---
+
+<!-- featuresMain2: Features_home_2
 features2:
   [
 
@@ -25,5 +28,4 @@ features2:
     empty,
     features2_sustainability
 
-  ]
----
+  ] -->

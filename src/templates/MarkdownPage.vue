@@ -30,19 +30,12 @@
       />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-        <Features
+        <!-- <Features
           v-if="$page.markdownPage.features2.length > 0"
           :id="$page.markdownPage.id"
           :main="$page.markdownPage.featuresMain2"
           :features="$page.markdownPage.features2"
-        />
-
-        <logoShowcase
-          v-if="$page.markdownPage.logos.length > 0"
-          :id="$page.markdownPage.id"
-          :main="$page.markdownPage.logosMain"
-          :logos="$page.markdownPage.logos"
-        />
+        /> -->
 
         <Comparison
           v-if="
@@ -61,6 +54,19 @@
           "
           :id="$page.markdownPage.id"
           :products="$page.markdownPage.productData"
+        />
+        
+        <g-image
+          class="mx-auto mb-20"
+          v-if="$page.markdownPage.solution_image5"
+          :src="$page.markdownPage.solution_image5.src"
+        />
+
+        <logoShowcase
+          v-if="$page.markdownPage.logos.length > 0"
+          :id="$page.markdownPage.id"
+          :main="$page.markdownPage.logosMain"
+          :logos="$page.markdownPage.logos"
         />
 
         <CallToAction
@@ -134,7 +140,7 @@
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
-      
+
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
         <g-image
           v-if="$page.markdownPage.solution_image4"
@@ -165,6 +171,7 @@
         solution_image2
         solution_image3
         solution_image4
+        solution_image5
         cards{
           id
           title
