@@ -10,15 +10,24 @@
         :link="$url($page.markdownPage.link)"
       />
     </div>
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <ShowProductCaseHome
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
-        :id="$page.markdownPage.id"
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
+
+    <!-- new home -->
+
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+      <Features
+        class="lg:mt-10"
+        v-if="$page.markdownPage.features.length > 0"
+        :main="$page.markdownPage.featuresMain"
+        :features="$page.markdownPage.features"
+      />
+    </div>
+    <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
+
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+      <SolutionsHeader
+        class="lg:mt-20"
+        v-if="$page.markdownPage.headerSolution4"
+        :header="$page.markdownPage.headerSolution4"
       />
 
       <NewCard
@@ -26,47 +35,17 @@
         v-if="$page.markdownPage.cards"
         :cards="$page.markdownPage.cards"
       />
-
-      <StatsDetails
-        v-if="
-          $page.markdownPage.statsDetails &&
-          $page.markdownPage.statsDetails.length > 0
-        "
-        :partnerships="$page.markdownPage.statsDetails"
-      />
     </div>
-
-    <SolutionsHeader
-      v-if="$page.markdownPage.header"
-      :header="$page.markdownPage.header"
-    />
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
-      <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
-
-      <NewCard
-        :id="$page.markdownPage.id"
-        v-if="$page.markdownPage.cards2"
-        :cards="$page.markdownPage.cards2"
-        reverseCard="true"
+       <CallToAction
+        class="lg:mt-20"
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
       />
 
       <g-image
-        class="w-1/2 mx-auto mt-10"
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
+        v-if="$page.markdownPage.solution_image2"
+        :src="$page.markdownPage.solution_image2.src"
       />
-    </div>
-
-    <SolutionsHeader
-      v-if="$page.markdownPage.header2"
-      :header="$page.markdownPage.header2"
-    />
-
-
-    <!-- new home -->
   </Layout>
 </template>
 
@@ -84,10 +63,41 @@
         header_excerpt
         button
         link
-        solution_image
-        solution_image_2
-        solution_image3
-        cards{
+        solution_image2
+        
+       featuresMain{
+          id
+          title 
+         # subtitle
+          btn 
+          link
+          content
+        }
+        features{
+          id
+          title 
+          svg
+          content
+        }
+          stats {
+          id
+          title
+          content
+          button
+          link
+          btn1
+          btn2
+          link1
+          link2
+          image
+        }
+        headerSolution4{
+        subtitle
+        content
+        btn1
+        link1
+       }
+       cards{
           id
           title
           image
@@ -96,54 +106,14 @@
           order
           content
         }
-        productsMain{
+        cta{
           id
           title
-          subtitle
+          content
+          button
+          link
           image
-          btn1
-          link1
-          btn2
-          link2
         }
-        productData{
-         id
-         title
-         content
-         image
-       }     
-       statsDetails {
-        id
-        image
-        content
-      }
-      header{
-        title
-        subtitle
-        content
-        btn1
-        link1
-        btn2
-        link2
-       }
-      cards2{
-        id
-        title
-        image
-        button
-        link
-        order
-        content
-      }
-      header2{
-        title
-        subtitle
-        content
-        btn1
-        link1
-        btn2
-        link2
-       }
     }  
   }
 </page-query>
@@ -154,6 +124,9 @@ import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
+import Features from "~/components/custom/sections/Features.vue";
+import CallToAction from "~/components/custom/sections/CallToAction.vue";
+import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
 
 export default {
   components: {
@@ -162,6 +135,9 @@ export default {
     ShowProductCaseHome,
     SolutionsHeader,
     StatsDetails,
+    Map,
+    Features,
+    CallToAction,
   },
   computed: {
     getImg() {

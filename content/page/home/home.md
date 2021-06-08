@@ -1,21 +1,21 @@
 ---
 id: home
 metaTitle: ThreeFold Farming | Hello Future Farmer
-metaDesc: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world.
-metaImg: ./home_header.png
-header_title: Hello Future Farmer
-header_image: ./home_header.png
-header_excerpt: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world.
+metaDesc:  Large corporations control today’s Internet. This centralized approach is highly inefficient, extremely costly, and unsustainable. We don’t own our data, and it isn’t safe. With your help, ThreeFold is going to give the world a new, better Internet.
+metaImg: ./about_header2.png
+header_title: We build a new internet together
+header_image: ./about_header2.png
+header_excerpt: Large corporations control today’s Internet. This centralized approach is highly inefficient, extremely costly, and unsustainable. We don’t own our data, and it isn’t safe. With your help, ThreeFold is going to give the world a new, better Internet. 
 button: Get 3Node
 link: /get_3node
-solution_image: ./requirements.png
-solution_image_2: ./home_map.png
-solution_image3: ./decenteralize.png
-cards2: [node_card1]
-productsMain: graph_home
-productData: [img_1, img_2, img_3]
-cards: [home_card]
-statsDetails: [state1, state2, state3]
-header: header
-header2: tfgrid_explorer
+
+# new
+
+featuresMain: participate_features
+features: [feature1, feature2, feature3, feature4]
+stats: stats
+headerSolution4: headerSolution4
+cards: [node_card1, node_card2, node_card3]
+cta: threefold_farming_cta
+solution_image2: ./home_grid.png
 ---
