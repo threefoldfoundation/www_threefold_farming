@@ -69,7 +69,7 @@
 
 <page-query>
   query {
-    markdownPage(id: "home") {
+    markdownPage(id: "farming") {
         id
         path
         content

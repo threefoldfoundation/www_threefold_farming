@@ -48,7 +48,7 @@ query ($private: Int){
       }
     }
   }
-    markdownPage(id: "home") {
+    markdownPage(id: "farming") {
         id
         metaImg
   }

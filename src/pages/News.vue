@@ -66,7 +66,7 @@ query($page: Int){
     }
   }
 
-    markdownPage(id: "home") {
+    markdownPage(id: "farming") {
         id
         metaImg
   }

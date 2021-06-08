@@ -1,7 +1,7 @@
 <template>
   <section
     class="py-12 px-4 text-center"
-    v-if="id == 'home' || id == 'get_3node'"
+    v-if="id == 'farming' || id == 'get_3node'"
   >
     <div v-if="main">
       <h2 class="text-4xl leading-tight mb-6 font-bold font-heading uppercase">
