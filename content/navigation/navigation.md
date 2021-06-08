@@ -38,11 +38,6 @@ navLinks:
     link: https://threefold.io/why
     external: true
     expandable: false
-  
-  - name: FARMING
-    link: /farming
-    external: false
-    expandable: false
 
   - name: 3NODE
     link: /get_3node
