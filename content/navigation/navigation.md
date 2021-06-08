@@ -44,6 +44,11 @@ navLinks:
     external: false
     expandable: false
 
+  - name: Farming
+    link: /farming
+    external: false
+    expandable: false
+
   - name: TOKEN
     link: https://threefold.io/token
     external: true

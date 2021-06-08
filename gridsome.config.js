@@ -281,6 +281,8 @@ module.exports = {
                     headerSolution2: 'SolutionsHeader',
                     headerSolution3: 'SolutionsHeader',
                     headerSolution4: 'SolutionsHeader',
+                    farmingHeader: 'Header',
+                    farmingHeader2: 'Header2',
                     inTheNews: 'InTheNews',
                     pricing_plansMain: 'PricingPlans',
                     pricingPlans: 'PricingPlans',

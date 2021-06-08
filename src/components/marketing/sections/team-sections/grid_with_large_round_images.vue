@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-screen-xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"
+    class="max-w-screen-xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-12"
   >
     <div class="space-y-12">
       <div

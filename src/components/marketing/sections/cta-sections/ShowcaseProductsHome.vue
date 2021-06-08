@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 mb-5" v-if="id == 'home'">
+  <div class="py-12 mb-5" v-if="id == 'home' || id == 'farming'">
     <div class="w-full text-center">
       <h2
         v-if="main !== null"
@@ -34,13 +34,35 @@
                 v-if="product.url.includes('http')"
                 target="_blank"
                 :href="product.url"
-                class="bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 shadow rounded-full"
+                class="
+                  bg-blue-900
+                  text-sm
+                  learn-button
+                  hover:bg-blue-800
+                  text-gray-100
+                  px-12
+                  py-2
+                  mr-5
+                  shadow
+                  rounded-full
+                "
                 >{{ product.button }}</a
               >
               <a
                 v-else
                 :href="product.url"
-                class="bg-blue-900 text-sm learn-button hover:bg-blue-800 text-gray-100 px-12 py-2 mr-5 shadow rounded-full"
+                class="
+                  bg-blue-900
+                  text-sm
+                  learn-button
+                  hover:bg-blue-800
+                  text-gray-100
+                  px-12
+                  py-2
+                  mr-5
+                  shadow
+                  rounded-full
+                "
                 >{{ product.button }}</a
               >
             </div>
@@ -52,13 +74,33 @@
           v-if="main.link1.includes('http')"
           target="_blank"
           :href="main.link1"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="
+            inline-block
+            py-2
+            module
+            px-10
+            leading-none
+            text-white
+            hover:bg-gray-700
+            rounded
+            shadow
+          "
           >{{ main.btn1 }}</a
         >
         <a
           v-else
           :href="main.link1"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="
+            inline-block
+            py-2
+            module
+            px-10
+            leading-none
+            text-white
+            hover:bg-gray-700
+            rounded
+            shadow
+          "
           >{{ main.btn1 }}</a
         >
       </div>
@@ -67,13 +109,33 @@
           v-if="main.link2.includes('http')"
           target="_blank"
           :href="main.link2"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="
+            inline-block
+            py-2
+            module
+            px-10
+            leading-none
+            text-white
+            hover:bg-gray-700
+            rounded
+            shadow
+          "
           >{{ main.btn2 }}</a
         >
         <a
           v-else
           :href="main.link2"
-          class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
+          class="
+            inline-block
+            py-2
+            module
+            px-10
+            leading-none
+            text-white
+            hover:bg-gray-700
+            rounded
+            shadow
+          "
           >{{ main.btn2 }}</a
         >
       </div>
@@ -84,7 +146,14 @@
     <div class="w-full text-center lg:px-40 sm:px-4">
       <h2
         v-if="main !== null"
-        class="text-4xl leading-tight text-white text-center mb-12 font-normal font-heading uppercase"
+        class="
+          text-4xl
+          leading-tight
+          text-white text-center
+          mb-12
+          font-normal font-heading
+          uppercase
+        "
       >
         {{ main.title }}
       </h2>
@@ -118,13 +187,33 @@
                   v-if="product.url.includes('http')"
                   target="_blank"
                   :href="product.url"
-                  class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+                  class="
+                    inline-block
+                    py-2
+                    module
+                    px-2
+                    leading-none
+                    text-white
+                    hover:bg-gray-700
+                    rounded
+                    shadow
+                  "
                   >{{ product.button }}</a
                 >
                 <a
                   v-else
                   :href="product.url"
-                  class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+                  class="
+                    inline-block
+                    py-2
+                    module
+                    px-2
+                    leading-none
+                    text-white
+                    hover:bg-gray-700
+                    rounded
+                    shadow
+                  "
                   >{{ product.button }}</a
                 >
               </div>

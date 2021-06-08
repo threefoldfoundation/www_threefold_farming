@@ -37,6 +37,30 @@
           :features="$page.markdownPage.features2"
         /> -->
 
+        <ShowProductCaseHome
+          v-if="
+            $page.markdownPage.productData &&
+            $page.markdownPage.productData.length > 0
+          "
+          :id="$page.markdownPage.id"
+          :main="$page.markdownPage.productsMain"
+          :products="$page.markdownPage.productData"
+        />
+
+        <NewCard
+          :id="$page.markdownPage.id"
+          v-if="$page.markdownPage.cards"
+          :cards="$page.markdownPage.cards"
+        />
+
+        <StatsDetails
+          v-if="
+            $page.markdownPage.statsDetails &&
+            $page.markdownPage.statsDetails.length > 0
+          "
+          :partnerships="$page.markdownPage.statsDetails"
+        />
+
         <Comparison
           v-if="
             $page.markdownPage.comparisonSecs &&
@@ -55,7 +79,7 @@
           :id="$page.markdownPage.id"
           :products="$page.markdownPage.productData"
         />
-        
+
         <g-image
           class="mx-auto mb-20"
           v-if="$page.markdownPage.solution_image5"
@@ -86,7 +110,10 @@
           :src="$page.markdownPage.solution_image3.src"
         />
       </div>
-
+      <SolutionsHeader
+        v-if="$page.markdownPage.farmingHeader"
+        :header="$page.markdownPage.farmingHeader"
+      />
       <BrandPanel
         :brand="$page.markdownPage.brandPanel"
         v-if="$page.markdownPage.brandPanel"
@@ -98,6 +125,11 @@
       />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
+        <g-image
+          class="mx-auto mt-10"
+          v-if="$page.markdownPage.farming_solution_image"
+          :src="$page.markdownPage.farming_solution_image.src"
+        />
         <Features
           class="lg:mt-10"
           v-if="$page.markdownPage.features.length > 0"
@@ -122,13 +154,30 @@
           v-if="$page.markdownPage.headerSolution4"
           :header="$page.markdownPage.headerSolution4"
         />
+        <NewCard
+          :id="$page.markdownPage.id"
+          v-if="$page.markdownPage.cards2"
+          :cards="$page.markdownPage.cards2"
+          reverseCard="true"
+        />
 
         <NewCard
           :id="$page.markdownPage.id"
-          v-if="$page.markdownPage.cards"
+          v-if="$page.markdownPage.cards && $page.markdownPage.id !== 'farming'"
           :cards="$page.markdownPage.cards"
         />
+
+        <g-image
+          class="w-1/2 mx-auto mt-10"
+          v-if="$page.markdownPage.farming_solution_image_2"
+          :src="$page.markdownPage.farming_solution_image_2.src"
+        />
       </div>
+
+      <SolutionsHeader
+        v-if="$page.markdownPage.farmingHeader2"
+        :header="$page.markdownPage.farmingHeader2"
+      />
 
       <CallToAction
         class="lg:mt-20"
@@ -172,6 +221,8 @@
         solution_image3
         solution_image4
         solution_image5
+        farming_solution_image
+        farming_solution_image_2
         cards{
           id
           title
@@ -181,7 +232,7 @@
           order
           content
         }
-      header{
+        header{
           title
           subtitle
           content
@@ -305,6 +356,54 @@
           svg
           content
         }
+        productsMain{
+          id
+          title
+          subtitle
+          image
+          btn1
+          link1
+          btn2
+          link2
+        }
+        productData{
+         id
+         title
+         content
+         image
+       }  
+        statsDetails {
+        id
+        image
+        content
+      }
+        farmingHeader{
+        title
+        subtitle
+        content
+        btn1
+        link1
+        btn2
+        link2
+       }
+        farmingHeader2{
+        title
+        subtitle
+        content
+        btn1
+        link1
+        btn2
+        link2
+       }
+       cards2{
+        id
+        title
+        image
+        button
+        link
+        order
+        content
+      }
     }
   }
 
@@ -321,6 +420,8 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
+import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
+import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
 
 export default {
   components: {
@@ -334,6 +435,8 @@ export default {
     CallToAction,
     Comparison,
     BrandPanel,
+    ShowProductCaseHome,
+    StatsDetails,
   },
   metaInfo() {
     return {
