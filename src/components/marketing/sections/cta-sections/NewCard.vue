@@ -21,13 +21,31 @@
             v-if="card.link.includes('http')"
             target="_blank"
             :href="card.link"
-            class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
+            class="
+              bg-gray-900
+              learn-button
+              hover:bg-gray-700
+              text-gray-100
+              px-5
+              py-3
+              font-semibold
+              rounded
+            "
             >{{ card.button }}</a
           >
           <g-link
             v-else
             :to="card.link"
-            class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 font-semibold rounded"
+            class="
+              bg-gray-900
+              learn-button
+              hover:bg-gray-700
+              text-gray-100
+              px-5
+              py-3
+              font-semibold
+              rounded
+            "
             >{{ card.button }}</g-link
           >
         </div>
@@ -69,13 +87,33 @@
             v-if="card.link.includes('http')"
             target="_blank"
             :href="card.link"
-            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+            class="
+              inline-block
+              py-2
+              module
+              px-2
+              leading-none
+              text-white
+              hover:bg-gray-700
+              rounded
+              shadow
+            "
             >{{ card.button }}</a
           >
           <g-link
             v-else
             :to="card.link"
-            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+            class="
+              inline-block
+              py-2
+              module
+              px-2
+              leading-none
+              text-white
+              hover:bg-gray-700
+              rounded
+              shadow
+            "
             >{{ card.button }}</g-link
           >
         </div>
@@ -85,7 +123,7 @@
 
   <div
     class="lg:py-12 lg:flex lg:justify-center flex flex-col"
-    v-else-if="id == 'get_3node'"
+    v-else-if="id == 'get_3node' || id == 'home'"
   >
     <div
       v-for="(card, index) in cards"
@@ -99,7 +137,16 @@
         ></div>
       </div>
       <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-        <h2 class="text-4xl font-normal leading-tight font-heading uppercase text-center">
+        <h2
+          class="
+            text-4xl
+            font-normal
+            leading-tight
+            font-heading
+            uppercase
+            text-center
+          "
+        >
           {{ card.title }}
         </h2>
         <div
@@ -111,13 +158,33 @@
             v-if="card.link.includes('http')"
             target="_blank"
             :href="card.link"
-            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+            class="
+              inline-block
+              py-2
+              module
+              px-2
+              leading-none
+              text-white
+              hover:bg-gray-700
+              rounded
+              shadow
+            "
             >{{ card.button }}</a
           >
           <g-link
             v-else
             :to="card.link"
-            class="inline-block py-2 module px-2 leading-none text-white hover:bg-gray-700 rounded shadow"
+            class="
+              inline-block
+              py-2
+              module
+              px-2
+              leading-none
+              text-white
+              hover:bg-gray-700
+              rounded
+              shadow
+            "
             >{{ card.button }}</g-link
           >
         </div>
@@ -167,7 +234,6 @@ export default {
 };
 </script>
 <style scoped>
-
 .border-wrap {
   max-width: 250px;
   padding: 1rem;
