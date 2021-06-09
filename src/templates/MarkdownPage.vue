@@ -4,6 +4,7 @@
       <Header
         v-if="
           $page.markdownPage.id !== 'get_3node' &&
+          $page.markdownPage.id !== 'farming' &&
           $page.markdownPage.header_title &&
           $page.markdownPage.header_title != ''
         "
@@ -18,7 +19,10 @@
       />
 
       <Header
-        v-if="$page.markdownPage.id == 'get_3node'"
+        v-if="
+          $page.markdownPage.id == 'get_3node' ||
+          $page.markdownPage.id == 'farming'
+        "
         :id="$page.markdownPage.id"
         :span="$page.markdownPage.header_span"
         :title="$page.markdownPage.header_title"
