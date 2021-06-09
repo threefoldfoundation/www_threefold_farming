@@ -32,7 +32,7 @@ items:
  - title: PARTICIPATE
    links:
     - name: Start Farming
-      link: /farming/get_3node
+      link: /get_3node
     - name: Buy the Token
       link: https://threefold.io/token
     - name: Test the Cloud
@@ -47,9 +47,7 @@ items:
  - title: LEARN
    links:
     - name: About Farming
-      link: /
-    - name: How Farming works
-      link: /how_it_works
+      link: /farming
     - name: What is TFT?
       link: https://threefold.io/token
     - name: Live Capacity

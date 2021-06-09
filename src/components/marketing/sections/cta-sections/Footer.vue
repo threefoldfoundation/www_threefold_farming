@@ -172,7 +172,7 @@
                   </a>
                   <a
                     v-else
-                    :href="item.link"
+                    :href="$url(item.link)"
                     class="text-base leading-6 text-gray-500 hover:text-gray-900"
                   >
                     {{ item.name }}
