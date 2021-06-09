@@ -1,7 +1,7 @@
 ---
 id: product3
 title: Fits in any Home or Office
-img : ''
+image : ''
 button: ''
 url: ''
 ---

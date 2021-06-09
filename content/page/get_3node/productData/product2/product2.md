@@ -1,7 +1,7 @@
 ---
 id: product2
 title: Performance Meets Price
-img : ''
+image : ''
 button: ''
 url: ''
 ---

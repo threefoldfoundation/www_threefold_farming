@@ -40,7 +40,8 @@
         <ShowProductCaseHome
           v-if="
             $page.markdownPage.productData &&
-            $page.markdownPage.productData.length > 0
+            $page.markdownPage.productData.length > 0 &&
+            $page.markdownPage.id !== 'get_3node'
           "
           :id="$page.markdownPage.id"
           :main="$page.markdownPage.productsMain"
@@ -268,7 +269,7 @@
          id
          title
          content
-         img
+         image
          button
          url
        }

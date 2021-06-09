@@ -1,7 +1,7 @@
 ---
 id: product1
 title: Simple and Secure
-img : ''
+image : ''
 button: ''
 url: ''
 ---
