@@ -20,7 +20,7 @@
         v-for="(logo, idx) in logos"
         :key="idx"
         :to="logo.url"
-        class="w-1/3 px-4 mb-8"
+        class="w-1/3 px-4 mb-8 mx-auto"
       >
         <g-image :src="img(logo.image)" />
       </g-link>

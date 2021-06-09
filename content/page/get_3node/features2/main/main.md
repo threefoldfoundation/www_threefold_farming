@@ -3,7 +3,7 @@ id: Features_home_2
 title: Introducing Titan 3Node
 subtitle: ''
 btn: Reserve your 3Node
-link: /pre-register
+link: /Pre-order
 btn2: Discover Zero OS
 link2: https://threefold.io/info/threefold#/threefold__grid_architecture?id=zero-os
 btn3: What is ThreeFold Token

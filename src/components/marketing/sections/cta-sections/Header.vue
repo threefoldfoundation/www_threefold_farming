@@ -109,7 +109,7 @@
         </h1>
 
         <div
-          v-if="id == 'pre-register'"
+          v-if="id == 'pre-order'"
           class="mb-8 text-white font-light text-xl leading-8"
         >
           <span class="green font-bold">{{ span }}</span>

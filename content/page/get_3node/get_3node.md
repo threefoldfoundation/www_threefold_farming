@@ -1,19 +1,19 @@
 ---
 id: get_3node
 metaTitle: ThreeFold Farming | Get 3Node
-metaDesc: The ThreeFold Token is the currency of the fastest growing P2P internet network on the planet. Earn tokens by becoming a ThreeFold Farmer.
+metaDesc: Order your Titan 3Node to begin your journey towards generating income by selling capacity. The 3Node sales will happen on a First-Come, First-Serve basis.
 metaImg: ./server_3node.png
 header_title: Ready to start farming?
 header_image: ./server_3node.png
 header_altImg: token_header
-header_excerpt: '| Reserve your Titan 3Node to begin your journey towards generating income by selling capacity. The next limited batch of 3Nodes closes 30th of June, 2021.'
-header_span: €999 
-button: Pre-Register
-link: /pre-register # https://app.liquid.com/quick-exchange/
+header_excerpt: '| Order your Titan 3Node to begin your journey towards generating income by selling capacity. The 3Node sales will happen on a First-Come, First-Serve basis.'
+header_span: €845 (ex. VAT)
+button: Pre-Order
+link: /pre-order # https://app.liquid.com/quick-exchange/
 productData: [product1, product2, product3]
 solution_image5: ./size.png
 logosMain: node_logo
-logos: [node_logo1, node_logo2, node_logo3]
+logos: [node_logo1, node_logo3]
 cta2: getnode_cta
 ---
 
