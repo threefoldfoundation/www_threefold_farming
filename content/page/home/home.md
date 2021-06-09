@@ -6,8 +6,8 @@ metaImg: ./about_header2.png
 header_title: We build a new internet together
 header_image: ./about_header2.png
 header_excerpt: Large corporations control today’s Internet. This centralized approach is highly inefficient, extremely costly, and unsustainable. We don’t own our data, and it isn’t safe. With your help, ThreeFold is going to give the world a new, better Internet. 
-button: Get 3Node
-link: /get_3node
+button: ''
+link: ''
 
 # new
 
