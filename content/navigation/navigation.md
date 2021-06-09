@@ -39,13 +39,13 @@ navLinks:
     external: true
     expandable: false
 
-  - name: 3NODE
-    link: /get_3node
+  - name: Farming
+    link: /farming
     external: false
     expandable: false
 
-  - name: Farming
-    link: /farming
+  - name: 3NODE
+    link: /get_3node
     external: false
     expandable: false
 
