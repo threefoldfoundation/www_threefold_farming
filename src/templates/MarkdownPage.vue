@@ -244,6 +244,8 @@
           link1
           btn2
           link2
+          btn3
+          link3
        }
         header2{
           title

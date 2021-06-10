@@ -4,8 +4,10 @@ title: FIRST-COME, FIRST-SERVE
 subtitle: '€845 (ex. VAT)'
 btn1: Pre-Order
 link1: http://pre-register.threefold.io
-btn2: Join the Community
-link2: https://t.me/threefold
+btn2: Pre-Order FAQ
+link2: https://forum.threefold.io/t/nodeshop-pre-order-faq/853
+btn3: Join the Community
+link3: https://t.me/threefold
 ---
 
 **3Node Titan V2.1 is now available for pre-orders** 

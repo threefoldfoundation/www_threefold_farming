@@ -26,6 +26,14 @@
             >{{ header.btn2 }}</g-link
           >
         </div>
+        <div v-if="header.btn3" class="border-wrap inline-flex mt-5 mx-2">
+          <g-link
+            class="inline-block py-2 module px-10 leading-none text-white hover:bg-gray-700 rounded shadow" 
+            v-if="header.btn3"
+            :to="header.link3"
+            >{{ header.btn3 }}</g-link
+          >
+        </div>
       </div>
     </div>
   </section>
