@@ -36,16 +36,22 @@
         :cards="$page.markdownPage.cards"
       />
     </div>
-       <CallToAction
-        class="lg:mt-20"
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
+    <CenteredAccordion
+      v-if="$page.markdownPage.faqContent"
+      :main="$page.markdownPage.faqMain"
+      :faqs="$page.markdownPage.faqContent"
+    />
 
-      <g-image
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-      />
+    <CallToAction
+      class="lg:mt-20"
+      v-if="$page.markdownPage.cta"
+      :cta="$page.markdownPage.cta"
+    />
+
+    <g-image
+      v-if="$page.markdownPage.solution_image2"
+      :src="$page.markdownPage.solution_image2.src"
+    />
   </Layout>
 </template>
 
@@ -114,6 +120,15 @@
           link
           image
         }
+        faqMain{
+          id
+          title
+        }
+        faqContent{
+          id
+          question
+          content
+        }
     }  
   }
 </page-query>
@@ -127,6 +142,7 @@ import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.v
 import Features from "~/components/custom/sections/Features.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import Map from "~/components/marketing/sections/cta-sections/StateMap.vue";
+import CenteredAccordion from "~/components/marketing/sections/faq-sections/CenteredAccordion.vue";
 
 export default {
   components: {
@@ -138,6 +154,7 @@ export default {
     Map,
     Features,
     CallToAction,
+    CenteredAccordion,
   },
   computed: {
     getImg() {
