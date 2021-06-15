@@ -18,6 +18,4 @@ headerSolution4: headerSolution4
 cards: [node_card1, node_card2, node_card3]
 cta: threefold_farming_cta
 solution_image2: ./home_grid.png
-faqMain: homeFAQ
-faqContent: [q1, q2, q3, q4, q5, q6]
 ---

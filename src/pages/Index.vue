@@ -34,13 +34,8 @@
         :id="$page.markdownPage.id"
         v-if="$page.markdownPage.cards"
         :cards="$page.markdownPage.cards"
-      />
+      /> 
     </div>
-    <CenteredAccordion
-      v-if="$page.markdownPage.faqContent"
-      :main="$page.markdownPage.faqMain"
-      :faqs="$page.markdownPage.faqContent"
-    />
 
     <CallToAction
       class="lg:mt-20"
@@ -119,15 +114,6 @@
           button
           link
           image
-        }
-        faqMain{
-          id
-          title
-        }
-        faqContent{
-          id
-          question
-          content
         }
     }  
   }

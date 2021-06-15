@@ -183,6 +183,12 @@
         :header="$page.markdownPage.farmingHeader2"
       />
 
+      <CenteredAccordion
+        v-if="$page.markdownPage.faqContent"
+        :main="$page.markdownPage.faqMain"
+        :faqs="$page.markdownPage.faqContent"
+      />
+
       <CallToAction
         class="lg:mt-20"
         v-if="$page.markdownPage.cta"
@@ -410,6 +416,15 @@
         order
         content
       }
+      faqMain{
+        id
+        title
+      }
+      faqContent{
+        id
+        question
+        content
+      }
     }
   }
 
@@ -428,6 +443,7 @@ import Comparison from "~/components/custom/sections/Comparison.vue";
 import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import ShowProductCaseHome from "~/components/marketing/sections/cta-sections/ShowcaseProductsHome.vue";
 import StatsDetails from "~/components/marketing/sections/team-sections/grid_with_large_round_images.vue";
+import CenteredAccordion from "~/components/marketing/sections/faq-sections/CenteredAccordion.vue";
 
 export default {
   components: {
@@ -443,6 +459,7 @@ export default {
     BrandPanel,
     ShowProductCaseHome,
     StatsDetails,
+    CenteredAccordion,
   },
   metaInfo() {
     return {
