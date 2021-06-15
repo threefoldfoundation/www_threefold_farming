@@ -68,7 +68,7 @@
               </dt>
               <dd class="mt-2 pr-12" v-if="active == index">
                 <div
-                  class="text-base leading-6 text-gray-500"
+                  class="text-base leading-6 text-gray-700 post-content"
                   v-html="faq.content"
                 ></div>
               </dd>
