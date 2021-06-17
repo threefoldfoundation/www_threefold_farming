@@ -1,8 +1,9 @@
 <template>
   <div class="bg-gray-50">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto">
         <h2
+          v-if="main"
           class="
             text-center text-3xl
             leading-9
@@ -66,9 +67,9 @@
                   </span>
                 </button>
               </dt>
-              <dd class="mt-2 pr-12" v-if="active == index">
+              <dd class="mt-6 pr-12" v-if="active == index">
                 <div
-                  class="text-base leading-6 text-gray-700 post-content"
+                  class="text-base leading-6 text-gray-600 post-content"
                   v-html="faq.content"
                 ></div>
               </dd>
@@ -94,6 +95,9 @@ export default {
       this.active = index;
       this.open = !this.open;
     },
+  },
+  mounted() {
+    console.log(this.main);
   },
 };
 </script>
