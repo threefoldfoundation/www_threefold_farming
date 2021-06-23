@@ -1,7 +1,7 @@
 ---
 id: getnode_cta
 title:
-button: Pre-Order
+button: Order Now
 link: /pre-order
 image: ''
 ---

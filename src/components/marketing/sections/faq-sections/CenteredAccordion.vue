@@ -96,8 +96,5 @@ export default {
       this.open = !this.open;
     },
   },
-  mounted() {
-    console.log(this.main);
-  },
 };
 </script>

@@ -8,7 +8,7 @@ header_image: ./server_3node.png
 header_altImg: token_header
 header_excerpt: '| Order your Titan 3Node to begin your journey towards generating income by selling capacity. The 3Node sales will happen on a First-Come, First-Serve basis.'
 header_span: €845 (ex. VAT)
-button: Pre-Order
+button: Order Now
 link: /pre-order # https://app.liquid.com/quick-exchange/
 productData: [product1, product2, product3]
 solution_image5: ./size.png
