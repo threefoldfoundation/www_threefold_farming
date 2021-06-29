@@ -1,12 +1,12 @@
 ---
 id: pre-order
 metaTitle: ThreeFold Farming | Order Now
-metaDesc: €845 (ex. VAT) | Reserve your Titan V2 3Node to begin your journey towards generating income by selling capacity.
+metaDesc: The 3Node sales will happen on a First-Come, First-Serve basis. Shipping early Q4 2021
 metaImg: ./register_header.png
 header_title: Order Your 3Node Now
 header_image: ./register_header.png
-header_excerpt: " | The 3Node sales will happen on a First-Come, First-Serve basis"
-header_span: €845 (ex. VAT)
+header_excerpt: The 3Node sales will happen on a First-Come, First-Serve basis. Shipping early Q4 2021
+header_span: ''
 button: ''
 link: ''
 title: ''
