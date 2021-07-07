@@ -13,16 +13,18 @@ items:
  - title: TF Universe
    links:
     - name: ThreeFold Token
-      link: https://threefold.io/token
+      link: /token
     - name: ThreeFold Farming
-      link: /farming
-    - name: ThreeFold Kube Cloud
+      link: https://threefold.io/farming
+    - name: Kubernetes Cloud
       link: https://threefold.io/cloud
+    - name: Quantum-Safe Storage
+      link: https://threefold.io/info/cloud#/cloud__threefold_filesystem
     - name: ThreeFold Marketplace
       link: https://threefold.io/marketplace
     - name: Digital Twin
       link: https://mydigitaltwin.io
-    - name: Conscious Internet
+    - name: Alliance
       link: https://threefold.io/aci
     - name: ThreeFold Tech
       link: https://threefold.tech
@@ -30,7 +32,7 @@ items:
  - title: Participate
    links:
     - name: Start Farming
-      link: /get_3node
+      link: https://threefold.io/farming/get_3node
     - name: Buy the Token
       link: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
     - name: Test the Cloud
@@ -44,13 +46,13 @@ items:
  
  - title: Learn
    links:
-    - name: The Grid
+    - name: ThreeFold Grid
       link: https://threefold.io/info/threefold#/threefold__grid_home
-    - name: Technology
+    - name: ThreeFold Technology
       link: https://threefold.io/info/threefold#/internet4__technology
-    - name: Farming
-      link: https://threefold.io/info/threefold#/threefold__farming
-    - name: Token
+    - name: ThreeFold Farming
+      link: https://threefold.io/info/threefold#/threefold__farming_intro
+    - name: ThreeFold Token
       link: https://threefold.io/info/threefold#/threefold__token_home
     - name: Carbon Double Win
       link: https://threefold.io/info/threefold#/threefold__energy_savings

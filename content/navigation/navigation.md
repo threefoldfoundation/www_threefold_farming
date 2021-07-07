@@ -13,11 +13,10 @@ navLinks:
     submenu:
       - title: Introduction
         path: /farming
-      - title: Farming Rewards
-        path: https://threefold.io/info/threefold#/threefold__farming_reward
-        external: true
       - title: Start Farming
         path: /get_3node
+      - title: Farming Rewards
+        path: https://threefold.io/info/threefold#/threefold__farming_reward
         external: true
       - title: FAQ
         path: https://forum.threefold.io/c/farming/farming-faq/53
