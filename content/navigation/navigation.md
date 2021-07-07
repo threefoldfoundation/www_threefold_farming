@@ -17,7 +17,7 @@ navLinks:
         path: https://threefold.io/info/threefold#/threefold__farming_reward
         external: true
       - title: Start Farming
-        path: https://threefold.io/info/threefold#/threefold__start_farming
+        path: /get_3node
         external: true
       - title: FAQ
         path: https://forum.threefold.io/c/farming/farming-faq/53
