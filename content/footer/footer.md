@@ -12,12 +12,10 @@ telegram: 'https://t.me/threefoldnews'
 items:
  - title: TF Universe
    links:
-    - name: Universe Home
-      link: https://threefold.io/universe
     - name: ThreeFold Token
       link: https://threefold.io/token
     - name: ThreeFold Farming
-      link: /
+      link: /farming
     - name: ThreeFold Kube Cloud
       link: https://threefold.io/cloud
     - name: ThreeFold Marketplace
@@ -29,12 +27,12 @@ items:
     - name: ThreeFold Tech
       link: https://threefold.tech
   
- - title: PARTICIPATE
+ - title: Participate
    links:
     - name: Start Farming
       link: /get_3node
     - name: Buy the Token
-      link: https://threefold.io/token
+      link: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
     - name: Test the Cloud
       link: https://threefold.io/cloud
     - name: Try the Marketplace
@@ -44,26 +42,26 @@ items:
     - name: Testing Community
       link: https://t.me/joinchat/BwOvOxxgK59GmRoZ2_sM0w
  
- - title: LEARN
+ - title: Learn
    links:
-    - name: About Farming
-      link: /farming
-    - name: What is TFT?
-      link: https://threefold.io/token
-    - name: Live Capacity
-      link: https://explorer.threefold.io
-    - name: What is the Internet?
-      link: https://info.threefold.io/info/threefold#/threefold__grid_intro
-    - name: Planet Positive
-      link: /blog/post/threefold_regenerates/
-    - name: Peer-to-Peer
-      link: /blog/post/what_is_peer_to_peer
-    - name: Data Sovereignty
-      link: /blog/post/threefold_data_sovereignty/
+    - name: The Grid
+      link: https://threefold.io/info/threefold#/threefold__grid_home
+    - name: Technology
+      link: https://threefold.io/info/threefold#/internet4__technology
+    - name: Farming
+      link: https://threefold.io/info/threefold#/threefold__farming
+    - name: Token
+      link: https://threefold.io/info/threefold#/threefold__token_home
+    - name: Carbon Double Win
+      link: https://threefold.io/info/threefold#/threefold__energy_savings
+    - name: Manuals
+      link: https://threefold.io/info/threefold#/threefold__wiki_overview
+    - name: Releases
+      link: https://threefold.io/info/threefold#/threefold__release_mgmt
     - name: ThreeFold Glossary
       link: https://threefold.io/info/threefold#/threefold__defs
 
- - title: ABOUT US
+ - title: About Us
    links:
     - name: ThreeFold
       link: https://threefold.io/info/threefold
@@ -77,7 +75,6 @@ items:
       link: /news
     - name: Forum
       link: https://forum.threefold.io/
- 
     - name: Contact Us
       link: 'mailto:info@threefold.io'
 ---

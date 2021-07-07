@@ -1,58 +1,47 @@
 ---
 id: navigation
 navLinks:
-  - name: TF Universe
-    link: "" # /dropdown
-    external: false
-    expandable: true
-    submenu:
-      - title: Universe Home
-        path: https://threefold.io/universe
-        external: true
-
-      - title: ThreeFold Token
-        path: https://threefold.io/token
-        external: true
-
-      - title: ThreeFold Kube Cloud
-        path: https://threefold.io/cloud
-        external: true
-
-      - title: ThreeFold Marketplace
-        path: https://threefold.io/marketplace
-        external: true
-
-      - title: Digital Twin
-        path: https://mydigitaltwin.io
-        external: true
-
-      - title: Conscious Internet
-        path: https://threefold.io/aci
-        external: true
-
-      - title: ThreeFold Tech
-        path: https://threefold.tech/
-        external: true
-
-  - name: WHY
+  - name: Why
     link: https://threefold.io/why
     external: true
     expandable: false
 
   - name: Farming
-    link: /farming
+    link: ""
     external: false
-    expandable: false
+    expandable: true
+    submenu:
+      - title: Introduction
+        path: /farming
+      - title: Farming Rewards
+        path: https://threefold.io/info/threefold#/threefold__farming_reward
+        external: true
+      - title: Start Farming
+        path: https://threefold.io/info/threefold#/threefold__start_farming
+        external: true
+      - title: FAQ
+        path: https://forum.threefold.io/c/farming/farming-faq/53
+        external: true
 
-  - name: 3NODE
-    link: /get_3node
+  - name: Token
+    link: ""
     external: false
-    expandable: false
-
-  - name: TOKEN
-    link: https://threefold.io/token
-    external: true
-    expandable: false
+    expandable: true
+    submenu:
+      - title: Introduction
+        path: /token
+      - title: Buy TFT
+        path: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+        external: true
+      - title: Tokenomics
+        path: https://threefold.io/info/threefold#/threefold__tokenomics
+        external: true
+      - title: Distribution
+        path: https://threefold.io/info/threefold#/threefold__token_overview
+        external: true
+      - title: FAQ
+        path: https://forum.threefold.io/c/threefold-token/tft-faq/57
+        external: true
 
   - name: Collaborators
     link: "" # /dropdown
@@ -155,4 +144,38 @@ social:
         
       - title: ThreeFold Glossary
         path: https://threefold.io/info/threefold#/threefold__defs
+        external: true -->
+
+<!-- 
+  - name: TF Universe
+    link: "" # /dropdown
+    external: false
+    expandable: true
+    submenu:
+      - title: Universe Home
+        path: https://threefold.io/universe
+        external: true
+
+      - title: ThreeFold Token
+        path: https://threefold.io/token
+        external: true
+
+      - title: ThreeFold Kube Cloud
+        path: https://threefold.io/cloud
+        external: true
+
+      - title: ThreeFold Marketplace
+        path: https://threefold.io/marketplace
+        external: true
+
+      - title: Digital Twin
+        path: https://mydigitaltwin.io
+        external: true
+
+      - title: Conscious Internet
+        path: https://threefold.io/aci
+        external: true
+
+      - title: ThreeFold Tech
+        path: https://threefold.tech/
         external: true -->
