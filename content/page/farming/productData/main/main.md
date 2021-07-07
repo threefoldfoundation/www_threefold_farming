@@ -7,7 +7,8 @@ btn1: Zero-OS
 link1: https://info.threefold.io/#/internet4__zos
 btn2: ThreeFold Token
 link2: https://threefold.io/token
+btn3: Learn More
+link3: https://threefold.io/info/threefold#/threefold__farming_intro 
 ---
 
-<!-- btn3: Learn More
-link3: https://threefold.io/info/threefold#/threefold__farming_intro -->
+
