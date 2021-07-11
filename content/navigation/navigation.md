@@ -6,22 +6,6 @@ navLinks:
     external: true
     expandable: false
 
-  - name: Farming
-    link: ""
-    external: false
-    expandable: true
-    submenu:
-      - title: Introduction
-        path: /farming
-      - title: Start Farming
-        path: /get_3node
-      - title: Farming Rewards
-        path: https://threefold.io/info/threefold#/threefold__farming_reward
-        external: true
-      - title: FAQ
-        path: https://forum.threefold.io/c/farming/farming-faq/53
-        external: true
-
   - name: Token
     link: ""
     external: false
@@ -40,6 +24,72 @@ navLinks:
         external: true
       - title: FAQ
         path: https://forum.threefold.io/c/threefold-token/tft-faq/57
+        external: true
+
+  - name: Farming
+    link: ""
+    external: false
+    expandable: true
+    submenu:
+      - title: Introduction
+        path: /farming
+      - title: Start Farming
+        path: /get_3node
+      - title: Farming Rewards
+        path: https://threefold.io/info/threefold#/threefold__farming_reward
+        external: true
+      - title: FAQ
+        path: https://forum.threefold.io/c/farming/farming-faq/53
+        external: true
+
+  - name: Use
+    link: "https://cloud.threefold.io/"
+    external: true
+    expandable: true
+    submenu:
+      - title: Partners
+        path: /partners    
+      - title: ThreeFold Cloud
+        path: https://cloud.threefold.io
+        external: true      
+      - title: ThreeFold Marketplace
+        path: https://threefold.io/marketplace
+        external: true
+      - title: Digital Twin
+        path: https://mydigitaltwin.io/
+        external: true
+      - title: Developers (SDK)
+        path: https://sdk.threefold.io/
+        external: true
+      # - title: Kubernetes Cloud
+      #   path: https://threefold.io/info/cloud#/cloud__evdc
+      #   external: true
+      # - title: Quantum-Safe Storage
+      #   path: https://threefold.io/info/cloud#/cloud__threefold_filesystem
+      #   external: true
+      
+  - name: Technology
+    link: "" # /dropdown
+    external: false
+    expandable: true
+    submenu:
+      - title: Grid Technology
+        path: https://threefold.io/info/threefold#/internet4__technology
+        external: true
+      - title: Zero-OS
+        path: https://threefold.io/info/threefold#/internet4__tfgrid_primitives
+        external: true
+      - title: Smart Contract for IT
+        path: https://threefold.io/info/threefold#/internet4__smartcontract_it
+        external: true
+      - title: P2P Network
+        path: https://threefold.io/info/threefold#/internet4__planetary_network
+        external: true
+      - title: Web2 vs Web3 vs P2P
+        path: https://threefold.io/info/threefold#/threefold__grid_compare
+        external: true
+      - title: FAQ / Forum
+        path: https://forum.threefold.io/c/technical-discussion/technical-faq/55
         external: true
 
   - name: Collaborators
