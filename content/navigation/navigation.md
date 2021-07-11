@@ -49,10 +49,10 @@ navLinks:
     submenu:
       - title: Partners
         path: /partners    
-      - title: ThreeFold Cloud
+      - title: Cloud
         path: https://cloud.threefold.io
         external: true      
-      - title: ThreeFold Marketplace
+      - title: Marketplace
         path: https://threefold.io/marketplace
         external: true
       - title: Digital Twin
@@ -67,7 +67,7 @@ navLinks:
       # - title: Quantum-Safe Storage
       #   path: https://threefold.io/info/cloud#/cloud__threefold_filesystem
       #   external: true
-      
+
   - name: Technology
     link: "" # /dropdown
     external: false
@@ -112,23 +112,24 @@ navLinks:
     external: false
     expandable: true
     submenu:
+      - title: KnowledgeBase
+        path: https://wiki.threefold.io
+        external: true            
       - title: Blog
-        path: /blog
-
+        path: https://www.threefold.io/blog
+        external: true
       - title: NewsRoom
-        path: /news
-        
+        path: https://www.threefold.io/news
+        external: true
       - title: Forum
         path: https://forum.threefold.io
         external: true
-
       - title: FAQ
-        path: /faq
-        external: false
-
-      - title: Contact Us
-        path: "mailto:info@threefold.io"
-        external: true
+        path: https://www.threefold.io/faq
+        external: true   
+      - title: Explorer
+        path: https://explorer.threefold.io/
+        external: true    
 
 social:
   - icon: telegram-plane

@@ -88,11 +88,12 @@ export default {
         "https://explorer.threefold.io/api/stats"
       );
       let farms = getFarms.data.length;
-      let hru = (results.data.hru / 1000000).toFixed();
+      let hru = (results.data.hru /1000 ).toFixed();
+      let cru = (results.data.cru ).toFixed();
       this.stats.push(
         { farms: farms },
-        { "HDD PB": hru },
-        { countries: results.data.countries }
+        { "Storage TB": hru },
+        { "CPU Cores": cru }
       );
     } catch (error) {
       console.log(error);
