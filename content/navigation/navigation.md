@@ -92,21 +92,24 @@ navLinks:
         path: https://forum.threefold.io/c/technical-discussion/technical-faq/55
         external: true
 
-  - name: Collaborators
+  - name: Community
     link: "" # /dropdown
     external: false
     expandable: true
     submenu:
       - title: Partners
-        path: /partners
-
+        path: https://threefold.io/partners
+        external: true
       - title: People
-        path: /people      
-
+        path: https://threefold.io/people
+        external: true      
       - title: Alliance
         path: https://threefold.io/aci
         external: true
-
+      - title: Telegram
+        path: https://t.me/threefoldnews
+        external: true   
+        
   - name: More Info
     link: "" # /dropdown
     external: false
