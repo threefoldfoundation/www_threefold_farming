@@ -13,7 +13,7 @@ items:
  - title: Threefold Universe
    links:
     - name: ThreeFold Token
-      link: /token
+      link: https://threefold.io/token
     - name: ThreeFold Farming
       link: https://threefold.io/farming
     - name: ThreeFold Cloud
