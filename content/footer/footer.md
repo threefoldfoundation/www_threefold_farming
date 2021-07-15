@@ -75,7 +75,8 @@ items:
     - name: Forum
       link: https://forum.threefold.io/
     - name: Contact Us
-      link: 'mailto:info@threefold.io'
+      link: mailto:info@threefold.io
+      
 ---
 
 [Terms & Conditions](https://threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
