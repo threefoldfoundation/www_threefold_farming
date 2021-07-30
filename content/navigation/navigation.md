@@ -23,7 +23,7 @@ navLinks:
       - title: Distribution
         path: https://threefold.io/info/threefold#/threefold__token_overview
         external: true
-      - title: FAQ
+      - title: FAQ / Forum
         path: https://forum.threefold.io/c/threefold-token/tft-faq/57
         external: true
 
@@ -40,8 +40,8 @@ navLinks:
         path: https://threefold.io/info/threefold#/threefold__farming_reward
         external: true
       - title: FAQ
-        path: https://forum.threefold.io/c/farming/farming-faq/53
-        external: true
+        path: /faq
+        external: false
 
   - name: Use
     link: "https://cloud.threefold.io/"
@@ -128,9 +128,9 @@ navLinks:
       - title: Forum
         path: https://forum.threefold.io
         external: true
-      - title: FAQ
-        path: https://www.threefold.io/faq
-        external: true   
+      - title: FAQ / Forum
+        path: https://forum.threefold.io/c/farming/farming-faq/53
+        external: true
       - title: Explorer
         path: https://explorer.threefold.io/
         external: true    
