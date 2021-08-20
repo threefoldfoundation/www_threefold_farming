@@ -20,8 +20,11 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
+      <Map
+        v-if="$page.markdownPage.stats"
+        :section="$page.markdownPage.stats"
+      />
     </div>
-    <Map v-if="$page.markdownPage.stats" :section="$page.markdownPage.stats" />
 
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
       <SolutionsHeader
@@ -34,7 +37,7 @@
         :id="$page.markdownPage.id"
         v-if="$page.markdownPage.cards"
         :cards="$page.markdownPage.cards"
-      /> 
+      />
     </div>
 
     <CallToAction

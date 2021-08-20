@@ -69,7 +69,7 @@
           </div>
         </a>
       </div>
-      <div v-if="main.btn1" class="border-wrap inline-flex mr-5 mt-5 mx-auto">
+      <div v-if="main.btn1" class="border-wrap inline-flex lg:mr-5 mt-5 mx-auto">
         <a
           v-if="main.link1.includes('http')"
           target="_blank"
@@ -104,7 +104,7 @@
           >{{ main.btn1 }}</a
         >
       </div>
-      <div v-if="main.btn2" class="border-wrap inline-flex mt-5 mx-auto">
+      <div v-if="main.btn2" class="border-wrap inline-flex mt-5 lg:mr-5 mx-auto">
         <a
           v-if="main.link2.includes('http')"
           target="_blank"
@@ -137,6 +137,41 @@
             shadow
           "
           >{{ main.btn2 }}</a
+        >
+      </div>
+      <div v-if="main.btn3" class="border-wrap inline-flex mt-5 mx-auto">
+        <a
+          v-if="main.link3.includes('http')"
+          target="_blank"
+          :href="main.link3"
+          class="
+            inline-block
+            py-2
+            module
+            px-10
+            leading-none
+            text-white
+            hover:bg-gray-700
+            rounded
+            shadow
+          "
+          >{{ main.btn3 }}</a
+        >
+        <a
+          v-else
+          :href="main.link3"
+          class="
+            inline-block
+            py-2
+            module
+            px-10
+            leading-none
+            text-white
+            hover:bg-gray-700
+            rounded
+            shadow
+          "
+          >{{ main.btn3 }}</a
         >
       </div>
     </div>

@@ -163,7 +163,7 @@
               <ul class="mt-4 space-y-4 footerlink">
                 <li v-for="item in footerLink.links" :key="item.name">
                   <a
-                    v-if="item.link.includes('http')"
+                    v-if="item.link.includes('http') || item.link.includes('@') "
                     :href="item.link"
                     target="_blank"
                     class="text-base leading-6 text-gray-500 hover:text-gray-900"
