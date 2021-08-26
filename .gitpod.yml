@@ -1,39 +1,26 @@
 image:
   file: .gitpod.Dockerfile
-<<<<<<< HEAD
 tasks:
     - name: WIKI
       command: |
-        export PBRANCH=development
-        curl https://raw.githubusercontent.com/crystaluniverse/crystaltools/$PBRANCH/install.sh > /tmp/install.sh
+        curl https://raw.githubusercontent.com/crystaluniverse/crystaltools/development/install.sh > /tmp/install.sh
         bash /tmp/install.sh
         source /workspace/env.sh
-        # publtools_check
-        # cd wiki_config && publishtools flatten 
-        web_install
-        website_install
-        website_run
-        echo ' - do "website_run" to run wiki or website.'
-        echo ' - do "open workspace.code-workspace" to open all relevant dirs in your editor.'
+        publtools_check
+        cd config
+        publishtools install 
+        cd ..
+        clear
+        echo ' -- WEB PUBLISH TOOLS -- '
+        echo 
+        echo ' - do "./run" to run website.'
+        echo ' - do "./build" to build website, see in dir build for result.'
+        echo ' - do "open ../workspace.code-workspace" to open all relevant dirs in your editor.'
 ports:
   - port: 9998
     onOpen: open-browser
   - port: 8080
     onOpen: open-browser    
-=======
-# # Commands to start on workspace startup
-tasks:
-    # - init: bash /workspace/www_threefold_io/gitpod/install.sh
-    - command: |
-        rm -f /tmp/install.sh
-        curl -s -o /tmp/install.sh  https://raw.githubusercontent.com/threefoldfoundation/data_threefold/development/install.sh
-        bash /tmp/install.sh
-        bash /workspace/data_threefold/gitpod_scripts/install.sh
-        bash /workspace/data_threefold/gitpod_scripts/run.sh
-ports:
-  - port: 8080
-    onOpen: open-browser
->>>>>>> 3cd8946a00cf5d7f45f2f71ac63843f6ed0aef8b
   - port: 6379
     onOpen: ignore
 vscode:
@@ -50,7 +37,6 @@ github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
     master: true
-<<<<<<< HEAD
 # enable for all branches in this repo (defaults to false)
     branches: true
 # enable for pull requests coming from this repo (defaults to true)
@@ -63,17 +49,3 @@ github:
     addBadge: false
 # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
-=======
-    # enable for all branches in this repo (defaults to false)
-    branches: true
-    # enable for pull requests coming from this repo (defaults to true)
-    pullRequests: true
-    # enable for pull requests coming from forks (defaults to false)
-    pullRequestsFromForks: false
-    # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
-    addComment: true
-    # add a "Review in Gitpod" button to pull requests (defaults to false)
-    addBadge: false
-    # add a label once the prebuild is ready to pull requests (defaults to false)
-    addLabel: prebuilt-in-gitpod
->>>>>>> 3cd8946a00cf5d7f45f2f71ac63843f6ed0aef8b
