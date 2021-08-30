@@ -81,7 +81,7 @@
               >
                 <div
                   v-if="open"
-                  class="w-64 max-h-10 px-2 py-2 bg-white rounded-md shadow dark:bg-gray-700"
+                  class="w-64 px-2 py-2 bg-white rounded-md shadow dark:bg-gray-700"
                 >
                   <a
                     v-for="topic in topics"
