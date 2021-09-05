@@ -15,7 +15,7 @@
     "@gridsome/transformer-remark": "^0.6.2",
     "@noxify/gridsome-remark-classes": "^1.0.0",
     "@noxify/gridsome-remark-table-align": "^1.0.0",
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.3.4",
     "axios": "^0.21.1",
     "babel-runtime": "^6.26.0",
     "core-js": "^3.6.5",
