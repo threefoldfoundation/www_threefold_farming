@@ -99,7 +99,7 @@
     <div
       class="flex flex-wrap items-center lg:px-16 text-center lg:pb-20 lg:text-left pt-20 -mx-2"
     >
-      <div class="lg:w-1/2 px-10 my-44 order-2">
+      <div class="lg:w-1/2 px-10 order-2">
         <g-image :src="img" :alt="altImg" />
       </div>
 
