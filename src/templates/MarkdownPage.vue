@@ -184,7 +184,7 @@
       />
 
       <CenteredAccordion
-        v-if="$page.markdownPage.faqContent"
+        v-if="$page.markdownPage.faqContent.length > 0"
         :main="$page.markdownPage.faqMain"
         :faqs="$page.markdownPage.faqContent"
       />

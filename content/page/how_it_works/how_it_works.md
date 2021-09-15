@@ -15,6 +15,6 @@ brandPanel : howitworks_brandPanel
 header: participate_header
 solution_image: ./requirements.png
 solution_image3: ./decenteralize.png
-header2: tfgrid_explorer
+header2: hiw_tfgrid_explorer
 
 ---

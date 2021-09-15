@@ -1,5 +1,5 @@
 ---
-id: tfgrid_explorer
+id: hiw_tfgrid_explorer
 title: ''
 subtitle: LET’S DECENTRALIZE THE WORLD TOGETHER
 btn1: Let’s Do This!
