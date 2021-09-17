@@ -3,7 +3,7 @@ id: node_card1
 title: Stateless Operating System
 image: ./zero_os.png
 button: Learn More
-link: https://info.threefold.io/#/internet4__zos
+link: https://library.threefold.me/info/threefold/#/internet4__zos
 order: 1
 ---
 

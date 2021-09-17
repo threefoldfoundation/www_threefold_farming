@@ -3,7 +3,7 @@ id: node_card3
 title: Peer-to-Peer Network 
 image: ./zero_os.png
 button: Learn More
-link: https://info.threefold.io/#/internet4__znet 
+link: https://library.threefold.me/info/threefold/#/internet4__znet 
 order: 3
 ---
 

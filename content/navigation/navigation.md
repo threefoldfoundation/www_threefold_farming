@@ -60,7 +60,7 @@ navLinks:
         path: https://mydigitaltwin.io/
         external: true
       - title: Developers (SDK)
-        path: https://sdk.threefold.io/
+        path: https://library.threefold.me/info/sdk/
         external: true
       # - title: Kubernetes Cloud
       #   path: https://threefold.io/info/cloud#/cloud__evdc
@@ -117,7 +117,7 @@ navLinks:
     expandable: true
     submenu:
       - title: KnowledgeBase
-        path: https://wiki.threefold.io
+        path: https://library.threefold.me/info/tfgrid
         external: true            
       - title: Blog
         path: https://www.threefold.io/blog
@@ -163,7 +163,7 @@ social:
         external: true
 
       - title: Build with the SDK
-        path: https://sdk.threefold.io/
+        path: https://library.threefold.me/info/sdk/
         external: true
 
 
@@ -184,7 +184,7 @@ social:
         external: true
 
       - title: What is the Internet?
-        path: https://info.threefold.io/info/threefold#/threefold__grid_intro
+        path: https://library.threefold.me/info/threefold/info/threefold#/threefold__grid_intro
         external: true
       
       - title: Planet Positive

@@ -3,7 +3,7 @@ id: node_card2
 title: Smart Contract for IT
 image: ./zero_people.png
 button: Learn More
-link: https://info.threefold.io/#/internet4__smartcontract_it
+link: https://library.threefold.me/info/threefold/#/internet4__smartcontract_it
 order: 2
 ---
 
