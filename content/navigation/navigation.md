@@ -15,7 +15,7 @@ navLinks:
         path: https://threefold.io/token
         external: true
       - title: Buy TFT
-        path: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+        path: https://library.threefold.me/info/tfgrid/#/tokens/how_to_buy
         external: true
       - title: Tokenomics
         path: https://threefold.io/info/threefold#/threefold__tokenomics
