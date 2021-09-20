@@ -18,10 +18,10 @@ navLinks:
         path: https://library.threefold.me/info/tfgrid/#/tokens/how_to_buy
         external: true
       - title: Tokenomics
-        path: https://threefold.io/info/threefold#/threefold__tokenomics
+        path: https://library.threefold.me/info/tfgrid/#/tokens/tokenomics
         external: true
       - title: Distribution
-        path: https://threefold.io/info/threefold#/threefold__token_overview
+        path: https://library.threefold.me/info/threefold#/threefold__token_overview
         external: true
       - title: FAQ / Forum
         path: https://forum.threefold.io/c/threefold-token/tft-faq/57
@@ -37,7 +37,7 @@ navLinks:
       - title: Start Farming
         path: /get_3node
       - title: Farming Rewards
-        path: https://threefold.io/info/threefold#/threefold__farming_reward
+        path: https://library.threefold.me/info/tfgrid/#/farming/farming_reward
         external: true
       - title: FAQ
         path: /faq
