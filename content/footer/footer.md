@@ -17,7 +17,7 @@ items:
     - name: ThreeFold Farming
       link: https://threefold.io/farming
     - name: ThreeFold Cloud
-      link: https://threefold.io/cloud
+      link: https://cloud.threefold.io/
     - name: Grid Explorer
       link: https://explorer.threefold.io/      
     - name: ThreeFold Marketplace
@@ -25,7 +25,7 @@ items:
     - name: Digital Twin
       link: https://mydigitaltwin.io
     - name: Alliance
-      link: https://threefold.io/aci
+      link: https://consciousinternet.org/
 
         
  - title: Participate
@@ -35,7 +35,7 @@ items:
     - name: Buy the Token
       link: https://library.threefold.me/info/tfgrid/#/tokens/how_to_buy
     - name: Test the Cloud
-      link: https://threefold.io/cloud
+      link: https://cloud.threefold.io/
     - name: Develop with the SDK (advanced)
       link: https://threefold.io/info/sdk
     - name: Testing Community
