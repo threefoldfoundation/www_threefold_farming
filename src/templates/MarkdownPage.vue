@@ -158,12 +158,12 @@
           v-if="$page.markdownPage.headerSolution4"
           :header="$page.markdownPage.headerSolution4"
         />
-        <NewCard
+        <!-- <NewCard
           :id="$page.markdownPage.id"
           v-if="$page.markdownPage.cards2"
           :cards="$page.markdownPage.cards2"
           reverseCard="true"
-        />
+        /> -->
 
         <NewCard
           :id="$page.markdownPage.id"

@@ -1,8 +1,8 @@
 ---
 id: navigation
 navLinks:
-  - name: Mission
-    link: https://threefold.io/mission
+  - name: Why
+    link: https://threefold.io/why
     external: true
     expandable: false
 
