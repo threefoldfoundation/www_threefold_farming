@@ -34,7 +34,7 @@
             target="_blank"
             class="inline-block module py-2 px-10 leading-none text-white hover:bg-gray-700 rounded shadow"
             :href="link"
-            >{{ button }}</a
+            >{{button}}</a
           >
 
           <a

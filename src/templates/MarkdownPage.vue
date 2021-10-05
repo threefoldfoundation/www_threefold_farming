@@ -30,7 +30,7 @@
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
-        :link="$url($page.markdownPage.link)"
+        :link="$page.markdownPage.link"
       />
 
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
