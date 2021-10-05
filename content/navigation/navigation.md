@@ -33,7 +33,7 @@ navLinks:
     expandable: true
     submenu:
       - title: Introduction
-        path: /farming
+        path: /oldfarming
       - title: Start Farming
         path: /get_3node
       - title: Farming Rewards
