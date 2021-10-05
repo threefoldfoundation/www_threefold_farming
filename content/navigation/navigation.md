@@ -27,13 +27,13 @@ navLinks:
         path: https://forum.threefold.io/c/threefold-token/tft-faq/57
         external: true
 
-  - name: Farming
+  - name: Farm
     link: ""
     external: false
     expandable: true
     submenu:
       - title: Introduction
-        path: /farming
+        path: /farm
       - title: Start Farming
         path: /get_3node
       - title: Farming Rewards

@@ -1,7 +1,7 @@
 <template>
   <div
     class="lg:py-12 lg:flex lg:justify-center flex flex-col"
-    v-if="id == 'farming' && !reverseCard"
+    v-if="id == 'farm' && !reverseCard"
   >
     <div
       class="bg-white lg:mx-8 lg:flex items-center lg:max-w-5xl"

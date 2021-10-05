@@ -1,5 +1,5 @@
 ---
-id: farming
+id: farm
 metaTitle: ThreeFold Farming | Hello Future Farmer
 metaDesc: Plug in a 3Node at your home or office, and start generating income by selling peer-to-peer storage and compute capacity to the world.
 metaImg: ./home_header.png

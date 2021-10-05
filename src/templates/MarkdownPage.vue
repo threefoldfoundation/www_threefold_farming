@@ -4,7 +4,7 @@
       <Header
         v-if="
           $page.markdownPage.id !== 'get_3node' &&
-          $page.markdownPage.id !== 'farming' &&
+          $page.markdownPage.id !== 'farm' &&
           $page.markdownPage.header_title &&
           $page.markdownPage.header_title != ''
         "
@@ -21,7 +21,7 @@
       <Header
         v-if="
           $page.markdownPage.id == 'get_3node' ||
-          $page.markdownPage.id == 'farming'
+          $page.markdownPage.id == 'farm'
         "
         :id="$page.markdownPage.id"
         :span="$page.markdownPage.header_span"
@@ -167,7 +167,7 @@
 
         <NewCard
           :id="$page.markdownPage.id"
-          v-if="$page.markdownPage.cards && $page.markdownPage.id !== 'farming'"
+          v-if="$page.markdownPage.cards && $page.markdownPage.id !== 'farm'"
           :cards="$page.markdownPage.cards"
         />
 

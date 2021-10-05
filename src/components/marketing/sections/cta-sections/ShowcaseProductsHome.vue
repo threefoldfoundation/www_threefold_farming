@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 mb-5" v-if="id == 'home' || id == 'farming'">
+  <div class="py-12 mb-5" v-if="id == 'home' || id == 'farm'">
     <div class="w-full text-center">
       <h2
         v-if="main !== null"
