@@ -1,39 +1,34 @@
 <template>
   <div
-    class="fixed inset-0 h-16 lg:px-16"
+    class="fixed inset-0 h-16"
     :class="{ scrolled: !view.atTopOfPage }"
   >
     <header
-      class="flex items-center justify-between flex-wrap container-fluid mx-auto px-4 sm:px-0 py-4 transition-all transition-500"
+      class="container mx-auto px-4 sm:px-0 py-4 transition-all transition-500"
       :class="{
         'opacity-100': !disableScroll && scrollPosition > headerHeight,
         'opacity-0': !disableScroll && scrollPosition < headerHeight,
       }"
     >
-      <div class="flex items-center justify-between px-4 py-3 sm:p-0">
-        <div class="inline-flex items-center flex-shrink-0">
-          <a :href="$url('/')" class="flex">
+      <div class="">
+        <div class="my-2 ">
+          <!-- <a :href="$url('/')" class=""> -->
             <g-image
               :src="require(`!!assets-loader!@images/tfn_black.svg`)"
-              class="mr-3 fill-current logo"
-              v-if="theme == 'light'"
+              class="mx-auto logo"
+              
               alt=""
             />
 
-            <g-image
-              :src="require(`!!assets-loader!@images/tfn_black.svg`)"
-              class="mr-3 fill-current logo"
-              v-else
-              alt=""
-            />
+     
             <!-- <span
               class="hidden md:block font-semibold text-xl tracking-tight"
               >{{ $static.metadata.siteName }}</span
             > -->
-          </a>
+          <!-- </a> -->
         </div>
 
-        <div class="sm:hidden ml-auto">
+        <!-- <div class="sm:hidden ml-auto">
           <button
             @click="isOpen = !isOpen"
             type="button"
@@ -52,12 +47,12 @@
               />
             </svg>
           </button>
-        </div>
-        <div class="text-gray-400 sm:block md:hidden">
+        </div> -->
+        <!-- <div class="text-gray-400 sm:block md:hidden">
           <ul class="list-none flex justify-center md:justify-end">
-            <!-- <li class="mr-0 sm:mr-6">
+            <li class="mr-0 sm:mr-6">
               <theme-switcher v-on="$listeners" :theme="theme" />
-            </li> -->
+            </li>
             <li
               :key="element.name"
               v-for="(element, index) in navigation.social"
@@ -99,10 +94,10 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
 
-      <nav
+      <!-- <nav
         :class="isOpen ? 'block' : 'hidden'"
         class="bg-white navbar md:order-2 px-2 pt-2 ml-auto pb-4 sm:flex sm:p-0 sm:w-100 sm:bg-transparent"
       >
@@ -189,7 +184,7 @@
             >{{ element.name }}</g-link
           >
         </div>
-        <!-- <div
+        <div
           class="md:hidden inline-flex rounded-full border-2 border-gray-200 w-1/2"
         >
           <span class="w-auto flex justify-end items-center p-2">
@@ -202,10 +197,10 @@
             v-model="search"
             @keyup.enter="result"
           />
-        </div> -->
-      </nav>
-      <div class="hidden md:ml-auto md:inline-block md:order-last">
-        <!-- <div class="inline-flex rounded-full border-2 border-gray-200 w-1/2">
+        </div>
+      </nav> -->
+      <!-- <div class="hidden md:ml-auto md:inline-block md:order-last">
+        <div class="inline-flex rounded-full border-2 border-gray-200 w-1/2">
           <span class="w-auto flex justify-end items-center p-2">
             <font-awesome :icon="['fas', 'search']" />
           </span>
@@ -216,11 +211,11 @@
             v-model="search"
             @keyup.enter="result"
           />
-        </div> -->
+        </div>
         <ul class="list-none inline-flex justify-center md:justify-end">
-          <!-- <li class="mr-0 sm:mr-2">
+          <li class="mr-0 sm:mr-2">
             <ThemeSwitcher v-on="$listeners" :theme="theme" />
-          </li> -->
+          </li>
           <li
             :key="element.name"
             v-for="(element, index) in navigation.social"
@@ -258,7 +253,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
   </div>
 </template>
@@ -363,9 +358,9 @@ button:focus {
 .inset-0 {
   z-index: 999;
 }
-nav li a {
+/* nav li a {
   padding-right: 10px;
-}
+} */
 a.active--exact.active {
   background-color: rgba(237, 242, 247, 1);
   border-radius: 0.5rem;
@@ -375,7 +370,7 @@ a.active--exact.active {
   width: auto;
 }
 .logo {
-  max-width: 180px;
+  max-width: 230px;
 }
 
 nav {
